@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'Buying',
+            }
+        ]
+    } %}
+
+    {% include 'layouts/common/title-block.html.twig' with {
+        text: 'Buying',
+        tag: 'h1',
+        wrapMod: 'container mb50',
+    } only %}
+
+    {% include 'layouts/sections/tile.html.twig' with {
+        list: [
+            {
+                img: asset('build/images/buying/buying-1.svg'),
+                text: '
+                    <h3>Get Treated Right with FULL VIP Service.</h3>
+                    <p>Enjoy the VIP treatment.<br>Enjoy full service assistance, and have a professional negotiator on your side to get you the very best deal on your new home in Vancouver while saving thousands of dollars.</p>
+                '
+            },
+            {
+                img: asset('build/images/buying/buying-2.svg'),
+                text: '
+                    <h3>Full time Professional REALTORS® on duty</h3>
+                    <p>Leveraging the most advanced technology and tools means you get first class service from a dedicated, full time REALTOR® that is more organized, better equipped to respond to your needs and enquiries faster and is more knowledgeable about the current market, while being able to focus more attention on service and helping you to get the best deal on your next home.</p>
+                '
+            },
+            {
+                img: asset('build/images/buying/buying-3.svg'),
+                text: '
+                    <h3>FULL Database Search. All Listings on the Market. No Exceptions!</h3>
+                    <p>Use our home search tool to access the properties for sale in Lower Mainland<br>viksemenov’s MLS® search and New Homes centre come together to offer the most expansive bank of houses for sale in Lower Mainland on the web. Start your search now…</p>
+                '
+            },
+            {
+                img: asset('build/images/buying/buying-4.svg'),
+                text: '
+                    <h3>Get the Inside Scoop with Unique information and Tools</h3>
+                    <p>Get the information you need to find the perfect home and neighborhood, and buy with confidence.<br>Check out the most comprehensive, accurate and innovate suite of tools and data to find the perfect match in a new home you’ll love… </p>
+                '
+            },
+        ]
+    } only %}
+
+    <div class="container pt40 pb80">
+        <span class="subtitle">Get a great deal on a fantastic new home!</span>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+<div data-type="{{ feedId }}" class="show-more-wrap text-block {{ mod|default('_show-8') }} js-show-more-wrap">
+    {%  include 'layouts/listings/' ~ feedId ~ '-description.html.twig' with {
+        description: description
+    } only %}
+
+    {% include 'layouts/controls/button.html.twig' with {
+        mod: 'show-more-btn _bordered-gray js-show-more-btn',
+        toggleTextInitial: 'Show more',
+        toggleTextActive: 'Hide',
+    } only %}
+</div>

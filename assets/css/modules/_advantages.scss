@@ -1,0 +1,174 @@
+.advantages {
+	$r: &;
+	
+	&__table {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	
+	&__col {
+		position: relative;
+		width: calc(100% / 3 - 160px / 3);
+		max-width: 283px;
+	}
+	
+	&__img-wrap {
+		width: 100%;
+		height: 150px;
+	}
+	
+	&__img {
+		display: block;
+		width: auto;
+		max-width: 100%;
+		height: 100%;
+	}
+	
+	&__text {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&._gray-wrap {
+		#{$r}__wrap {
+			@extend .pt50;
+			@extend .pb50;
+			background: $gray2;
+			border-radius: 20px;
+		}
+		
+		#{$r}__img-wrap {
+			height: 120px;
+		}
+		
+		#{$r}__img {
+			width: auto;
+			max-width: 100%;
+			height: 100%;
+		}
+		
+		#{$r}__table {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		
+		#{$r}__col {
+			max-width: none;
+			margin-bottom: 0;
+			padding-left: 0;
+		}
+	}
+	
+	@include media_1300 {
+		&__img-wrap {
+			height: 130px;
+		}
+		
+		&._gray-wrap {
+			#{$r}__wrap {
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+			
+			#{$r}__col {
+				width: calc(100% / 3 - 100px / 3);
+			}
+			
+			#{$r}__img-wrap {
+				position: relative;
+			}
+		}
+	}
+	
+	@include media_1000 {
+		&__table {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		
+		&__col {
+			width: 100%;
+			max-width: none;
+			margin-bottom: 50px;
+			padding-left: 140px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		
+		&__img-wrap {
+			@include absolute-cm(0,auto,auto);
+			width: 100px;
+			height: auto;
+		}
+		
+		&__img {
+			width: 100%;
+			height: auto;
+		}
+		
+		&._gray-wrap {
+			#{$r}__wrap {
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+			
+			#{$r}__col {
+				width: calc(100% / 3 - 80px / 3);
+			}
+			
+			#{$r}__img-wrap {
+				height: 100px;
+			}
+		}
+	}
+	
+	@include media_700 {
+		&__col {
+			padding-left: 0;
+		}
+		
+		&__img-wrap {
+			position: relative;
+		}
+		
+		&._gray-wrap {
+			#{$r}__wrap {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			
+			#{$r}__table {
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
+			
+			#{$r}__col {
+				width: 100%;
+				margin-bottom: 30px;
+				padding-left: 80px;
+				min-height: 60px;
+				
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			
+			#{$r}__img-wrap {
+				@include absolute(0,auto,auto);
+				height: auto;
+				width: 60px;
+			}
+			
+			#{$r}__img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

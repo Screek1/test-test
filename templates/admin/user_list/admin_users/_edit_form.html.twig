@@ -1,0 +1,17 @@
+{{ form_start(form) }}
+<div class="my-custom-class-for-errors">
+    {{ form_errors(form) }}
+</div>
+
+<div class="row mb-3">
+    <div class="col">
+        username
+    </div>
+    <div class="col" id="some-custom-id">
+        password
+    </div>
+</div>
+
+<button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+<a class="btn btn-light" href="{{ path('admin_list') }}" hreflang="en">back to list</a>
+{{ form_end(form) }}

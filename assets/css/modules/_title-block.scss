@@ -1,0 +1,22 @@
+.title-block {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	
+	@include media_min-1000{
+		&__text {
+			flex: 1 0 0;
+			padding-right: 40px;
+			
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+	
+	@include media_1000 {
+		&__slider-nav-wrap {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+<div class="info-card">
+    {% if title|default(false) %}
+        <h5 class="info-card__title pb20 mb20 {{ icon ?? '' }} h5">
+            {{ title }}
+        </h5>
+    {% endif %}
+
+    {% if list|default(false) %}
+        <div class="info-card__list">
+            {% for item in list %}
+                <div class="info-card__row pb20 mb20">
+
+                    {% if item.subtitle ?? false %}
+                        <div class="info-card__subtitle body-text">
+                            {{ item.subtitle }}
+                        </div>
+                    {% endif %}
+
+                    {% if item.label ?? false %}
+                        <div class="info-card__label small-text">
+                            {{ item.label }}
+                        </div>
+                    {% endif %}
+
+                    <div class="info-card__table">
+                        <div class="info-card__col info-card__col_left">
+                            {% if item.status ?? false %}
+                                <div class="info-card__status small-text_bold {{ item.status.mod }}">
+                                    {{ item.status.text }}
+                                </div>
+                            {% endif %}
+
+                            {% if item.val ?? false %}
+                                <div class="info-card__val small-text">
+                                    {{ item.val }}
+                                </div>
+                            {% endif %}
+                        </div>
+
+{# // TODO School rating #}
+                        <div class="info-card__col info-card__col_right">
+                            {% if item.rating ?? false and item.rating != 'Rating 7/10' %}
+                                <div class="info-card__rating small-text">
+                                    Rating {{ item.rating }}/10
+                                </div>
+                            {% elseif(item.rating is defined) %}
+                                <div class="info-card__rating small-text">
+                                    No Rating
+                                </div>
+                            {% endif %}
+
+                            {% if item.details ?? false %}
+                                <a class="info-card__details button1 link-purple" href="{{ item.details }}">Details</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if description ?? false %}
+        <p class="info-card__description pt20 mt20 tiny-text">
+            {{ description }}
+        </p>
+    {% endif %}
+</div>

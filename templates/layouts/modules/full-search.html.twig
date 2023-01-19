@@ -1,0 +1,181 @@
+{% set fullSearchNavList = [
+    {
+        text: 'MLS®',
+        linkMod: 'js-full-search-type-link',
+        dataVal: 'mls',
+        dataToggle: '',
+    },
+    {
+        text: 'New Property',
+        linkMod: 'js-full-search-type-link',
+        dataVal: 'new-property',
+        dataToggle: '',
+    },
+    {
+        text: 'Commercial',
+        linkMod: 'js-full-search-type-link',
+        dataVal: 'commercial',
+        dataToggle: 'commercial',
+    },
+] %}
+
+{% set fullSearchBuildingSizeSelect = {
+    name: 'buildingSize',
+    inputMod: '_transparent',
+    wrapMod: ' js-fs-tab js-fs-tab-commercial _hide',
+    options: [
+        {
+            value: 'any',
+            text: 'Any Builiding Size',
+            selected: true,
+        },
+
+        {
+            value: '100',
+            text: '100+ sqft',
+        },
+
+        {
+            value: '200',
+            text: '200+ sqft',
+        },
+
+        {
+            value: '300',
+            text: '300+ sqft',
+        },
+    ]
+} %}
+
+{% set fullSearchlotSizeSelect = {
+    name: 'lotSize',
+    inputMod: '_transparent',
+    wrapMod: ' js-fs-tab js-fs-tab-commercial _hide',
+    options: [
+        {
+            value: 'any',
+            text: 'Any Lot Size',
+            selected: true,
+        },
+
+        {
+            value: '2000',
+            text: '2000+ sqft',
+        },
+
+        {
+            value: '3000',
+            text: '3000+ sqft',
+        },
+
+        {
+            value: '4000',
+            text: '4000+ sqft',
+        },
+    ]
+} %}
+
+{# {{ dump(type) }} #}
+{# {{ dump(priceFrom) }} #}
+{# {{ dump(priceTo) }} #}
+{# {{ dump(beds) }} #}
+{# {{ dump(baths) }} #}
+
+<form class="full-search js-full-search" action="{{ path('search_listings') }}" data-google-action="full-search"
+      data-category="search" data-label="search" method="GET">
+    <div class="full-search__nav-wrap mb20">
+        <input type="text" class="pseudo-hidden js-full-search-type" name="searchType"/>
+
+        {% include 'layouts/modules/slide-menu.html.twig' with {
+            list: fullSearchNavList,
+            firstActive: true,
+            wrapMod: '_turquoise',
+        } only %}
+    </div>
+
+    <div class="full-search__fields-container mb20">
+        {% include 'layouts/form/autofill.html.twig' with {
+            inputName: 'searchInput',
+            dropdownMod: '_big',
+            requestOptions: {
+                action: path('facets_search'),
+                type: "POST",
+            }
+        } only %}
+
+        <div class="full-search__selects-container">
+            <div class="full-search__selects-group">
+                {% include 'layouts/form/checkbox-list-select.html.twig' with {
+                    wrapMod: '_fh js-fs-tab js-fs-tab-default',
+                    placeholder: 'Any',
+                    list: type,
+                } %}
+
+                {# TODO: commercial type #}
+                {% include 'layouts/form/checkbox-list-select.html.twig' with {
+                    wrapMod: '_fh js-fs-tab js-fs-tab-commercial _hide',
+                    placeholder: 'Any',
+                    defaultList: 'commercial',
+                } %}
+
+                {% include 'layouts/form/price-select.html.twig' with {
+                    wrapMod: '_fh',
+                    pricesArrayFrom: priceFrom,
+                    pricesArrayTo: priceTo,
+                } %}
+            </div>
+
+            <div class="full-search__selects-group">
+                {% include 'layouts/form/radio-row-select.html.twig' with {
+                    name: 'minBeds',
+                    wrapMod: '_fh js-fs-tab js-fs-tab-default',
+                    placeholder: 'Beds',
+                    list: minBeds,
+                    keyAsVal: true,
+                    dataProps: {
+                        patternReplace: '@',
+                        patternSimple: "@&#32;Beds"
+                    },
+                } %}
+
+                {% include 'layouts/form/radio-row-select.html.twig' with {
+                    name: 'minBaths',
+                    wrapMod: '_fh js-fs-tab js-fs-tab-default',
+                    placeholder: 'Baths',
+                    list: minBaths,
+                    keyAsVal: true,
+                    dataProps: {
+                        patternReplace: '@',
+                        patternSimple: "@&#32;Baths"
+                    },
+                } %}
+
+                {# TODO: building size #}
+                {% include 'layouts/form/select.html.twig' with fullSearchBuildingSizeSelect only %}
+
+                {# TODO: lot size #}
+                {% include 'layouts/form/select.html.twig' with fullSearchlotSizeSelect only %}
+            </div>
+        </div>
+
+        <button class="icon-btn icon-search js-full-search-button"></button>
+    </div>
+
+    <div class="full-search__buttons-wrap">
+        <div class="full-search__button-map-wrap">
+            {% include 'layouts/controls/button.html.twig' with {
+                href: '#svg-map',
+                text: 'Search by map',
+                mod: '_dark _to-icon-on-700 icon-map js-nav-link'
+            } %}
+        </div>
+
+        <div class="full-search__button-search-wrap show-on-700">
+            {% include 'layouts/controls/button.html.twig' with {
+                button: true,
+                text: 'Search',
+                mod: 'icon-search'
+            } %}
+        </div>
+    </div>
+</form>

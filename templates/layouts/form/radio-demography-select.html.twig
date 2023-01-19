@@ -1,0 +1,37 @@
+{% embed 'layouts/containers/demography-dropdown-button.html.twig' with {
+    placeholder: placeholder|default(''),
+    wrapMod: wrapMod|default(''),
+    popupMod: '_small-padding',
+    list: list|default(false),
+    defaultList: defaultList|default(false),
+    name: name,
+    dataProps: dataProps|default(false),
+    keyAsVal: keyAsVal|default(false),
+    selectedVal: selectedVal|default(false),
+} only %}
+    {% block dropdown_content %}
+        {% if list.submenu is defined %}
+            {% include 'layouts/controls/radio-row-with-submenu.html.twig' with {
+                name: name,
+                list: list.list|default(false),
+                defaultList: defaultList|default(false),
+                keyAsVal: keyAsVal|default(false),
+                selectedVal: selectedVal|default(false),
+                wrapMod: '_custom text-center',
+                itemWrapMod: '_custom',
+                textMod: 'extra-small-text text-center'
+            } only %}
+        {% else %}
+            {% include 'layouts/controls/radio-row.html.twig' with {
+                name: name,
+                list: list|default(false),
+                defaultList: defaultList|default(false),
+                keyAsVal: keyAsVal|default(false),
+                selectedVal: selectedVal|default(false),
+                wrapMod: '_custom text-center',
+                itemWrapMod: '_custom',
+                textMod: 'extra-small-text text-center'
+            } only %}
+        {% endif %}
+    {% endblock %}
+{% endembed %}

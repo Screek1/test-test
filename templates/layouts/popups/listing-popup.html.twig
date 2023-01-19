@@ -1,0 +1,322 @@
+{% block stylesheets %}
+    <style>
+        .legend {
+            width: 190px;
+            padding: 10px 15px;
+            font: 14px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+            /*border-radius: 5px;*/
+            line-height: 24px;
+            color: #555;
+        }
+
+        .legend h4 {
+            text-align: center;
+            font-size: 16px;
+            margin: 2px 12px 8px;
+            color: #777;
+        }
+
+        .legend span {
+            position: relative;
+            bottom: 3px;
+        }
+
+        .legend i {
+            width: 50px;
+            height: 18px;
+            float: left;
+            margin: 0 8px 0 0;
+            opacity: 0.7;
+        }
+
+        .legend i.icon {
+            background-size: 18px;
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
+{% set listingPopupMapMenu = [
+    {
+        text: 'Photos',
+        linkMod: 'js-content-tab-nav',
+        dataVal: 'gallery',
+        contentId: ['gallery', 'agent'],
+    },
+    {
+        text: 'Map',
+        linkMod: 'js-content-tab-nav js-map-layer-option',
+        dataVal: 'listings',
+        initMap: '#listing-popup-map',
+        contentId: ['map', 'agent'],
+    },
+    {
+        text: 'Street view',
+        linkMod: 'js-content-tab-nav js-map-layer-option',
+        dataVal: 'street-view',
+        contentId: ['street-view', 'agent'],
+        dataTrigger: { target: '#google-street-view', event: 'trigger:init' }
+    },
+    {
+        text: 'Schools',
+        linkMod: 'js-content-tab-nav js-map-layer-option',
+        dataVal: 'schools',
+        initMap: '#listing-popup-map',
+        contentId: ['map', 'schools'],
+    },
+    {
+        text: 'Crime',
+        linkMod: 'js-content-tab-nav js-map-layer-option',
+        dataVal: 'crime',
+        initMap: '#listing-popup-map',
+        contentId: ['map', 'crime'],
+        dropdown: true,
+        selectedVal: 'allViolationsRating',
+        dropdownItems: [
+        {
+            text: 'Total Crime Rate',
+            value: 'allViolationsRating'
+        },
+        {
+            text: 'Criminal Crime Rate',
+            value: 'criminalViolationsRating'
+        },
+        {
+            text: 'Violent Crime Rate ',
+            value: 'violentCrimeRating'
+        },
+        {
+            text: 'Property Crime Rate',
+            value: 'propertyCrimeRating'
+        },
+        {
+            text: 'Other Crime Rate',
+            value: 'otherCrimeRating'
+        },
+        {
+            text: 'Traffic Crime Rate',
+            value: 'trafficCrimeRating'
+        },
+        {
+            text: 'Drug Crime Rate',
+            value: 'drugCrimeRating'
+        }
+    ]
+    },
+    {
+        text: 'Commute',
+        linkMod: 'js-content-tab-nav js-map-layer-option',
+        dataVal: 'commute',
+        initMap: '#listing-popup-map',
+        contentId: ['map', 'commute'],
+    },
+    {
+        text: 'Shop & Eat',
+        linkMod: 'js-content-tab-nav js-map-layer-option',
+        dataVal: 'yelp',
+        initMap: '#listing-popup-map',
+        contentId: ['map', 'shop-and-eat'],
+    },
+] %}
+
+
+{% set listingPopupMapSchoolsSelect = {
+    'name': 'schools-type--select',
+    'inputMod': '_fill-white',
+    'wrapMod': 'mb10',
+    'options': [
+        {
+            'value': 'val1',
+            'text': 'Assigned',
+        },
+        {
+            'value': 'val2',
+            'text': 'Property2',
+        },
+    ]
+} %}
+
+{% set listingPopupMapSchoolsSlideMenu = [
+    {
+        text: 'Elementary',
+        linkMod: 'js-schools-option',
+        dataVal: 'elementary',
+    },
+    {
+        text: 'Middle',
+        linkMod: 'js-schools-option',
+        dataVal: 'middle',
+    },
+    {
+        text: 'Secondary',
+        linkMod: 'js-schools-option',
+        dataVal: 'secondary',
+    },
+    {
+        text: 'All',
+        linkMod: 'js-schools-option',
+        dataVal: 'all',
+    },
+] %}
+
+{% set listingPopupMapCommuteSlideMenu = [
+    {
+        text: 'Driving',
+        linkMod: 'js-commute-option',
+        dataVal: 'car',
+    },
+    {
+        text: 'Transit',
+        linkMod: 'js-commute-option',
+        dataVal: 'bus',
+    },
+    {
+        text: 'Walking',
+        linkMod: 'js-commute-option',
+        dataVal: 'pedestrian',
+    },
+    {
+        text: 'Cycling',
+        linkMod: 'js-commute-option',
+        dataVal: 'bicycle',
+    },
+    {
+        text: 'Scooter',
+        linkMod: 'js-commute-option',
+        dataVal: 'scooter',
+    },
+] %}
+
+<div class="popup-style popup-style_fh js-popup js-popup-listing-popup">
+    <div class="popup-style__container">
+
+        <div class="popup-style__scroll-wrap">
+            <div class="popup-style__content ">
+                <div class="popup-map-container js-map-interface-wrap js-wrap">
+                    <div class="popup-map-container__nav-wrap mb40_2">
+                        {% include 'layouts/modules/slide-menu.html.twig' with {
+                            list: listingPopupMapMenu,
+                        } only %}
+
+                        <div class="cross-btn js-close-popup"></div>
+                    </div>
+
+                    <div class="popup-map-container__content">
+                        <div class="popup-map-container__table content-tabs-container">
+                            <div class="popup-map-container__col popup-map-container__col_left">
+
+                                <div class="content-tab js-content-tab" data-content-id="gallery">
+                                    <div class="popup-map-container__scroll-wrap js-smooth-scroll"
+                                         data-scroll-content-wrap="true">
+                                        {% include 'layouts/modules/listing-gallery.html.twig' with {
+                                            images: images|default(false),
+                                            imgMod: 'js-tab-img'
+                                        } only %}
+                                    </div>
+                                </div>
+
+                                <div class="content-tab js-content-tab" data-content-id="street-view">
+                                    <div class="google-street-view" id="google-street-view" data-props="{{ {
+                                        apiUrl: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC983NJ9_Ub2jFbQ6mwdqlT8tGVjnmxhJQ',
+                                        coordinates: coordinates|default(false),
+                                    }|json_encode }}"></div>
+                                </div>
+
+                                <div class="map-container _fw1300 content-tab js-map-container js-content-tab"
+                                     data-content-id="map">
+                                    {% include 'layouts/common/spinner.html.twig' %}
+
+                                    <div class="map" id="listing-popup-map" data-params='{{ {
+                                        center: coordinates|default(false),
+                                        schoolsPath: path('school_search'),
+                                        crimePath: path('crime_search'),
+                                        yelpPath: path('business_search'),
+                                        initialMarker: true,
+                                        zoom: 15,
+                                        minZoom: 10,
+                                        controlsPosition: 'topright',
+                                    }|json_encode }}'></div>
+                                </div>
+                            </div>
+
+                            <div class="popup-map-container__col popup-map-container__col_right ">
+                                <div class="content-tabs-container">
+                                    <div class="content-tab _fw1300 js-content-tab" data-content-id="schools">
+                                        {% include 'layouts/modules/map-menu.html.twig' with {
+                                            title: 'Schools',
+                                            select: listingPopupMapSchoolsSelect,
+                                            slideMenu: listingPopupMapSchoolsSlideMenu,
+                                            contentMod: 'js-schools-cards-menu',
+                                            wrapMod: 'js-wrap',
+                                            text: 'Check with the applicable school district prior to making a decision based on these schools.',
+                                        } only %}
+                                    </div>
+
+                                    <div class="content-tab _fw1300 js-content-tab" data-content-id="crime">
+
+                                    </div>
+
+                                    <div class="content-tab _fw1300 js-content-tab" data-content-id="commute">
+                                        {% include 'layouts/modules/map-menu.html.twig' with {
+                                            title: 'Commute',
+                                            text: 'Commute times are based on typical rush hour traffic.',
+                                            slideMenu: listingPopupMapCommuteSlideMenu,
+                                            contentMod: 'js-commute-routes-menu',
+                                            wrapMod: 'js-wrap',
+                                            showCommuteForm: true,
+                                        } only %}
+                                    </div>
+
+                                    <div class="content-tab _fw1300 js-content-tab" data-content-id="shop-and-eat">
+                                        {% include 'layouts/modules/map-menu.html.twig' with {
+                                            title: 'Shop & Eat',
+                                            yelpLabel: true,
+                                            slideMenu: 'default',
+                                            contentMod: 'js-yelp-cards-menu',
+                                            wrapMod: 'js-wrap',
+                                        } only %}
+                                    </div>
+
+                                    <div class="content-tab hide-on-1300 js-content-tab" data-content-id="agent">
+                                        {% include 'layouts/modules/agent.html.twig' with {
+                                            confidentiality: true,
+                                            confidentialityCollapse: true,
+                                            agentPhoto: agent.agentPhoto,
+                                            agentName: agent.agentName,
+                                            agencyName: agent.agencyName,
+                                            agentPhone: agentPhoneNumber,
+                                            listingId: listingId,
+                                            wrapMod: '_mh hide-on-1300',
+                                            containerMod: 'js-smooth-scroll',
+                                            tyTitleMod: 'mt10 h3',
+                                            tySubtitleMod: 'mt10 h6',
+                                        } only %}
+                                    </div>
+
+                                    <div class="content-tab-simple show-on-1300 js-content-tab" data-content-id="agent">
+                                        {% include 'layouts/controls/button.html.twig' with {
+                                            text: 'Go See This Home Now',
+                                            mod: '_fixed js-call-popup',
+                                            dataPopup: {
+                                                target: 'agent',
+                                            }
+                                        } %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

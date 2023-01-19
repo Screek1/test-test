@@ -1,0 +1,10 @@
+<div class="radio-labels-row {{ wrapMod|default('mtr5') }}">
+    {% for item in items %}
+        {% set checkedAttr = selectedVal|default(false) ? (selectedVal == item.value ? 'checked') : (loop.index0 ? '' : 'checked') %}
+
+        <label class="radio-labels-row__item button1 {{ itemMod|default('mt5') }}">
+            <input class="radio-labels-row__input pseudo-hidden" type="radio" name="{{ name }}" value="{{ item.value }}" {{ checkedAttr }}>
+            <span class="radio-labels-row__text">{{ item.text }}</span>
+        </label>
+    {% endfor %}
+</div>

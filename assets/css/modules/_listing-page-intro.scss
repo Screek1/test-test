@@ -1,0 +1,101 @@
+.listing-page-intro {
+	&__header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	
+	&__title-wrap {
+		width: calc(100% / 12 * 6 - 40px / 3);
+	}
+	
+	&__price-wrap {
+		width: calc(100% / 12 * 3 - 40px / 3);
+	}
+	
+	&__agent-wrap {
+		width: calc(100% / 12 * 3 - 40px / 3);
+	}
+	
+	&__subtitle {
+		color: $dark1;
+	}
+	
+	&__label {
+		color: $dark1;
+	}
+	
+	&__controls-wrap {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+		&._va-center {
+			align-items: center;
+		}
+	}
+	
+	@include media_min-700 {
+		&__controls-col {
+			&:first-child {
+				flex: 1 1 0;
+				padding-right: 40px;
+			}
+			
+			&:last-child {
+				flex: 0 0 auto;
+			}
+		}
+		
+		&__controls-wrap {
+			.metrics {
+				padding-top: 5px;
+			}
+		}
+	}
+	
+	@include media_1300 {
+		&__title-wrap {
+			width: 100%;
+		}
+	}
+	
+	@include media_1000 {
+	
+	}
+	
+	@include media_700 {
+		&__controls-col {
+			width: 100%;
+			
+			&:first-child {
+				margin-bottom: 15px;
+			}
+			
+			.btn-style {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.estate-header {
+
+}
+
+.breadcrumbs__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.days-on-market {
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+

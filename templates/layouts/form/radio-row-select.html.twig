@@ -1,0 +1,21 @@
+{% embed 'layouts/containers/dropdown-button.html.twig' with {
+    placeholder: placeholder|default(''),
+    wrapMod: wrapMod|default(''),
+    popupMod: '_small-padding',
+    list: list|default(false),
+    defaultList: defaultList|default(false),
+    name: name,
+    dataProps: dataProps|default(false),
+    keyAsVal: keyAsVal|default(false),
+    selectedVal: selectedVal|default(false),
+} only %}
+    {% block dropdown_content %}
+        {% include 'layouts/controls/radio-row.html.twig' with {
+            name: name,
+            list: list|default(false),
+            defaultList: defaultList|default(false),
+            keyAsVal: keyAsVal|default(false),
+            selectedVal: selectedVal|default(false),
+        } only %}
+    {% endblock %}
+{% endembed %}

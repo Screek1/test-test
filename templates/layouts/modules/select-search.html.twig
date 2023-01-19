@@ -1,0 +1,42 @@
+<form class="select-search" action="{{ path('search_listings') }}">
+{#    {% include 'layouts/form/select.html.twig' with {#}
+{#        'name': 'header-search-select',#}
+{#        'inputMod': '_fill-gray _dark-text',#}
+{#        'options': [#}
+{#            {#}
+{#                'value': 'val1',#}
+{#                'text': 'New Property',#}
+{#            },#}
+{#            {#}
+{#                'value': 'val2',#}
+{#                'text': 'New Property1',#}
+{#            },#}
+{#            {#}
+{#                'value': 'val3',#}
+{#                'text': 'New Property2',#}
+{#            },#}
+{#        ]#}
+{#    } only %}#}
+
+    {% include 'layouts/form/autofill.html.twig' with {
+        inputPlaceholder: 'Enter Neighbourhood, City, MLS®',
+        inputMod: '_bordered',
+        dropdownMod: '_rel-h js-max-height',
+        inputName: 'searchInput',
+        maxHeightSettings: {
+            offset: 20,
+            fromPosition: true,
+        },
+        requestOptions: {
+            action: path('facets_search'),
+            type: "POST",
+        }
+    } only %}
+
+    <div
+            class="select-search__clear-button icon-cross show-on-700 js-clear-input"
+            data-clear-input-name="search-input"
+    ></div>
+
+    <button class="icon-btn icon-search"></button>
+</form>

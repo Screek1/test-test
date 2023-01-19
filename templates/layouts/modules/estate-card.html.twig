@@ -1,0 +1,145 @@
+{% set defaultSliderParameters = {
+    lazyLoad: 'ondemand',
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+            arrows: false,
+        }
+        }
+    ]
+} %}
+
+{% set cardHtmlTag = baseTag|default(false) ? baseTag : 'a' %}
+{% set hrefAttr = cardHtmlTag == 'a' ? 'href=/' ~ listingUrl : '' %}
+
+<{{ cardHtmlTag }}
+class="estate-card js-estate-card {{ wrapMod|default('') }}"
+{{ hrefAttr }}
+    {{ dataAttr|default(false) }}
+>
+<div class="estate-card__slider-wrap js-wrap">
+    <div
+            class="estate-cards-slider {{ sliderMod|default('js-trigger-slider') }}"
+            data-prevent-parent-swipe="true"
+            data-lazy-inner="true"
+            data-img-selector="ec-src"
+            data-slider-parameters="{{ defaultSliderParameters|json_encode }}"
+    >
+        {% if images|length %}
+            {% for key, img in images %}
+                {% set estateCardImgSrc = (showFirstImg|default(false) and not key) ? img : "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" %}
+
+                <div class="estate-cards-slider__item">
+                    <img class="estate-cards-slider__img of"
+                         src={{ estateCardImgSrc }}
+                         data-ec-src="{{ img }}" alt="Card Image"/>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="estate-cards-slider__item default-img-bg"></div>
+        {% endif %}
+    </div>
+
+    <div class="estate-card__header">
+        <div class="estate-card__labels-wrap">
+            {% if isNew|default(false) %}
+                <span class="estate-card__label schild_2">NEW</span>
+            {% endif %}
+
+            {# TODO: for sale by owner #}
+            {% if forSaleByOwner|default(false) %}
+                <span class="estate-card__label schild_2">for sale by owner</span>
+            {% endif %}
+        </div>
+
+        {% if not hideAddToFavorite|default(false) %}
+            <span
+                    class="estate-card__add-to-favorite circle-button _ic-fs-12 favorite-toggle js-ajax-send-button js-prevent {{ userFavorite|default(false) ? '_active' }}"
+                    data-callback="toggle_active"
+                    data-url="{{ path('add_to_favorites', {listingId: listingId}) }}"
+            ></span>
+        {% endif %}
+    </div>
+
+    <div class="estate-card__arrows-wrap js-slider-nav">
+        <span class="estate-card__arrow circle-button _bordered icon-angle-left js-arrow-left js-prevent"></span>
+        <span class="estate-card__arrow circle-button _bordered icon-angle-right js-arrow-right js-prevent"></span>
+    </div>
+</div>
+
+<div class="estate-card__description {{ descriptionMod|default('pt30 pb30') }}">
+    {% if financials.listingPrice|default(false) or date|default(false) %}
+        <div class="estate-card__title-wrap {{ titleWrapMod|default('') }}">
+            {% if financials.listingPrice|default(false) %}
+                <span class="estate-card__title {{ titleMod|default('subtitle_bold mb10') }}">${{ financials.listingPrice|number_format(0, '.', ',') }}</span>
+            {% endif %}
+
+            {% if date|default(false) %}
+                <span class="estate-card__date small-text_bold">{{ date|date() }}</span>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if address.streetAddress|default(false) and address.city|default(false) %}
+        <h5 class="estate-card__location {{ locationMod|default('h5 mb10') }}">
+            {{ address.streetAddress ~ ', ' ~  address.city }}
+        </h5>
+    {% endif %}
+
+    {% if metrics|default(false) %}
+        <div class="estate-card__metrics-wrap {{ metricsWrapMod|default('mb20') }}">
+            {% include 'layouts/modules/metrics.html.twig' with {
+                metrics: metrics,
+                outputProps: ['bedRooms','bathRooms','sqrtFootage'],
+                wrapMod: '_simple',
+                itemMod: '',
+                valMod: 'h6',
+                labelMod: 'h6',
+            } only %}
+        </div>
+    {% endif %}
+
+    {% if mlsNumber|default(false) %}
+        <span class="gray-mls-after {% if feedId == 'ddf' %}icon-mls-min{% endif %} tiny-text">{{ mlsPrefix|default('') }}{{ 'MLS® ' ~ mlsNumber }}</span>
+    {% endif %}
+
+    {% if controls|default(false) %}
+        <div class="estate-card__controls-wrap pt20">
+            <div class="estate-card__controls-list pt20">
+                {% include 'layouts/controls/button.html.twig' with {
+                    href: listingUrl,
+                    text: 'View Details',
+                    mod: '_turquoise'
+                } %}
+
+                {% include 'layouts/modules/controls-bar.html.twig' with {
+                    controlsArray: [
+                        {
+                            label: 'Add to favorites',
+                            mod: 'favorite-toggle js-ajax-send-button ' ~ (userFavorite|default(false) ? '_active ' : ' ' ),
+                            dataAttribute: 'data-url=' ~ path('add_to_favorites', {listingId: listingId}),
+                            dataCallback: 'toggle_active',
+                        },
+
+                    ],
+                } only %}
+
+
+                {#                    Removed buttons #}
+                {#                    { #}
+                {#                    label: 'Share', #}
+                {#                    mod: 'icon-share-frame', #}
+                {#                    href: '#', #}
+                {#                    }, #}
+                {#                    { #}
+                {#                    label: 'Compare', #}
+                {#                    mod: 'icon-compare-frame', #}
+                {#                    href: '#', #}
+                {#                    }, #}
+            </div>
+        </div>
+    {% endif %}
+</div>
+</{{ cardHtmlTag }}>

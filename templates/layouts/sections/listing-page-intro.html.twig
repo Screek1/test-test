@@ -1,0 +1,145 @@
+<section class="listing-page-intro {{ wrapMod ?? 'mb70' }}">
+    <div class="listing-page-intro__container {{ containerMod ?? 'container' }}">
+        <div class="listing-page-intro__header mb20">
+            <div class="listing-page-intro__title-wrap">
+                <h1 class="listing-page-intro__title h2 mb10">
+                    {{ listingTitle }}
+                </h1>
+
+                <h2 class="listing-page-intro__subtitle table-text">
+                    {{ 'MLS® ' ~ listing.mlsNumber }}
+                </h2>
+            </div>
+
+            <div class="listing-page-intro__price-wrap hide-on-1300">
+                {% include 'layouts/modules/price-card.html.twig' with {
+                    'listingPrice': listing.financials.listingPrice,
+                    'originalListingPrice': listing.financials.originalListingPrice,
+                } only %}
+            </div>
+
+            <div class="listing-page-intro__agent-wrap hide-on-1300">
+                {% include 'layouts/modules/agent.html.twig' with {
+                    simple: true,
+                    agentPhoto: listing.agent.agentPhoto,
+                    agentName: listing.agent.agentName,
+                    agencyName: listing.agent.agencyName,
+                    agentPhone: phoneNumber,
+                } only %}
+            </div>
+        </div>
+        <div class="listing-page-intro__controls-wrap mb20">
+            <div class="listing-page-intro__controls-col">
+                {% include 'layouts/modules/metrics.html.twig' with {
+                    metrics: listing.metrics,
+                } only %}
+            </div>
+            <div class="listing-page-intro__controls-col">
+                {% include 'layouts/modules/controls-bar.html.twig' with {
+                    controlsArray: [
+                        {
+                            label: 'Add to favorites',
+                            mod: 'favorite-toggle js-ajax-send-button ' ~ (listing.userFavorite ? '_active ' : ' ' ),
+                            dataAttribute: 'data-url=' ~ path('add_to_favorites', {listingId: listing.listingId}),
+                            dataCallback: 'toggle_active',
+                        },
+                        {
+                            label: 'Print',
+                            mod: 'icon-print-frame js-print-listing',
+                        }
+                    ],
+                } only %}
+                {# TODO Removed share button #}
+                {#                { #}
+                {#                label: 'Share', #}
+                {#                mod: 'icon-share-frame', #}
+                {#                href: '#' #}
+                {#                }, #}
+            </div>
+        </div>
+
+        <div class="listing-page-intro__gallery-wrap mb20">
+            {% include 'layouts/modules/estate-gallery.html.twig' with {
+                'images': listing.images,
+            } only %}
+        </div>
+
+        <div class="listing-page-intro__controls-wrap _va-center">
+            <div class="listing-page-intro__controls-col hide-on-700">
+                <div class="addthis_inline_share_toolbox"></div>
+            </div>
+            <div class="listing-page-intro__controls-col">
+                {% include 'layouts/controls/button.html.twig' with {
+                    text: 'Show more info',
+                    mod: '_dark show-on-1300 js-call-popup',
+                    dataPopup: {
+                        target: 'listing-popup',
+                        fire_click_selector: ".js-content-tab-nav[data-val='listings']",
+                    }
+                } %}
+
+                {% include 'layouts/modules/controls-bar.html.twig' with {
+                    wrapMod: 'hide-on-1300',
+                    controlsArray: [
+                        {
+                            text: 'Photos',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='gallery']"
+                        }
+                        },
+                        {
+                            text: 'Map',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='listings']"
+                        }
+                        },
+                        {
+                            text: 'Street view',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='street-view']"
+                        }
+                        },
+                        {
+                            text: 'Schools',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='schools']"
+                        }
+                        },
+                        {
+                            text: 'Crime',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='crime']"
+                        }
+                        },
+                        {
+                            text: 'Commute',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='commute']"
+                        }
+                        },
+                        {
+                            text: 'Shop & Eat',
+                            mod: 'js-call-popup',
+                            dataPopup: {
+                            target: 'listing-popup',
+                            fire_click_selector: ".js-content-tab-nav[data-val='yelp']"
+                        }
+                        },
+                    ],
+                } only %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<div class="estate-gallery js-wrap">
+    <div class="estate-gallery__nav-wrap">
+        {% include 'layouts/modules/slider-nav.html.twig' %}
+    </div>
+
+    <div class="estate-gallery__slider-wrap">
+        <div
+                class="estate-gallery-slider _absolute-dots-nav js-estate-gallery-slider"
+                data-lazy-inner="true"
+                data-img-selector="eg-src"
+        >
+            {% for img in images %}
+                <div
+                        class="estate-gallery-slider__img-wrap js-estate-gallery-slider-img"
+                        data-full-size="{{ img }}"
+                >
+                    <img
+                            class="estate-gallery-slider__img of"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="Listing Image"
+                            data-eg-src="{{ img }}"
+                    />
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

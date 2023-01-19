@@ -1,0 +1,127 @@
+{% set criteriaLabels = {
+    minBeds: {
+        prefix: '',
+        suffix: 'Beds',
+    },
+    minBaths: {
+        prefix: '',
+        suffix: 'Baths',
+    },
+    minLotSize: {
+        prefix: 'lot',
+        suffix: 'sqft',
+    },
+    maxYearBuilt: {
+        prefix: '',
+        suffix: 'max year built',
+    },
+    minYearBuilt: {
+        prefix: '',
+        suffix: 'min year built',
+    },
+    keywordsArray: {
+        prefix: 'Keywords: ',
+        suffix: '',
+    },
+    maxLivingArea: {
+        prefix: '',
+        suffix: 'max living area',
+    },
+    minLivingArea: {
+        prefix: '',
+        suffix: 'min living area',
+    },
+    propertyTypes: {
+        prefix: 'Home types: ',
+        suffix: '',
+    },
+} %}
+
+<div class="search-card pt40 pb40 {{ mod|default('') }} js-wrap">
+    <div class="search-card__table mb20">
+        <div class="search-card__col search-card__col_left">
+            {% if criteria.location|default(false) %}
+                <h5 class="search-card__title h5 mb10">{{ criteria.location }}</h5>
+            {% endif %}
+
+            {% if criteria|default(false) %}
+                <div class="search-card__subtitle small-text mtr5 mb20">
+                    <span class="search-card__criteria-label mt5">Search Criteria:</span>
+                    <span class="search-card__criteria-val mt5">{{
+                        criteria|map((val, key) =>
+                            criteriaLabels[key]|default(false) and val|length ? (
+                                (criteriaLabels[key].prefix|default(false) ? criteriaLabels[key].prefix ~ ' ' : '') ~
+                                (val is iterable ? val|join(', ') : val) ~
+                                (criteriaLabels[key].suffix|default(false) ? ' ' ~ criteriaLabels[key].suffix : '')
+                            ) : ''
+                        )|filter(val => val|length)|join(' | ')
+                    }}</span>
+                </div>
+            {% endif %}
+
+            {% include 'layouts/controls/row-buttons.html.twig' with {
+                buttonsMod: 'js-ajax-send-button',
+                buttonsCallback: 'toggle_active_s',
+                setActive: frequency|default(''),
+                array: [
+                    {
+                        text: 'Daily',
+                        dataUrl: path('set_saved_search_frequency', { 'id': id, 'frequency': 'Daily' }),
+                    },
+                    {
+                        text: 'Weekly',
+                        dataUrl: path('set_saved_search_frequency', { 'id': id, 'frequency': 'Weekly' }),
+                    },
+                    {
+                        text: 'Monthly',
+                        dataUrl: path('set_saved_search_frequency', { 'id': id, 'frequency': 'Monthly' }),
+                    },
+                    {
+                        text: 'ASAP',
+                        dataUrl: path('set_saved_search_frequency', { 'id': id, 'frequency': 'ASAP' }),
+                    },
+                    {
+                        text: 'No Emails',
+                        dataUrl: path('set_saved_search_frequency', { 'id': id, 'frequency': 'None' }),
+                    },
+                ],
+            } only %}
+        </div>
+
+        <div class="search-card__col search-card__col_right">
+            {% if criteria.minPrice|default(false) or criteria.maxPrice|default(false) %}
+                <span class="search-card__price body-text_bold mb10">{{
+                    (criteria.minPrice|default(false) ? '$' ~ criteria.minPrice|number_format(0, '.', ',') : '0')
+                    ~ ' - ' ~
+                    (criteria.maxPrice|default(false) ? '$' ~ criteria.maxPrice|number_format(0, '.', ',') : 'Any')
+                }}</span>
+            {% endif %}
+
+            {% if found|default(false) %}
+                <span class="search-card__found tiny-text">{{
+                    'We found total ' ~ found ~ ' listing matching and new listing matching your criteria'
+                }}</span>
+            {% endif %}
+
+            {% if lastRun|default(false) %}
+                <span class="search-card__date tiny-text">{{ lastRun|date() }}</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="search-card__buttons-wrap mtr10">
+        {% include 'layouts/controls/button.html.twig' with {
+            href: search_url,
+            text: 'See Search Result',
+            mod: '_turquoise mt10',
+        } only %}
+
+        {% include 'layouts/controls/button.html.twig' with {
+            text: 'Delete',
+            mod: '_bordered-gray mt10 js-ajax-send-button',
+            dataUrl: path('delete_saved_search', { 'id': id }),
+            dataCallback: 'remove_wrap',
+            dataAttr: 'data-request-props=' ~ {type: 'delete'}|json_encode
+        } only %}
+    </div>
+</div>

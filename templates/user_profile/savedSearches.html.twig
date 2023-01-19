@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Saved Searches{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('account') }}
+{% endblock %}
+
+{% block body %}
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'My Account',
+            }
+        ]
+    } %}
+
+    {% include 'layouts/common/title-block.html.twig' with {
+        text: 'My Account',
+        tag: 'h1',
+        wrapMod: 'container mb50',
+    } only %}
+
+
+    {% embed 'layouts/containers/account-table.html.twig' with {
+        userData: user|default(false),
+        savedSearches: savedSearches|default(false),
+    } only %}
+        {% block account_content %}
+            <h3 class="h3 mb40">Saved Searches</h3>
+
+            {% if savedSearches|default(false)|length %}
+                {% for item in savedSearches %}
+                    {% include 'layouts/modules/search-card.html.twig' with item|merge({mod: 'mb10'}) only %}
+                {% endfor %}
+
+                <span
+                        class="link-turquoise button2 mt40 inline-block js-ajax-send-button"
+                        data-url="#"
+                >
+                    Unsubscribe from all search emails
+                </span>
+            {% else %}
+                <span class="subtitle mb40">
+                    You haven't saved searches yet. Start searching for properties to add now.
+                </span>
+
+                {% include 'layouts/controls/button.html.twig' with {
+                    href: path('listings_map', {location: 'Vancouver,BC'}),
+                    text: 'Search Homes',
+                    mod: '_turquoise _big-m-small',
+                    textMod: 'button0',
+                } only %}
+
+                {% include 'layouts/sections/note.html.twig' with {
+                    mod: '_details mt50',
+                    label: 'More details:',
+                    containerMod: '',
+                    wrapMod: 'pt40 pb40',
+                    innerContainerMod: '',
+                    text: 'To add a new search, just start a new search, then save it',
+                } only %}
+            {% endif %}
+        {% endblock %}
+    {% endembed %}
+
+{#    <div>#}
+{#        {{ dump(user) }}#}
+{#    </div>#}
+{% endblock %}

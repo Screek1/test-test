@@ -1,0 +1,46 @@
+.radio-labels-row {
+	$r: &;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+	&__text {
+		color: $gray1;
+		transition: $default-transition;
+	}
+	
+	&__item {
+		position: relative;
+		margin-right: 13px;
+		cursor: pointer;
+		
+		&:hover {
+			#{$r}__text {
+				color: $dark1;
+			}
+		}
+
+		&::after {
+			content: '|';
+			color: $gray1;
+			@include absolute(-0.1em,auto,0,calc(100% + 5px));
+			@extend .tiny-text;
+			pointer-events: none;
+		}
+		
+		&:last-child {
+			margin-right: 0;
+			
+			&::after {
+				display: none;
+			}
+		}
+	}
+	
+	&__input {
+		&:checked ~ #{$r}__text {
+			color: $dark1;
+		}
+	}
+}

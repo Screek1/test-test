@@ -1,0 +1,78 @@
+{% set criteriaLabels = {
+    minBeds: {
+        prefix: '',
+        suffix: 'Beds',
+    },
+    minBaths: {
+        prefix: '',
+        suffix: 'Baths',
+    },
+    minLotSize: {
+        prefix: 'lot',
+        suffix: 'sqft',
+    },
+    maxYearBuilt: {
+        prefix: '',
+        suffix: 'max year built',
+    },
+    minYearBuilt: {
+        prefix: '',
+        suffix: 'min year built',
+    },
+    keywordsArray: {
+        prefix: 'Keywords: ',
+        suffix: '',
+    },
+    maxLivingArea: {
+        prefix: '',
+        suffix: 'max living area',
+    },
+    minLivingArea: {
+        prefix: '',
+        suffix: 'min living area',
+    },
+    propertyTypes: {
+        prefix: 'Home types: ',
+        suffix: '',
+    },
+} %}
+
+<div class="card">
+    <div class="card-body">
+        <div class="mb-2">
+            <label class="mb-0">Location:&nbsp;</label>
+            <span>{{ criteria.location }}</span>
+        </div>
+
+        <div class="mb-2">
+            <label class="mb-0">Price:&nbsp;</label>
+            <span>{{ (criteria.minPrice|default(false) ? '$' ~ criteria.minPrice|number_format(0, '.', ',') : '0')
+                ~ ' - ' ~
+                (criteria.maxPrice|default(false) ? '$' ~ criteria.maxPrice|number_format(0, '.', ',') : 'Any') }}</span>
+        </div>
+
+        {% if lastRun|default(false) %}
+            <div class="mb-2">
+                <label class="mb-0">Last run:&nbsp;</label>
+                <span>{{ lastRun|date() }}</span>
+            </div>
+        {% endif %}
+
+        <div class="mb-2">
+            <label class="mb-0">Search parameters:&nbsp;</label>
+            <span>
+                {{ criteria|map((val, key) =>
+                criteriaLabels[key]|default(false) and val|length ? (
+                (criteriaLabels[key].prefix|default(false) ? criteriaLabels[key].prefix ~ ' ' : '') ~
+                (val is iterable ? val|join(', ') : val) ~
+                (criteriaLabels[key].suffix|default(false) ? ' ' ~ criteriaLabels[key].suffix : '')
+                ) : ''
+                )|filter(val => val|length)|join(' | ') }}
+            </span>
+        </div>
+
+        <div class="mt-3">
+            <a href="{{ search_url }}" target="_blank" class="btn btn-primary" hreflang="en">Show on map</a>
+        </div>
+    </div>
+</div>

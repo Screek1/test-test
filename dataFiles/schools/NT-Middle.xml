@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>École William McDonald School</Name>
+    <Street>50 Taylor Road</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Middle</Level>
+    <Grades>6-8</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.44199329999999</lat>
+    <lon>-114.391195</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

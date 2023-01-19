@@ -1,0 +1,172 @@
+.note {
+	$r: &;
+	
+	&__wrap {
+		background: $gray3;
+		border-radius: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
+	&__label {
+		display: inline-block;
+		font-weight: 700;
+	}
+	
+	&__text-wrap {
+		position: relative;
+		min-height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	
+	&__text {
+		position: relative;
+	}
+	
+	&__container {
+		&.container {
+			#{$r}__wrap {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	
+	&._mls {
+		#{$r}__text-wrap {
+			padding-right: 205px;
+			@extend .icon-mls;
+			
+			&::before {
+				font-family: $icomoon;
+				font-size: 60px;
+				line-height: 1;
+				color: $gray1;
+				@include absolute(0,0,auto,auto);
+			}
+		}
+	}
+	
+	&._light-gray {
+		#{$r}__wrap {
+			background: $gray2;
+			border-radius: 20px;
+		}
+	}
+	
+	&._details,
+	&._advice,
+	&._important {
+		#{$r}__text-wrap {
+			padding-left: 50px;
+			
+			&::before {
+				font-family: $icomoon;
+				font-size: 30px;
+				font-weight: 100;
+				line-height: 1;
+				@include absolute(0,auto,auto);
+			}
+		}
+	}
+	
+	&._details {
+		#{$r}__wrap {
+			background: $details;
+		}
+		
+		#{$r}__text-wrap {
+			@extend .icon-details;
+			
+			&::before {
+				color: $yellow2;
+			}
+		}
+	}
+	
+	&._advice {
+		#{$r}__wrap {
+			background: $advice;
+		}
+		
+		#{$r}__text-wrap {
+			@extend .icon-advice;
+			
+			&::before {
+				color: $blue2;
+			}
+		}
+	}
+	
+	&._important {
+		#{$r}__wrap {
+			background: $pink-pdra;
+		}
+		
+		#{$r}__text-wrap {
+			@extend .icon-important;
+			
+			&::before {
+				color: $pink-red;
+			}
+		}
+	}
+	
+	
+	@include media_1300 {
+		&._mls {
+			#{$r}__text-wrap {
+				padding-right: 180px;
+			}
+		}
+	}
+	
+	@include media_1000 {
+		&._mls {
+			#{$r}__text-wrap {
+				padding-right: 0;
+				padding-bottom: 60px;
+				
+				&::before {
+					font-size: 50px;
+					top: auto;
+					right: auto;
+					left: 0;
+					bottom: 0;
+				}
+			}
+		}
+	}
+	
+	@include media_700 {
+		&__wrap,
+		&__container.container &__wrap {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		
+		&._details,
+		&._advice,
+		&._important {
+			#{$r}__text-wrap {
+				padding-left: 35px;
+				
+				&::before {
+					font-size: 20px;
+				}
+			}
+		}
+		
+		&._mls {
+			#{$r}__text-wrap {
+				padding-bottom: 45px;
+				
+				&::before {
+					font-size: 35px;
+				}
+			}
+		}
+	}
+}

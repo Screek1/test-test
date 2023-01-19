@@ -1,0 +1,183 @@
+{% set homeTypes = [
+    'Industrial',
+    'Office',
+    'Single Family',
+    'Multi-family',
+    'Agriculture',
+    'Other',
+    'Business',
+    'Retail',
+    'Recreational',
+    'Vacant Land',
+] %}
+
+{% set listingTypes = [
+    'For Sale By Agent',
+    'For Sale By Owner',
+    'New Construction',
+    'Foreclosures',
+    'Coming Soon',
+    'New Listings (Past Week)',
+    'Open Houses',
+    'Price Reduced (Past Week)',
+    'Include Accepting Backup Offers',
+    'Include Pending & Under Contract',
+] %}
+
+{% set lotSize = [
+    'No Min',
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+] %}
+
+
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="province">Province</label>
+            <input type="text" class="form-control" name="criteria[province]" id="province" value="{{ criteria['province']|default(null) }}">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control" name="criteria[city]" id="city" value="{{ criteria['city']|default(null) }}">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="district">District</label>
+            <input type="text" class="form-control" name="criteria[district]" id="district" value="{{ criteria['district']|default(null) }}">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        {{ include('admin/modules/select.html.twig', {
+            array: criteriaOptions.priceFrom,
+            label: 'Min price',
+            id: 'search_page_price',
+            name: 'criteria[minPrice]',
+            selectedVal: criteria.minPrice|default('50000'),
+            formatBigPrice: true,
+        }) }}
+    </div>
+    <div class="col">
+        {% include 'admin/modules/select.html.twig' with {
+            array: criteriaOptions.priceTo,
+            label: 'Max price',
+            id: 'search_page_price',
+            name: 'criteria[maxPrice]',
+            selectedVal: criteria.maxPrice|default('1400000'),
+            formatBigPrice: true,
+        } only %}
+    </div>
+    <div class="col">
+        {% include 'admin/modules/select.html.twig' with {
+            array: criteriaOptions.minBeds,
+            label: 'Min beds',
+            id: 'beds',
+            name: 'criteria[minBeds]',
+            selectedVal: criteria.minBeds|default('3'),
+        } only %}
+    </div>
+    <div class="col">
+        {% include 'admin/modules/select.html.twig' with {
+            array: criteriaOptions.minBaths,
+            label: 'Min baths',
+            id: 'bath',
+            name: 'criteria[minBath]',
+            selectedVal: criteria.minBath|default('2'),
+        } only %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="min-square-feet">Min square feet</label>
+            <input type="text" class="form-control" name="criteria[minSquareFeet]" id="min-square-feet" value="{{ criteria['minSquareFeet']|default(null) }}">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="max-square-feet">Max square feet</label>
+            <input type="text" class="form-control" name="criteria[maxSquareFeet]"  id="max-square-feet" value="{{ criteria['maxSquareFeet']|default(null) }}">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="min-year-built">Min year built</label>
+            <input type="text" class="form-control" name="criteria[minYearBuilt]" id="min-year-built" value="{{ criteria['minYearBuilt']|default(null) }}">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="max-year-built">Max year built</label>
+            <input type="text" class="form-control" name="criteria[maxYearBuilt]" id="max-year-built" value="{{ criteria['maxYearBuilt']|default(null) }}">
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        {% include 'admin/modules/checkbox-list.html.twig' with {
+            array: homeTypes,
+            id: 'home-type',
+            label: 'Home Types',
+            name: 'criteria[homeTypes]',
+            selectedValues: selectedHomeTypes|default([]),
+        } only %}
+    </div>
+    <div class="col">
+            {% include 'admin/modules/checkbox-list.html.twig' with {
+            array: listingTypes,
+            id: 'listing-type',
+            label: 'Listing Types',
+            name: 'criteria[listingTypes]',
+            selectedValues: selectedListingTypes|default([]),
+        } only %}
+    </div>
+
+
+    <div class="col-6">
+        <div class="row">
+            <div class="col">
+                {% include 'admin/modules/select.html.twig' with {
+                    array: lotSize,
+                    label: 'Lot Size',
+                    id: 'lot-size',
+                    name: 'criteria[lotSize]',
+                    textSuffix: '+ sqft',
+                    selectedVal: criteria['lotSize']|default('300'),
+                } only %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="keywords">Keywords</label>
+
+                    <select id="keywords" class="js-tags-input" name="criteria[keywords]" multiple>
+                        {% if keywords is defined %}
+                            {% for item in keywords|default(false) %}
+                                <option value="{{ item }}">{{ item }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

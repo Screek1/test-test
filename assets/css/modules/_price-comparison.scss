@@ -1,0 +1,329 @@
+.price-comparison {
+	&__chart-wrap {
+		position: relative;
+		padding: 40px 30px 10px;
+		border: 1px solid $gray-line;
+		border-radius: 20px;
+		
+		&::before {
+			content: '';
+			@include absolute;
+			width: 100%;
+			height: 100%;
+			background: $white;
+			opacity: 0;
+			z-index: 3;
+			border-radius: inherit;
+			pointer-events: none;
+			transition: $default-transition;
+		}
+		
+		&._loading-data {
+			&::before {
+				opacity: .9;
+				pointer-events: auto;
+			}
+		}
+	}
+	
+	@include media_700 {
+		&__chart-wrap {
+			padding: 30px 20px 10px;
+		}
+		
+		&__chart-scroll-container {
+			overflow-x: auto;
+			
+			.chart {
+				min-width: 800px;
+			}
+		}
+	}
+}
+
+.chart {
+	width: 100%;
+	height: 520px;
+	
+	.ct-chart-line {
+		overflow: visible;
+	}
+	
+	.custom-point {
+		r: 5;
+		stroke-width: 4px;
+		fill: $white;
+		opacity: 0;
+		
+		&._hover {
+			opacity: 1;
+		}
+	}
+	
+	.ct-grid {
+		pointer-events: none;
+		stroke-dasharray: 0;
+		stroke: $gray-line;
+		
+		&.ct-horizontal {
+			stroke: rgba(0, 0, 0, 0);
+		}
+		
+		&._hover-handler {
+			pointer-events: auto;
+			stroke: rgba(0,0,0,0);
+			
+			&:hover + .ct-grid {
+				stroke: $gray-line;
+			}
+		}
+	}
+	
+	.ct-series {
+		pointer-events: none;
+	}
+	
+	.ct-series-a {
+		.ct-line, .ct-point, .custom-point {
+			stroke: $chart-color-a;
+		}
+	}
+	.ct-series-b {
+		.ct-line, .ct-point, .custom-point {
+			stroke: $chart-color-b;
+		}
+	}
+	.ct-series-c {
+		.ct-line, .ct-point, .custom-point {
+			stroke: $chart-color-c;
+		}
+	}
+	.ct-series-d {
+		.ct-line, .ct-point, .custom-point {
+			stroke: $chart-color-d;
+		}
+	}
+	.ct-series-e {
+		.ct-line, .ct-point, .custom-point {
+			stroke: $chart-color-e;
+		}
+	}
+	
+	.ct-point {
+		cursor: pointer;
+		
+		&._hover {
+			stroke: $dark1;
+		}
+	}
+	
+	.ct-line {
+		stroke-width: 3px;
+		stroke-linecap: round;
+	}
+	
+	
+	.ct-label {
+		@extend .tiny-text;
+		color: $gray1;
+		
+		&.ct-horizontal {
+			padding-top: 20px;
+			padding-right: 5px;
+		}
+		
+		&.ct-vertical {
+			justify-content: flex-start;
+		}
+	}
+	
+	.rotate-wrap {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+		.ct-label.ct-horizontal {
+			@include absolute(5px,auto,auto);
+			display: block;
+			white-space: nowrap;
+			padding-top: 0;
+			padding-right: 0;
+			width: auto !important;
+			height: auto !important;
+			transform-origin: 100% 0;
+			transform: translateX(-100%) rotate(-45deg);
+		}
+	}
+	
+	@include media_1000 {
+		.ct-label {
+			font-size: 10px;
+		}
+	}
+	
+	@include media_500 {
+		height: 400px;
+	}
+	
+	@include media_350 {
+		height: 250px;
+	}
+}
+
+.chart-info {
+	$r: &;
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: calc(100% + 10px);
+	left: -5px;
+	margin-top: -10px;
+	
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	
+	&__item {
+		position: relative;
+		max-width: calc(100% - 10px);
+		margin: 10px 5px 0;
+	}
+	
+	&__label {
+		position: relative;
+		
+		&[class*="_color-"] {
+			padding-left: 26px;
+			
+			&::before {
+				content: '';
+				@include absolute(0,auto,auto);
+				height: 16px;
+				width: 16px;
+				border-radius: 50%;
+				background: $dark1;
+			}
+		}
+		
+		&._color-a {
+			&::before {
+				background: $chart-color-a;
+			}
+		}
+		&._color-b {
+			&::before {
+				background: $chart-color-b;
+			}
+		}
+		&._color-c {
+			&::before {
+				background: $chart-color-c;
+			}
+		}
+		&._color-d {
+			&::before {
+				background: $chart-color-d;
+			}
+		}
+		&._color-e {
+			&::before {
+				background: $chart-color-e;
+			}
+		}
+	}
+	
+	&__price {
+		color: $dark1;
+	}
+	
+	&__price-diff {
+		color: $gray0;
+	}
+	
+	@include media_min-1000 {
+		&__item {
+			width: calc(100% / 3 - 10px);
+			padding: 0 20px;
+			border-right: 1px solid $gray-line;
+			
+			&:nth-child(3n - 2) {
+				padding-left: 0;
+			}
+			
+			&:nth-child(3n) {
+				padding-right: 0;
+				border-right: none;
+			}
+		}
+	}
+	
+	@include media_1000 {
+		&__item {
+			width: calc(100% - 10px);
+			border-bottom: 1px solid $gray-line;
+			margin-bottom: 5px;
+			padding-bottom: 15px;
+			
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+		}
+		
+		&__content {
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+		
+		&__label,
+		&__link,
+		&__price,
+		&__warning {
+			margin-right: 10px;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	@include media_700 {
+		&__label {
+			position: relative;
+			
+			&[class*="_color-"] {
+				padding-left: 24px;
+				
+				&::before {
+					height: 14px;
+					width: 14px;
+				}
+			}
+		}
+	}
+}
+
+.price-comparison-form {
+	&__row {
+		position: relative;
+		width: calc(100% + 20px);
+		left: -10px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	&__col {
+		padding: 0 10px;
+	}
+}

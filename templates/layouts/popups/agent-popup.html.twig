@@ -1,0 +1,13 @@
+<div class="popup-style popup-style_fh js-popup js-popup-agent">
+    <div class="popup-style__container">
+        <div class="popup-style__content">
+            <div class="popup-agent-wrap">
+                <div class="cross-btn js-close-popup"></div>
+
+                {% if agentData|default(false) %}
+                    {% include 'layouts/modules/agent.html.twig' with agentData only %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

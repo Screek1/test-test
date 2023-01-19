@@ -1,0 +1,70 @@
+.social-connection-card {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 50px;
+	padding-right: 50px;
+	background: $white;
+	border-radius: 20px;
+	
+	&__status {
+		color: $gray1;
+	}
+	
+	&__description {
+		position: relative;
+		padding-left: 45px;
+		
+		&::before {
+			@include absolute(0,auto);
+			font-size: 30px;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+		}
+		
+		&._google-colored {
+			&::before {
+				content: '';
+				font-size: 0;
+				background: $googleColoredIcon center center no-repeat;
+				background-size: contain;
+			}
+		}
+		
+		&.icon-facebook {
+			&::before {
+				color: $facebook;
+			}
+		}
+	}
+	
+	.toggle-button:not(._active) ~ &__description &__status {
+		.active-text {
+			display: none;
+		}
+	}
+	
+	.toggle-button._active ~ &__description &__status {
+		.default-text {
+			display: none;
+		}
+	}
+	
+	@include media_500 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	@include media_350 {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+		
+		&__description {
+			margin-bottom: 10px;
+		}
+	}
+}

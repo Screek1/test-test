@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<body>
+<h1>Signed up for viewing</h1>
+
+<strong>Full name</strong>: <span>{{ user.name }}</span><br>
+<strong>Email</strong>: <span>{{ user.email }}</span><br>
+<strong>Phone</strong>: <span>{{ user.phoneCode }} {{ user.phoneNumber }}</span><br>
+<strong>Link</strong>: <span><a href="{{ url }}">Link</a></span><br>
+
+<script type="text/javascript">
+    {% block js %}{% endblock %}
+</script>
+</body>
+</html>

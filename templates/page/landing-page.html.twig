@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block description %}{{ page.description }}{% endblock %}
+
+{% block body %}
+    {% embed 'layouts/sections/intro.html.twig' with {
+        title: page.title,
+        link: {
+            href: '#',
+            text: 'See All 3940 Vancouver Real Estate',
+        },
+        gradient: 'bg-grad-1',
+        wrapMod: 'intro-animations-2'
+    } only %}
+        {% block intro_bg_wrap %}
+            {% include 'layouts/svg/intro-bg-2.html.twig' %}
+        {% endblock %}
+    {% endembed %}
+
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'Real Estate For Sale',
+            }
+        ]
+    } %}
+
+    {# TODO: replace featuredProperties #}
+    {% include 'layouts/sections/slider-section.html.twig' with {
+        title: page.title,
+        titleTag: 'h2',
+        slides: searchListings.listings,
+        wrapMod: 'mb100'
+    } only %}
+
+    {% embed 'layouts/containers/text-block.html.twig' with {
+        content: page.content,
+        wrapMod: '',
+    } only %}
+        {% block textblock_content %}
+            {# TODO: replace text-editor-content #}
+            {{ content|raw }}
+        {% endblock %}
+    {% endembed %}
+
+{#    {{ dump(page.content) }}#}
+{% endblock %}

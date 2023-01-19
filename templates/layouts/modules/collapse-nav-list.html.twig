@@ -1,0 +1,253 @@
+{#tut#}
+{% set navTableArray = [
+    {
+        mod: '_full-width',
+        listMod: '_flex',
+        title: 'Homes for Sale',
+        list: [
+            {
+                href: path('listings_map', {'location': 'Vancouver,BC'}),
+                text: 'Vancouver Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Langley,BC'}),
+                text: 'Langley Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Victoria,BC'}),
+                text: 'Victoria Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Surrey,BC'}),
+                text: 'Surrey Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Burnaby,BC'}),
+                text: 'Burnaby Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Coquitlam,BC'}),
+                text: 'Coquitlam Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Kelowna,BC'}),
+                text: 'Kelowna Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Abbotsford,BC'}),
+                text: 'Abbotsford Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Chilliwack,BC'}),
+                text: 'Chilliwack Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Richmond,BC'}),
+                text: 'Richmond Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Maple Ridge,BC'}),
+                text: 'Maple Ridge Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'North Vancouver,BC'}),
+                text: 'North Vancouver Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Toronto,ON'}),
+                text: 'Toronto Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Ottawa,ON'}),
+                text: 'Ottawa Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Mississauga,ON'}),
+                text: 'Mississauga Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Hamilton,ON'}),
+                text: 'Hamilton Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Kitchener,ON'}),
+                text: 'Kitchener Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'London,ON'}),
+                text: 'London Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Oshawa,ON'}),
+                text: 'Oshawa Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Windsor,ON'}),
+                text: 'Windsor Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'St. Catharines,ON'}),
+                text: 'St. Catharines Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Niagara Falls,ON'}),
+                text: 'Niagara Falls Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Calgary,AB'}),
+                text: 'Calgary Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Edmonton,AB'}),
+                text: 'Edmonton Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Halifax,NS'}),
+                text: 'Halifax Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'St. John\'s,NL'}),
+                text: 'St. John\'s Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Saskatoon,SK'}),
+                text: 'Saskatoon Homes for Sale',
+            },
+            {
+                href: path('listings_map', {'location': 'Regina,SK'}),
+                text: 'Regina Homes for Sale',
+            }
+        ]
+    },
+    {
+        title: 'viksemenov Info',
+        list: [
+            {
+                href: path('how-it-works'),
+                text: 'How it Works',
+            },
+            {
+                href: path('selling'),
+                text: 'Selling',
+            },
+            {
+                href: path('buying'),
+                text: 'Buying',
+            },
+            {
+                href: '#',
+                text: 'viksemenov Blog',
+            },
+            {
+                href: path('sitemap'),
+                text: 'Site Map',
+            },
+            {
+                href: '#',
+                text: 'Our Agents',
+            }
+        ]
+    },
+    {
+        title: 'Real Estate Tools and Guides',
+        list: [
+            {
+                href: '#',
+                text: 'Q&A Forum',
+            },
+            {
+                href: '#',
+                text: 'First Time Home Buyers Guide',
+            },
+            {
+                href: '#',
+                text: "What's my Surrey home worth?",
+            }
+        ]
+    },
+    {
+        title: 'Lower Mainland Real Estate',
+        list: [
+            {
+                href: '#',
+                text: 'Lower Mainland Real Estate',
+            },
+            {
+                href: '#',
+                text: 'Vancouver Real Estate',
+            },
+            {
+                href: '#',
+                text: 'Surrey Real Estate',
+            },
+            {
+                href: '#',
+                text: 'Burnaby Real Estate',
+            },
+            {
+                href: '#',
+                text: 'Richmond Real Estate',
+            }
+        ]
+    },
+    {
+        title: 'Contact Us',
+        list: [
+            {
+                href: path('page', { slug: 'privacy-policy' }),
+                text: 'Privacy Policy',
+            },
+            {
+                href: path('page', { slug: 'terms-of-use' }),
+                text: 'Terms of Use',
+            },
+            {
+                href: path('page', { slug: 'disclaimers' }),
+                text: 'Disclaimers',
+            },
+            {
+                href: 'https://twitter.com/viksemenov',
+                target: '_blank',
+                text: 'Follow us on Twitter',
+            },
+            {
+                href: path('contact_us'),
+                text: 'Contact Us',
+            }
+        ]
+    },
+] %}
+
+{% set mode = wrapMod|default('') %}
+
+<div class="collapse-nav-list mtr40 {{ mode }}">
+    {% for col in navTableArray %}
+        <div class="collapse-nav-list__col mt40 {{ col.mod|default('') }}">
+            <span class="collapse-nav-list__title small-text_bold pb20 js-toggle-next">{{ col.title }}</span>
+
+            <div class="collapse-nav-list__list-wrap {{ col.listMod|default('') }}">
+                <div class="collapse-nav-list__list">
+                    {% set count = 0 %}
+                    {% for link in col.list %}
+                        {% if mode == '_3-col' and count >= 10 %}
+                            {% set count = 0 %}
+                            </div>
+                            <div class="collapse-nav-list__list">
+                        {% elseif mode != '_3-col' and count >= 7 %}
+                        {% set count = 0 %}
+                            </div>
+                            <div class="collapse-nav-list__list">
+                        {% endif %}
+                        {% set count = count + 1 %}
+                        <a class="collapse-nav-list__link link-light-gray small-text" href="{{ link.href }}"
+                           target="{{ link.target|default('_self') }}">{{ link.text }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+
+

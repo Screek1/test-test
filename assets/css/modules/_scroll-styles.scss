@@ -1,0 +1,69 @@
+[data-scrollbar] {
+	.scroll-content {
+		padding-right: 15px;
+	}
+	
+	.scrollbar-track-y {
+		width: 3px;
+		background: transparent;
+		
+		.scrollbar-thumb {
+			width: 3px;
+			background: $gray5;
+			border-radius: 3px;
+			transition: background .3s ease;
+			cursor: pointer;
+			
+			&:hover,
+			&:active {
+				background: $dark1;
+			}
+		}
+	}
+	
+	&._scroll-hover-white {
+		.scrollbar-track-y {
+			.scrollbar-thumb {
+				&:hover,
+				&:active {
+					background: $white;
+				}
+			}
+		}
+	}
+}
+
+[data-simplebar] {
+	.simplebar-track  {
+		&.simplebar-vertical {
+			width: 3px;
+			
+			.simplebar-scrollbar {
+				cursor: pointer;
+				pointer-events: auto;
+				
+				&::before {
+					top: 0;
+					bottom: 0;
+					opacity: 1;
+					background: $gray5;
+					border-radius: 3px;
+					transition: background .3s ease;
+				}
+				
+				&:hover,
+				&:active {
+					&::before {
+						background: $dark1;
+					}
+				}
+			}
+		}
+	}
+	.simplebar-scrollbar {
+		&::before {
+			left: 0;
+			right: 0;
+		}
+	}
+}

@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Favourite Listings{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('account') }}
+{% endblock %}
+
+{% block body %}
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'My Account',
+            }
+        ]
+    } %}
+
+    {% include 'layouts/common/title-block.html.twig' with {
+        text: 'My Account',
+        tag: 'h1',
+        wrapMod: 'container mb50',
+    } only %}
+
+    {% embed 'layouts/containers/account-table.html.twig' with {
+        userData: user|default(false),
+        savedSearches: savedSearches|default(false),
+        viewings: viewings,
+        wrapMod: 'js-wrap'
+    } only %}
+        {% block account_content %}
+            <h3 class="h3 mb40">Scheduled Viewings</h3>
+
+            {% if viewings|default(false)|length %}
+                {% include 'layouts/modules/slide-menu.html.twig' with {
+                    wrapMod: '_gray mb30',
+                    firstActive: true,
+                    list: [
+                        {
+                            text: 'Feature',
+                            linkMod: 'js-content-tab-nav',
+                            contentId: ['feature'],
+                        },
+                        {
+                            text: 'Past',
+                            linkMod: 'js-content-tab-nav',
+                            contentId: ['past'],
+                        },
+                    ],
+                } only %}
+
+                <div class="content-tabs-container">
+                    <div class="content-tab js-content-tab _active" data-content-id="feature">
+                        <div class="viewings-list">
+                            {% set newViewingsCounter = 0 %}
+
+                            {% for item in viewings %}
+                                {% if ((item.scheduled_time|date('Y-m-d') > date('now')|date('Y-m-d')) or item.scheduled_time == null) and item.status == 'new' %}
+                                    {% set newViewingsCounter =  newViewingsCounter + 1 %}
+
+                                    {% include 'layouts/modules/estate-card.html.twig' with item.listing|merge({
+                                        mlsPrefix: 'Listed by Re/max Masters Realty | ',
+                                        sliderMod: '_g3-bg js-default-slider',
+                                        wrapMod: '_horizontal',
+                                        baseTag: 'div',
+                                        titleMod: 'body-text_bold',
+                                        metricsWrapMod: 'mb10',
+                                        titleWrapMod: 'mb10',
+                                        date: item.scheduled_time|default('now'),
+                                        controls: true,
+                                        hideAddToFavorite: true,
+                                    }) only %}
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if newViewingsCounter == 0 %}
+                                <span class="subtitle mb40">
+                                    You haven't feature scheduled viewings yet. Start searching for properties to add now.
+                                </span>
+
+                                {% include 'layouts/controls/button.html.twig' with {
+                                    href: path('listings_map', {location: 'Vancouver,BC'}),
+                                    text: 'Search Homes',
+                                    mod: '_turquoise _big-m-small',
+                                    textMod: 'button0',
+                                } only %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="content-tab js-content-tab" data-content-id="past">
+                        <div class="viewings-list">
+                            {% set pastViewingsCounter = 0 %}
+
+                            {% for item in viewings %}
+                                {% if (item.scheduled_time|date('Y-m-d') < date('now')|date('Y-m-d')) and item.status == 'new' %}
+                                    {% set pastViewingsCounter =  pastViewingsCounter + 1 %}
+
+                                    {% include 'layouts/modules/estate-card.html.twig' with item.listing|merge({
+                                        mlsPrefix: 'Listed by Re/max Masters Realty | ',
+                                        sliderMod: '_g3-bg js-default-slider',
+                                        wrapMod: '_horizontal',
+                                        baseTag: 'div',
+                                        titleMod: 'body-text_bold',
+                                        metricsWrapMod: 'mb10',
+                                        titleWrapMod: 'mb10',
+                                        date: item.scheduled_time|default('now'),
+                                        controls: true,
+                                        hideAddToFavorite: true,
+                                    }) only %}
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if pastViewingsCounter == 0 %}
+                                <span class="subtitle mb40">
+                                    You haven't past scheduled viewings yet. Start searching for properties to add now.
+                                </span>
+
+                                {% include 'layouts/controls/button.html.twig' with {
+                                    href: path('listings_map', {location: 'Vancouver,BC'}),
+                                    text: 'Search Homes',
+                                    mod: '_turquoise _big-m-small',
+                                    textMod: 'button0',
+                                } only %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <span class="subtitle mb40">
+                    You haven't scheduled viewings yet. Start searching for properties to add now.
+                </span>
+
+                {% include 'layouts/controls/button.html.twig' with {
+                    href: path('listings_map', {location: 'Vancouver,BC'}),
+                    text: 'Search Homes',
+                    mod: '_turquoise _big-m-small',
+                    textMod: 'button0',
+                } only %}
+            {% endif %}
+        {% endblock %}
+    {% endembed %}
+
+    {% include 'layouts/sections/note.html.twig' with {
+        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',
+        mod: '_mls mt50',
+    } only %}
+{% endblock %}

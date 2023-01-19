@@ -1,0 +1,66 @@
+<div class="popup-style popup-style_fh js-popup js-popup-assessment">
+    <div class="popup-style__container">
+        <div class="popup-style__scroll-wrap">
+            <div class="popup-style__content ">
+                <div class="popup-map-container js-map-interface-wrap js-wrap">
+                    <div class="popup-map-container__nav-wrap mb40_2">
+                        <div class="cross-btn js-close-popup"></div>
+                    </div>
+
+                    <div class="popup-map-container__content">
+                        <div class="popup-map-container__table content-tabs-container">
+                            <div class="popup-map-container__col popup-map-container__col_left">
+                                <div class="map-container _fw1300 content-tab js-map-container _active" data-content-id="map">
+                                    {% include 'layouts/common/spinner.html.twig' %}
+
+                                    <div class="map" id="assessment-map"></div>
+                                </div>
+                            </div>
+
+                            <div class="popup-map-container__col popup-map-container__col_right ">
+                                <div class="content-tabs-container">
+                                    <div class="content-tab hide-on-1300 _active" data-content-id="agent">
+                                        {% include 'layouts/modules/agent.html.twig' with {
+                                            confidentiality: true,
+                                            confidentialityCollapse: true,
+                                            agentPhoto: agent.agentPhoto,
+                                            agentName: agent.agentName,
+                                            agencyName: agent.agencyName,
+                                            agentPhone: agent.agentPhone,
+                                            btnText: 'Get Your Valuation!',
+                                            wrapMod: '_mh hide-on-1300',
+                                            containerMod: 'js-smooth-scroll',
+                                            tyTitleMod: 'mt10 h3',
+                                            tySubtitleMod: 'mt10 h6',
+                                            addHiddenInputs: [
+                                                {
+                                                    name: 'selectedAddress',
+                                                },
+                                                {
+                                                    name: 'userSearch',
+                                                }
+                                            ],
+                                            formAction: path('new_assessment_request')
+                                        } only %}
+                                    </div>
+
+                                    <div class="content-tab-simple show-on-1300 _active" data-content-id="agent">
+                                        {% include 'layouts/controls/button.html.twig' with {
+                                            text: 'Get Your Valuation!',
+                                            mod: '_fixed js-call-popup js-popup-props-button',
+                                            dataPopup: {
+                                                target: 'agent',
+                                            },
+                                        } %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

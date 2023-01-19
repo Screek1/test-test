@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Profile!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('account') }}
+{% endblock %}
+
+{% block body %}
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'My Account',
+            }
+        ]
+    } %}
+
+    {% include 'layouts/common/title-block.html.twig' with {
+        text: 'My Account',
+        tag: 'h1',
+        wrapMod: 'container mb50',
+    } only %}
+
+
+    {% embed 'layouts/containers/account-table.html.twig' with {
+        userData: user,
+        provinceOptions: provinceOptions,
+    } only %}
+        {% block account_content %}
+            <h3 class="h3 mb40">Edit Profile</h3>
+
+            {% include 'layouts/sections/note.html.twig' with {
+                mod: '_advice mb50',
+                label: 'More advice:',
+                containerMod: '',
+                wrapMod: 'pt40 pb40',
+                innerContainerMod: '',
+                text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',
+            } only %}
+
+            {% include 'layouts/modules/edit-profile-form.html.twig' with {
+                userData: userData,
+                provinceOptions: provinceOptions
+            } only %}
+        {% endblock %}
+    {% endembed %}
+
+
+
+{#    {% include 'layouts/sections/note.html.twig' with {#}
+{#        mod: '_details',#}
+{#        label: 'More details:',#}
+{#        containerMod: '',#}
+{#        wrapMod: 'pt40 pb40',#}
+{#        innerContainerMod: '',#}
+{#        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',#}
+{#    } only %}#}
+
+{#    {% include 'layouts/sections/note.html.twig' with {#}
+{#        mod: '_advice',#}
+{#        label: 'More advice:',#}
+{#        containerMod: '',#}
+{#        wrapMod: 'pt40 pb40',#}
+{#        innerContainerMod: '',#}
+{#        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',#}
+{#    } only %}#}
+
+{#    {% include 'layouts/sections/note.html.twig' with {#}
+{#        mod: '_important',#}
+{#        label: 'More important:',#}
+{#        containerMod: '',#}
+{#        wrapMod: 'pt40 pb40',#}
+{#        innerContainerMod: '',#}
+{#        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',#}
+{#    } only %}#}
+
+{#    {% include 'layouts/sections/note.html.twig' with {#}
+{#        mod: '_details',#}
+{#        label: 'More details:',#}
+{#        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',#}
+{#    } only %}#}
+
+
+{#    {% include 'layouts/sections/note.html.twig' with {#}
+{#        mod: '_advice',#}
+{#        label: 'Advice:',#}
+{#        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',#}
+{#    } only %}#}
+
+
+{#    {% include 'layouts/sections/note.html.twig' with {#}
+{#        mod: '_important',#}
+{#        label: 'More important:',#}
+{#        text: 'Information regarding school boundaries and other statistics changes frequently and is for general information purposes only. You should not use such information in determining the legal eligibility to attend any particular school or school system',#}
+{#    } only %}#}
+
+
+{#    #}
+{#    <div>#}
+{#        {{ dump(user) }}#}
+{#    </div>#}
+{% endblock %}

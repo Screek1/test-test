@@ -1,0 +1,28 @@
+<div class="breadcrumbs mt20 mb80">
+    <div class="breadcrumbs__list container">
+        <div>
+            <span class="breadcrumbs__item">
+                <a href="/">Home</a>
+            </span>
+            {% if listing.breadCrumbs|default(false) or array|default(false) %}
+                {% for crumb in listing.breadCrumbs|default(array|default(false)) | cast_to_array %}
+                    {% if loop.last %}
+                        <span class="breadcrumbs__item">
+                        <span>{{ crumb.crumb }}</span>
+                    </span>
+                    {% else %}
+                        <span class="breadcrumbs__item">
+{#                            TODO HARDCODE BREADCRUMBS #}
+                        <a href="{{ crumb.uri|replace({'staging.': 'www.'}) }}">{{ crumb.crumb }}</a>
+                    </span>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </div>
+        {% if daysOnTheMarket|default(null) %}
+            <div class="days-on-market">
+                {{ daysOnTheMarket ~ ' Days on the market' }}
+            </div>
+        {% endif %}
+    </div>
+</div>

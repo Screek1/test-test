@@ -1,0 +1,174 @@
+.error-block {
+	min-height: calc(100vh - 100px);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 20px 0;
+	
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: auto;
+	}
+	
+	&__col {
+		&_left {
+			width: calc(100% / 12 * 5 - 10px);
+			
+			svg {
+				display: block;
+				width: 100%;
+				height: auto;
+				backface-visibility: hidden;
+				pointer-events: none;
+				
+				.animate-in-window {
+					transform-box: fill-box;
+				}
+			}
+		}
+		
+		&_right {
+			width: calc(100% / 12 * 7 - 10px);
+			padding-right: calc(100% / 12);
+		}
+	}
+	
+	@include media_1300 {
+		&__col {
+			width: calc(50% - 10px);
+			
+			&_right {
+				padding-right: 0;
+			}
+		}
+	}
+	
+	@include media_1000 {
+		min-height: calc(100vh - 80px);
+		
+		&__container {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			max-width: 540px;
+		}
+		
+		&__col {
+			width: 100%;
+			
+			&_left {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+	@include media_700 {
+		min-height: calc(100vh - 50px);
+		
+		&__col {
+			&_left {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	
+}
+
+.not-found-animation {
+	@keyframes nf-magnifier-animation {
+		0%, 100% {
+			transform: rotate(0deg);
+		}
+		
+		25% {
+			transform: rotate(4.5deg);
+		}
+		
+		75% {
+			transform: rotate(-1.7deg);
+		}
+	}
+	
+	@keyframes nf-man-hand-left {
+		0%, 100% {
+			transform: rotate(0deg);
+		}
+		
+		25% {
+			transform: rotate(10deg);
+		}
+		
+		75% {
+			transform: rotate(-5deg);
+		}
+	}
+	
+	@keyframes nf-man-hand-right-top {
+		0%, 100% {
+			transform: rotate(0deg);
+		}
+		
+		25% {
+			transform: rotate(2deg);
+		}
+		
+		75% {
+			transform: rotate(-3deg);
+		}
+	}
+	
+	@keyframes nf-man-hand-right-bottom {
+		0%, 100% {
+			transform: translate3d(0,0,0);
+		}
+		
+		25% {
+			transform: translate3d(-6%,0,0);
+		}
+		
+		75% {
+			transform: translate3d(6%,0,0);
+		}
+	}
+	
+	.svg-magnifier,
+	.svg-man-hand-left,
+	.svg-man-hand-right-top,
+	.svg-man-hand-right-bottom,
+	.svg-tree {
+		animation-duration: 3s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	}
+	
+	.svg-magnifier {
+		animation-name: nf-magnifier-animation;
+		transform-origin: 100% 22%;
+	}
+	.svg-man-hand-left {
+		animation-name: nf-man-hand-left;
+		transform-origin: 100% 22%;
+	}
+	.svg-man-hand-right-top {
+		animation-name: nf-man-hand-right-top;
+		transform-origin: 47% 8%;
+	}
+	.svg-man-hand-right-bottom {
+		animation-name: nf-man-hand-right-bottom;
+		transform-origin: 75% 0;
+	}
+	.svg-tree {
+		animation-duration: 4s;
+		animation-name: leaves-animation-2;
+		transform-origin: 50% 100%;
+		
+		@for $i from 1 through 10 {
+			&:nth-child(#{$i}n) {
+				animation-delay: #{50*$i + ms};
+			}
+		}
+	}
+}

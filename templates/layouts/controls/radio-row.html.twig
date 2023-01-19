@@ -1,0 +1,47 @@
+{% set defaultLists = {
+    baths: {
+        0: "Any",
+        1: "1+",
+        2: "2+",
+        3: "3+",
+        4: "4+",
+        5: "5+",
+    },
+
+    beds: {
+        0: "Any",
+        1: "1+",
+        2: "2+",
+        3: "3+",
+        4: "4+",
+        5: "5+",
+    },
+} %}
+
+{% set useList = list|default(false) ? list : (defaultList ? defaultLists[defaultList] : []) %}
+
+<div class="radio-row {{ wrapMod|default('') }}">
+    {% for key, item  in useList|cast_to_array %}
+        {% set value = item.value|default(false) ? item.value : (loop.index0 ? (keyAsVal|default(false) ? key : item) : '') %}
+
+        {% set checkedAttr = firstNotChecked|default(false) ? '' :
+            (selectedVal|default(false) ? (selectedVal is same as(value) ? 'checked' : '') : (loop.index0 ? '' : 'checked'))
+        %}
+
+        {% set text = item.text|default(false) ? item.text : item %}
+
+        <div class="radio-row__item {{ itemWrapMod|default('') }}">
+            <input
+                    class="radio-row__input"
+                    type="radio"
+                    name="{{ name }}"
+                    value="{{ value }}"
+                    data-value="{{ value }}"
+                    data-text="{{ text }}"
+                    {{ checkedAttr }}
+            >
+            <div class="radio-row__indicator"></div>
+            <div class="radio-row__text {{ textMod|default('small-text') }}">{{ text }}</div>
+        </div>
+    {% endfor %}
+</div>

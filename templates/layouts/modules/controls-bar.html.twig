@@ -1,0 +1,24 @@
+<div class="controls-bar {{ wrapMod|default('') }}">
+    {% for item in controlsArray %}
+        {% set dataLabel = item.label|default(false) ? "data-label=" ~ item.label : '' %}
+        {% set dataPopupAttribute = item.dataPopup|default(false) ? "data-popup=" ~ item.dataPopup|json_encode() : '' %}
+        {% set dataCallbackAttr = item.dataCallback|default(false) ? "data-callback=" ~ item.dataCallback : '' %}
+        {% set html_tag = item.href|default(false) ? 'a' :'div' %}
+        {% set href = item.href|default(false) ? "href=" ~ item.href : '' %}
+
+        <{{html_tag}}
+            class="controls-bar__item {{ item.mod|default('') }}"
+            {{ dataLabel }}
+            {{ dataPopupAttribute }}
+            {{ dataCallbackAttr }}
+            {{ href }}
+            {{ item.dataAttribute|default('') }}
+        >
+            {% if item.text|default(false) %}
+                <span class="controls-bar__text button1">
+                    {{ item.text }}
+                </span>
+            {% endif %}
+        </{{html_tag}}>
+    {% endfor %}
+</div>

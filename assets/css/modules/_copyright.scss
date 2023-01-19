@@ -1,0 +1,57 @@
+@mixin col1300($r) {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+	#{$r}__text {
+		width: 100%;
+	}
+	
+	#{$r}__logo {
+		margin-top: 20px;
+		
+		&::before {
+			display: block;
+			font-size: 23px;
+		}
+	}
+}
+
+.copyright {
+	$r: &;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	&__text {
+		width: calc(100% - 90px);
+		color: $gray1;
+	}
+	
+	&__logo {
+		cursor: pointer;
+		transition: $default-transition;
+		color: $gray1;
+		
+		&::before {
+			display: block;
+			font-size: 27px;
+		}
+		
+		&:hover {
+			color: $dark1;
+		}
+	}
+	
+	@include media_1300 {
+		&._col-1300 {
+			@include col1300($r);
+		}
+	}
+	
+	@include media_700 {
+		&:not(._col-1300) {
+			@include col1300($r);
+		}
+	}
+}

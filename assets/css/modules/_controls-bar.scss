@@ -1,0 +1,86 @@
+.controls-bar {
+	position: relative;
+	display: inline-flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	max-width: 100%;
+	
+	&__item {
+		position: relative;
+		min-height: 40px;
+		padding: 5px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid $gray-line;
+		color: $dark1;
+		transition: $default-transition;
+		pointer-events: auto;
+		cursor: pointer;
+		
+		&:first-child {
+			border-radius: 10px 0 0 10px;
+		}
+		
+		&:last-child {
+			border-radius: 0 10px 10px 0;
+		}
+		
+		&:first-child:last-child {
+			border-radius: 10px;
+		}
+		
+		&[data-label] {
+			&::after {
+				content: attr(data-label);
+				@extend .tiny-text;
+				@include absolute(auto,auto,calc(100% + 5px),50%);
+				transform: translate(-50%, 10px);
+				padding: 3px 8px;
+				background: $white;
+				color: $gray0;
+				border: 1px solid $gray2;
+				box-sizing: border-box;
+				border-radius: 10px;
+				pointer-events: none;
+				opacity: 0;
+				transition: $default-transition;
+				will-change: transform;
+			}
+		}
+		
+		&:hover {
+			background: $gray4;
+			
+			&::after {
+				transform: translate(-50%, 0);
+				opacity: 1;
+			}
+		}
+		
+		&::before {
+			font-size: 18px;
+		}
+		
+		&:not(:last-child) {
+			border-right: none;
+		}
+		
+		&[class*="icon-"],
+		&.favorite-toggle {
+			padding: 5px 15px;
+		}
+	}
+	
+	&__text {
+	
+	}
+	
+	&._white & {
+		&__item {
+			background: $white;
+		}
+	}
+}

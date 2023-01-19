@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.legend {
+  width: 130px;
+  padding: 5px 10px;
+  font-weight: 700 !important;
+  font: 10px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  line-height: 20px;
+  color: #555;
+
+  &__title {
+    line-height: 1.2;
+  }
+
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 12px 8px;
+  color: #777;
+}
+
+.legend span {
+  position: relative;
+}
+
+.legend i {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.legend i.icon {
+  background-size: 18px;
+  background-color: rgba(255, 255, 255, 1);
+}

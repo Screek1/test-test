@@ -1,0 +1,85 @@
+<form
+        class="form-style js-ajax-form"
+        action="{{ path('login_check') }}"
+        method="post"
+        autocomplete="off"
+        data-reload-page="true"
+        data-disable-before-send="true"
+>
+    <h3 class="form-style__title h3 mb30">Sign in or register<br>to save your favorite homes</h3>
+
+    <div class="form-style__social-buttons-wrap">
+        {% include 'layouts/controls/button.html.twig' with {
+            text: 'Continue with Facebook',
+            mod: '_med icon-facebook _to-icon-on-700',
+            href: path('connect_facebook_start'),
+            textMod: 'small-text_bold',
+        } only %}
+
+        {% include 'layouts/controls/button.html.twig' with {
+            text: 'Continue with Google',
+            mod: '_med _bordered-gray _google-colored _to-icon-on-700',
+            href: path('connect_google_start'),
+            textMod: 'small-text_bold',
+        } only %}
+    </div>
+
+    {% include 'layouts/common/separator.html.twig' with {
+        text: 'OR',
+        wrapMod: '',
+        marginsMod: 'mt20 mb20',
+    } only %}
+
+    <div class="form-style__row js-form-row mb10">
+        <span class="form-style__label small-text mb10">Email</span>
+
+        {% include 'layouts/form/input.html.twig' with {
+            name: 'email',
+            placeholder: '',
+            inputMod: '_bordered-med required usermail',
+        } only %}
+    </div>
+
+    <div class="form-style__row js-form-row mb10">
+        <span class="form-style__label small-text mb10">Password</span>
+
+        <div class="tel-wrap">
+            <div class="tel-wrap__phone">
+                {% include 'layouts/form/input.html.twig' with {
+                    name: 'phone',
+                    placeholder: 'Phone number',
+                    inputMod: '_bordered-med required js-only-numbers',
+                    extraParams: 'maxlength=10'
+                } only %}
+            </div>
+        </div>
+    </div>
+    <div class="form-style__row mb10">
+        <div class="alert alert-danger"></div>
+    </div>
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+    <div class="form-style__row js-form-row mb15">
+        {% include 'layouts/controls/button.html.twig' with {
+            button: true,
+            text: 'Login',
+            mod: '_bordered',
+        } only %}
+    </div>
+
+    <span class="link-turquoise tiny-text js-call-popup" data-popup="{{ {
+        target: 'password-recovery',
+        show_overlay: true
+    }|json_encode }}">Forgot Password?</span>
+
+    {% include 'layouts/common/separator.html.twig' with {
+        wrapMod: '',
+        marginsMod: 'mt20 mb30',
+    } %}
+
+    <span class="button1">
+        Not a member? <span class="link-turquoise inline-block js-call-popup" data-popup="{{ {
+            target: 'registration',
+            show_overlay: true
+        }|json_encode }}">Register for free</span>
+    </span>
+</form>

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Social connections{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('account') }}
+{% endblock %}
+
+{% block body %}
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'My Account',
+            }
+        ]
+    } %}
+
+    {% include 'layouts/common/title-block.html.twig' with {
+        text: 'My Account',
+        tag: 'h1',
+        wrapMod: 'container mb50',
+    } only %}
+
+    {% embed 'layouts/containers/account-table.html.twig' with {
+        userData: user|default(false),
+        savedSearches: savedSearches|default(false),
+    } only %}
+        {% block account_content %}
+            <h3 class="h3 mb40">Social Connections</h3>
+
+            {% include 'layouts/modules/social-connection-card.html.twig' with {
+                title: 'Facebook',
+                iconMod: 'icon-facebook',
+                wrapMod: 'mb20',
+                path: '#',
+                active: true,
+            } only %}
+
+            {% include 'layouts/modules/social-connection-card.html.twig' with {
+                title: 'Google',
+                iconMod: '_google-colored',
+                wrapMod: 'mb20',
+                path: '#',
+                active: false,
+            } only %}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

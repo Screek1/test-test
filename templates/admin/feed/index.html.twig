@@ -1,0 +1,44 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Hello FeedController!{% endblock %}
+
+{% block body %}
+<div class="content px-2">
+    <div class="card card-primary card-outline">
+        <div class="card-body">
+            <table class="table table-bordered table-hover mb-0">
+                <thead class="bg-secondary">
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Status</th>
+                    <th>Last Update</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {% for feed in feeds %}
+                    <tr>
+                        <td class="align-middle">{{ feed.name }}</td>
+                        <td id="{{ feed.name }}-feed-busy" class="align-middle">{{ feed.classId ?? '- - -' }}</td>
+                        <td id="{{ feed.name }}-feed-busy" class="align-middle">{{ feed.busy ? 'Running' : 'Stop' }}</td>
+                        <td id="{{ feed.name }}-feed-time" class="align-middle">{{ feed.lastRunTime|date("Y-m-d H:i:s")  }}</td>
+                        <td class="align-middle">
+                            <button type="button" class="btn btn-primary js-feed-refresh" data-name="{{ feed.name }}" data-url="{{ path('admin_feed_refresh', {'name': feed.name}) }}">
+                                <i class="fa fa-retweet"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% else %}
+
+                    <tr>
+                        <td colspan="5">no records found</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

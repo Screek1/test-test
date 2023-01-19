@@ -1,0 +1,21 @@
+<div class="form-group">
+    {% if label|default(false) %}
+        <label for="{{ id }}">{{ label }}</label>
+    {% endif %}
+
+    <select id="{{ id }}" name="{{ name }}" class="custom-select">
+        {% for item in array %}
+            {% set selectedAttr = selectedVal|default(false) ? (selectedVal == item ? 'selected' : '') : (loop.index0 ? '' : 'selected') %}
+            {% set formatText = formatBigPrice|default(false) and loop.index0 ?
+                '$' ~ (item >= 1000000 ? item/1000000 ~ 'm' : item/1000 ~ 'k') :
+                item
+            %}
+
+            {% if loop.index0 == 0 %}
+                <option {{ selectedAttr }}>{{ formatText }}</option>
+            {% else %}
+                <option value="{{ item }}" {{ selectedAttr }}>{{ formatText }}{{ textSuffix|default('') }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+</div>

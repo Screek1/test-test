@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>Alexis Arrowmaker School</Name>
+    <Street>P.O. Box 70</Street>
+    <City>Wekweètì</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>64.1903707</lat>
+    <lon>-114.1841016</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Angik School</Name>
+    <Street>P.O. Box 100</Street>
+    <City>Paulatuk</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>69.35093499999999</lat>
+    <lon>-124.0712091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bompas Elementary School</Name>
+    <Street>P.O. Box 499</Street>
+    <City>Fort Simpson</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.8662091</lat>
+    <lon>-121.3575374</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Charles Tetcho School</Name>
+    <Street>P.O. Box 60</Street>
+    <City>Sambaa K'e</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.44066780000001</lat>
+    <lon>-121.2444842</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Charles Yohin School</Name>
+    <Street>General Delivery</Street>
+    <City>Nahanni Butte</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-10</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.0334654</lat>
+    <lon>-123.3833649</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief Albert Wright School</Name>
+    <Street>P.O. Box 126</Street>
+    <City>Tulita</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>64.90342269999999</lat>
+    <lon>-125.5733163</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief Jimmy Bruneau School</Name>
+    <Street>Bag Service #1</Street>
+    <City>Behchokǫ̀</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief Julian Yendo School</Name>
+    <Street>General Delivery</Street>
+    <City>Wrigley</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>63.22147200000001</lat>
+    <lon>-123.4547809</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief Julius School</Name>
+    <Street>P.O. Box 26</Street>
+    <City>Fort McPherson</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>67.43644499999999</lat>
+    <lon>-134.880755</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief Paul Niditchie School</Name>
+    <Street>General Delivery</Street>
+    <City>Tsiigehtchic</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>67.4418167</lat>
+    <lon>-133.7429146</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief Sunrise Education Centre</Name>
+    <Street>P.O. Box 3055</Street>
+    <City>Hay River Dene Reserve</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.8369156</lat>
+    <lon>-115.754647</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chief T'Selehye School</Name>
+    <Street>P.O. Box 99</Street>
+    <City>Fort Good Hope</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>66.2556759</lat>
+    <lon>-128.6340211</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Colville Lake School</Name>
+    <Street>P.O. Box 52</Street>
+    <City>Colville Lake</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>67.0386393</lat>
+    <lon>-126.0881066</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Deh Gáh Elementary and Secondary School</Name>
+    <Street>P.O. Box 320</Street>
+    <City>Fort Providence</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.3576238</lat>
+    <lon>-117.6606539</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Deninu School</Name>
+    <Street>General Delivery</Street>
+    <City>Fort Resolution</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.17205399999999</lat>
+    <lon>-113.673764</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>East Three Elementary School</Name>
+    <Street>P.O. Box 1470</Street>
+    <City>Inuvik</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>68.3607437</lat>
+    <lon>-133.7230178</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Echo-Dene School</Name>
+    <Street>General Delivery</Street>
+    <City>Fort Liard</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.2395738</lat>
+    <lon>-123.4733159</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Allain St-Cyr</Name>
+    <Street>48 Taylor Road</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.44212549999999</lat>
+    <lon>-114.3922152</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Boréale</Name>
+    <Street>145 Promenade Riverview</Street>
+    <City>Hay River</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.8172827</lat>
+    <lon>-115.7740146</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École J.H. Sissons School</Name>
+    <Street>5700 - 51A Avenue</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-5</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.4460075</lat>
+    <lon>-114.3779802</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École St. Joseph School</Name>
+    <Street>P.O. Box 728</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.4539717</lat>
+    <lon>-114.3717887</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>ehtseo Ayha School</Name>
+    <Street>P.O. Box 179</Street>
+    <City>Deline</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>65.1888507</lat>
+    <lon>-123.4227517</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Elizabeth Mackenzie Elementary School</Name>
+    <Street>Bag Service #2</Street>
+    <City>Behchokǫ̀</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Harry Camsell School</Name>
+    <Street>54 Woodland Drive</Street>
+    <City>Hay River</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-3</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.81218699999999</lat>
+    <lon>-115.7861851</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Helen Kalvak Elihakvik</Name>
+    <Street>P.O. Box 162</Street>
+    <City>Ulukhaktok</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>70.73675039999999</lat>
+    <lon>-117.7704441</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Inualthuyak School</Name>
+    <Street>General Delivery</Street>
+    <City>Sachs Harbour</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>71.985123</lat>
+    <lon>-125.2464831</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Jean Wetrade Gamètì School</Name>
+    <Street>General Delivery</Street>
+    <City>Gamètì</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>64.1121952</lat>
+    <lon>-117.3539847</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Joseph Burr Tyrrell School</Name>
+    <Street>232 McDougal Rd</Street>
+    <City>Fort Smith</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.0070908</lat>
+    <lon>-111.8899038</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>K'álemì Dene School</Name>
+    <Street>P.O. Box 236</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.4539717</lat>
+    <lon>-114.3717887</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kaw Tay Whee School</Name>
+    <Street>P.O. Box 40, Yellowknife</Street>
+    <City>Detah</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.412902</lat>
+    <lon>-114.3095019</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Louie Norwegian School</Name>
+    <Street>General Delivery</Street>
+    <City>Jean Marie River</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.532927</lat>
+    <lon>-120.634679</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lutsel K'e Dene School</Name>
+    <Street>P.O. Box 80</Street>
+    <City>Lutselk’e</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.40549399999999</lat>
+    <lon>-110.736935</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mackenzie Mountain School</Name>
+    <Street>P.O. Box 270</Street>
+    <City>Norman Wells</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>65.28149379999999</lat>
+    <lon>-126.8286524</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mangilaluk School</Name>
+    <Street>P.O. Box 5000</Street>
+    <City>Tuktoyaktuk</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>69.445358</lat>
+    <lon>-133.034181</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mezi Community School</Name>
+    <Street>General Delivery</Street>
+    <City>Whatì</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>63.1439642</lat>
+    <lon>-117.2693419</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mildred Hall Elementary School</Name>
+    <Street>5408 - 50th Avenue</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.4518728</lat>
+    <lon>-114.3789996</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Moose Kerr School</Name>
+    <Street>P.O. 120</Street>
+    <City>Aklavik</City>
+    <State>NT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>68.219916</lat>
+    <lon>-135.0077881</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>N.J. Macpherson School</Name>
+    <Street>525 Range Lake Road</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-5</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.4395427</lat>
+    <lon>-114.4160799</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Princess Alexandra School</Name>
+    <Street>56 Woodland Drive</Street>
+    <City>Hay River</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>4-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.81218699999999</lat>
+    <lon>-115.7861851</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Range Lake North School</Name>
+    <Street>170 Borden Drive</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.4506192</lat>
+    <lon>-114.415307</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Territorial School</Name>
+    <Street>P.O. Box 4426, Hay River</Street>
+    <City>Kakisa</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.816218</lat>
+    <lon>-115.7853652</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Weledeh Catholic School</Name>
+    <Street>P.O. Box 1650</Street>
+    <City>Yellowknife</City>
+    <State>NT</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.45471139999999</lat>
+    <lon>-114.3712222</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+
+{% block body %}
+    {% include 'layouts/common/breadcrumbs.html.twig' with {
+        array: [
+            {
+                crumb: 'Real Estate For Sale',
+            }
+        ]
+    } %}
+
+    {% embed 'layouts/containers/text-block.html.twig' with {
+        wrapMod: '',
+        content: page.content|default(''),
+    } only %}
+        {% block textblock_content %}
+            {{ content|raw }}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

@@ -1,0 +1,33 @@
+<div class="user-card pt50 pb40">
+    <div class="user-card__person">
+        {% if photo|default(false) %}
+            <div class="user-card__img-wrap mb10 _bordered">
+                <img src="{{ photo }}" class="user-card__img of" alt="User Photo"/>
+            </div>
+        {% else %}
+            <div class="user-card__img-wrap mb10 _default"></div>
+        {% endif %}
+
+        {% if name|default(false) %}
+            <span class="user-card__name subtitle_bold">{{ name }}</span>
+        {% endif %}
+
+        {% if roles|default(false) %}
+            {% if 'ROLE_ADMIN' in roles %}
+                <span class="user-card__role table-text">Admin</span>
+            {% else %}
+                <span class="user-card__role table-text">User</span>
+            {% endif %}
+        {% endif %}
+    </div>
+
+    <div class="user-card__menu">
+        <div class="list">
+            <a href="{{ path("edit_profile") }}" class="link-gray small-text mb10">Edit Profile</a>
+            <a href="{{ path("favourite_listings") }}" class="link-gray small-text mb10">Favourites Listings</a>
+            <a href="{{ path("scheduled_viewings") }}" class="link-gray small-text mb10">Scheduled Viewings</a>
+            <a href="{{ path("social_connections") }}" class="link-gray small-text mb10">Social Connections</a>
+            <a href="{{ path("saved_searches") }}" class="link-gray small-text mb10">Saved Searches</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+{% set defaultSlideMenuList = [
+    {
+        text: 'Highlights',
+        dataVal: 'all',
+        linkMod: 'js-yelp-nav-link',
+    },
+    {
+        text: 'Restaurants',
+        dataVal: 'restaurants',
+        linkMod: 'js-yelp-nav-link',
+    },
+    {
+        text: 'Groceries',
+        dataVal: 'groceries',
+        linkMod: 'js-yelp-nav-link',
+    },
+    {
+        text: 'Nightlife',
+        dataVal: 'nightlife',
+        linkMod: 'js-yelp-nav-link',
+    },
+    {
+        text: 'Cafes',
+        dataVal: 'cafes',
+        linkMod: 'js-yelp-nav-link',
+    },
+    {
+        text: 'Shopping',
+        dataVal: 'shopping',
+        linkMod: 'js-yelp-nav-link',
+    },
+    {
+        text: 'Arts & Entertainment',
+        dataVal: 'arts',
+        linkMod: 'js-yelp-nav-link',
+    },
+] %}
+
+<div class="slide-menu {{ wrapMod|default('') }} js-slide-menu-wrap">
+    <div class="slide-menu__overflow-wrap">
+        <div class="slide-menu__list js-slide-menu">
+            {% for item in list|default(defaultSlideMenuList) %}
+                {% set slideMenuDataVal = item.dataVal|default(false) ? 'data-val=' ~ item.dataVal %}
+
+                {% set slideMenuDataToggle = item.dataToggle|default(false) ? 'data-toggle=' ~ item.dataToggle %}
+
+                {% set slideMenuDataInitMap = item.initMap|default(false) ? 'data-init-map=' ~ item.initMap %}
+
+                {% set slideMenuDataTrigger = item.dataTrigger|default(false) ? 'data-trigger=' ~ item.dataTrigger|json_encode %}
+
+                {% set slideMenuDataContentId = item.contentId|default(false) ? 'data-content-id=' ~
+                    (item.contentId is iterable ? item.contentId|json_encode : item.contentId) %}
+
+                <div class="slide-menu__item js-slide-menu-item">
+                    <div class="slide-menu__link button1 js-slide-menu-link js-dropdown-demography {{ item.linkMod|default('') }}
+                        {{ firstActive|default(false) ? (loop.index0 ?: '_active') }}
+                        {{ activeByDataVal|default(false) ? (activeByDataVal is same as(item.dataVal) ? '_active') }}"
+                            {{ slideMenuDataVal }}
+                            {{ slideMenuDataInitMap }}
+                            {{ slideMenuDataContentId }}
+                            {{ slideMenuDataToggle }}
+                            {{ slideMenuDataTrigger }}
+                    >
+                        {{ item.text }}
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    {% for item in list|default(defaultSlideMenuList) %}
+        {% if item.dropdownItems is defined %}
+            <form class="js-demography-dropdown-form" data-type="{{ item.dataVal }}">
+                {% include 'layouts/form/radio-demography-select.html.twig' with {
+                    name: item.dataVal,
+                    wrapMod: '_btn-style _popup-stick-to-left _selected-highlight',
+                    placeholder: item.text,
+                    selectedVal: item.selectedVal,
+                    list: item.dropdownItems,
+                    keyAsVal: false
+                } %}
+            </form>
+        {% endif %}
+    {% endfor %}
+    <div class="slide-menu__button slide-menu__button_left circle-button _bordered icon-angle-left js-slide-menu-btn-left"></div>
+    <div class="slide-menu__button slide-menu__button_right circle-button _bordered icon-angle-right js-slide-menu-btn-right"></div>
+</div>

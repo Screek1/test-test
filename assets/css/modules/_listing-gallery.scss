@@ -1,0 +1,139 @@
+.listings-tile {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	@extend .mtr50;
+	pointer-events: none;
+	
+	.estate-card {
+		width: calc(50% - 30px);
+		@extend .mt50;
+		pointer-events: auto;
+	}
+	
+	@include media_1300 {
+		.estate-card {
+			width: calc(50% - 25px);
+		}
+	}
+	
+	@include media_1000 {
+		.estate-card {
+			width: calc(50% - 10px);
+		}
+	}
+	
+	@include media_700 {
+		.estate-card {
+			width: 100%;
+		}
+	}
+}
+
+@media print {
+	.print-popup {
+		.listings-tile {
+			display: block;
+			
+			.estate-card {
+				display: inline-block;
+				vertical-align: top;
+				
+				&:nth-child(odd) {
+					margin-right: 30px;
+				}
+				
+				.slick-dots,
+				.slick-arrow,
+				&__add-to-favorite {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.listing-gallery {
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+	
+	&__list {
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	&__item {
+		position: relative;
+		width: calc(50% - 5px);
+		@include rh(500/730);
+		margin-top: 10px;
+		background: $gray2;
+		overflow: hidden;
+		z-index: 2;
+		max-height: calc(100vh - 190px);
+		
+		&:first-child {
+			margin-top: 0;
+		}
+		
+		&:nth-child(3n - 2) {
+			width: 100%;
+			@include rh(600/1460);
+		}
+	}
+	
+	&__img {
+		display: block;
+		z-index: 1;
+	}
+	
+	
+	@include media_1300 {
+	
+	}
+	
+	@include media_1000 {
+	
+	}
+	
+	@include media_700 {
+		&__item {
+			max-height: calc(100vh - 100px);
+			
+			&::after {
+				padding-top: 80%;
+			}
+			
+			&:nth-child(3n - 2) {
+				&::after {
+					padding-top: 60%;
+				}
+			}
+		}
+		
+	}
+	
+	@include media_500 {
+		&__item {
+			width: calc(50% - 3px);
+			margin-top: 6px;
+			
+			&::after {
+				padding-top: 100%;
+			}
+			
+			&:nth-child(3n - 2) {
+				&::after {
+					padding-top: 80%;
+				}
+			}
+		}
+		
+	}
+}

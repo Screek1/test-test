@@ -1,0 +1,16 @@
+<div class="social-connection-card pt20 pb20 {{ wrapMod|default('') }}">
+    {% include 'layouts/controls/toggle-button.html.twig' with {
+        wrapMod: 'mb20',
+        active: active|default(false),
+        path: path|default('#'),
+    } only %}
+
+    <div class="social-connection-card__description {{ iconMod|default('') }}">
+        <span class="social-connection-card__title small-text_bold">{{ title|default('') }}</span>
+
+        <span class="social-connection-card__status small-text">
+            <span class="active-text">Connected</span>
+            <span class="default-text">Not connected</span>
+        </span>
+    </div>
+</div>

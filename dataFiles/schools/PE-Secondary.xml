@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>Bluefield Senior High School</Name>
+    <Street>924 Colville Rd – Rte 9</Street>
+    <City>Hampshire</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>10-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.28189</lat>
+    <lon>-63.29441999999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Charlottetown Rural Senior High School</Name>
+    <Street>100 Raiders Rd</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>10-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2585736</lat>
+    <lon>-63.1504632</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Colonel Gray Senior High School</Name>
+    <Street>175 Spring Park Rd</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>10-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.24109259999999</lat>
+    <lon>-63.14024920000001</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Grace Christian School</Name>
+    <Street>50 Kirkdale Rd.</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program/>
+    <www/>
+    <lat>46.26428</lat>
+    <lon>-63.16317249999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kensington Intermediate Senior High School</Name>
+    <Street>19 Victoria St East</Street>
+    <City>Kensington</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>7-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.4411008</lat>
+    <lon>-63.62944359999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kinkora Regional High School</Name>
+    <Street>54 Anderson Rd</Street>
+    <City>Kinkora</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.322536</lat>
+    <lon>-63.598022</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Montague Alternative Education</Name>
+    <Street>513 Main St</Street>
+    <City>Montague</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>7-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Alternative Education Sites</Program>
+    <www/>
+    <lat>46.1710226</lat>
+    <lon>-62.6519612</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Montague Regional High School</Name>
+    <Street>274 Valleyfield Rd – Rte 326</Street>
+    <City>Lower Montague</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>10-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.1583479</lat>
+    <lon>-62.64730949999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Morell Regional High School</Name>
+    <Street>100 Little Flower Av – Rte 322</Street>
+    <City>Morell</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.411724</lat>
+    <lon>-62.707294</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Provincial Adolescent School</Name>
+    <Street>40 Enman Cr</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>7-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Alternative Education Sites</Program>
+    <www/>
+    <lat>46.2606463</lat>
+    <lon>-63.1493277</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Souris Regional School</Name>
+    <Street>15 Longworth St</Street>
+    <City>Souris</City>
+    <State>PE</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.357826</lat>
+    <lon>-62.2511441</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Three Oaks Senior High School</Name>
+    <Street>10 Kenmoore Av</Street>
+    <City>Summerside</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>10-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.401199</lat>
+    <lon>-63.77892600000001</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westisle Alternative Education</Name>
+    <Street>39570 Western Rd – Rte 2</Street>
+    <City>Rosebank</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>7-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Alternative Education Sites</Program>
+    <www/>
+    <lat>46.806388</lat>
+    <lon>-64.14808599999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westisle Composite High School</Name>
+    <Street>39570 Western Rd – Rte 2</Street>
+    <City>Rosebank</City>
+    <State>PE</State>
+    <Level>Secondary</Level>
+    <Grades>10-12</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.806388</lat>
+    <lon>-64.14808599999999</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

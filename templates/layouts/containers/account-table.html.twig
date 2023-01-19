@@ -1,0 +1,12 @@
+<section class="account-table container {{ wrapMod|default('') }}">
+    <div class="account-table__col account-table__col_left">
+        {% include 'layouts/modules/user-card.html.twig' with {
+            name: userData.name|default(false),
+            roles: userData.roles|default(false),
+        } only %}
+    </div>
+
+    <div class="account-table__col account-table__col_right js-wrap">
+        {% block account_content %}{% endblock %}
+    </div>
+</section>

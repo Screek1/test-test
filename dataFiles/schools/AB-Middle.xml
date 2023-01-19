@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>A. E. Cross School</Name>
+    <Street>3445 - 37 Street S.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0234398</lat>
+    <lon>-114.141812</lon>
+    <Coordinates> -114.11804000000001,51.00871,0.0
+ -114.12948000000001,51.008720000000004,0.0
+ -114.12949,51.00813,0.0
+ -114.13443000000001,51.00813,0.0
+ -114.13645000000001,51.00753,0.0
+ -114.13791,51.008390000000006,0.0
+ -114.14118,51.00916,0.0
+ -114.14131,51.008610000000004,0.0
+ -114.15278,51.008630000000004,0.0
+ -114.16456000000001,51.00865,0.0
+ -114.17606,51.008660000000006,0.0
+ -114.18759000000001,51.00867,0.0
+ -114.1876,51.01151,0.0
+ -114.19549,51.01431,0.0
+ -114.19304000000001,51.015950000000004,0.0
+ -114.19056,51.01868,0.0
+ -114.18783,51.02169000000001,0.0
+ -114.18757000000001,51.022540000000006,0.0
+ -114.18753000000001,51.03783000000001,0.0
+ -114.18301000000001,51.03768,0.0
+ -114.18164000000001,51.03745000000001,0.0
+ -114.17577000000001,51.03647,0.0
+ -114.17325000000001,51.036570000000005,0.0
+ -114.16995000000001,51.0377,0.0
+ -114.16613000000001,51.03965,0.0
+ -114.16421000000001,51.040020000000005,0.0
+ -114.16427000000001,51.03049000000001,0.0
+ -114.15626,51.030570000000004,0.0
+ -114.15624000000001,51.031420000000004,0.0
+ -114.15738,51.03144,0.0
+ -114.15734,51.03253,0.0
+ -114.15494000000001,51.033,0.0
+ -114.15283000000001,51.03294,0.0
+ -114.15185000000001,51.03331000000001,0.0
+ -114.14912000000001,51.03333000000001,0.0
+ -114.14795000000001,51.03275000000001,0.0
+ -114.14512,51.03273,0.0
+ -114.14535000000001,51.033370000000005,0.0
+ -114.14264000000001,51.0332,0.0
+ -114.14129000000001,51.03318,0.0
+ -114.12958,51.03316,0.0
+ -114.12956000000001,51.03783000000001,0.0
+ -114.12232000000001,51.03782,0.0
+ -114.11316000000001,51.037890000000004,0.0
+ -114.11373,51.037130000000005,0.0
+ -114.11436,51.03661,0.0
+ -114.11765000000001,51.035410000000006,0.0
+ -114.11828000000001,51.03425000000001,0.0
+ -114.1183,51.030710000000006,0.0
+ -114.11783000000001,51.02948000000001,0.0
+ -114.11796000000001,51.023970000000006,0.0
+ -114.11804000000001,51.00871,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Alexandra Middle School</Name>
+    <Street>477 - 6 Street S.E.</Street>
+    <City>Medicine Hat</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.mhpsd.ca/</www>
+    <lat>50.032942</lat>
+    <lon>-110.674639</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Allendale School</Name>
+    <Street>6415 - 106 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5013</lat>
+    <lon>-113.503966</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Anchors Outreach School</Name>
+    <Street>5-55 Wheatland Trail</Street>
+    <City>Strathmore</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ghsd75.com</www>
+    <lat>51.058985</lat>
+    <lon>-113.399182</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Avalon Junior School</Name>
+    <Street>5425 - 114 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.491862</lat>
+    <lon>-113.523228</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bishop Kidd School</Name>
+    <Street>1420 - 28 Street S.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cssd.ab.ca</www>
+    <lat>51.0408485</lat>
+    <lon>-113.9920849</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bishop Lloyd School</Name>
+    <Street>5524 - 31 Street</Street>
+    <City>Lloydminster</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.lpsd.ca</www>
+    <lat>53.268415</lat>
+    <lon>-110.0205041</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bishop Pinkham School</Name>
+    <Street>3304 - 63 Avenue S.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>50.9969601</lat>
+    <lon>-114.1308684</lon>
+    <Coordinates> -114.11804000000001,51.00871,0.0
+ -114.11522000000001,51.008720000000004,0.0
+ -114.10645000000001,51.00873000000001,0.0
+ -114.10655000000001,51.00137,0.0
+ -114.10920000000001,51.001340000000006,0.0
+ -114.10910000000001,50.998450000000005,0.0
+ -114.10914000000001,50.99398000000001,0.0
+ -114.11794,50.99389000000001,0.0
+ -114.11801000000001,50.99051000000001,0.0
+ -114.13532000000001,50.990590000000004,0.0
+ -114.13535,50.994080000000004,0.0
+ -114.14126,50.99414,0.0
+ -114.14129000000001,50.994550000000004,0.0
+ -114.14131,50.994890000000005,0.0
+ -114.14131,51.00139,0.0
+ -114.14131,51.008610000000004,0.0
+ -114.14118,51.00916,0.0
+ -114.13791,51.008390000000006,0.0
+ -114.13645000000001,51.00753,0.0
+ -114.13443000000001,51.00813,0.0
+ -114.12949,51.00813,0.0
+ -114.12948000000001,51.008720000000004,0.0
+ -114.11804000000001,51.00871,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Branton School</Name>
+    <Street>2103 - 20 Street N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0712475</lat>
+    <lon>-114.1090366</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Britannia School</Name>
+    <Street>16018 - 104 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5466651</lat>
+    <lon>-113.5973729</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Brooks Junior High School</Name>
+    <Street>124 - 4th Avenue East</Street>
+    <City>Brooks</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.grasslands.ab.ca</www>
+    <lat>50.568318</lat>
+    <lon>-111.892306</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cardinal Leger</Name>
+    <Street>8808 - 144 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.60624300000001</lat>
+    <lon>-113.4761251</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Clarence Sansom School</Name>
+    <Street>5840 - 24 Avenue N.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0746945</lat>
+    <lon>-113.949345</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Clover Bar Junior High School</Name>
+    <Street>50 Main Boulevard</Street>
+    <City>Sherwood Park</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.eips.ca</www>
+    <lat>53.536049</lat>
+    <lon>-113.309531</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Crowther Memorial Junior High School</Name>
+    <Street>190 Brent Boulevard</Street>
+    <City>Strathmore</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ghsd75.com</www>
+    <lat>51.061138</lat>
+    <lon>-113.389778</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>D S MacKenzie School</Name>
+    <Street>4020 - 106 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.477067</lat>
+    <lon>-113.504641</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dan Knott School</Name>
+    <Street>1434 - 80 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.445945</lat>
+    <lon>-113.45628</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dickinsfield School</Name>
+    <Street>14320 - 88A Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.6052556</lat>
+    <lon>-113.4774209</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dr. Gordon Higgins School</Name>
+    <Street>155 Rundlehill Drive N.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0753248</lat>
+    <lon>-113.9706712</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Fox Run School</Name>
+    <Street>2 Falcon Ridge Drive</Street>
+    <City>Sylvan Lake</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cesd73.ca</www>
+    <lat>52.2997177</lat>
+    <lon>-114.1114398</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École J E Lapointe School</Name>
+    <Street>4801 - 55 Avenue</Street>
+    <City>Beaumont</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.blackgold.ca</www>
+    <lat>53.356415</lat>
+    <lon>-113.4114839</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Joseph-Moreau</Name>
+    <Street>9750 - 74 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.centrenord.ab.ca</www>
+    <lat>53.51066900000001</lat>
+    <lon>-113.481409</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Lacombe Junior High School</Name>
+    <Street>5830 - 50 Street</Street>
+    <City>Lacombe</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.wolfcreek.ab.ca</www>
+    <lat>52.473129</lat>
+    <lon>-113.733886</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Leduc Junior High School</Name>
+    <Street>4412 - 48 Street</Street>
+    <City>Leduc</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.blackgold.ca</www>
+    <lat>53.25934299999999</lat>
+    <lon>-113.547472</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Edith Rogers School</Name>
+    <Street>8308 Millwoods Road</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.47420049999999</lat>
+    <lon>-113.4560937</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>EIPS Centre for Educational Alternatives</Name>
+    <Street>1604 Sherwood Drive</Street>
+    <City>Sherwood Park</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.eips.ca</www>
+    <lat>53.5235047</lat>
+    <lon>-113.3072334</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Evergreen Catholic Junior High Outreach</Name>
+    <Street>2-420 King Street</Street>
+    <City>Spruce Grove</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsrd.ca</www>
+    <lat>53.5434268</lat>
+    <lon>-113.8996659</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>F. E. Osborne School</Name>
+    <Street>5315 Varsity Drive N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0928737</lat>
+    <lon>-114.1631092</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>F. R. Haythorne School</Name>
+    <Street>300 Colwill Boulevard</Street>
+    <City>Sherwood Park</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.eips.ca</www>
+    <lat>53.529804</lat>
+    <lon>-113.265967</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Father Michael Troy Junior High</Name>
+    <Street>3630 - 23 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.4724634</lat>
+    <lon>-113.377373</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Georges P. Vanier School</Name>
+    <Street>509 - 32 Avenue N.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0805728</lat>
+    <lon>-114.0522817</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>H. D. Cartwright School</Name>
+    <Street>5500 Dalhart Road N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.1126474</lat>
+    <lon>-114.1614325</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>H. E. Beriault</Name>
+    <Street>8125 - 167 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.515417</lat>
+    <lon>-113.608253</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hellenic-Canadian Community of Edmonton and Region</Name>
+    <Street>10450 - 116 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program/>
+    <www>http://www.edmontonhellenic.com</www>
+    <lat>53.54796</lat>
+    <lon>-113.522006</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Highlands School</Name>
+    <Street>11509 - 62 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5693849</lat>
+    <lon>-113.4346629</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hillcrest School</Name>
+    <Street>16400 - 80 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5143739</lat>
+    <lon>-113.604734</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Iron Ridge Junior Campus</Name>
+    <Street>P.O. Box 1240</Street>
+    <City>Blackfalds</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.wolfcreek.ab.ca</www>
+    <lat>52.38087909999999</lat>
+    <lon>-113.7954188</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>J. J. Bowlen Junior High School</Name>
+    <Street>6110 - 144 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.6052944</lat>
+    <lon>-113.4364989</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>John D Bracco School</Name>
+    <Street>3150 - 139 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.603416</lat>
+    <lon>-113.3927061</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>John Ware School</Name>
+    <Street>10020 - 19 Street S.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>50.963623</lat>
+    <lon>-114.1054103</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Junior High Fresh Start Outreach Program</Name>
+    <Street>1420 - 28 St. S.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cssd.ab.ca</www>
+    <lat>51.0408485</lat>
+    <lon>-113.9920849</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kate Chegwin School</Name>
+    <Street>3119 - 48 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.46263399999999</lat>
+    <lon>-113.414989</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kenilworth School</Name>
+    <Street>7005 - 89 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.523833</lat>
+    <lon>-113.4357505</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Killarney School</Name>
+    <Street>13110 - 91 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5917993</lat>
+    <lon>-113.4820255</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Londonderry School</Name>
+    <Street>7104 - 144 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.6059253</lat>
+    <lon>-113.450949</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lorne Akins Junior High School</Name>
+    <Street>4 Fairview Boulevard</Street>
+    <City>St. Albert</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.spschools.org</www>
+    <lat>53.6342318</lat>
+    <lon>-113.6077632</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Madeleine D' Houet Bilingual School</Name>
+    <Street>108 - 22 Street N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cssd.ab.ca</www>
+    <lat>51.0531353</lat>
+    <lon>-114.112222</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mary Butterworth School</Name>
+    <Street>16315 - 109 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.623978</lat>
+    <lon>-113.506412</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Michael Phair School</Name>
+    <Street>9407 - 211 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.532077</lat>
+    <lon>-113.6828897</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Middle Years Outreach School</Name>
+    <Street>9625 Prairie Road</Street>
+    <City>Grande Prairie</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.gppsd.ab.ca</www>
+    <lat>55.1532638</lat>
+    <lon>-118.7843607</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Midsun School</Name>
+    <Street>660 Sunmills Drive S.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>50.90185</lat>
+    <lon>-114.030978</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mount Royal School</Name>
+    <Street>2234 - 14 Street S.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.034791</lat>
+    <lon>-114.0941762</lon>
+    <Coordinates> -114.05067000000001,51.048950000000005,0.0
+ -114.04046000000001,51.04505,0.0
+ -114.04213000000001,51.04393,0.0
+ -114.04337000000001,51.04214,0.0
+ -114.04517000000001,51.040850000000006,0.0
+ -114.04738,51.0392,0.0
+ -114.04911000000001,51.03790000000001,0.0
+ -114.04984,51.03542,0.0
+ -114.04928000000001,51.03336,0.0
+ -114.05031000000001,51.031180000000006,0.0
+ -114.05146,51.030150000000006,0.0
+ -114.05295000000001,51.030260000000005,0.0
+ -114.05409000000001,51.031310000000005,0.0
+ -114.05596000000001,51.032450000000004,0.0
+ -114.05730000000001,51.03275000000001,0.0
+ -114.05972000000001,51.034800000000004,0.0
+ -114.06133000000001,51.035900000000005,0.0
+ -114.06117,51.03783000000001,0.0
+ -114.07158000000001,51.03784,0.0
+ -114.07438,51.037870000000005,0.0
+ -114.07831000000001,51.03781000000001,0.0
+ -114.07837,51.035140000000005,0.0
+ -114.07715,51.035160000000005,0.0
+ -114.07577,51.03482,0.0
+ -114.07578000000001,51.03228000000001,0.0
+ -114.07542000000001,51.03173,0.0
+ -114.07429,51.03096000000001,0.0
+ -114.07426000000001,51.030620000000006,0.0
+ -114.07441000000001,51.03018,0.0
+ -114.07482,51.03004000000001,0.0
+ -114.07513000000001,51.030100000000004,0.0
+ -114.07576,51.030480000000004,0.0
+ -114.07639,51.03125000000001,0.0
+ -114.07677000000001,51.03152000000001,0.0
+ -114.07698,51.03159,0.0
+ -114.07691000000001,51.031420000000004,0.0
+ -114.07639,51.030800000000006,0.0
+ -114.07641000000001,51.030680000000004,0.0
+ -114.07727000000001,51.030390000000004,0.0
+ -114.08368000000001,51.030390000000004,0.0
+ -114.08353000000001,51.029540000000004,0.0
+ -114.08316,51.0292,0.0
+ -114.08323000000001,51.02736,0.0
+ -114.08342,51.02707,0.0
+ -114.08463,51.02734,0.0
+ -114.08591000000001,51.02562,0.0
+ -114.08623000000001,51.0255,0.0
+ -114.08707000000001,51.0255,0.0
+ -114.0879,51.02564,0.0
+ -114.08819000000001,51.02479,0.0
+ -114.08848,51.02452,0.0
+ -114.08956,51.024300000000004,0.0
+ -114.09048000000001,51.02414,0.0
+ -114.09086,51.024100000000004,0.0
+ -114.09188,51.024080000000005,0.0
+ -114.09472000000001,51.02403,0.0
+ -114.09474000000001,51.02103,0.0
+ -114.09474000000001,51.02033,0.0
+ -114.09455000000001,51.020120000000006,0.0
+ -114.09410000000001,51.020140000000005,0.0
+ -114.09203000000001,51.017070000000004,0.0
+ -114.09149000000001,51.017140000000005,0.0
+ -114.09134,51.0168,0.0
+ -114.09212000000001,51.01634000000001,0.0
+ -114.09367,51.01418,0.0
+ -114.09375000000001,51.012750000000004,0.0
+ -114.09208000000001,51.011570000000006,0.0
+ -114.08939000000001,51.01034000000001,0.0
+ -114.08678,51.00961,0.0
+ -114.08608000000001,51.00871,0.0
+ -114.09634000000001,51.008750000000006,0.0
+ -114.10645000000001,51.00873000000001,0.0
+ -114.11522000000001,51.008720000000004,0.0
+ -114.11804000000001,51.00871,0.0
+ -114.11796000000001,51.023970000000006,0.0
+ -114.11783000000001,51.02948000000001,0.0
+ -114.1183,51.030710000000006,0.0
+ -114.11828000000001,51.03425000000001,0.0
+ -114.11765000000001,51.035410000000006,0.0
+ -114.11436,51.03661,0.0
+ -114.11373,51.037130000000005,0.0
+ -114.11316000000001,51.037890000000004,0.0
+ -114.12232000000001,51.03782,0.0
+ -114.12223000000001,51.03830000000001,0.0
+ -114.12224,51.039640000000006,0.0
+ -114.12226000000001,51.04157000000001,0.0
+ -114.12270000000001,51.04157000000001,0.0
+ -114.12268,51.043310000000005,0.0
+ -114.12346000000001,51.043290000000006,0.0
+ -114.1235,51.04663000000001,0.0
+ -114.12353,51.049130000000005,0.0
+ -114.11768000000001,51.04726,0.0
+ -114.11464000000001,51.04628,0.0
+ -114.11327000000001,51.04627000000001,0.0
+ -114.11181,51.046400000000005,0.0
+ -114.10913000000001,51.0478,0.0
+ -114.10212000000001,51.04806000000001,0.0
+ -114.09997000000001,51.047830000000005,0.0
+ -114.09768000000001,51.04759000000001,0.0
+ -114.09529,51.04733,0.0
+ -114.09482000000001,51.04728,0.0
+ -114.09120000000001,51.048170000000006,0.0
+ -114.08675000000001,51.04927000000001,0.0
+ -114.08433000000001,51.050450000000005,0.0
+ -114.08390000000001,51.050650000000004,0.0
+ -114.08349000000001,51.050850000000004,0.0
+ -114.08031000000001,51.05239,0.0
+ -114.07876,51.053290000000004,0.0
+ -114.07763000000001,51.05395000000001,0.0
+ -114.07600000000001,51.0549,0.0
+ -114.07559,51.055130000000005,0.0
+ -114.07487,51.05538000000001,0.0
+ -114.07222000000001,51.056270000000005,0.0
+ -114.07117000000001,51.05655,0.0
+ -114.06945,51.056580000000004,0.0
+ -114.06798,51.056070000000005,0.0
+ -114.06752000000001,51.05592000000001,0.0
+ -114.06628,51.055490000000006,0.0
+ -114.06487000000001,51.0538,0.0
+ -114.06461000000001,51.05308,0.0
+ -114.06457,51.053070000000005,0.0
+ -114.06450000000001,51.05286,0.0
+ -114.06255000000001,51.05223,0.0
+ -114.05067000000001,51.048950000000005,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Okotoks Junior High School</Name>
+    <Street>1 Pacific Avenue</Street>
+    <City>Okotoks</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.fsd38.ab.ca</www>
+    <lat>50.7274168</lat>
+    <lon>-113.9689847</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ottewell School</Name>
+    <Street>9435 - 73 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5316093</lat>
+    <lon>-113.4391744</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Parkside School</Name>
+    <Street>P.O. Box 250</Street>
+    <City>Redcliff</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.07721369999999</lat>
+    <lon>-110.7878554</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Prairie River Junior High School</Name>
+    <Street>P.O. Box 940</Street>
+    <City>High Prairie</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.hpsd.ca</www>
+    <lat>55.43289910000001</lat>
+    <lon>-116.4886918</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Prairie Rose Regional Division Home Education</Name>
+    <Street>1002B Allowance Ave. SE</Street>
+    <City>Medicine Hat</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.029099</lat>
+    <lon>-110.6644641</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Raymond Junior High School</Name>
+    <Street>65 West 100 North</Street>
+    <City>Raymond</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.westwind.ab.ca</www>
+    <lat>49.4639771</lat>
+    <lon>-112.6635928</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>REAL McMan</Name>
+    <Street>770 - 1 Street S.E.</Street>
+    <City>Medicine Hat</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.mhpsd.ca/</www>
+    <lat>50.043155</lat>
+    <lon>-110.6729092</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Richard S Fowler Catholic Junior High School</Name>
+    <Street>65 Sir Winston Churchill Ave</Street>
+    <City>St. Albert</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.gsacrd.ab.ca</www>
+    <lat>53.6377463</lat>
+    <lon>-113.607704</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Riverbend School</Name>
+    <Street>14820 - 53 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.490922</lat>
+    <lon>-113.5764139</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rosslyn School</Name>
+    <Street>13215 - 113A Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5923852</lat>
+    <lon>-113.5156762</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rudolph Hennig Junior High School</Name>
+    <Street>9512 - 92 Street</Street>
+    <City>Fort Saskatchewan</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.eips.ca</www>
+    <lat>53.69735300000001</lat>
+    <lon>-113.225049</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rundle College Junior High School</Name>
+    <Street>7375 - 17 Avenue SW</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program/>
+    <www>http://www.rundle.ab.ca</www>
+    <lat>51.03701419999999</lat>
+    <lon>-114.1939739</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>S Bruce Smith School</Name>
+    <Street>5545 - 184 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.4909256</lat>
+    <lon>-113.6393028</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sherwood Heights Junior High School</Name>
+    <Street>241 Fir Street</Street>
+    <City>Sherwood Park</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.eips.ca</www>
+    <lat>53.5193199</lat>
+    <lon>-113.307652</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sir George Simpson Junior High School</Name>
+    <Street>50 Grosvenor Boulevard</Street>
+    <City>St. Albert</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.spschools.org</www>
+    <lat>53.62151009999999</lat>
+    <lon>-113.6247391</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sir John A Macdonald School</Name>
+    <Street>6600 - 4 Street N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.11159000000001</lat>
+    <lon>-114.071106</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sir John Thompson School</Name>
+    <Street>13525 - 132 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.591835</lat>
+    <lon>-113.5549779</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Spruce Avenue School</Name>
+    <Street>11424 - 102 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.564984</lat>
+    <lon>-113.497348</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Bonaventure School</Name>
+    <Street>1710 Acadia Drive S.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cssd.ab.ca</www>
+    <lat>50.9317816</lat>
+    <lon>-114.0471717</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Cecilia School</Name>
+    <Street>8830 - 132 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.592972</lat>
+    <lon>-113.477773</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Francis Junior High School</Name>
+    <Street>333 - 18 Street S.</Street>
+    <City>Lethbridge</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.holyspirit.ab.ca</www>
+    <lat>49.695413</lat>
+    <lon>-112.8158343</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Helena School</Name>
+    <Street>320 - 64 Avenue N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cssd.ab.ca</www>
+    <lat>51.1114423</lat>
+    <lon>-114.0676771</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Hilda School</Name>
+    <Street>7630 - 38 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.47370799999999</lat>
+    <lon>-113.451391</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Jean Brebeuf School</Name>
+    <Street>5030 Northland Drive N.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cssd.ab.ca</www>
+    <lat>51.0978645</lat>
+    <lon>-114.1402155</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. John Paul II Collegiate</Name>
+    <Street>53 Cimarron Drive</Street>
+    <City>Okotoks</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.redeemer.ab.ca</www>
+    <lat>50.711839</lat>
+    <lon>-113.968508</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Mark School</Name>
+    <Street>11625 - 135 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.5674559</lat>
+    <lon>-113.5541408</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Mary's School</Name>
+    <Street>155 - 11 Street S.W.</Street>
+    <City>Medicine Hat</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.mhcbe.ab.ca</www>
+    <lat>50.02826839999999</lat>
+    <lon>-110.690952</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Nicholas School</Name>
+    <Street>3643 - 115 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.56695999999999</lat>
+    <lon>-113.399497</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Rose School</Name>
+    <Street>8815 - 145 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.52144699999999</lat>
+    <lon>-113.568705</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Thomas More Junior High School</Name>
+    <Street>9610 - 165 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.ecsd.net</www>
+    <lat>53.533064</lat>
+    <lon>-113.606358</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Steele Heights School</Name>
+    <Street>11430 - 68 st NW</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.567879</lat>
+    <lon>-113.4453997</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>T D Baker School</Name>
+    <Street>1750 Millwoods Road E.</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.4474401</lat>
+    <lon>-113.4515346</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Terry Fox School</Name>
+    <Street>139 Falshire Drive N.E.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.1049567</lat>
+    <lon>-113.945444</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vernon Barford School</Name>
+    <Street>32 Fairway Drive 119 Street &amp; 38 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vincent J Maloney Catholic School</Name>
+    <Street>20 Mont Clare Place</Street>
+    <City>St. Albert</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.gsacrd.ab.ca</www>
+    <lat>53.63809269999999</lat>
+    <lon>-113.6365075</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vincent Massey School</Name>
+    <Street>939 - 45 Street S.W.</Street>
+    <City>Calgary</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.cbe.ab.ca</www>
+    <lat>51.0444112</lat>
+    <lon>-114.1535162</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westlawn School</Name>
+    <Street>9520 - 165 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5324395</lat>
+    <lon>-113.607841</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westminster School</Name>
+    <Street>13712 - 104 Avenue</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5465591</lat>
+    <lon>-113.5588057</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westmount School</Name>
+    <Street>11124 - 130 Street</Street>
+    <City>Edmonton</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.epsb.ca</www>
+    <lat>53.5597623</lat>
+    <lon>-113.5467655</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>William D Cuts School</Name>
+    <Street>149 Larose Drive</Street>
+    <City>St. Albert</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.spschools.org</www>
+    <lat>53.647442</lat>
+    <lon>-113.644241</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>YMCA Stay in School Career High School</Name>
+    <Street>770 - 1 Street SE</Street>
+    <City>Medicine Hat</City>
+    <State>AB</State>
+    <Level>Middle</Level>
+    <Grades/>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www>http://www.mhpsd.ca/</www>
+    <lat>50.043155</lat>
+    <lon>-110.6729092</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

@@ -1,0 +1,231 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+{% block body %}
+    <div class="content-header">
+        <h1 class="text-dark">Admin Listing list</h1>
+    </div>
+
+    <div class="content px-2">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <form role="form" action="{{ path('admin_listing_list') }}" method="get">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-12">
+                            <div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="search">MLS Number</span>
+                                    </div>
+                                    <input type="text" class="form-control"
+                                           value="{{ app.request.query.get('mlsNum') }}" name="mlsNum" id="search">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-12">
+                            <div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="listingId">Listing ID</span>
+                                    </div>
+                                    <input type="text" class="form-control"
+                                           value="{{ app.request.query.get('listingId') }}" name="listingId"
+                                           id="listingId">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text font-weight-400" for="processingStatus">Processing
+                                    Status</label>
+                            </div>
+                            <select class="custom-select" id="processingStatus" name="processingStatus">
+                                <option value="" selected>Choose...</option>
+                                <option value="none" {{ app.request.query.get('processingStatus') == 'none' ? 'selected' : '' }}>
+                                    None
+                                </option>
+                                <option value="processing" {{ app.request.query.get('processingStatus') == 'processing' ? 'selected' : '' }}>
+                                    Processing
+                                </option>
+                                <option value="error" {{ app.request.query.get('processingStatus') == 'error' ? 'selected' : '' }}>
+                                    Error
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="custom-control custom-checkbox m-auto">
+                            <input type="checkbox"
+                                   class="custom-control-input" {{ app.request.query.get('selfListing') == 'on' ? 'checked' : '' }}
+                                   name="selfListing" id="selfListing">
+                            <label class="custom-control-label" for="selfListing">Self Listing</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Search</button>
+                </form>
+
+                {% if listingList.results is empty %}
+                    <h5 class="pt-3 pb-1 mb-0 text-secondary">No listings found!</h5>
+                {% else %}
+                    <table class="table table-bordered table-hover">
+                        <thead class="bg-secondary">
+                        <tr>
+                            <th>Mls Num</th>
+                            <th>Feed Listing ID</th>
+                            <th>Feed</th>
+                            <th>Class</th>
+                            <th>Status / Processing status</th>
+                            <th style="width: 40px">Self Listing</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for listing in listingList.results %}
+                            {% if listing.selfListing %}
+                                {% set self = 0 %}
+                                {% set ariaPressed = 'true' %}
+                            {% else %}
+                                {% set self = 1 %}
+                                {% set ariaPressed = 'false' %}
+                            {% endif %}
+                            <tr>
+                                <td>{{ listing.mlsNum }}</td>
+                                <td>{{ listing.feedListingID }}</td>
+                                <td>{{ listing.feedId }}</td>
+                                <td>{{ listing.classId ? listing.classId : '- - -' }}</td>
+                                <td>{{ listing.status }} / <span
+                                            id="processing-status-{{ listing.id }}">{{ listing.processingStatus }}</span>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-toggle js-estate-change" data-toggle="button"
+                                            aria-pressed="{{ ariaPressed }}" autocomplete="off"
+                                            data-url="{{ path('admin_listing_ajax', {mlsId: listing.id}) }}">
+                                        <div class="handle"></div>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button"
+                                            class="btn btn-primary btn-sm mr-2 js-estate-sync" {{ listing.processingStatus == 'processing' ? 'disabled' : '' }}
+                                            autocomplete="off" data-id="{{ listing.id }}"
+                                            data-url="{{ path('admin_listing_sync_ajax', {id: listing.id}) }}">
+                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button"
+                                            class="btn btn-primary btn-sm mr-2 js-estate-update-coordinates"
+                                            autocomplete="off"
+                                            data-url="{{ path('admin_listing_update_coordinates_ajax', {id: listing.id}) }}">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button"
+                                            class="btn btn-danger btn-sm mr-2 js-estate-delete" {{ listing.taggedForDeletion? "disabled": '' }}
+                                            autocomplete="off"
+                                            data-url="{{ path('admin_listing_delete_ajax', {mlsId: listing.id}) }}">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </button>
+
+                                    {% if listing.error and listing.errorTrace %}
+                                        <button type="button"
+                                                class="btn btn-danger btn-sm js-listing-info"
+                                                autocomplete="off"
+                                                data-error="{{ listing.error }}"
+                                                data-trace="{{ listing.errorTrace }}">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </button>
+                                    {% endif %}
+                                    {#                                    <a class="card-link" href=""> #}
+                                    {#                                        <i class="fa fa-edit"></i> #}
+                                    {#                                    </a> #}
+                                    {#                                    <a class="card-link" href=""> #}
+                                    {#                                        <i class="fa fa-eye"></i> #}
+                                    {#                                    </a> #}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+        {% macro pagination(total, current, url, uri, nearbyPagesLimit = 4) %}
+            {% apply spaceless %}
+                <div class="pagination">
+                    <li class="page-item {{ current > 1 ? '' : 'disabled' }}">
+                        <a class="page-link"
+                           href="{{ current > 1 ? (url ~ (current-1))|e : '' }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}"
+                           aria-label="Previous"
+                           hreflang="en">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+
+                    {% for i in 1..total %}
+                        {% if 0 == (current - nearbyPagesLimit) - loop.index %}
+                            <li class="page-item"><a class="page-link"
+                                                     href="{{ (url ~ 1)|e }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}"
+                                                     hreflang="en">1</a></li>
+                            {% if 1 != loop.index %}
+                                <li class="page-item disabled"><span class="page-link">...</span></li>
+                            {% endif %}
+                        {% elseif 0 == (current + nearbyPagesLimit) - loop.index  and (current + nearbyPagesLimit) < total %}
+                            <li class="page-item disabled"><span class="page-link">...</span></li>
+                        {% elseif 0 < (current - nearbyPagesLimit) - loop.index %}
+                        {% elseif 0 > (current + nearbyPagesLimit) - loop.index %}
+                        {% else %}
+                            {% if current == loop.index %}
+                                <li class="page-item active"><span class="page-link">{{ loop.index }}</span></li>
+                            {% else %}
+                                <li class="page-item"><a class="page-link"
+                                                         hreflang="en"
+                                                         href="{{ url ~ loop.index }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}">{{ loop.index }}</a>
+                                </li>
+                            {% endif %}
+
+                        {% endif %}
+                    {% endfor %}
+                    {% if current != total  and (current + nearbyPagesLimit) < total %}
+                        <li class="page-item"><a class="page-link"
+                                                 hreflang="en"
+                                                 href="{{ path('admin_listing_list', {'p': total}) }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}">{{ total }}</a>
+                        </li>
+                    {% endif %}
+
+
+                    <li class="page-item {{ current < total ? '' : 'disabled' }}">
+                        <a class="page-link"
+                           href="{{ current < total ? (url ~ (current+1))|e : '' }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}"
+                           aria-label="Next"
+                           hreflang="en">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </div>
+            {% endapply %}
+        {% endmacro %}
+
+        {% set uri = app.request.requesturi %}
+        {% if '?' not in uri %}
+            {% set uri = false %}
+        {% endif %}
+
+        {% if listingList.results is not empty and listingList.pagesCount > 1 %}
+            <div class="row">
+                <div class="col-auto">
+                    {{ _self.pagination(listingList.pagesCount, listingList.currentPage, '/admin/listings/', uri) }}
+                </div>
+                <div class="col-auto">
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="page-selector" id="page-selector-input"
+                               placeholder="Page number"/>
+
+                        <span class="input-group-append">
+                            <span class="btn btn-primary"
+                                  onclick="window.location = `/admin/listings/${document.getElementById('page-selector-input').value}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}`">Go</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

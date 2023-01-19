@@ -1,0 +1,16 @@
+<div class="edit-field js-edit-field">
+    <div class="edit-field__controls-wrap mtr10">
+        {% if text|default(false) %}
+            <span class="edit-field__text small-text_bold mt10">{{ text }}</span>
+        {% endif %}
+
+        <span class="edit-field__btn button2 link-turquoise mt10 js-edit-field-button">
+            <span class="edit-field__edit-text">Edit</span>
+            <span class="edit-field__cancel-text">Cancel</span>
+        </span>
+    </div>
+
+    <div class="edit-field__collapse-container pt10">
+        {% block edit_field_collapse_container %}{% endblock %}
+    </div>
+</div>

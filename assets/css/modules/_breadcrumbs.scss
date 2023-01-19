@@ -1,0 +1,46 @@
+.breadcrumbs {
+    &__item {
+        position: relative;
+        display: inline;
+    
+        &::after {
+            content: '\e903';
+            font-family: $icomoon;
+            display: inline;
+            color: $dark1;
+            pointer-events: none;
+            font-size: 6px;
+            line-height: 1;
+            margin: 0 16px;
+        }
+        
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    
+    a, span {
+        display: inline;
+        position: relative;
+        @extend .tiny-text;
+    }
+    
+    a {
+        position: relative;
+        @extend .link-light-gray;
+    }
+    
+    span {
+        color: $dark1;
+    }
+    
+    @include media_700 {
+        &__item {
+            &::after {
+                margin: 0 6px;
+            }
+        }
+    }
+}

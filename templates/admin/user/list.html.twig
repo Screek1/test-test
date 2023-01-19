@@ -1,0 +1,174 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Users/Leads{% endblock %}
+
+{% block body %}
+    {#    {{ dump(users) }} #}
+    {#    {{ dump(count) }} #}
+
+    <div class="content-header">
+        <h1 class="text-dark">Leads</h1>
+    </div>
+
+    <div class="content px-2">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <form role="form" action="{{ path('admin_user_list') }}" method="get">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-12">
+                            <div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="name">Name</span>
+                                    </div>
+                                    <input type="text" class="form-control" value="{{ app.request.query.get('name') }}"
+                                           name="name" id="name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-12">
+                            <div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="email">E-mail</span>
+                                    </div>
+                                    <input type="text" class="form-control" value="{{ app.request.query.get('email') }}"
+                                           name="email" id="email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-12">
+                            <div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="phone">Phone</span>
+                                    </div>
+                                    <input type="text" class="form-control" value="{{ app.request.query.get('phone') }}"
+                                           name="phone" id="phone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Search</button>
+                </form>
+                <table class="table table-bordered table-hover mb-0">
+                    <thead class="bg-secondary">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Phone number</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    {% for user in userResult.results %}
+                        <tr>
+                            <td class="align-middle">{{ user.id }}</td>
+                            <td class="align-middle">{{ user.name }}</td>
+                            <td class="align-middle">{{ user.phoneNumber }}</td>
+                            <td class="align-middle">{{ user.email }}</td>
+                            <td class="align-middle">
+                                <a class="card-link" href="{{ path('admin_user_details', { id: user.id }) }}"
+                                   hreflang="en">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% else %}
+
+                        <tr>
+                            <td colspan="5">no records found</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {% macro pagination(total, current, url, uri, nearbyPagesLimit = 4) %}
+            {% apply spaceless %}
+                <div class="pagination">
+                    <li class="page-item {{ current > 1 ? '' : 'disabled' }}">
+                        <a class="page-link"
+                           href="{{ current > 1 ? (url ~ (current-1))|e : '' }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}"
+                           aria-label="Previous"
+                           hreflang="en">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+
+                    {% for i in 1..total %}
+                        {% if 0 == (current - nearbyPagesLimit) - loop.index %}
+                            <li class="page-item"><a class="page-link"
+                                                     hreflang="en"
+                                                     href="{{ (url ~ 1)|e }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}">1</a>
+                            </li>
+                            {% if 1 != loop.index %}
+                                <li class="page-item disabled"><span class="page-link">...</span></li>
+                            {% endif %}
+                        {% elseif 0 == (current + nearbyPagesLimit) - loop.index  and (current + nearbyPagesLimit) < total %}
+                            <li class="page-item disabled"><span class="page-link">...</span></li>
+                        {% elseif 0 < (current - nearbyPagesLimit) - loop.index %}
+                        {% elseif 0 > (current + nearbyPagesLimit) - loop.index %}
+                        {% else %}
+                            {% if current == loop.index %}
+                                <li class="page-item active"><span class="page-link">{{ loop.index }}</span></li>
+                            {% else %}
+                                <li class="page-item"><a class="page-link"
+                                                         hreflang="en"
+                                                         href="{{ url ~ loop.index }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}">{{ loop.index }}</a>
+                                </li>
+                            {% endif %}
+
+                        {% endif %}
+                    {% endfor %}
+                    {% if current != total  and (current + nearbyPagesLimit) < total %}
+                        <li class="page-item"><a class="page-link"
+                                                 hreflang="en"
+                                                 href="{{ (url ~ total)|e }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}">{{ total }}</a>
+                        </li>
+                    {% endif %}
+
+
+                    <li class="page-item {{ current < total ? '' : 'disabled' }}">
+                        <a class="page-link"
+                           hreflang="en"
+                           href="{{ current < total ? (url ~ (current+1))|e : '' }}{% if uri|split('?')|last %}?{{ uri|split('?')|last }}{% endif %}"
+                           aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </div>
+            {% endapply %}
+        {% endmacro %}
+
+        {% set uri = app.request.requesturi %}
+        {% if '?' not in uri %}
+            {% set uri = false %}
+        {% endif %}
+
+        {% if userResult.results is not empty and userResult.pagesCount > 1 %}
+            <div class="row">
+                <div class="col-auto">
+                    {{ _self.pagination(userResult.pagesCount, userResult.currentPage, '/admin/users/', uri) }}
+                </div>
+                <div class="col-auto">
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="page-selector" id="page-selector-input"
+                               placeholder="Page number"/>
+
+                        <span class="input-group-append">
+                            <span class="btn btn-primary"
+                                  onclick="window.location = `/admin/users/${document.getElementById('page-selector-input').value}`">Go</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+    </div>
+{% endblock %}

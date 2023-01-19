@@ -1,0 +1,74 @@
+{% set fullSearchMinPriceSelect = [
+    "No min",
+    10000,
+    20000,
+    30000,
+    50000,
+    100000,
+    500000,
+    800000,
+    900000,
+    1000000,
+    1200000,
+    1400000,
+    1500000,
+] %}
+
+{% set fullSearchMaxPriceSelect = [
+    "No max",
+    10000,
+    20000,
+    30000,
+    50000,
+    100000,
+    500000,
+    800000,
+    900000,
+    1000000,
+    1200000,
+    1400000,
+    1500000,
+] %}
+
+{% embed 'layouts/containers/dropdown-button.html.twig' with {
+    placeholder: placeholder|default('Price'),
+    wrapMod: wrapMod|default(''),
+    popupMod: popupMod|default('_small-padding'),
+    arrayMin: pricesArrayFrom|default(fullSearchMinPriceSelect),
+    arrayMax: pricesArrayTo|default(fullSearchMaxPriceSelect),
+    selectedMinVal: selectedMinVal|default(false),
+    selectedMaxVal: selectedMaxVal|default(false),
+    dataProps: {
+        patternReplace: '@',
+        patternTwin: {
+            first: '@+',
+            last: '$0&#32;-&#32;@',
+            both: '@&#32;-&#32;@',
+        },
+    },
+    selectDropdownMod: selectDropdownMod|default(false),
+    selectMaxHeightSettings: selectMaxHeightSettings|default(false),
+} only %}
+    {% block dropdown_content %}
+        <div class="twin-fields js-twin-fields">
+            {% include 'layouts/form/select.html.twig' with {
+                name: 'minPrice',
+                inputMod: '_bordered-bright',
+                formatBigPrice: true,
+                options: arrayMin,
+                dropdownMod: selectDropdownMod,
+                maxHeightSettings: selectMaxHeightSettings,
+                selectedVal: selectedMinVal|default(false),
+            } only %}
+            {% include 'layouts/form/select.html.twig' with {
+                name: 'maxPrice',
+                inputMod: '_bordered-bright',
+                formatBigPrice: true,
+                options: arrayMax,
+                dropdownMod: selectDropdownMod,
+                maxHeightSettings: selectMaxHeightSettings,
+                selectedVal: selectedMaxVal|default(false),
+            } only %}
+        </div>
+    {% endblock %}
+{% endembed %}

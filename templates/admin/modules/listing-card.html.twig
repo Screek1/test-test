@@ -1,0 +1,108 @@
+{% set metricsLabels = {
+    yearBuilt: {
+        suffix: 'built'
+    },
+    bedRooms: {
+        suffix: 'Beds'
+    },
+    bathRooms: {
+        suffix: 'Baths'
+    },
+    stories: {
+        suffix: 'Stories'
+    },
+    lotSize: {
+        prefix: 'lot',
+        suffix: lotSizeUnits|default('sqft'),
+    },
+    sqrtFootage: {
+        suffix: sqrtFootageUnits|default('sqft'),
+    },
+} %}
+
+{% set isNotPast = status|default(false) != 'past' %}
+
+<div class="card">
+    <div id="{{ 'slider-' ~ sliderIndex|default('0') }}" class="carousel slide" data-interval="false"
+         data-ride="carousel">
+        <div class="carousel-inner">
+            {% for img in images %}
+                <div class="carousel-item {{ loop.index == 1 ? 'active' : '' }}">
+                    <div class="d-block w-100"
+                         style="height: 250px; background: url('{{ img }}') center center no-repeat; background-size: cover"></div>
+                </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#{{ 'slider-' ~ sliderIndex|default('0') }}" role="button"
+           data-slide="prev" hreflang="en">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#{{ 'slider-' ~ sliderIndex|default('0') }}" role="button"
+           data-slide="next" hreflang="en">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col">
+                <h4 class="mb-0">
+                    <b>${{ financials.listingPrice|number_format(0, '.', ',') }}</b>
+                </h4>
+            </div>
+
+            {% if showDate|default(false) %}
+                {% set colorMod = status|default(false) == 'past' ? 'bg-secondary' : (date|default(false) ? 'bg-success' : 'bg-warning') %}
+
+                <div class="col text-right">
+                    <h5>
+                        <span
+                                class="date-picker-button {{ isNotPast ? 'js-date-picker' : '' }}"
+                                data-update-path="{{ updatePath|default('#') }}"
+                                data-cancel-path="{{ cancelPath|default('#') }}"
+                                data-viewing-id="{{ listingId }}"
+                        >
+                            <span class="date-picker-button__badge badge badge-pill {{ colorMod }} js-date-picker-badge">
+                                <span class="date-picker-button__text-wrap">
+                                    <span class="date-picker-button__text js-date-picker-text">
+                                        {{ date|default(false) ? date|date() : 'Select date' }}
+                                    </span>
+
+                                    {% if isNotPast %}
+                                        <i class="fa fa-edit"></i>
+                                    {% endif %}
+                                </span>
+                            </span>
+                        </span>
+                    </h5>
+                </div>
+            {% endif %}
+        </div>
+
+        <h6>{{ fullAddress }}</h6>
+
+        <p class="card-text">
+            <small>
+                {{ metrics|map((val, key) =>
+                metricsLabels[key]|default(false) and val|length ? (
+                (metricsLabels[key].prefix|default(false) ? metricsLabels[key].prefix ~ ' ' : '') ~
+                (val is iterable ? val|join(', ') : val) ~
+                (metricsLabels[key].suffix|default(false) ? ' ' ~ metricsLabels[key].suffix : '')
+                ) : ''
+                )|filter(val => val|length)|join(' | ') }}
+            </small>
+        </p>
+        <p class="card-text">MLS: {{ mlsNumber }}</p>
+
+        <div class="btn-toolbar justify-content-between">
+            <a href="{{ listingUrl }}" target="_blank" class="btn btn-primary btn-sm" hreflang="en">Go to page</a>
+
+            {% if isNotPast %}
+                <span class="btn btn-secondary btn-sm js-cancel-viewing" data-viewing-id="{{ listingId }}"
+                      data-cancel-path="{{ path('cancel_viewing') }}">Cancel Viewing</span>
+            {% endif %}
+        </div>
+    </div>
+</div>

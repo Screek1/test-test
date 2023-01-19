@@ -1,0 +1,30 @@
+{% set priceAreUp = originalListingPrice ? listingPrice > originalListingPrice : false %}
+{% set priceAreDown = originalListingPrice ? listingPrice < originalListingPrice : false %}
+
+<div class="price-card">
+    <div class="price-card__current subtitle_bold">
+        ${{ listingPrice|number_format(0, '.', ',') }}
+
+        {% if priceAreUp %}
+            <div class="price-card__arrow icon-arrow-up"></div>
+        {% endif %}
+
+        {% if priceAreDown %}
+            <div class="price-card__arrow icon-arrow-down"></div>
+        {% endif %}
+    </div>
+
+    {% if priceAreUp or priceAreDown %}
+        <div class="price-card__original body-text">
+            <div class="price-card__line-through">
+                ${{ originalListingPrice|number_format(0, '.', ',') }}
+            </div>
+
+            <div class="price-card__info icon-info"></div>
+        </div>
+    {% endif %}
+
+    <div class="price-card__mortgage small-text mt10">
+        Esr. Mortgage <span class="js-calc-total"></span>/mo
+    </div>
+</div>

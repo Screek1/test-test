@@ -1,0 +1,40 @@
+.ui-tooltip {
+	padding: 0;
+	border-radius: 0;
+	z-index: 999;
+	pointer-events: none;
+	
+	.ui-tooltip-content {
+		position: relative;
+		padding: 4px 10px;
+		border-radius: 100px;
+		background: $dark1;
+		z-index: 3;
+		color: $white;
+		@extend .tiny-text_bold;
+		
+		&._color-a {
+			background: $chart-color-a;
+		}
+		
+		&._color-b {
+			background: $chart-color-b;
+		}
+		
+		&._color-c {
+			background: $chart-color-c;
+		}
+		
+		&._color-d {
+			background: $chart-color-d;
+		}
+		
+		&._color-e {
+			background: $chart-color-e;
+		}
+	}
+}
+
+.ui-helper-hidden-accessible {
+	display: none;
+}

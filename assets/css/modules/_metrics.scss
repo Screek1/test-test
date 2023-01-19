@@ -1,0 +1,108 @@
+.metrics {
+	$r: &;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: -10px;
+	
+	&__item {
+		padding: 5px 20px;
+		background: $gray2;
+		border-radius: 30px;
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		margin-top: 10px;
+		margin-right: 10px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	&__val {
+		color: $dark1;
+	}
+	
+	&__label {
+		color: $gray1;
+		margin-left: 5px;
+		
+		&:first-child {
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	}
+	
+	&._simple {
+		margin-top: 0;
+		
+		#{$r}__item {
+			padding: 0;
+			margin-right: 0;
+			border-radius: 0;
+			background: transparent;
+			margin-top: 0;
+			
+			&:last-child {
+				#{$r}__label:last-child {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+		
+		#{$r}__label {
+			margin-left: 0;
+			color: $gray0;
+			
+			&::before,
+			&::after {
+				pointer-events: none;
+				display: inline;
+				user-select: none;
+			}
+			
+			&::before {
+				content: '\00a0';
+			}
+			
+			&::after {
+				content: '\00a0|\00a0';
+			}
+			
+			&:first-child {
+				margin-right: 0;
+				
+				&::before {
+					display: none;
+				}
+				
+				&::after {
+					content: '\00a0';
+				}
+			}
+		}
+	}
+	
+	
+	@include media_1300 {
+	
+	}
+	
+	@include media_1000 {
+	
+	}
+	
+	@include media_700 {
+		margin-top: -5px;
+		
+		&__item {
+			padding: 2px 12px;
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+	}
+}

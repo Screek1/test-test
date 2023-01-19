@@ -1,0 +1,15 @@
+<div class="note {{ mod ?? '' }}">
+    <div class="note__container {{ containerMod ?? 'container' }}">
+        <div class="note__wrap {{ wrapMod|default('pt50 pb50') }}">
+            <div class="note__text-wrap {{ innerContainerMod ?? 'inner-container _fw700' }}">
+                <div class="note__text {{ textMod ?? 'tiny-text' }}">
+                    {% if label|default(false) %}
+                        <span class="note__label">{{ label }}</span>
+                    {% endif %}
+
+                    {{ text|default('') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

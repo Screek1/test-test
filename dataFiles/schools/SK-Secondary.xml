@@ -1,0 +1,6104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>33 Central School</Name>
+    <Street>33 Central BOX 89</Street>
+    <City>FILLMORE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.8814096</lat>
+    <lon>-103.4382122</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Abbey Hutterite School</Name>
+    <Street>BOX 299</Street>
+    <City>ABBEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.7349688</lat>
+    <lon>-108.7584875</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Aberdeen Composite School</Name>
+    <Street>BOX 10</Street>
+    <City>ABERDEEN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3261036</lat>
+    <lon>-106.2914913</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Aden Bowman Collegiate</Name>
+    <Street>1904 CLARENCE AVENUE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.10684149999999</lat>
+    <lon>-106.6474103</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Alameda School</Name>
+    <Street>BOX 237</Street>
+    <City>ALAMEDA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.2646159</lat>
+    <lon>-102.2825252</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Albert E. Peacock Collegiate</Name>
+    <Street>145 ROSS STREET E</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3972366</lat>
+    <lon>-105.5297955</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Allan Composite School</Name>
+    <Street>BOX 9</Street>
+    <City>ALLAN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.89455</lat>
+    <lon>-106.05644</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Annaheim School</Name>
+    <Street>BOX 160</Street>
+    <City>ANNAHEIM</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.31938</lat>
+    <lon>-104.8207025</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Arborfield School</Name>
+    <Street>BOX 70</Street>
+    <City>ARBORFIELD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.1039278</lat>
+    <lon>-103.6608803</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Archbishop M.C. O'Neill High School</Name>
+    <Street>134 ARGYLE STREET</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.4775255</lat>
+    <lon>-104.6332219</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Archerwill School</Name>
+    <Street>BOX 308</Street>
+    <City>ARCHERWILL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.440067</lat>
+    <lon>-103.8615204</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Arcola School</Name>
+    <Street>BOX 356</Street>
+    <City>ARCOLA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6390657</lat>
+    <lon>-102.4925359</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Arm River Colony School</Name>
+    <Street>BOX 570</Street>
+    <City>LUMSDEN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.688173</lat>
+    <lon>-105.054836</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Assiniboia Composite High School</Name>
+    <Street>200 BELL ROAD</Street>
+    <City>ASSINIBOIA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6251495</lat>
+    <lon>-105.9975256</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Avery Outreach School</Name>
+    <Street>4111 48 AVENUE</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.2757122</lat>
+    <lon>-109.9997417</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Avonlea School</Name>
+    <Street>BOX 330</Street>
+    <City>AVONLEA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.0157533</lat>
+    <lon>-105.0548738</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Baildon Colony Hutterite School</Name>
+    <Street>15 THATCHER DR E</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.412363</lat>
+    <lon>-105.532091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Balcarres School</Name>
+    <Street>BOX 610</Street>
+    <City>BALCARRES</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8017128</lat>
+    <lon>-103.5448295</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Balfour Collegiate</Name>
+    <Street>1245 COLLEGE AVENUE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4392131</lat>
+    <lon>-104.5992848</lon>
+    <Coordinates> -104.61073,50.440720000000006,0.0
+ -104.61093000000001,50.452740000000006,0.0
+ -104.60626,50.45356,0.0
+ -104.60634,50.456450000000004,0.0
+ -104.60121000000001,50.454440000000005,0.0
+ -104.58609000000001,50.447700000000005,0.0
+ -104.57531,50.44711,0.0
+ -104.56360000000001,50.44708000000001,0.0
+ -104.56317000000001,50.44364,0.0
+ -104.56233,50.44133,0.0
+ -104.56207,50.439220000000006,0.0
+ -104.56419000000001,50.43656000000001,0.0
+ -104.57184000000001,50.42857000000001,0.0
+ -104.57270000000001,50.42746,0.0
+ -104.57639,50.42418000000001,0.0
+ -104.57971,50.423700000000004,0.0
+ -104.58456000000001,50.422940000000004,0.0
+ -104.58754,50.42311,0.0
+ -104.58885000000001,50.42472,0.0
+ -104.58881000000001,50.42551,0.0
+ -104.58769000000001,50.42598,0.0
+ -104.58758,50.426840000000006,0.0
+ -104.58572000000001,50.427910000000004,0.0
+ -104.58546000000001,50.429100000000005,0.0
+ -104.58553,50.42981,0.0
+ -104.58415000000001,50.43095,0.0
+ -104.58542000000001,50.432300000000005,0.0
+ -104.58803,50.43283,0.0
+ -104.59131000000001,50.43278,0.0
+ -104.59403,50.43173,0.0
+ -104.59579000000001,50.43128,0.0
+ -104.59821000000001,50.43169,0.0
+ -104.59922,50.431760000000004,0.0
+ -104.60016,50.43249,0.0
+ -104.60178,50.43153,0.0
+ -104.60289,50.43061,0.0
+ -104.60604000000001,50.430310000000006,0.0
+ -104.60814,50.430980000000005,0.0
+ -104.60866000000001,50.43287,0.0
+ -104.60779000000001,50.43421000000001,0.0
+ -104.60646000000001,50.43614,0.0
+ -104.60983,50.43751,0.0
+ -104.61067000000001,50.437340000000006,0.0
+ -104.61073,50.440720000000006,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Bearstream School</Name>
+    <Street>BOX 700</Street>
+    <City>KAMSACK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5648837</lat>
+    <lon>-101.8984151</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bedford Road Collegiate</Name>
+    <Street>722 BEDFORD ROAD</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.133737</lat>
+    <lon>-106.6810117</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Beechy Hutterite School</Name>
+    <Street>BOX 338</Street>
+    <City>BEECHY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.877454</lat>
+    <lon>-107.3835596</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Beechy School</Name>
+    <Street>BOX 310</Street>
+    <City>BEECHY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.877454</lat>
+    <lon>-107.3835596</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Belle Plaine Hutterite School</Name>
+    <Street>BOX 61</Street>
+    <City>BELLE PLAINE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3931891</lat>
+    <lon>-105.1566084</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bengough School</Name>
+    <Street>BOX 459</Street>
+    <City>BENGOUGH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.3945353</lat>
+    <lon>-105.1264656</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bert Fox Community High School</Name>
+    <Street>BOX 880</Street>
+    <City>FORT QU'APPELLE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.7613621</lat>
+    <lon>-103.7974054</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bethlehem Catholic High School</Name>
+    <Street>110 BOWLT CRES</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.12888299999999</lat>
+    <lon>-106.7460278</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Big River High School</Name>
+    <Street>BOX 430</Street>
+    <City>BIG RIVER</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.8337733</lat>
+    <lon>-107.0250783</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Biggar Central School</Name>
+    <Street>2000 BOX 1148</Street>
+    <City>BIGGAR</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0588157</lat>
+    <lon>-107.979551</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Birch Hills School</Name>
+    <Street>BOX 219</Street>
+    <City>BIRCH HILLS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.98238</lat>
+    <lon>-105.4320697</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bishop James Mahoney High School</Name>
+    <Street>231 PRIMROSE DRIVE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.1722702</lat>
+    <lon>-106.6320253</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bishop Lloyd Middle School</Name>
+    <Street>5524 31ST STREET</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.268415</lat>
+    <lon>-110.0205041</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bishop Murray High School</Name>
+    <Street>615 WIGGINS AVENUE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.1195126</lat>
+    <lon>-106.6398357</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bjorkdale School</Name>
+    <Street>BOX 98</Street>
+    <City>BJORKDALE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.70824709999999</lat>
+    <lon>-103.646764</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Blaine Lake Composite School</Name>
+    <Street>BOX 220</Street>
+    <City>BLAINE LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.830433</lat>
+    <lon>-106.874397</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Blessed Marie Rivier Catholic School</Name>
+    <Street>1405 BISHOP PASCAL PL</Street>
+    <City>PRINCE ALBERT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>53.2001132</lat>
+    <lon>-105.7679665</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bone Creek Hutterite School</Name>
+    <Street>BOX 93</Street>
+    <City>GULL LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.0922263</lat>
+    <lon>-108.478918</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Borden School</Name>
+    <Street>BOX 40</Street>
+    <City>BORDEN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.4050451</lat>
+    <lon>-107.2396555</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Box Elder Hutterite School</Name>
+    <Street>BOX 841</Street>
+    <City>MAPLE CREEK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.906595</lat>
+    <lon>-109.480174</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Broadview School</Name>
+    <Street>BOX 639</Street>
+    <City>BROADVIEW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bruno School</Name>
+    <Street>BOX 160</Street>
+    <City>BRUNO</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.2639843</lat>
+    <lon>-105.5253009</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Butte Hutterite School</Name>
+    <Street>BOX 120</Street>
+    <City>BRACKEN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.1782292</lat>
+    <lon>-108.094743</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cabri School</Name>
+    <Street>BOX 349</Street>
+    <City>CABRI</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.61836719999999</lat>
+    <lon>-108.4618717</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Campbell Collegiate</Name>
+    <Street>102 MASSEY ROAD</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.412128</lat>
+    <lon>-104.61113</lon>
+    <Coordinates> -104.56360000000001,50.44708000000001,0.0
+ -104.5438,50.447140000000004,0.0
+ -104.54361000000001,50.4453,0.0
+ -104.54388,50.44375,0.0
+ -104.54449000000001,50.44317,0.0
+ -104.54497,50.441750000000006,0.0
+ -104.54696000000001,50.441010000000006,0.0
+ -104.54812000000001,50.440250000000006,0.0
+ -104.54864,50.43999,0.0
+ -104.54864,50.43864000000001,0.0
+ -104.54875000000001,50.437470000000005,0.0
+ -104.54815,50.43695,0.0
+ -104.54809,50.436930000000004,0.0
+ -104.54828,50.43605,0.0
+ -104.54907000000001,50.435810000000004,0.0
+ -104.55008000000001,50.435480000000005,0.0
+ -104.55032000000001,50.43477000000001,0.0
+ -104.55138000000001,50.433960000000006,0.0
+ -104.55221,50.432900000000004,0.0
+ -104.55309000000001,50.43238,0.0
+ -104.54062,50.42627,0.0
+ -104.53890000000001,50.42775,0.0
+ -104.53727,50.429230000000004,0.0
+ -104.53723000000001,50.42992,0.0
+ -104.53710000000001,50.43441000000001,0.0
+ -104.53578,50.43601,0.0
+ -104.53424000000001,50.43784,0.0
+ -104.53352000000001,50.438280000000006,0.0
+ -104.53313000000001,50.43927000000001,0.0
+ -104.53290000000001,50.44019,0.0
+ -104.53268000000001,50.44061000000001,0.0
+ -104.53173000000001,50.44057,0.0
+ -104.52878000000001,50.44055,0.0
+ -104.52394000000001,50.44055,0.0
+ -104.52311,50.4335,0.0
+ -104.52322000000001,50.429190000000005,0.0
+ -104.52427000000001,50.42719,0.0
+ -104.52614000000001,50.425700000000006,0.0
+ -104.52246000000001,50.42611,0.0
+ -104.51704000000001,50.426260000000006,0.0
+ -104.51186000000001,50.42589,0.0
+ -104.51215,50.42363,0.0
+ -104.51226000000001,50.42210000000001,0.0
+ -104.51221000000001,50.42047,0.0
+ -104.51273,50.41921000000001,0.0
+ -104.51495000000001,50.41765,0.0
+ -104.51693,50.41635,0.0
+ -104.51827000000001,50.415530000000004,0.0
+ -104.51226000000001,50.41245000000001,0.0
+ -104.51209000000001,50.40814,0.0
+ -104.51803000000001,50.40885,0.0
+ -104.52104000000001,50.40785,0.0
+ -104.52573000000001,50.40751,0.0
+ -104.52917000000001,50.40807,0.0
+ -104.53045,50.409850000000006,0.0
+ -104.53109,50.411260000000006,0.0
+ -104.53733000000001,50.410000000000004,0.0
+ -104.54047000000001,50.40903,0.0
+ -104.54583000000001,50.40751,0.0
+ -104.55382,50.40561,0.0
+ -104.55842000000001,50.404090000000004,0.0
+ -104.56877000000001,50.399910000000005,0.0
+ -104.57247000000001,50.39701,0.0
+ -104.58827000000001,50.39674,0.0
+ -104.59965000000001,50.39656,0.0
+ -104.61658000000001,50.396460000000005,0.0
+ -104.64392000000001,50.396950000000004,0.0
+ -104.64396,50.40540000000001,0.0
+ -104.6179,50.404560000000004,0.0
+ -104.61802000000001,50.43601,0.0
+ -104.61274,50.434270000000005,0.0
+ -104.61164000000001,50.4333,0.0
+ -104.61171,50.432230000000004,0.0
+ -104.61231000000001,50.4309,0.0
+ -104.61268000000001,50.43012,0.0
+ -104.61306,50.429260000000006,0.0
+ -104.61171,50.42822,0.0
+ -104.60977000000001,50.427670000000006,0.0
+ -104.60802000000001,50.42689000000001,0.0
+ -104.60552000000001,50.42841000000001,0.0
+ -104.60407000000001,50.429190000000005,0.0
+ -104.60336000000001,50.42971000000001,0.0
+ -104.60138,50.429930000000006,0.0
+ -104.59791000000001,50.429950000000005,0.0
+ -104.59579000000001,50.42974,0.0
+ -104.5934,50.429260000000006,0.0
+ -104.59288000000001,50.42826,0.0
+ -104.59306000000001,50.427220000000005,0.0
+ -104.59318,50.426080000000006,0.0
+ -104.59407,50.42501000000001,0.0
+ -104.59452,50.42354,0.0
+ -104.59288000000001,50.4232,0.0
+ -104.59277,50.42211,0.0
+ -104.58997000000001,50.421640000000004,0.0
+ -104.58818000000001,50.421040000000005,0.0
+ -104.58665,50.42085,0.0
+ -104.58333,50.42202,0.0
+ -104.58161000000001,50.422630000000005,0.0
+ -104.57964000000001,50.422630000000005,0.0
+ -104.57811000000001,50.4224,0.0
+ -104.57688,50.423010000000005,0.0
+ -104.57594,50.422990000000006,0.0
+ -104.57604,50.41933,0.0
+ -104.57512000000001,50.42125000000001,0.0
+ -104.57594,50.422990000000006,0.0
+ -104.57445000000001,50.42591,0.0
+ -104.56744,50.432790000000004,0.0
+ -104.5647,50.435770000000005,0.0
+ -104.56284000000001,50.4378,0.0
+ -104.56207,50.439220000000006,0.0
+ -104.56234,50.44261,0.0
+ -104.5631,50.444700000000004,0.0
+ -104.56360000000001,50.44708000000001,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Campus Regina Public</Name>
+    <Street>828 ALBERT ST</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4655946</lat>
+    <lon>-104.619339</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cando Community School</Name>
+    <Street>BOX 250</Street>
+    <City>CANDO</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.373152</lat>
+    <lon>-108.213075</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Canora Composite School</Name>
+    <Street>BOX 986</Street>
+    <City>CANORA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.6339451</lat>
+    <lon>-102.4370069</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Canwood School</Name>
+    <Street>BOX 370</Street>
+    <City>CANWOOD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.3590236</lat>
+    <lon>-106.6020899</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Capeland Hutterite School</Name>
+    <Street>PO BOX 1809</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.2740577</lat>
+    <lon>-107.770371</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Carlton Comprehensive High School</Name>
+    <Street>665 28TH STREET E</Street>
+    <City>PRINCE ALBERT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.1875243</lat>
+    <lon>-105.7343942</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Carmichael Hutterite School</Name>
+    <Street>BOX 30</Street>
+    <City>GULL LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.097294</lat>
+    <lon>-108.476579</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Carnduff Education Complex</Name>
+    <Street>BOX 398</Street>
+    <City>CARNDUFF</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.17393790000001</lat>
+    <lon>-101.7958095</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Caronport High School</Name>
+    <Street>510 COLLEGE DRIVE</Street>
+    <City>CARONPORT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4549391</lat>
+    <lon>-105.8177258</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Carpenter High School</Name>
+    <Street>BOX 369</Street>
+    <City>MEADOW LAKE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.1225361</lat>
+    <lon>-108.4429145</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Carrot River High School</Name>
+    <Street>BOX 759</Street>
+    <City>CARROT RIVER</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.28020859999999</lat>
+    <lon>-103.5875261</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Centennial Collegiate</Name>
+    <Street>160 NELSON RD</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.148409</lat>
+    <lon>-106.5763091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Central Butte School</Name>
+    <Street>BOX 340</Street>
+    <City>CENTRAL BUTTE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.7965516</lat>
+    <lon>-106.5041574</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Central Collegiate</Name>
+    <Street>149 OXFORD STREET W</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3986297</lat>
+    <lon>-105.5390026</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chaplin School</Name>
+    <Street>BOX 150</Street>
+    <City>CHAPLIN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4578451</lat>
+    <lon>-106.6617158</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Charlebois Community School</Name>
+    <Street>BOX 40</Street>
+    <City>CUMBERLAND HOUSE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.95826599999999</lat>
+    <lon>-102.267444</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Chinook Alternative Middle Plus School</Name>
+    <Street>PO BOX 1809</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.2740577</lat>
+    <lon>-107.770371</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Churchbridge Public School</Name>
+    <Street>BOX 470</Street>
+    <City>CHURCHBRIDGE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8984533</lat>
+    <lon>-101.8968736</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Churchill Community High School</Name>
+    <Street>BAG SERVICE #7500</Street>
+    <City>LA RONGE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>City Park Collegiate</Name>
+    <Street>820 9TH AVENUE N</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.139676</lat>
+    <lon>-106.648072</lon>
+    <Coordinates> -106.65894000000001,52.14336,0.0
+ -106.64272000000001,52.14312,0.0
+ -106.64493,52.138450000000006,0.0
+ -106.64837000000001,52.135250000000006,0.0
+ -106.64936000000001,52.132180000000005,0.0
+ -106.65144000000001,52.13022,0.0
+ -106.65366,52.12948,0.0
+ -106.65587000000001,52.12801,0.0
+ -106.65796,52.124570000000006,0.0
+ -106.66127,52.12297,0.0
+ -106.66741,52.12223,0.0
+ -106.66864000000001,52.12223,0.0
+ -106.66963000000001,52.125800000000005,0.0
+ -106.66963000000001,52.13317000000001,0.0
+ -106.66852000000001,52.13439,0.0
+ -106.6684,52.14041,0.0
+ -106.65894000000001,52.14336,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Clavet Composite School</Name>
+    <Street>GENERAL DELIVERY</Street>
+    <City>CLAVET</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.99633670000001</lat>
+    <lon>-106.3772733</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Clear Springs Hutterite School</Name>
+    <Street>BOX 399</Street>
+    <City>KENASTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5006133</lat>
+    <lon>-106.2706237</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>College Park School</Name>
+    <Street>2115 56 AVE</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.255761</lat>
+    <lon>-110.020068</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Colonsay School</Name>
+    <Street>BOX 66</Street>
+    <City>COLONSAY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.9770121</lat>
+    <lon>-105.8744599</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Consul School</Name>
+    <Street>BOX 179</Street>
+    <City>CONSUL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.2953781</lat>
+    <lon>-109.5201135</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cornerstone Christian School</Name>
+    <Street>43 IROQUOIS STREET</Street>
+    <City>EAST MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.38286369999999</lat>
+    <lon>-105.5324506</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Coronach School</Name>
+    <Street>BOX 120</Street>
+    <City>CORONACH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.1136432</lat>
+    <lon>-105.5230905</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Craik School</Name>
+    <Street>BOX 180</Street>
+    <City>CRAIK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.0520945</lat>
+    <lon>-105.8224018</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Creighton Community School</Name>
+    <Street>BOX 158</Street>
+    <City>CREIGHTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.75399</lat>
+    <lon>-101.8980189</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Creston Bench Hutterian School</Name>
+    <Street>BOX 33</Street>
+    <City>SHAUNAVON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6463379</lat>
+    <lon>-108.4215787</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cudworth School</Name>
+    <Street>BOX 490</Street>
+    <City>CUDWORTH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.4896373</lat>
+    <lon>-105.7351559</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cupar School</Name>
+    <Street>BOX 429</Street>
+    <City>CUPAR</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.9468295</lat>
+    <lon>-104.2116849</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cut Knife High School</Name>
+    <Street>BOX 430</Street>
+    <City>CUT KNIFE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.747843</lat>
+    <lon>-109.0206088</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cypress Hutterite School</Name>
+    <Street>BOX 716</Street>
+    <City>MAPLE CREEK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.906595</lat>
+    <lon>-109.480174</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dalmeny High School</Name>
+    <Street>BOX 250</Street>
+    <City>DALMENY</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3399428</lat>
+    <lon>-106.7746957</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Davidson School</Name>
+    <Street>BOX 699</Street>
+    <City>DAVIDSON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.2628546</lat>
+    <lon>-105.9890338</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Debden School</Name>
+    <Street>BOX 280</Street>
+    <City>DEBDEN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.5247608</lat>
+    <lon>-106.8810821</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Delisle Composite School</Name>
+    <Street>BOX 250</Street>
+    <City>DELISLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.9237702</lat>
+    <lon>-107.1348358</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dene High School</Name>
+    <Street>BAG SERVICE 3</Street>
+    <City>LA LOCHE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>56.481961</lat>
+    <lon>-109.435338</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dinsmore Composite School</Name>
+    <Street>BOX 490</Street>
+    <City>DINSMORE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.3318329</lat>
+    <lon>-107.4467915</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Downie Lake Hutterite School</Name>
+    <Street>BOX 326</Street>
+    <City>MAPLE CREEK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.906595</lat>
+    <lon>-109.480174</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dr. Martin LeBoldus High School</Name>
+    <Street>2330 25TH AVENUE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.41908129999999</lat>
+    <lon>-104.613077</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Dreambuilders High School</Name>
+    <Street>345 BROADWAY ST W</Street>
+    <City>YORKTON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>51.2103907</lat>
+    <lon>-102.484304</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>E.D. Feehan Catholic High School</Name>
+    <Street>411 AVENUE M</Street>
+    <City>NORTH SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.13416849999999</lat>
+    <lon>-106.6893335</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>E.S. Laird Middle School</Name>
+    <Street>4808 45TH AVENUE</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.2822316</lat>
+    <lon>-109.992116</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eagle Creek Colony School</Name>
+    <Street>BOX 208</Street>
+    <City>ASQUITH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.13425729999999</lat>
+    <lon>-107.2287249</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Earview Hutterian School</Name>
+    <Street>PO BOX 1809</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.2740577</lat>
+    <lon>-107.770371</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>East Fairwell Hutterian School</Name>
+    <Street>BOX 546</Street>
+    <City>EASTEND</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.514043</lat>
+    <lon>-108.8199661</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eastend School</Name>
+    <Street>BOX 69</Street>
+    <City>EASTEND</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.5148839</lat>
+    <lon>-108.8209061</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eaton School</Name>
+    <Street>BOX 190</Street>
+    <City>EATONIA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.2235776</lat>
+    <lon>-109.3947843</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Boréale</Name>
+    <Street>C.P. 576</Street>
+    <City>PONTEIX</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.74630639999999</lat>
+    <lon>-107.4896867</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Canadienne-Française - Pavillon Gustave-Dubois</Name>
+    <Street>2320 AVENUE</Street>
+    <City>LOUISE SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0999551</lat>
+    <lon>-106.6249254</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École de Bellegarde</Name>
+    <Street>C.P. 69</Street>
+    <City>BELLEGARDE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.533464</lat>
+    <lon>-101.553278</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Ducharme</Name>
+    <Street>340 OMINICA ST W</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.393572</lat>
+    <lon>-105.543347</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Gravelbourg School</Name>
+    <Street>BOX 930</Street>
+    <City>GRAVELBOURG</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.8756758</lat>
+    <lon>-106.5573172</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Mathieu de Gravelbourg</Name>
+    <Street>C.P. 690</Street>
+    <City>GRAVELBOURG</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.8756758</lat>
+    <lon>-106.5573172</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École MGR de Laval pavillon secondaire</Name>
+    <Street>1440 9TH AVE N</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4850825</lat>
+    <lon>-104.6020453</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Notre-Dame-des-Vertus</Name>
+    <Street>C.P. 248</Street>
+    <City>ZENON PARK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.06442819999999</lat>
+    <lon>-103.7582248</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Père Mercure</Name>
+    <Street>1881 99E RUE</Street>
+    <City>NORTH BATTLEFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.7850626</lat>
+    <lon>-108.3008783</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Providence</Name>
+    <Street>C.P. 289</Street>
+    <City>VONDA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3182621</lat>
+    <lon>-106.1004682</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École St-Isidore de Bellevue</Name>
+    <Street>GENERAL DELIVERY</Street>
+    <City>ST ISIDORE DE BELLEVUE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.7843177</lat>
+    <lon>-105.9245705</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Valois</Name>
+    <Street>449 10E RUE EST</Street>
+    <City>PRINCE ALBERT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.20373</lat>
+    <lon>-105.7431749</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Elrose Composite School</Name>
+    <Street>BOX 400</Street>
+    <City>ELROSE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.2006378</lat>
+    <lon>-108.0329235</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Englefeld School</Name>
+    <Street>BOX 100</Street>
+    <City>ENGLEFELD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program>Protestant</Program>
+    <www/>
+    <lat>52.1591192</lat>
+    <lon>-104.655211</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ernie Studer School</Name>
+    <Street>BOX 129</Street>
+    <City>LOON LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.0290376</lat>
+    <lon>-109.1576008</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Esterhazy Central High School</Name>
+    <Street>BOX 640</Street>
+    <City>ESTERHAZY</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.6568523</lat>
+    <lon>-102.0757791</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Estevan Comprehensive</Name>
+    <Street>255 SPRUCE DRIVE</Street>
+    <City>ESTEVAN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.1536088</lat>
+    <lon>-102.9766864</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eston Composite School</Name>
+    <Street>BOX 639</Street>
+    <City>ESTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Estuary Hutterite School</Name>
+    <Street>BOX 760</Street>
+    <City>LEADER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8889827</lat>
+    <lon>-109.5419457</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Evan Hardy Collegiate</Name>
+    <Street>605 ACADIA DRIVE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.12016819999999</lat>
+    <lon>-106.5978318</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eyebrow School</Name>
+    <Street>BOX 130</Street>
+    <City>EYEBROW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8021594</lat>
+    <lon>-106.1491673</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>F.W. Johnson Collegiate</Name>
+    <Street>400 FINES DRIVE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4503961</lat>
+    <lon>-104.547089</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Foam Lake Composite High School</Name>
+    <Street>BOX 790</Street>
+    <City>FOAM LAKE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.6392324</lat>
+    <lon>-103.5321115</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Fox Valley School</Name>
+    <Street>BOX 208</Street>
+    <City>FOX VALLEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4683816</lat>
+    <lon>-109.4821967</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Friesen Hutterite School</Name>
+    <Street>BOX 216</Street>
+    <City>WALDECK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.359601</lat>
+    <lon>-107.5934175</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Frontier School</Name>
+    <Street>BOX 126</Street>
+    <City>FRONTIER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.204894</lat>
+    <lon>-108.5618091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Garden Plane Colony School</Name>
+    <Street>BOX 150</Street>
+    <City>FRONTIER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.204894</lat>
+    <lon>-108.5618091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Gladmar Regional School</Name>
+    <Street>BOX 39</Street>
+    <City>GLADMAR</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.1645625</lat>
+    <lon>-104.4539141</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Glaslyn Central School</Name>
+    <Street>BOX 370</Street>
+    <City>GLASLYN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.3603543</lat>
+    <lon>-108.3552189</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Glentworth Central School</Name>
+    <Street>BOX 100</Street>
+    <City>GLENTWORTH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.4237759</lat>
+    <lon>-106.680112</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Goodsoil Central School</Name>
+    <Street>BOX 189</Street>
+    <City>GOODSOIL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.3992509</lat>
+    <lon>-109.230136</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Gordon F. Kells High School</Name>
+    <Street>BOX 489</Street>
+    <City>CARLYLE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6339652</lat>
+    <lon>-102.2670806</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Grassy Hill Hutterian School</Name>
+    <Street>BOX 417</Street>
+    <City>TOMPKINS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.0623636</lat>
+    <lon>-108.7933104</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Grayson School</Name>
+    <Street>BOX 10</Street>
+    <City>GRAYSON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.7197118</lat>
+    <lon>-102.6403098</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Green Leaf Colony School</Name>
+    <Street>BOX 40</Street>
+    <City>MARCELIN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.9272137</lat>
+    <lon>-106.7910184</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Greenall School</Name>
+    <Street>BOX 70</Street>
+    <City>BALGONIE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4921223</lat>
+    <lon>-104.2687766</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Grenfell High School</Name>
+    <Street>BOX 1090</Street>
+    <City>GRENFELL</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4113984</lat>
+    <lon>-102.9300898</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Gronlid Central School</Name>
+    <Street>BOX 114</Street>
+    <City>GRONLID</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.100928</lat>
+    <lon>-104.465241</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Gull Lake School</Name>
+    <Street>BOX 599</Street>
+    <City>GULL LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.0922263</lat>
+    <lon>-108.478918</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>H. Hardcastle School</Name>
+    <Street>BOX 238</Street>
+    <City>EDAM</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.1877874</lat>
+    <lon>-108.7668365</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hafford Central School</Name>
+    <Street>BOX 97</Street>
+    <City>HAFFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.72650160000001</lat>
+    <lon>-107.353148</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hague High School</Name>
+    <Street>BOX 390</Street>
+    <City>HAGUE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.5109445</lat>
+    <lon>-106.4163091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hanley School</Name>
+    <Street>BOX 449</Street>
+    <City>HANLEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.6279713</lat>
+    <lon>-106.4394856</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Harvest City Christian Academy</Name>
+    <Street>2202 8TH AVENUE</Street>
+    <City>NORTH REGINA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4826068</lat>
+    <lon>-104.6123634</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Haven Hutterite School PO</Name>
+    <Street>BOX 668</Street>
+    <City>LEADER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8889827</lat>
+    <lon>-109.5419457</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hazlet School</Name>
+    <Street>BOX 90</Street>
+    <City>HAZLET</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3983389</lat>
+    <lon>-108.5957881</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hector Thiboutot Community School</Name>
+    <Street>BOX 150</Street>
+    <City>SANDY BAY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>55.525592</lat>
+    <lon>-102.315742</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hepburn School</Name>
+    <Street>BOX 219</Street>
+    <City>HEPBURN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.5232573</lat>
+    <lon>-106.7302626</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Herbert School</Name>
+    <Street>BOX 670</Street>
+    <City>HERBERT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4275233</lat>
+    <lon>-107.2234377</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Heritage Christian School</Name>
+    <Street>BOX 490</Street>
+    <City>BATTLEFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.7362682</lat>
+    <lon>-108.3052431</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hillcrest Hutterite School</Name>
+    <Street>BOX 100</Street>
+    <City>DUNDURN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.8095922</lat>
+    <lon>-106.5076269</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hillmond Central School</Name>
+    <Street>GBS 1-26 RR 2</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.2779625</lat>
+    <lon>-110.0061451</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hodgeville School</Name>
+    <Street>BOX 160</Street>
+    <City>HODGEVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.1095372</lat>
+    <lon>-106.9603772</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Holy Cross High School</Name>
+    <Street>2115 MCEOWN AVENUE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.1047436</lat>
+    <lon>-106.6154383</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Holy Rosary High School</Name>
+    <Street>6611A 39 STREET</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>53.2719629</lat>
+    <lon>-110.0424221</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Horizon Distance Learning Centre</Name>
+    <Street>BOX 40</Street>
+    <City>HUMBOLDT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.2019792</lat>
+    <lon>-105.1228655</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hudson Bay Community School</Name>
+    <Street>BOX 1268</Street>
+    <City>HUDSON BAY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.856798</lat>
+    <lon>-102.3881142</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hulbert Hutterite School</Name>
+    <Street>BOX 37</Street>
+    <City>PONTEIX</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.74630639999999</lat>
+    <lon>-107.4896867</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Humboldt Collegiate Institute</Name>
+    <Street>BOX 1780</Street>
+    <City>HUMBOLDT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.2019792</lat>
+    <lon>-105.1228655</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Imperial School</Name>
+    <Street>BOX 240</Street>
+    <City>IMPERIAL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.3469325</lat>
+    <lon>-105.4359238</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Indian Head High School</Name>
+    <Street>BOX 609</Street>
+    <City>INDIAN HEAD</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.5304592</lat>
+    <lon>-103.6558153</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Invermay School</Name>
+    <Street>BOX 219</Street>
+    <City>INVERMAY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.8086148</lat>
+    <lon>-103.1563854</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ituna School</Name>
+    <Street>BOX 370</Street>
+    <City>ITUNA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.17057</lat>
+    <lon>-103.495758</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>James Hamblin School</Name>
+    <Street>BOX 90</Street>
+    <City>QU'APPELLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.54261349999999</lat>
+    <lon>-103.8776698</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Jean Vanier School</Name>
+    <Street>425 15TH AVENUE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.4423069</lat>
+    <lon>-104.616813</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>John Dolan School</Name>
+    <Street>3144 ARLINGTON AVENUE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0947155</lat>
+    <lon>-106.6211368</lon>
+    <Coordinates> -106.60461000000001,52.08946,0.0
+ -106.62266000000001,52.08944,0.0
+ -106.62266000000001,52.089690000000004,0.0
+ -106.62273,52.102720000000005,0.0
+ -106.62272000000001,52.103750000000005,0.0
+ -106.62269,52.107350000000004,0.0
+ -106.62123000000001,52.107380000000006,0.0
+ -106.60781000000001,52.10472000000001,0.0
+ -106.60437,52.10473,0.0
+ -106.60461000000001,52.08946,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>John Paul II Collegiate</Name>
+    <Street>1491 97TH STREET</Street>
+    <City>NORTH BATTLEFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.778742</lat>
+    <lon>-108.304205</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Jonas Samson Junior High School</Name>
+    <Street>715 7TH AVENUE W</Street>
+    <City>MEADOW LAKE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.12509480000001</lat>
+    <lon>-108.4479856</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kamsack Comprehensive Institute</Name>
+    <Street>BOX 579</Street>
+    <City>KAMSACK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5648837</lat>
+    <lon>-101.8984151</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kelliher School</Name>
+    <Street>BOX 220</Street>
+    <City>KELLIHER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.2636634</lat>
+    <lon>-103.7383654</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kelvington High School</Name>
+    <Street>BOX 400</Street>
+    <City>KELVINGTON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.16652329999999</lat>
+    <lon>-103.5293345</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kenaston School</Name>
+    <Street>BOX 99</Street>
+    <City>KENASTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5006133</lat>
+    <lon>-106.2706237</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kerrobert Composite School</Name>
+    <Street>BOX 258</Street>
+    <City>KERROBERT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.9185447</lat>
+    <lon>-109.136794</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kincaid Central School</Name>
+    <Street>BOX 90</Street>
+    <City>KINCAID</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6691127</lat>
+    <lon>-107.004064</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kindersley Composite School</Name>
+    <Street>BOX 1450</Street>
+    <City>KINDERSLEY</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.4675266</lat>
+    <lon>-109.1546825</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kinistino School</Name>
+    <Street>BOX 650</Street>
+    <City>KINISTINO</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.9518312</lat>
+    <lon>-105.0307621</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kipling School</Name>
+    <Street>BOX 730</Street>
+    <City>KIPLING</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.10286</lat>
+    <lon>-102.62755</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kiskahikan School</Name>
+    <Street>BOX 72</Street>
+    <City>WEYAKWIN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.430212</lat>
+    <lon>-105.801312</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kyle Composite School</Name>
+    <Street>BOX 40</Street>
+    <City>KYLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8327023</lat>
+    <lon>-108.0392125</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>L.P. Miller Comprehensive School</Name>
+    <Street>BOX 2650</Street>
+    <City>NIPAWIN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.3623525</lat>
+    <lon>-104.0130053</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lafleche Central School</Name>
+    <Street>BOX 130</Street>
+    <City>LAFLECHE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.7049455</lat>
+    <lon>-106.5734083</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lajord Colony School</Name>
+    <Street>BOX 514</Street>
+    <City>WHITE CITY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4401331</lat>
+    <lon>-104.3566974</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lake Lenore School</Name>
+    <Street>BOX 40</Street>
+    <City>LAKE LENORE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3948719</lat>
+    <lon>-104.9842555</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lakeside Colony School</Name>
+    <Street>BOX 580</Street>
+    <City>QUILL LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0698056</lat>
+    <lon>-104.256388</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lakeview Colony School</Name>
+    <Street>BOX 366</Street>
+    <City>UNITY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.44373239999999</lat>
+    <lon>-109.1583194</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lampman School</Name>
+    <Street>BOX 370</Street>
+    <City>LAMPMAN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.3772738</lat>
+    <lon>-102.7522945</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Langenburg Central School</Name>
+    <Street>BOX 10</Street>
+    <City>LANGENBURG</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8422177</lat>
+    <lon>-101.7008065</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lanigan Central High School</Name>
+    <Street>BOX 639</Street>
+    <City>LANIGAN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lashburn High School</Name>
+    <Street>BOX 430</Street>
+    <City>LASHBURN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.129814</lat>
+    <lon>-109.6117996</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Leader Composite School</Name>
+    <Street>BOX 610</Street>
+    <City>LEADER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.8889827</lat>
+    <lon>-109.5419457</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Leask Community School</Name>
+    <Street>BOX 460</Street>
+    <City>LEASK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.01884</lat>
+    <lon>-106.7364258</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Leask Hutterite Colony School</Name>
+    <Street>BOX 430</Street>
+    <City>LEASK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.01884</lat>
+    <lon>-106.7364258</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Leoville Central School</Name>
+    <Street>BOX 39</Street>
+    <City>LEOVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.63275429999999</lat>
+    <lon>-107.5541529</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Leroy School</Name>
+    <Street>BOX 278</Street>
+    <City>LEROY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.00021169999999</lat>
+    <lon>-104.7385969</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lipton School</Name>
+    <Street>BOX 160</Street>
+    <City>LIPTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.90257889999999</lat>
+    <lon>-103.8489505</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lloydminster Comprehensive High School</Name>
+    <Street>5615 42ND ST</Street>
+    <City>LLOYDMINSTER</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.2759614</lat>
+    <lon>-110.0214052</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lord Asquith School</Name>
+    <Street>BOX 40</Street>
+    <City>ASQUITH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.13425729999999</lat>
+    <lon>-107.2287249</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Loreburn Central School</Name>
+    <Street>BOX 220</Street>
+    <City>LOREBURN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.23007639999999</lat>
+    <lon>-106.5985423</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lucky Lake School</Name>
+    <Street>BOX 219</Street>
+    <City>LUCKY LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.9814599</lat>
+    <lon>-107.1345683</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Lumsden High School</Name>
+    <Street>BOX 449</Street>
+    <City>LUMSDEN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.6462813</lat>
+    <lon>-104.8675689</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Luseland School</Name>
+    <Street>BOX 399</Street>
+    <City>LUSELAND</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0818618</lat>
+    <lon>-109.3901762</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>MacDonald School</Name>
+    <Street>BOX 40</Street>
+    <City>STOCKHOLM</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.6608385</lat>
+    <lon>-102.3016169</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Macklin School</Name>
+    <Street>BAG #1</Street>
+    <City>MACKLIN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Maidstone High School</Name>
+    <Street>BOX 426</Street>
+    <City>MAIDSTONE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.087744</lat>
+    <lon>-109.2921159</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Manacowin Alternative School</Name>
+    <Street>2022 102ND ST</Street>
+    <City>NORTH BATTLEFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.78771820000001</lat>
+    <lon>-108.2953964</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mankota School</Name>
+    <Street>BOX 300</Street>
+    <City>MANKOTA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.4190508</lat>
+    <lon>-107.0750516</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Manor School</Name>
+    <Street>BOX 28</Street>
+    <City>MANOR</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6048803</lat>
+    <lon>-102.0837705</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Maple Creek Composite School PO</Name>
+    <Street>BOX 369</Street>
+    <City>MAPLE CREEK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.906595</lat>
+    <lon>-109.480174</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Marion M. Graham Collegiate</Name>
+    <Street>602 LENORE DRIVE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1772381</lat>
+    <lon>-106.6195601</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Marshall School</Name>
+    <Street>BOX 149</Street>
+    <City>MARSHALL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.1931158</lat>
+    <lon>-109.7782751</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Martensville High School</Name>
+    <Street>BOX 730</Street>
+    <City>MARTENSVILLE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.2933971</lat>
+    <lon>-106.6563681</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Martin Collegiate</Name>
+    <Street>1100 MCINTOSH</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4618111</lat>
+    <lon>-104.6546486</lon>
+    <Coordinates> -104.70977,50.4842,0.0
+ -104.66399000000001,50.48422000000001,0.0
+ -104.66419,50.47464,0.0
+ -104.66848,50.46983,0.0
+ -104.64189,50.46916,0.0
+ -104.64242000000001,50.46793,0.0
+ -104.64345000000001,50.466930000000005,0.0
+ -104.64357000000001,50.46453,0.0
+ -104.64353000000001,50.45521,0.0
+ -104.64340000000001,50.45337000000001,0.0
+ -104.6427,50.45017000000001,0.0
+ -104.64293,50.44727,0.0
+ -104.64334000000001,50.44456,0.0
+ -104.64423000000001,50.43948,0.0
+ -104.64536000000001,50.44013,0.0
+ -104.64551,50.44116,0.0
+ -104.64510000000001,50.4414,0.0
+ -104.64435,50.44220000000001,0.0
+ -104.64438000000001,50.442800000000005,0.0
+ -104.64484,50.44323000000001,0.0
+ -104.64577000000001,50.443360000000005,0.0
+ -104.64635000000001,50.4431,0.0
+ -104.64678,50.44245,0.0
+ -104.64797000000001,50.44225,0.0
+ -104.64838,50.44238000000001,0.0
+ -104.64875,50.443650000000005,0.0
+ -104.64902000000001,50.44391,0.0
+ -104.65043000000001,50.44393,0.0
+ -104.65148,50.443580000000004,0.0
+ -104.65278,50.443920000000006,0.0
+ -104.65319000000001,50.444210000000005,0.0
+ -104.65319000000001,50.445530000000005,0.0
+ -104.65293000000001,50.445980000000006,0.0
+ -104.65119000000001,50.44673,0.0
+ -104.65064000000001,50.44708000000001,0.0
+ -104.65064000000001,50.44742,0.0
+ -104.65017,50.448080000000004,0.0
+ -104.65046000000001,50.44849000000001,0.0
+ -104.65267000000001,50.448730000000005,0.0
+ -104.65336,50.4483,0.0
+ -104.65513000000001,50.44827,0.0
+ -104.65637000000001,50.44832,0.0
+ -104.65646000000001,50.44876000000001,0.0
+ -104.65495000000001,50.44991,0.0
+ -104.65437000000001,50.45028000000001,0.0
+ -104.65568,50.45266,0.0
+ -104.65611000000001,50.45299000000001,0.0
+ -104.65742,50.45347,0.0
+ -104.65771000000001,50.45382000000001,0.0
+ -104.65863,50.45402000000001,0.0
+ -104.65976,50.453450000000004,0.0
+ -104.66002,50.45295,0.0
+ -104.66092,50.452580000000005,0.0
+ -104.66310000000001,50.452670000000005,0.0
+ -104.66336000000001,50.453500000000005,0.0
+ -104.66205000000001,50.454370000000004,0.0
+ -104.66359000000001,50.45485000000001,0.0
+ -104.66414,50.45515,0.0
+ -104.68669000000001,50.45519,0.0
+ -104.68641000000001,50.46923,0.0
+ -104.70989,50.469590000000004,0.0
+ -104.70977,50.4842,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Maryfield School</Name>
+    <Street>201 BARROWS STREET</Street>
+    <City>MARYFIELD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.8358708</lat>
+    <lon>-101.5218547</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Masinahikana School</Name>
+    <Street>BAG SERVICE #6500</Street>
+    <City>LA RONGE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Maverick School</Name>
+    <Street>197 4TH AVENUE NW</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.284281</lat>
+    <lon>-107.8052383</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Maymont Central School</Name>
+    <Street>BOX 129</Street>
+    <City>MAYMONT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.5630187</lat>
+    <lon>-107.7074451</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>McLurg High School</Name>
+    <Street>BOX 489</Street>
+    <City>WILKIE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.4093634</lat>
+    <lon>-108.7036767</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>McNaughton High School</Name>
+    <Street>BOX 1377</Street>
+    <City>MOOSOMIN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.1435671</lat>
+    <lon>-101.6668282</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Meadow Lake Christian Academy APT</Name>
+    <Street>208 - 9TH AVENUE</Street>
+    <City>EAST MEADOW LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.121493</lat>
+    <lon>-108.430621</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Meath Park School</Name>
+    <Street>GENERAL DELIVERY</Street>
+    <City>MEATH PARK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.4425409</lat>
+    <lon>-105.3689815</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Medstead Central School</Name>
+    <Street>BOX 150</Street>
+    <City>MEDSTEAD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.2980247</lat>
+    <lon>-108.0808141</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Melfort &amp; Unit Comprehensive Collegiate PO</Name>
+    <Street>BOX 99</Street>
+    <City>MELFORT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.8608387</lat>
+    <lon>-104.6142973</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Melville Comprehensive</Name>
+    <Street>10TH AVENUE E</Street>
+    <City>MELVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.9344238</lat>
+    <lon>-102.7993273</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Michael A. Riffel High School</Name>
+    <Street>5757 ROCHDALE BLVD.</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.4947548</lat>
+    <lon>-104.6626925</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Midale Central School</Name>
+    <Street>BOX 390</Street>
+    <City>MIDALE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.39593259999999</lat>
+    <lon>-103.4110513</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Milden Colony School P O</Name>
+    <Street>BOX 700</Street>
+    <City>ROSETOWN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5554913</lat>
+    <lon>-107.9910334</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Milestone School</Name>
+    <Street>BOX 478</Street>
+    <City>MILESTONE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.99152609999999</lat>
+    <lon>-104.5157548</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Miller Comprehensive High School</Name>
+    <Street>1027 COLLEGE AVENUE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.4393896</lat>
+    <lon>-104.5960526</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Minahik Waskahigan High School</Name>
+    <Street>BOX 160</Street>
+    <City>PINEHOUSE LAKE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>55.41768399999999</lat>
+    <lon>-106.6132667</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Montmartre School</Name>
+    <Street>BOX 300</Street>
+    <City>MONTMARTRE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.2193608</lat>
+    <lon>-103.4483066</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mortlach School</Name>
+    <Street>BOX 98</Street>
+    <City>MORTLACH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.45561499999999</lat>
+    <lon>-106.0667563</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mossbank School</Name>
+    <Street>BOX 460</Street>
+    <City>MOSSBANK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.9388405</lat>
+    <lon>-105.9644355</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mount Royal Collegiate</Name>
+    <Street>2220 RUSHOLME ROAD</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.133589</lat>
+    <lon>-106.7051313</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Muenster School</Name>
+    <Street>BOX 160</Street>
+    <City>MUENSTER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1898043</lat>
+    <lon>-104.9953972</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Naicam School</Name>
+    <Street>BOX 220</Street>
+    <City>NAICAM</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.4201117</lat>
+    <lon>-104.4984701</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Neilburg Composite School</Name>
+    <Street>BOX 309</Street>
+    <City>NEILBURG</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.8371867</lat>
+    <lon>-109.6297433</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Norfolk Hutterite School</Name>
+    <Street>BOX 357</Street>
+    <City>HODGEVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.1095372</lat>
+    <lon>-106.9603772</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Norquay School</Name>
+    <Street>BOX 430</Street>
+    <City>NORQUAY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.882227</lat>
+    <lon>-102.0864917</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>North Battleford Comprehensive High School</Name>
+    <Street>1791 110TH STREET</Street>
+    <City>NORTH BATTLEFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.7817261</lat>
+    <lon>-108.2844687</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>North Valley High School</Name>
+    <Street>BOX 10</Street>
+    <City>LEMBERG</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.7274405</lat>
+    <lon>-103.2030433</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>North West Central School</Name>
+    <Street>BOX 40</Street>
+    <City>PLENTY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.7833231</lat>
+    <lon>-108.6448676</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Nutana Collegiate</Name>
+    <Street>411 11TH STREET E</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.11908159999999</lat>
+    <lon>-106.6614019</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ogema School</Name>
+    <Street>BOX 280</Street>
+    <City>OGEMA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.5748395</lat>
+    <lon>-104.9170724</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Oskayak High School</Name>
+    <Street>919 BROADWAY AVENUE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.11608099999999</lat>
+    <lon>-106.6563068</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Osler School</Name>
+    <Street>BOX 10</Street>
+    <City>OSLER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3674367</lat>
+    <lon>-106.5361785</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Outlook High School</Name>
+    <Street>BOX 1720</Street>
+    <City>OUTLOOK</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.4832437</lat>
+    <lon>-107.0529914</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Oxbow Prairie Horizons School P O</Name>
+    <Street>BOX 660</Street>
+    <City>OXBOW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.2272232</lat>
+    <lon>-102.1695336</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Pangman School</Name>
+    <Street>BOX 188</Street>
+    <City>PANGMAN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.64682939999999</lat>
+    <lon>-104.6581797</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Paradise Hill School</Name>
+    <Street>BOX 28</Street>
+    <City>PARADISE HILL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.53752919999999</lat>
+    <lon>-109.4626977</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Pelletier Hill Hutterite School</Name>
+    <Street>R.R. #1</Street>
+    <City>ADMIRAL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Pennant Colony School</Name>
+    <Street>BOX 38</Street>
+    <City>PENNANT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.5321076</lat>
+    <lon>-108.2326639</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Perdue School</Name>
+    <Street>BOX 370</Street>
+    <City>PERDUE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0560088</lat>
+    <lon>-107.5433258</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Phoenix Academy</Name>
+    <Street>461 ATHABASCA ST E</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.39521</lat>
+    <lon>-105.523175</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Pierceland Central School</Name>
+    <Street>BOX 70</Street>
+    <City>PIERCELAND</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.34341</lat>
+    <lon>-109.7774599</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ponteix School</Name>
+    <Street>BOX 630</Street>
+    <City>PONTEIX</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.74630639999999</lat>
+    <lon>-107.4896867</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Porcupine Plain Comprehensive School P O</Name>
+    <Street>BOX 579</Street>
+    <City>PORCUPINE PLAIN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.5997888</lat>
+    <lon>-103.2543254</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Prairie South Virtual School</Name>
+    <Street>15 THATCHER DR E</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.412363</lat>
+    <lon>-105.532091</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Prairieland Hutterite School</Name>
+    <Street>BOX 667</Street>
+    <City>ROSETOWN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5554913</lat>
+    <lon>-107.9910334</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Preeceville School</Name>
+    <Street>BOX 679</Street>
+    <City>PREECEVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.9542781</lat>
+    <lon>-102.6680897</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Prince Albert Collegiate Institute</Name>
+    <Street>45 20TH STREET W</Street>
+    <City>PRINCE ALBERT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.1943579</lat>
+    <lon>-105.7560741</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Punnichy High School</Name>
+    <Street>BOX 460</Street>
+    <City>PUNNICHY</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.37119569999999</lat>
+    <lon>-104.2974236</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Quill Lake School</Name>
+    <Street>BOX 250</Street>
+    <City>QUILL LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.0700475</lat>
+    <lon>-104.252718</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Radville Regional High School</Name>
+    <Street>BOX 710</Street>
+    <City>RADVILLE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.46082029999999</lat>
+    <lon>-104.29709</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Raymore School</Name>
+    <Street>BOX 520</Street>
+    <City>RAYMORE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.40823</lat>
+    <lon>-104.528553</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Redvers School</Name>
+    <Street>BOX 9</Street>
+    <City>REDVERS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.57408969999999</lat>
+    <lon>-101.7063903</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Regina Christian School</Name>
+    <Street>2505 23RD AVE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.42306259999999</lat>
+    <lon>-104.617144</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Regina Huda School</Name>
+    <Street>40 SHEPPARD STREET</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4808962</lat>
+    <lon>-104.6239154</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Regina Public Schools Adult Campus</Name>
+    <Street>2314 11TH AV</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4505794</lat>
+    <lon>-104.6140614</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Regina Public Schools Night School</Name>
+    <Street>2314 11TH AVE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4505794</lat>
+    <lon>-104.6140614</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Riverbend Hutterite Colony School</Name>
+    <Street>BOX 630</Street>
+    <City>WALDHEIM</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.6203458</lat>
+    <lon>-106.6526038</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Riverview Collegiate Institute</Name>
+    <Street>650 COTEAU STREET W</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3827331</lat>
+    <lon>-105.550789</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Riverview Colony School</Name>
+    <Street>BOX 809</Street>
+    <City>WARMAN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3183662</lat>
+    <lon>-106.5750746</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Robert Southey School</Name>
+    <Street>BOX 460</Street>
+    <City>SOUTHEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.9403537</lat>
+    <lon>-104.4988815</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rocanville School</Name>
+    <Street>1002 FRANCIS AVENUE</Street>
+    <City>ROCANVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3835522</lat>
+    <lon>-101.6912002</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rockglen School</Name>
+    <Street>BOX 189</Street>
+    <City>ROCKGLEN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.1796599</lat>
+    <lon>-105.9510209</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rose Valley School</Name>
+    <Street>BOX 400</Street>
+    <City>ROSE VALLEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.2964924</lat>
+    <lon>-103.8133925</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rosetown Central High School</Name>
+    <Street>BOX 910</Street>
+    <City>ROSETOWN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5554913</lat>
+    <lon>-107.9910334</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rossignol High School</Name>
+    <Street>BOX 570</Street>
+    <City>ILE-A-LA-CROSSE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>55.4369862</lat>
+    <lon>-107.8983871</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rosthern High School</Name>
+    <Street>BOX 820</Street>
+    <City>ROSTHERN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.662259</lat>
+    <lon>-106.3318264</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Rouleau School</Name>
+    <Street>BOX 220</Street>
+    <City>ROULEAU</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.18878609999999</lat>
+    <lon>-104.9072322</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Royal West Campus</Name>
+    <Street>310 21ST ST E</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1270164</lat>
+    <lon>-106.6623526</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ruskin Hutterian School</Name>
+    <Street>PO BOX 894</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.285069</lat>
+    <lon>-107.7971722</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sacred Heart High School</Name>
+    <Street>280 GLADSTONE AVE.</Street>
+    <City>N. YORKTON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>51.2202243</lat>
+    <lon>-102.4749913</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sask Central Hutterian School</Name>
+    <Street>BOX 24</Street>
+    <City>SEMANS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.406481</lat>
+    <lon>-104.7313719</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Saskatoon Catholic Cyber School</Name>
+    <Street>2701 PORTER ST</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.104172</lat>
+    <lon>-106.615427</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Saskatoon Christian School</Name>
+    <Street>BOX 8 SITE 510 RR 5 STN MAIN</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1332144</lat>
+    <lon>-106.6700458</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Saskatoon Misbah School Inc</Name>
+    <Street>PO BOX 21065</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1332144</lat>
+    <lon>-106.6700458</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Saskatoon Public Online Learning Centre</Name>
+    <Street>605 ACADIA DR</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.12016819999999</lat>
+    <lon>-106.5978318</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Schell School</Name>
+    <Street>BOX 28</Street>
+    <City>HOLDFAST</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.9589402</lat>
+    <lon>-105.4225799</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Scott Collegiate</Name>
+    <Street>3350 7TH AVENUE</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4587793</lat>
+    <lon>-104.6293161</lon>
+    <Coordinates> -104.64189,50.46916,0.0
+ -104.6063,50.469550000000005,0.0
+ -104.60626,50.45356,0.0
+ -104.62433000000001,50.45042,0.0
+ -104.64293,50.44727,0.0
+ -104.6427,50.45017000000001,0.0
+ -104.64340000000001,50.45337000000001,0.0
+ -104.64357000000001,50.45662,0.0
+ -104.64345000000001,50.466930000000005,0.0
+ -104.64242000000001,50.46793,0.0
+ -104.64189,50.46916,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Shaunavon High School</Name>
+    <Street>BOX 1148</Street>
+    <City>SHAUNAVON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6463379</lat>
+    <lon>-108.4215787</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sheldon-Williams Collegiate</Name>
+    <Street>2601 CORONATION STREET</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4365927</lat>
+    <lon>-104.6351754</lon>
+    <Coordinates> -104.61093000000001,50.452740000000006,0.0
+ -104.61073,50.440720000000006,0.0
+ -104.61810000000001,50.440720000000006,0.0
+ -104.61807,50.423370000000006,0.0
+ -104.61824000000001,50.41854000000001,0.0
+ -104.6179,50.404560000000004,0.0
+ -104.62253000000001,50.40476,0.0
+ -104.62841,50.405350000000006,0.0
+ -104.64396,50.40540000000001,0.0
+ -104.64392000000001,50.396950000000004,0.0
+ -104.66396,50.39697,0.0
+ -104.66402000000001,50.418130000000005,0.0
+ -104.66357,50.418760000000006,0.0
+ -104.64875,50.4187,0.0
+ -104.64867000000001,50.41743,0.0
+ -104.64279,50.41684000000001,0.0
+ -104.64209000000001,50.4204,0.0
+ -104.64160000000001,50.424110000000006,0.0
+ -104.64293,50.43001,0.0
+ -104.64423000000001,50.43253000000001,0.0
+ -104.64489,50.43479000000001,0.0
+ -104.64423000000001,50.43948,0.0
+ -104.64293,50.44727,0.0
+ -104.61093000000001,50.452740000000006,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Sierra Hutterite School</Name>
+    <Street>BOX 33</Street>
+    <City>SHAUNAVON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6463379</lat>
+    <lon>-108.4215787</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Silver Stream School P O</Name>
+    <Street>BOX 3640</Street>
+    <City>MELVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.929452</lat>
+    <lon>-102.804654</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Smiley Hutterite School</Name>
+    <Street>BOX 44</Street>
+    <City>SMILEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.6336086</lat>
+    <lon>-109.4684708</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Southland Hutterite School</Name>
+    <Street>BOX 459</Street>
+    <City>HERBERT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4275233</lat>
+    <lon>-107.2234377</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Spirit e-Learning School</Name>
+    <Street>121 KLASSEN ST E BOX 809</Street>
+    <City>WARMAN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3176307</lat>
+    <lon>-106.5766669</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Spiritwood High School</Name>
+    <Street>BOX 280</Street>
+    <City>SPIRITWOOD</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.3645441</lat>
+    <lon>-107.5174338</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Spring Creek Hutterite School</Name>
+    <Street>BOX 29</Street>
+    <City>WALSH</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Spring Lake Hutterite School</Name>
+    <Street>PO BOX 35</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.285069</lat>
+    <lon>-107.7971722</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Springfield Hutterite School</Name>
+    <Street>BOX 1777</Street>
+    <City>KINDERSLEY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.4675266</lat>
+    <lon>-109.1546825</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>SPS Summer School</Name>
+    <Street>310 21ST ST E</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1270164</lat>
+    <lon>-106.6623526</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Brieux School</Name>
+    <Street>BOX 70</Street>
+    <City>ST BRIEUX</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.638419</lat>
+    <lon>-104.88868</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Gabriel's Separate School</Name>
+    <Street>BOX 1177</Street>
+    <City>BIGGAR</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.057145</lat>
+    <lon>-107.983556</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. George's Hill School</Name>
+    <Street>GENERAL DELIVERY</Street>
+    <City>DILLON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>39.6302643</lat>
+    <lon>-106.0433518</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Henry's Senior School</Name>
+    <Street>1255 PRINCE EDWARD STREET</Street>
+    <City>MELVILLE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.9368643</lat>
+    <lon>-102.7961416</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Joseph High School</Name>
+    <Street>115 NELSON ROAD</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.1477022</lat>
+    <lon>-106.583708</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Louis School</Name>
+    <Street>BOX 70</Street>
+    <City>ST LOUIS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.9206331</lat>
+    <lon>-105.8106271</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Luke School</Name>
+    <Street>625 ELPHINSTONE STREET</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.46881339999999</lat>
+    <lon>-104.6307994</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Mary High</Name>
+    <Street>380 14TH STREET W</Street>
+    <City>PRINCE ALBERT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>53.2010691</lat>
+    <lon>-105.7633423</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Michael School</Name>
+    <Street>426 13TH STREET NE</Street>
+    <City>WEYBURN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>49.6658502</lat>
+    <lon>-103.839521</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Pascal School</Name>
+    <Street>BOX 160</Street>
+    <City>GREEN LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.2765436</lat>
+    <lon>-107.8056609</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Walburg School</Name>
+    <Street>BOX 640</Street>
+    <City>ST WALBURG</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.6326913</lat>
+    <lon>-109.198612</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Star City Colony School</Name>
+    <Street>BOX 340</Street>
+    <City>STAR CITY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.86361729999999</lat>
+    <lon>-104.3298037</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Star City School</Name>
+    <Street>BOX 400</Street>
+    <City>STAR CITY</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.8615062</lat>
+    <lon>-104.3301813</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Stobart Community School</Name>
+    <Street>BOX 279</Street>
+    <City>DUCK LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.8118546</lat>
+    <lon>-106.2260275</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Stony Rapids School</Name>
+    <Street>GENERAL DELIVERY</Street>
+    <City>STONY RAPIDS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>59.2544657</lat>
+    <lon>-105.8380573</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Stoughton Central School</Name>
+    <Street>BOX 640</Street>
+    <City>STOUGHTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6785916</lat>
+    <lon>-103.029849</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sturgis Composite High School</Name>
+    <Street>BOX 100</Street>
+    <City>STURGIS</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.9364078</lat>
+    <lon>-102.5348723</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Success School</Name>
+    <Street>BOX 10</Street>
+    <City>SUCCESS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4601796</lat>
+    <lon>-108.0772828</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sun West Distance Learning Centre</Name>
+    <Street>BOX 99</Street>
+    <City>KENASTON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.5006133</lat>
+    <lon>-106.2706237</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sunnydale Colony School</Name>
+    <Street>BOX 809</Street>
+    <City>WARMAN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3183662</lat>
+    <lon>-106.5750746</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Swift Current Comprehensive High School</Name>
+    <Street>1100 11TH AVENUE NE</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.2985615</lat>
+    <lon>-107.7866902</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Thom Collegiate</Name>
+    <Street>265 ARGYLE STREET N</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4806685</lat>
+    <lon>-104.6306686</lon>
+    <Coordinates> -104.70971000000001,50.44106000000001,0.0
+ -104.70946,50.50869,0.0
+ -104.64602000000001,50.509240000000005,0.0
+ -104.6427,50.50784,0.0
+ -104.64115000000001,50.50609000000001,0.0
+ -104.64110000000001,50.49926000000001,0.0
+ -104.59826000000001,50.49898,0.0
+ -104.59541000000001,50.49667,0.0
+ -104.59423000000001,50.4915,0.0
+ -104.60188000000001,50.49154000000001,0.0
+ -104.60205,50.48635,0.0
+ -104.59831000000001,50.485020000000006,0.0
+ -104.59524,50.481910000000006,0.0
+ -104.59530000000001,50.46979,0.0
+ -104.64171,50.46942000000001,0.0
+ -104.64249000000001,50.46788,0.0
+ -104.64345000000001,50.466190000000004,0.0
+ -104.64353000000001,50.45521,0.0
+ -104.68669000000001,50.45519,0.0
+ -104.68689,50.440850000000005,0.0
+ -104.70971000000001,50.44106000000001,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Three Lakes School</Name>
+    <Street>BOX 38</Street>
+    <City>MIDDLE LAKE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.4794535</lat>
+    <lon>-105.3034921</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Tisdale Middle &amp; Secondary School</Name>
+    <Street>BOX 1000</Street>
+    <City>TISDALE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.8449385</lat>
+    <lon>-104.0452322</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Tommy Douglas Collegiate</Name>
+    <Street>130 BOWLT CRES</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1285453</lat>
+    <lon>-106.7472272</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Transition Place Education Centre</Name>
+    <Street>606-5TH AVE W</Street>
+    <City>MEADOW LAKE</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>54.1274659</lat>
+    <lon>-108.4461382</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Turtleford School</Name>
+    <Street>BOX 490</Street>
+    <City>TURTLEFORD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.3879784</lat>
+    <lon>-108.9583963</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Twin Lakes Community School</Name>
+    <Street>BOX 219</Street>
+    <City>BUFFALO NARROWS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>55.8628398</lat>
+    <lon>-108.4794604</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Unity Composite High School</Name>
+    <Street>BOX 1000</Street>
+    <City>UNITY</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.44373239999999</lat>
+    <lon>-109.1583194</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Val Marie School</Name>
+    <Street>BOX 240</Street>
+    <City>VAL MARIE</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.2463627</lat>
+    <lon>-107.728801</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Valley Christian Academy</Name>
+    <Street>BOX 279</Street>
+    <City>OSLER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.3674367</lat>
+    <lon>-106.5361785</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Valley View School</Name>
+    <Street>BAG SERVICE #2</Street>
+    <City>BEAUVAL</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vanguard Community School</Name>
+    <Street>BOX 310</Street>
+    <City>VANGUARD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.9064507</lat>
+    <lon>-107.3017245</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vanier Collegiate</Name>
+    <Street>324 MACDONALD STREET W</Street>
+    <City>MOOSE JAW</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>50.405988</lat>
+    <lon>-105.542997</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vibank Regional School</Name>
+    <Street>BOX 70</Street>
+    <City>VIBANK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3345821</lat>
+    <lon>-103.9488677</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Victoria Campus</Name>
+    <Street>1915 RETALLACK ST</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4484887</lat>
+    <lon>-104.6217789</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Viscount Central School</Name>
+    <Street>BOX 280</Street>
+    <City>VISCOUNT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.9469868</lat>
+    <lon>-105.6474767</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>W.P. Sandin Composite School</Name>
+    <Street>BOX 790</Street>
+    <City>SHELLBROOK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.223824</lat>
+    <lon>-106.3844837</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wadena Composite School</Name>
+    <Street>BOX 970</Street>
+    <City>WADENA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.94450699999999</lat>
+    <lon>-103.80147</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wakaw School</Name>
+    <Street>BOX 850</Street>
+    <City>WAKAW</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.648934</lat>
+    <lon>-105.7400993</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Waldeck Elementary and Junior High School</Name>
+    <Street>BOX 90</Street>
+    <City>WALDECK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.3617302</lat>
+    <lon>-107.5894883</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Waldheim School</Name>
+    <Street>BOX 367</Street>
+    <City>WALDHEIM</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.6203458</lat>
+    <lon>-106.6526038</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Walter Murray Collegiate</Name>
+    <Street>1905 PRESTON AVENUE</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1067334</lat>
+    <lon>-106.6221552</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Walter W. Brown High School</Name>
+    <Street>BOX 260</Street>
+    <City>LANGHAM</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.35897809999999</lat>
+    <lon>-106.9583581</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Warman High School</Name>
+    <Street>BOX 403</Street>
+    <City>WARMAN</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.323132</lat>
+    <lon>-106.582001</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Watrous Winston High School</Name>
+    <Street>BOX 1089</Street>
+    <City>WATROUS</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.6745142</lat>
+    <lon>-105.4683377</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Watson School</Name>
+    <Street>BOX 100</Street>
+    <City>WATSON</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.1293923</lat>
+    <lon>-104.527659</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wawota Parkland School</Name>
+    <Street>BOX 270</Street>
+    <City>WAWOTA</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.9031185</lat>
+    <lon>-102.0291568</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Webb Hutterite School</Name>
+    <Street>BOX 75</Street>
+    <City>WEBB</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.1825592</lat>
+    <lon>-108.2023805</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wesmor Community High School</Name>
+    <Street>1819 14TH AVE W</Street>
+    <City>PRINCE ALBERT</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.196413</lat>
+    <lon>-105.7889011</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westcliffe Composite School</Name>
+    <Street>BOX 65</Street>
+    <City>MARENGO</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.4803352</lat>
+    <lon>-109.7838673</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Weyburn Comprehensive School</Name>
+    <Street>629 KING ST</Street>
+    <City>WEYBURN</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.6708554</lat>
+    <lon>-103.8600804</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>White Buffalo Youth Lodge School</Name>
+    <Street>602 20TH ST W</Street>
+    <City>SASKATOON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Roman Catholic</Program>
+    <www/>
+    <lat>52.1264714</lat>
+    <lon>-106.6789842</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>White Fox School</Name>
+    <Street>BOX 250</Street>
+    <City>WHITE FOX</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.4471186</lat>
+    <lon>-104.0891813</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Whitewood School</Name>
+    <Street>BOX 10</Street>
+    <City>WHITEWOOD</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.329875</lat>
+    <lon>-102.2666277</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>William Derby School</Name>
+    <Street>BOX 517</Street>
+    <City>STRASBOURG</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.0691897</lat>
+    <lon>-104.9587047</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>William Mason School</Name>
+    <Street>BOX 219</Street>
+    <City>CHOICELAND</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>53.4902442</lat>
+    <lon>-104.4784109</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Willow Park Colony School</Name>
+    <Street>GENERAL DELIVERY</Street>
+    <City>TESSIER</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.8065453</lat>
+    <lon>-107.4279364</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Winding River Colony School</Name>
+    <Street>BOX 700</Street>
+    <City>BIRCH HILLS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>52.98238</lat>
+    <lon>-105.4320697</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Winston Knoll Collegiate</Name>
+    <Street>5255 ROCHDALE BLVD.</Street>
+    <City>REGINA</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4955323</lat>
+    <lon>-104.6565601</lon>
+    <Coordinates> -104.70989,50.48427,0.0
+ -104.70943000000001,50.509100000000004,0.0
+ -104.64602000000001,50.509240000000005,0.0
+ -104.6427,50.50784,0.0
+ -104.64115000000001,50.50609000000001,0.0
+ -104.64086,50.484300000000005,0.0
+ -104.70989,50.48427,0.0
+</Coordinates>
+  </Placemark>
+  <Placemark>
+    <Name>Wolseley High School</Name>
+    <Street>BOX 460</Street>
+    <City>WOLSELEY</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.4240404</lat>
+    <lon>-103.2769906</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wymark Hutterite School</Name>
+    <Street>PO BOX 386</Street>
+    <City>SWIFT CURRENT</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.285069</lat>
+    <lon>-107.7971722</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wymark School</Name>
+    <Street>BOX 30</Street>
+    <City>WYMARK</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>50.11024829999999</lat>
+    <lon>-107.7352233</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wynyard Composite High School</Name>
+    <Street>BOX 880</Street>
+    <City>WYNYARD</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.7652302</lat>
+    <lon>-104.1792004</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Yellow Grass School</Name>
+    <Street>BOX 180</Street>
+    <City>YELLOW GRASS</City>
+    <State>SK</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>49.8057212</lat>
+    <lon>-104.1585448</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Yorkton Regional High School</Name>
+    <Street>150 GLADSTONE AVENUE N</Street>
+    <City>YORKTON</City>
+    <State>SK</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>51.2158428</lat>
+    <lon>-102.4748898</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

@@ -1,0 +1,125 @@
+<div class="header js-header">
+    <div class="header__fixed-wrap">
+        <div class="header__logo-wrap">
+            {% include 'layouts/common/logo.html.twig' %}
+        </div>
+
+        {% if showSearch|default(false) %}
+            <div class="header__show-search icon-btn icon-search show-on-700 js-bcc js-toggle-active"></div>
+
+            <div class="header__search-wrap js-bcc-sibling">
+                {% include 'layouts/modules/select-search.html.twig' %}
+            </div>
+        {% endif %}
+
+        <div class="header__control-wrap hide-on-1300">
+            {% include 'layouts/controls/button.html.twig' with {
+                href: path('price-your-home'),
+                text: 'Price your home',
+            } %}
+        </div>
+
+        <div class="header__control-wrap hide-on-1300">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {% embed 'layouts/containers/dropdown-button.html.twig' with {
+                    placeholder: app.user.name|default(false) ?  app.user.name : app.user.username,
+                    scroll: true,
+                    wrapMod: 'icon-user _btn-style-bordered _popup-stick-to-right _wsn',
+                } only %}
+                    {% block dropdown_content %}
+                        <div class="list">
+                            <a href="{{ path("favourite_listings") }}" class="link-gray small-text mb10">Favourite Properties</a>
+                            <a href="{{ path("saved_searches") }}" class="link-gray small-text mb10">Saved Searches</a>
+                            <a href="{{ path("scheduled_viewings") }}" class="link-gray small-text mb10">Scheduled Viewings</a>
+                            <a href="{{ path("social_connections") }}" class="link-gray small-text mb10">Social Connections</a>
+                            <a href="{{ path('edit_profile') }}" class="link-gray small-text">Edit Profile</a>
+
+                            {% include 'layouts/common/separator.html.twig' with { wrapMod: '', marginsMod: 'mt20 mb20' } %}
+
+                            <a href="{{ path('app_logout') }}" class="link-gray small-text">Logout</a>
+                        </div>
+                    {% endblock %}
+                {% endembed %}
+            {% else %}
+                {% include 'layouts/controls/button.html.twig' with {
+                    mod: '_bordered js-call-popup',
+                    text: 'Sign in',
+                    dataPopup: {
+                        target: 'authorization',
+                        show_overlay: true,
+                    }
+                } %}
+            {% endif %}
+        </div>
+
+{#        <div class="header__control-wrap header__control-wrap_fh hide-on-1300">#}
+{#            {% include 'layouts/modules/select-language.html.twig' %}#}
+{#        </div>#}
+
+        <div class="header__control-wrap header__control-wrap_fh header__control-wrap_up">
+            {% include 'layouts/controls/hamburger.html.twig' %}
+
+            <div class="header__menu-wrap js-bcc-sibling js-max-height"
+                data-mh-settings="{{ {
+                    stopBp: 700,
+                    fromPosition: true,
+                    offset: 20,
+                }|json_encode }}"
+            >
+                <div class="header__scroll-wrap js-smooth-scroll">
+                    <div class="header-menu">
+                        <div class="header-menu__row show-on-1300">
+                            {% include 'layouts/controls/button.html.twig' with {
+                                href: path('price-your-home'),
+                                text: 'Price your home',
+                            } %}
+                        </div>
+
+                        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                            <div class="header-menu__row mt20 show-on-1300">
+                                {% embed 'layouts/containers/collapse-menu.html.twig' with {
+                                    wrapMod: 'show-on-1300',
+                                    titleWrapMod: 'icon-user',
+                                    title: app.user.name|default(false) ?  app.user.name : app.user.username,
+                                } only %}
+                                    {% block collapse_menu_content %}
+                                        <div class="list">
+                                            <a href="{{ path("favourite_listings") }}" class="link-gray small-text mb10">Favourite Properties</a>
+                                            <a href="{{ path("saved_searches") }}" class="link-gray small-text mb10">Saved Searches</a>
+                                            <a href="{{ path("scheduled_viewings") }}" class="link-gray small-text mb10">Scheduled Viewings</a>
+                                            <a href="{{ path('edit_profile') }}" class="link-gray small-text mb10">Edit Profile</a>
+                                            <a href="{{ path("social_connections") }}" class="link-gray small-text mb10">Social Connections</a>
+                                            <a href="{{ path('app_logout') }}" class="link-gray small-text">Logout</a>
+                                        </div>
+                                    {% endblock %}
+                                {% endembed %}
+
+                                {% include 'layouts/common/separator.html.twig' with { wrapMod: '', marginsMod: 'mt20 mb20' } %}
+                            </div>
+                        {% else %}
+                            <div class="header-menu__row mt10 mb20 show-on-1300">
+                                {% include 'layouts/controls/button.html.twig' with {
+                                    mod: '_bordered _narrow700 js-call-popup',
+                                    text: 'Sign in',
+                                    dataPopup: {
+                                        target: 'authorization',
+                                        show_overlay: true,
+                                    }
+                                } %}
+                            </div>
+                        {% endif %}
+
+
+                        {% include 'layouts/top-panel.html.twig' %}
+
+                        {% include 'layouts/common/separator.html.twig' with { wrapMod: 'show-on-1300', marginsMod: 'mt20 mb20' } %}
+
+                        <div class="header-menu__row show-on-1300">
+                            {% include 'layouts/modules/select-language-row.html.twig' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>Del Van Gorder School</Name>
+    <Street>Box 160</Street>
+    <City>Faro</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.2285419</lat>
+    <lon>-133.3531599</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Émilie-Tremblay / L'Académie Parhélie</Name>
+    <Street>20 Falcon Dr.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.706952</lat>
+    <lon>-135.1098979</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eliza Van Bibber School</Name>
+    <Street>Box 30</Street>
+    <City>Pelly Crossing</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.81797899999999</lat>
+    <lon>-136.568795</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>F.H. Collins Secondary School</Name>
+    <Street>1001 Lewes Boulevard</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>8-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.702366</lat>
+    <lon>-135.0230938</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ghùch Tlâ Community School</Name>
+    <Street>General Delivery</Street>
+    <City>Carcross</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.1675851</lat>
+    <lon>-134.7073506</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Individual Learning Centre</Name>
+    <Street>Suite 500 4201-4th Avenue</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.7211871</lat>
+    <lon>-135.0568448</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>J.V. Clark School</Name>
+    <Street>Box 38</Street>
+    <City>Mayo</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>63.59426199999999</lat>
+    <lon>-135.8964919</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Porter Creek Secondary School</Name>
+    <Street>1405 Hickory St.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>8-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.7699436</lat>
+    <lon>-135.1241501</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Robert Service School</Name>
+    <Street>Box 278</Street>
+    <City>Dawson City</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>64.06006959999999</lat>
+    <lon>-139.4320347</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ross River School</Name>
+    <Street>General Delivery</Street>
+    <City>Ross River</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.97968830000001</lat>
+    <lon>-132.4470326</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Elias Community School</Name>
+    <Street>Box 5494</Street>
+    <City>Haines Junction</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.7544541</lat>
+    <lon>-137.5117819</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Tantalus School</Name>
+    <Street>Box 134</Street>
+    <City>Carmacks</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.08846800000001</lat>
+    <lon>-136.28729</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Teen Parent Centre</Name>
+    <Street>Box 32077</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>8-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.7211871</lat>
+    <lon>-135.0568448</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vanier Catholic Secondary School</Name>
+    <Street>16 Duke St.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>8-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.70232799999999</lat>
+    <lon>-135.0297229</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Watson Lake Secondary School</Name>
+    <Street>Box 308</Street>
+    <City>Watson Lake</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>8-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.06280599999999</lat>
+    <lon>-128.710913</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Wood Street Centre</Name>
+    <Street>411 Wood St.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Secondary</Level>
+    <Grades>9-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.7200819</lat>
+    <lon>-135.0587495</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

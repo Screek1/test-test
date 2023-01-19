@@ -1,0 +1,50 @@
+<section class="intro {{ wrapMod ?? '' }} js-check-in-window">
+    {% if gradient|default(false) %}
+        <div class="intro__gradient {{ gradient }}"></div>
+    {% endif %}
+
+    <div class="intro__bg-wrap">
+        <div class="intro__svg-wrap">
+            {% block intro_bg_wrap %}{% endblock %}
+        </div>
+    </div>
+
+    <div class="intro__container {{ containerMod ?? 'container' }}">
+        <div class="intro__content {{ contentMod ?? 'inner-container' }}">
+            {% if title|default(false) %}
+                <h1 class="intro__title h1">{{ title }}</h1>
+            {% endif %}
+
+            {% if subtitle|default(false) %}
+                <span class="intro__subtitle subtitle_bold mt20">{{ subtitle }}</span>
+            {% endif %}
+
+            {% if fullSearch|default(false) and searchFormObject|default(false) %}
+                <div class="intro__full-search-wrap mt50">
+                    {% include 'layouts/modules/full-search.html.twig' with searchFormObject only %}
+                </div>
+            {% endif %}
+
+            {% if simpleSearch|default(false) %}
+                <div class="intro__simple-search-wrap mt20">
+                    {% include 'layouts/modules/simple-search.html.twig' with {
+                        wrapMod: '_big _bordered js-wrap',
+                        buttonMod: '_big js-autofill-search-button',
+                        autofill: true,
+                    } only %}
+                </div>
+            {% endif %}
+
+            {% if link|default(false) %}
+                <div class="intro__button-wrap mt20">
+                    {% include 'layouts/controls/button.html.twig' with {
+                        href: link.href|default(''),
+                        text: link.text|default(''),
+                        textMod: 'button0',
+                        mod: '_big _turquoise',
+                    } %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

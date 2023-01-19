@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<body>
+<h1>Contact Us Request</h1>
+
+<strong>Full name</strong>: <span>{{ name }}</span><br>
+<strong>Email</strong>: <span>{{ email }}</span><br>
+<strong>Phone</strong>: <span>{{ phone }}</span><br>
+<strong>Contact by</strong>: <span>{{ contact_method }}</span><br>
+<strong>Comment</strong>:<br>
+<p>{{ comment|nl2br }}</p><br>
+
+<script type="text/javascript">
+    {% block js %}{% endblock %}
+</script>
+</body>
+</html>

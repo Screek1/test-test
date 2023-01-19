@@ -1,0 +1,1533 @@
+.map {
+    @include absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    background: $gray2;
+    
+    .leaflet-control-attribution {
+        padding-right: 12px;
+    }
+}
+
+.homes-available {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-right: 20px;
+    color: $gray1;
+    
+    &__val {
+        margin-right: .3em;
+    }
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    &__label {
+        color: $gray1;
+        margin-right: .3em;
+    }
+}
+
+@keyframes svg-magnifier-animation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.map-section {
+    $r: &;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    
+    &__not-found-img-wrap {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+            position: relative;
+            display: block;
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            overflow: visible;
+    
+            .svg-animate {
+                transform-box: fill-box;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .svg-tree {
+                animation-name: leaves-animation-3;
+                animation-duration: 3s;
+                transform-origin: 50% 100%;
+            }
+            
+            .svg-magnifier {
+                animation-name: svg-magnifier-animation;
+                animation-duration: 4s;
+                transform-origin: 90% 90%;
+                
+            }
+        }
+    }
+    
+    &__title-wrap {
+        width: 100%;
+    }
+    
+    &__table {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        align-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        flex: 1 0 0;
+    }
+    
+    &__scroll-wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__col {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        &_left {
+            width: 850px;
+            
+            &::before {
+                content: '';
+                display: block;
+                @include absolute(0,auto,auto,-110%);
+                width: 100%;
+                height: 100%;
+                z-index: 90;
+            }
+            
+            .estate-content {
+            
+            }
+    
+            &._loading {
+            
+            }
+        }
+        
+        &_right {
+            width: calc(100% - 600px);
+            padding-left: 40px;
+        }
+    }
+    
+    &__nav-wrap {
+        width: 100%;
+        padding-top: 4px;
+    }
+    
+    &__form {
+        position: relative;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    &__filter-label {
+        display: block;
+        color: $dark1;
+    }
+    
+    &__filter-popup {
+        display: inline;
+    
+        .dropdown-button {
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+    }
+    
+    &__buttons-popup {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    &__filter-scroll {
+        display: inline;
+    }
+    
+    &__filter-wrap {
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        margin-top: -10px;
+    
+        & > .btn-style {
+            margin-top: 10px;
+        }
+    }
+    
+    &__sort-wrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        z-index: 2;
+        margin-top: -10px;
+        
+        .sort,
+        .homes-available {
+            margin-top: 10px;
+        }
+    }
+    
+    &__cards-container {
+        position: relative;
+        width: 100%;
+        flex: 1 0 0;
+    }
+    
+    &__map-container {
+        position: relative;
+        width: 100%;
+        flex: 1 0 0;
+    }
+    
+    &__cards-wrap {
+        @include absolute(0,auto,auto);
+        width: calc(100% + 20px);
+        height: 100%;
+    }
+    
+    &__map-wrap {
+        @include absolute(0,auto,auto);
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__cards-scroll-wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+        &:not([data-scrollbar]) {
+            padding-right: 20px;
+        }
+    
+        .scroll-content {
+            padding-right: 20px;
+        }
+        
+        .scrollbar-track-y .scrollbar-thumb {
+            background: $gray1;
+        }
+    }
+    
+    &__reset-wrap {
+        position: relative;
+        z-index: 1;
+    }
+    
+    &._not-found {
+        #{$r}__sort-wrap,
+        .estate-cards-pagination {
+            display: none;
+        }
+    }
+    
+    &:not(._not-found) {
+        #{$r}__reset-wrap,
+        #{$r}__not-found-img-wrap {
+            display: none;
+        }
+        
+        #{$r}__not-found-img-wrap {
+            svg {
+                .svg-animate {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+    
+    @include media_min-2400 {
+        &__col {
+            &_left {
+                width: 1140px;
+            }
+        
+            &_right {
+                width: calc(100% - 1140px);
+            }
+        }
+    }
+    
+    @include media_1500 {
+        &__not-found-img-wrap {
+            height: 260px;
+        }
+        
+        &__col {
+            &_left {
+                width: 570px;
+                z-index: 15;
+            }
+        
+            &_right {
+                width: calc(100% - 570px);
+            }
+        }
+        
+        &__filter-wrap {
+            margin-top: 0;
+        }
+        
+        &__filter-popup {
+            display: block;
+            @include fixed(100px, auto, auto);
+            height: calc(100vh - 100px);
+            transform: translateX(-110%);
+            transition: transform .3s ease;
+            width: 650px;
+            background: $white;
+            z-index: 800;
+            padding: 60px 20px 20px 40px;
+            
+            &._active {
+                transform: translateX(0);
+            }
+            
+            .cross-btn {
+                top: 15px;
+                right: 15px;
+            }
+    
+            .twin-fields,
+            .filter-more {
+                width: 100%;
+            }
+    
+            .radio-row {
+    
+                position: relative;
+                z-index: 1;
+            }
+            
+            .dropdown-button {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 0;
+                margin-right: 0;
+                background: transparent;
+                display: block;
+                border-radius: 0;
+                margin-bottom: 20px;
+                z-index: unset;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+                &__text {
+                    display: none;
+                }
+                
+                &__popup {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    right: auto;
+                    bottom: auto;
+                    border-radius: 0;
+                    border: none;
+                    padding: 0;
+                    transition: none;
+                    opacity: 1;
+                    transform: none;
+                    background: transparent;
+                    pointer-events: auto;
+                    z-index: unset;
+                }
+                
+                &__inner {
+                    position: relative;
+                    z-index: unset;
+                }
+                
+                &__scroll {
+                    width: 100%;
+                    height: auto;
+                    max-height: none;
+                    overflow: visible;
+                }
+                
+                &._btn-style {
+                    background: transparent;
+                }
+            }
+        }
+    
+        &__filter-scroll {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+    
+            &[data-scrollbar] > .scroll-content {
+                padding-right: 20px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+    
+    @include media_1300 {
+        &__not-found-img-wrap {
+            height: 210px;
+        }
+        
+        &__col {
+            &_left {
+                width: 370px;
+            }
+        
+            &_right {
+                width: calc(100% - 370px);
+            }
+        }
+    
+        &__filter-popup {
+            width: 450px;
+        }
+    }
+    
+    @include media_1000 {
+        height: calc(100% - 80px);
+        
+        .map {
+            border-radius: 20px 20px 0 0;
+        }
+        
+        &__not-found-img-wrap {
+            height: 160px;
+        }
+        
+        &__nav-wrap {
+            padding-top: 0;
+        }
+    
+        &__filter-wrap {
+            margin-bottom: 0;
+        }
+    
+        &__filter-popup {
+            top: 80px;
+            height: calc(100vh - 80px);
+            width: 100%;
+        }
+        
+        &__buttons-popup {
+            @include fixed(auto, 0, 20px);
+            display: flex;
+            justify-content: center;
+            pointer-events: none;
+            
+            .btn-style {
+                margin-right: 10px;
+                pointer-events: auto;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        
+        &__table {
+            width: calc(200% + 80px);
+            transition: left .3s ease-in-out;
+            left: 0;
+        }
+        
+        &__map-container {
+            width: calc(100% + 80px);
+            left: -40px;
+        }
+        
+        &__col {
+            width: calc(50% - 40px);
+            padding-bottom: 0;
+            padding-left: 0;
+            
+            &_left {
+                z-index: 2;
+                
+                .simplebar-track {
+                    display: none;
+                }
+            }
+            
+            &_right {
+                z-index: 1;
+            }
+        }
+        
+        &._map & {
+            &__table {
+                left: calc(-100% - 80px);
+            }
+        }
+    }
+    
+    @include media_700 {
+        height: calc(100% - 50px);
+        width: calc(100% - 40px);
+    
+        &__not-found-img-wrap {
+            height: 130px;
+        }
+        
+        &__filter-popup {
+            top: 50px;
+            height: calc(100vh - 50px);
+        }
+    
+        &__map-container {
+            width: calc(100% + 40px);
+            left: -20px;
+        }
+    }
+}
+
+.map-interface-wrap {
+    &:not(._drawing) {
+        .map-draw-bar {
+            display: none;
+        }
+    }
+    
+    &._drawing {
+        .map-section__filter-wrap,
+        .map-section__sort-wrap,
+        .map-section__nav-wrap,
+        .map-section__cards-container,
+        .map-buttons-bar,
+        .leaflet-control-zoom,
+        .leaflet-control-layers,
+        .leaflet-marker-icon {
+            opacity: .3;
+            pointer-events: none;
+        }
+    
+        .map-section__col_left::before {
+            left: 0;
+        }
+    }
+    
+    &:not(._draw-apply) {
+        .remove-boundary-button {
+            display: none;
+        }
+        .edit-boundary-button {
+            display: none;
+        }
+    }
+    
+    &._draw-apply {
+        .draw-button {
+            display: none;
+        }
+    }
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    .leaflet-control-layers-base {
+        & > label {
+            margin-bottom: 5px;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            & > div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                cursor: pointer;
+                
+                &:hover > input {
+                    background: $gray2;
+                }
+        
+                & > input {
+                    margin-top: 0;
+                    top: 0;
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #E1E6E7;
+                    background: transparent;
+                    transition: all 0.3s ease;
+                    z-index: 1;
+                    border-radius: 5px;
+                    box-sizing: content-box;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    @extend .icon-check;
+                    
+                    &::before {
+                        display: block;
+                        position: relative;
+                        font-family: $icomoon;
+                        font-size: 8px;
+                        line-height: 1;
+                        font-weight: 100;
+                        color: $white;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+                    }
+    
+                    &:checked {
+                        border-color: $fuchsia;
+                        background: $fuchsia;
+                        
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+        
+                & > span {
+                    @extend .small-text;
+                    color: $gray0;
+                }
+            }
+        }
+    }
+    
+    //.leaflet-control-layers-selector {
+    //    position: relative;
+    //    width: 10px;
+    //    height: 10px;
+    //    border-radius: 50%;
+    //    background: #eee;
+    //    border: 1px solid green;
+    //    box-sizing: border-box;
+    //
+    //    &::before {
+    //        content: '';
+    //        width: 6px;
+    //        height: 6px;
+    //        border-radius: 50%;
+    //        @include absolute;
+    //        opacity: 0;
+    //        transition: $default-transition;
+    //    }
+    //
+    //    &:checked {
+    //        &::before {
+    //            opacity: 1;
+    //        }
+    //    }
+    //}
+    
+    .leaflet-control {
+        user-select: none;
+    }
+    
+    .leaflet-control-layers-toggle {
+        background-image: url(../../images/map/layers.png);
+    }
+}
+
+.map-controls {
+    $r: &;
+    @include absolute(0,auto,auto);
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.map-draw-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    color: $white;
+    pointer-events: auto;
+    
+    &__label {
+        margin-right: auto;
+        padding: 0 40px 0 20px;
+    }
+    
+    &__btn {
+        height: 50px;
+        padding: 20px;
+        background: transparent;
+        transition: $default-transition;
+        
+        &:hover {
+            background: green;
+        }
+    }
+}
+
+.map-buttons-bar {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    
+    .select-module {
+        width: 200px;
+    }
+    
+    .select-module,
+    .btn-style {
+        margin-left: 10px;
+        margin-top: 10px;
+        pointer-events: auto;
+    }
+}
+
+.marker-popup-inner {
+    $r: &;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    padding: 10px 10px 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 12px;
+    
+    &__left-col {
+        width: 95px;
+    }
+    
+    &__right-col {
+        width: calc(100% - 95px);
+        padding-left: 10px;
+    }
+    
+    &__img-wrap {
+        position: relative;
+        display: block;
+        width: 100%;
+        @include rh(66/107);
+        border-radius: 10px;
+        overflow: hidden;
+        background: $gray2;
+        z-index: 3;
+        
+        &:hover {
+            #{$r}__img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    &__img {
+        z-index: 1;
+        transition: $default-transition;
+        transform-origin: 50% 50%;
+        will-change: transform;
+    }
+    
+    &__title {
+        display: inline-block;
+    }
+}
+
+.estate-content {
+    position: relative;
+    width: 100%;
+    padding: 0 0 40px;
+    overflow: hidden;
+}
+
+.map-page {
+    height: 100%;
+    
+    body,
+    .content {
+        height: 100%;
+    }
+}
+
+.leaflet-popup {
+    
+    .leaflet-popup-content-wrapper {
+        padding: 0;
+        border-radius: 10px;
+        
+        .leaflet-popup-content {
+            margin: 0;
+            max-width: calc(100vw - 10px);
+        }
+    }
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    @include absolute(0, 0, auto, auto);
+    @extend .icon-cross;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+    padding: 9px 9px 6px 6px;
+    width: auto;
+    height: auto;
+    
+    &:hover {
+        &:before {
+            color: $turquoise;
+        }
+    }
+    
+    &::before {
+        display: block;
+        font-family: $icomoon;
+        font-size: 9px;
+        line-height: 1;
+        font-weight: 100;
+        color: $dark1;
+        transition: $default-transition;
+    }
+}
+
+.marker-price {
+    $border-width: 1px;
+    
+    .marker-price-inner {
+        @include absolute-cm(0,auto,auto);
+        background: $blue;
+        border: $border-width solid $white;
+        padding: 3px 4px;
+        box-sizing: border-box;
+        color: $white;
+        border-radius: 30px;
+        transform: translate(-50%, -100%);
+        margin-top: -4px;
+    
+        &::before {
+            content: '';
+            display: block;
+            @include absolute(auto,0,-(4px + $border-width));
+            width: 8px;
+            height: 8px;
+            background: $blue;
+            border-bottom: $border-width solid $white;
+            border-right: $border-width solid $white;
+            transform-origin: 50% 50%;
+            transform: rotate(45deg);
+            z-index: 2;
+        }
+    
+        .marker-text {
+            display: block;
+            position: relative;
+            z-index: 5;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1;
+        }
+    }
+    
+    &._force-hover-state {
+        z-index: 9999 !important;
+        
+        .marker-price-inner {
+            background: $fuchsia;
+    
+            &::before {
+                background: $fuchsia;
+            }
+        }
+    }
+}
+
+.bus-stop {
+    $border-width: 1px;
+
+    .bus-stop-inner {
+        @include absolute-cm(0, auto, auto);
+        background: $dark-red;
+        border: $border-width solid $white;
+        padding: 2px 2px;
+        box-sizing: border-box;
+        color: $white;
+        border-radius: 50%;
+        transform: translate(-50%, -100%);
+        margin-top: -4px;
+
+        &._big {
+            padding: 4px 4px;
+        }
+    }
+}
+
+.marker-icon {
+    border-radius: 50%;
+    background: $blue;
+    border: 1px solid $white;
+    box-sizing: border-box;
+    
+    &::before,
+    &::after {
+        content: '';
+        border-radius: inherit;
+    }
+    
+    &::before {
+        @include absolute();
+        transform-origin: 50% 50%;
+        background: inherit;
+        opacity: .5;
+        z-index: 1;
+        transition: transform .3s ease;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    &::after {
+        @include absolute(-1px,auto,auto,-1px);
+        border: 2px solid $white;
+        box-sizing: border-box;
+        transition: $default-transition;
+        opacity: 0;
+        z-index: 2;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+    }
+    
+    &._force-hover-state {
+        z-index: 9999 !important;
+        
+        &::before {
+            transform: scale(3);
+        }
+        
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.big-icon {
+    &::after,
+    &::before {
+        @include absolute;
+        font-size: 49px;
+        line-height: 1;
+        font-weight: 100;
+        letter-spacing: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    &::after {
+        content: "\e931";
+        font-family: $icomoon;
+        transition: color .3s ease;
+        z-index: 1;
+    }
+    
+    &::before {
+        color: $white;
+        z-index: 2;
+    }
+    
+    &.icon-realestate {
+        color: #448114;
+        
+        @media print {
+            color: $black;
+        }
+    }
+    
+    &:hover,
+    &._force-hover-state {
+        z-index: 9999 !important;
+        
+        &:not(.icon-realestate) {
+            &::after {
+                color: $dark1;
+            }
+        }
+    }
+}
+
+.yelp-marker-icon {
+    border-radius: 50%;
+    background-color: $gray0;
+    transition: background-color .3s ease;
+    box-sizing: border-box;
+    border: 1px solid $white;
+    
+    &::after,
+    &::before {
+        @include absolute;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 100;
+        letter-spacing: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    &::before {
+        color: $white;
+        font-family: $icomoon;
+        z-index: 2;
+    }
+    
+    &._ic-school {
+        background: $fuchsia;
+        
+        &::before {
+            content: '\e964';
+            font-size: 20px;
+        }
+    }
+    
+    &._force-hover-state {
+        z-index: 9999 !important;
+        background: $dark1;
+    }
+}
+
+._ic-default {
+    &::before {content: '\e957'}
+}
+
+._ic-localservices,._ic-3dprinting,._ic-adoptionservices,._ic-airductcleaning,._ic-appraisalservices,._ic-artinstallation,._ic-artrestoration,._ic-awnings,._ic-bailbondsmen,._ic-bike_repair_maintenance,._ic-biohazardcleanup,._ic-bookbinding,._ic-busrental,._ic-calligraphy,._ic-carpet_cleaning,._ic-carpetdyeing,._ic-childcare,._ic-clockrepair,._ic-communitybookbox,._ic-communitygardens,._ic-copyshops,._ic-couriers,._ic-craneservices,._ic-cremationservices,._ic-datarecovery,._ic-donationcenter,._ic-dryclean,._ic-dumpsterrental,._ic-eldercareplanning,._ic-electronicsrepair,._ic-elevatorservices,._ic-engraving,._ic-enviroabatement,._ic-environmentaltesting,._ic-farmequipmentrepair,._ic-fingerprinting,._ic-foodbanks,._ic-forestry,._ic-funeralservices,._ic-furniturerepair,._ic-generatorinstallrepair,._ic-gestorias,._ic-grillservices,._ic-guitarstores,._ic-gunsmith,._ic-hazardouswastedisposal,._ic-homeappliancerepair,._ic-homelessshelters,._ic-hydrojetting,._ic-icedelivery,._ic-internetbooth,._ic-itservices,._ic-jewelryrepair,._ic-junkremovalandhauling,._ic-junkyards,._ic-knifesharpening,._ic-laundromat,._ic-laundryservices,._ic-machinerental,._ic-machineshops,._ic-mailboxcenters,._ic-metaldetectorservices,._ic-metalfabricators,._ic-mistingsystemservices,._ic-mobilephonerepair,._ic-mortuaryservices,._ic-musicinstrumentservices,._ic-nannys,._ic-nonprofit,._ic-notaries,._ic-outdoorpowerequipmentservices,._ic-pest_control,._ic-pianoservices,._ic-pianostores,._ic-portabletoiletservices,._ic-powdercoating,._ic-propane,._ic-record_labels,._ic-recording_studios,._ic-recyclingcenter,._ic-rentfurniture,._ic-reupholstery,._ic-sandblasting,._ic-screen_printing_tshirt_printing,._ic-screenprinting,._ic-selfstorage,._ic-septicservices,._ic-sewingalterations,._ic-shipping_centers,._ic-shoerepair,._ic-shoeshine,._ic-smokingareas,._ic-snowremoval,._ic-snuggleservices,._ic-stonemasons,._ic-telecommunications,._ic-tvmounting,._ic-vocalcoach,._ic-watch_repair,._ic-waterdelivery,._ic-welldrilling,._ic-wildlifecontrol,._ic-youth_club {
+    background: #004B76;
+    &::before {content: '\e94e'}
+}
+._ic-restaurants,._ic-abruzzese,._ic-afghani,._ic-african,._ic-alentejo,._ic-algarve,._ic-alsatian,._ic-altoatesine,._ic-andalusian,._ic-apulian,._ic-arabian,._ic-arabpizza,._ic-argentine,._ic-armenian,._ic-arroceria_paella,._ic-asianfusion,._ic-asturian,._ic-australian,._ic-austrian,._ic-auvergnat,._ic-azores,._ic-baden,._ic-baguettes,._ic-bangladeshi,._ic-basque,._ic-bavarian,._ic-bbq,._ic-beergarden,._ic-beerhall,._ic-beira,._ic-beisl,._ic-belgian,._ic-berrichon,._ic-bistros,._ic-blacksea,._ic-blowfish,._ic-bourguignon,._ic-brasseries,._ic-brazilian,._ic-brazilianempanadas,._ic-breakfast_brunch,._ic-british,._ic-buffets,._ic-bulgarian,._ic-burgers,._ic-burmese,._ic-cafes,._ic-cafeteria,._ic-cajun,._ic-calabrian,._ic-cambodian,._ic-canteen,._ic-cantonese,._ic-caribbean,._ic-catalan,._ic-centralbrazilian,._ic-cheekufta,._ic-cheesesteaks,._ic-chicken_wings,._ic-chickenshop,._ic-chilean,._ic-chinese,._ic-colombian,._ic-comfortfood,._ic-congee,._ic-conveyorsushi,._ic-corsican,._ic-creperies,._ic-cuban,._ic-cucinacampana,._ic-currysausage,._ic-cypriot,._ic-czech,._ic-czechslovakian,._ic-danish,._ic-delis,._ic-dimsum,._ic-diners,._ic-dinnertheater,._ic-dominican,._ic-donburi,._ic-dumplings,._ic-eastern_european,._ic-easterngerman,._ic-easternmexican,._ic-egyptian,._ic-eltern_cafes,._ic-emilian,._ic-eritrean,._ic-ethiopian,._ic-fado_houses,._ic-falafel,._ic-filipino,._ic-fischbroetchen,._ic-fishnchips,._ic-flatbread,._ic-flemish,._ic-fondue,._ic-food_court,._ic-foodstands,._ic-franconian,._ic-freiduria,._ic-french,._ic-friulan,._ic-fuzhou,._ic-galician,._ic-gamemeat,._ic-gastropubs,._ic-georgian,._ic-german,._ic-giblets,._ic-gluten_free,._ic-gozleme,._ic-greek,._ic-guamanian,._ic-gyudon,._ic-hainan,._ic-haitian,._ic-hakka,._ic-halal,._ic-handrolls,._ic-hawaiian,._ic-henghwa,._ic-hessian,._ic-heuriger,._ic-himalayan,._ic-hkcafe,._ic-hokkien,._ic-homemadefood,._ic-honduran,._ic-horumon,._ic-hotdog,._ic-hotdogs,._ic-hotpot,._ic-hunan,._ic-hungarian,._ic-iberian,._ic-indonesian,._ic-indpak,._ic-international,._ic-irish,._ic-island_pub,._ic-israeli,._ic-italian,._ic-izakaya,._ic-jaliscan,._ic-japacurry,._ic-japanese,._ic-jewish,._ic-kaiseki,._ic-kebab,._ic-kopitiam,._ic-korean,._ic-kosher,._ic-kurdish,._ic-kushikatsu,._ic-lahmacun,._ic-laos,._ic-laotian,._ic-latin,._ic-lebanese,._ic-ligurian,._ic-lumbard,._ic-lyonnais,._ic-madeira,._ic-malaysian,._ic-mamak,._ic-mauritius,._ic-meatballs,._ic-mediterranean,._ic-mexican,._ic-mideastern,._ic-milkbars,._ic-minho,._ic-modern_australian,._ic-modern_european,._ic-mongolian,._ic-moroccan,._ic-napoletana,._ic-newamerican,._ic-newcanadian,._ic-newmexican,._ic-newzealand,._ic-nicaraguan,._ic-nicois,._ic-nightfood,._ic-nikkei,._ic-noodles,._ic-norcinerie,._ic-northeasternbrazilian,._ic-northernbrazilian,._ic-northerngerman,._ic-northernmexican,._ic-norwegian,._ic-nyonya,._ic-oaxacan,._ic-oden,._ic-okinawan,._ic-okonomiyaki,._ic-onigiri,._ic-opensandwiches,._ic-oriental,._ic-ottomancuisine,._ic-oyakodon,._ic-pakistani,._ic-palatine,._ic-panasian,._ic-pancakes,._ic-parma,._ic-pekinese,._ic-persian,._ic-peruvian,._ic-pfcomercial,._ic-piemonte,._ic-pierogis,._ic-pita,._ic-pizza,._ic-polish,._ic-polynesian,._ic-popuprestaurants,._ic-portuguese,._ic-potatoes,._ic-poutineries,._ic-provencal,._ic-pubfood,._ic-pueblan,._ic-puertorican,._ic-ramen,._ic-raw_food,._ic-reunion,._ic-rhinelandian,._ic-ribatejo,._ic-riceshop,._ic-robatayaki,._ic-rodizios,._ic-roman,._ic-romanian,._ic-rotisserie_chicken,._ic-russian,._ic-salad,._ic-salvadoran,._ic-sandwiches,._ic-sardinian,._ic-scandinavian,._ic-schnitzel,._ic-scottish,._ic-seafood,._ic-senegalese,._ic-serbocroatian,._ic-shanghainese,._ic-sicilian,._ic-signature_cuisine,._ic-singaporean,._ic-slovakian,._ic-soba,._ic-somali,._ic-soulfood,._ic-soup,._ic-southafrican,._ic-southern,._ic-spanish,._ic-srilankan,._ic-steak,._ic-sud_ouest,._ic-sukiyaki,._ic-supperclubs,._ic-sushi,._ic-swabian,._ic-swedish,._ic-swissfood,._ic-syrian,._ic-szechuan,._ic-tabernas,._ic-tacos,._ic-taiwanese,._ic-takoyaki,._ic-tamales,._ic-tapas,._ic-tapasmallplates,._ic-tavolacalda,._ic-tempura,._ic-teochew,._ic-teppanyaki,._ic-tex-mex,._ic-thai,._ic-themedcafes,._ic-tonkatsu,._ic-tradamerican,._ic-traditional_swedish,._ic-tras_os_montes,._ic-trattorie,._ic-trinidadian,._ic-turkish,._ic-turkishravioli,._ic-tuscan,._ic-udon,._ic-ukrainian,._ic-unagi,._ic-uzbek,._ic-vegan,._ic-vegetarian,._ic-venetian,._ic-venezuelan,._ic-venison,._ic-vietnamese,._ic-waffles,._ic-westernjapanese,._ic-wok,._ic-wraps,._ic-yakiniku,._ic-yakitori,._ic-yucatan,._ic-yugoslav {
+    background-color: #F15A7F;
+    &::before {content: '\e945'}
+}
+._ic-nightlife,._ic-absinthebars,._ic-adultentertainment,._ic-airportlounges,._ic-barcrawl,._ic-bars,._ic-beachbars,._ic-beerbar,._ic-beergardens,._ic-champagne_bars,._ic-cigarbars,._ic-clubcrawl,._ic-cocktailbars,._ic-coffeeshops,._ic-comedyclubs,._ic-countrydancehalls,._ic-danceclubs,._ic-dancerestaurants,._ic-divebars,._ic-drivethrubars,._ic-fasil,._ic-gaybars,._ic-hookah_bars,._ic-hotel_bar,._ic-irish_pubs,._ic-karaoke,._ic-lounges,._ic-pianobars,._ic-poolhalls,._ic-pubs,._ic-pulquerias,._ic-sakebars,._ic-speakeasies,._ic-sportsbars,._ic-stripclubs,._ic-stripteasedancers,._ic-tabac,._ic-tikibars,._ic-vermouthbars,._ic-whiskeybars,._ic-wine_bars {
+    background-color: #3ACAC1;
+    &::before {content: '\e943'}
+}
+._ic-food,._ic-acaibowls,._ic-backshop,._ic-bagels,._ic-bakeries,._ic-beer_and_wine,._ic-bento,._ic-beverage_stores,._ic-breweries,._ic-brewpubs,._ic-bubbletea,._ic-butcher,._ic-cakeshop,._ic-candy,._ic-cheese,._ic-chimneycakes,._ic-chocolate,._ic-churros,._ic-cideries,._ic-coffee,._ic-coffeeroasteries,._ic-coffeeteasupplies,._ic-convenience,._ic-csa,._ic-cupcakes,._ic-customcakes,._ic-dagashi,._ic-delicatessen,._ic-desserts,._ic-distilleries,._ic-diyfood,._ic-donairs,._ic-donuts,._ic-driedfruit,._ic-empanadas,._ic-ethicgrocery,._ic-farmersmarket,._ic-fishmonger,._ic-fooddeliveryservices,._ic-foodtrucks,._ic-friterie,._ic-frozenfood,._ic-gelato,._ic-gluhwein,._ic-gourmet,._ic-grocery,._ic-hawkercentre,._ic-healthmarkets,._ic-herbsandspices,._ic-honey,._ic-icecream,._ic-importedfood,._ic-internetcafe,._ic-intlgrocery,._ic-jpsweets,._ic-juicebars,._ic-kombucha,._ic-macarons,._ic-markets,._ic-meaderies,._ic-meats,._ic-milkshakebars,._ic-nasilemak,._ic-oliveoil,._ic-organic_stores,._ic-panzerotti,._ic-pastashops,._ic-piadina,._ic-poke,._ic-popcorn,._ic-pretzels,._ic-salumerie,._ic-seafoodmarkets,._ic-shavedice,._ic-shavedsnow,._ic-smokehouse,._ic-streetvendors,._ic-sugarshacks,._ic-taiyaki,._ic-tea,._ic-tofu,._ic-torshi,._ic-tortillas,._ic-waterstores,._ic-zapiekanka {
+    background: #FF8A00;
+    &::before {content: '\e95b'}
+}
+._ic-shopping,._ic-accessories,._ic-adult,._ic-antiques,._ic-appliances,._ic-artsandcrafts,._ic-artsupplies,._ic-ateliers,._ic-auctionhouses,._ic-baby_gear,._ic-batterystores,._ic-bespoke,._ic-bikes,._ic-bookstores,._ic-brewingsupplies,._ic-bridal,._ic-candlestores,._ic-cannabisdispensaries,._ic-cellphoneaccessories,._ic-ceremonialclothing,._ic-childcloth,._ic-chinesebazaar,._ic-christmastrees,._ic-clothingrental,._ic-comicbooks,._ic-computers,._ic-concept_shops,._ic-cookingclasses,._ic-cosmetics,._ic-costumes,._ic-custommerchandise,._ic-dancewear,._ic-deptstores,._ic-diamondbuyers,._ic-discountstore,._ic-diveshops,._ic-drones,._ic-drugstores,._ic-dutyfreeshops,._ic-electronics,._ic-embroideryandcrochet,._ic-fabricstores,._ic-farmingequipment,._ic-fashion,._ic-fireworks,._ic-fitnessequipment,._ic-fleamarkets,._ic-florists,._ic-flowers,._ic-formalwear,._ic-framing,._ic-furclothing,._ic-furniture,._ic-gardening,._ic-gemstonesandminerals,._ic-giftshops,._ic-goldbuyers,._ic-golfequipment,._ic-grillingequipment,._ic-guns_and_ammo,._ic-hardware,._ic-hats,._ic-headshops,._ic-hifi,._ic-hobbyshops,._ic-hockeyequipment,._ic-holidaydecorations,._ic-homeandgarden,._ic-homedecor,._ic-horsequipment,._ic-hottubandpool,._ic-huntingfishingsupplies,._ic-hydroponics,._ic-jewelry,._ic-kimonos,._ic-kiosk,._ic-kitchenandbath,._ic-kitchensupplies,._ic-knittingsupplies,._ic-leather,._ic-lightingstores,._ic-linens,._ic-lingerie,._ic-livestocksupply,._ic-luggage,._ic-mags,._ic-marketstalls,._ic-materialeelettrico,._ic-maternity,._ic-mattresses,._ic-media,._ic-medicalsupplies,._ic-menscloth,._ic-militarysurplus,._ic-mobilephones,._ic-motorcyclinggear,._ic-musicalinstrumentsandteachers,._ic-musicvideo,._ic-officeequipment,._ic-opticians,._ic-outdoorfurniture,._ic-outdoorgear,._ic-outlet_stores,._ic-packingsupplies,._ic-paintstores,._ic-paintyourownpottery,._ic-pawn,._ic-perfume,._ic-personal_shopping,._ic-photographystores,._ic-playsets,._ic-plus_size_fashion,._ic-poolbilliards,._ic-popupshops,._ic-props,._ic-publicmarkets,._ic-pumpkinpatches,._ic-religiousitems,._ic-rugs,._ic-safestores,._ic-safetyequipment,._ic-scandinaviandesign,._ic-shedsandoutdoorstorage,._ic-shoes,._ic-shoppingcenters,._ic-shoppingpassages,._ic-skateshops,._ic-skishops,._ic-sleepwear,._ic-souvenirs,._ic-spiritual_shop,._ic-sportgoods,._ic-sportswear,._ic-stationery,._ic-stockings,._ic-sunglasses,._ic-surfshop,._ic-swimwear,._ic-tabletopgames,._ic-tableware,._ic-teachersupplies,._ic-thrift_stores,._ic-tickets,._ic-tobaccoshops,._ic-toys,._ic-tradclothing,._ic-trophyshops,._ic-uniforms,._ic-usedbooks,._ic-vapeshops,._ic-videoandgames,._ic-videogamestores,._ic-vintage,._ic-vinyl_records,._ic-vitaminssupplements,._ic-watches,._ic-wholesale_stores,._ic-wigs,._ic-womenscloth {
+    background-color: #633ABA;
+    &::before {content: '\e946'}
+}
+._ic-professional,._ic-accountants,._ic-advertising,._ic-architects,._ic-artconsultants,._ic-bankruptcy,._ic-billingservices,._ic-boatrepair,._ic-bookkeepers,._ic-businessconsulting,._ic-businesslawyers,._ic-careercounseling,._ic-commissionedartists,._ic-consumerlaw,._ic-contractlaw,._ic-courtreporters,._ic-criminaldefense,._ic-customsbrokers,._ic-digitizingservices,._ic-disabilitylaw,._ic-divorce,._ic-duilawyers,._ic-duplicationservices,._ic-editorialservices,._ic-elderlaw,._ic-employmentagencies,._ic-employmentlawyers,._ic-entertainmentlaw,._ic-estateplanning,._ic-fengshui,._ic-general_litigation,._ic-graphicdesign,._ic-immigrationlawyers,._ic-indoorlandscaping,._ic-iplaw,._ic-lawyers,._ic-legalservices,._ic-lifecoach,._ic-marketing,._ic-matchmakers,._ic-mediators,._ic-medicallaw,._ic-musicproduction,._ic-officecleaning,._ic-patentlaw,._ic-payroll,._ic-personal_injury,._ic-personalassistants,._ic-privateinvestigation,._ic-processservers,._ic-productdesign,._ic-publicadjusters,._ic-publicrelations,._ic-realestatelawyers,._ic-security,._ic-shredding,._ic-signmaking,._ic-socialsecuritylaw,._ic-softwaredevelopment,._ic-suppliesrestaurant,._ic-talentagencies,._ic-taxidermy,._ic-taxlaw,._ic-tenantlaw,._ic-trafficticketinglaw,._ic-translationservices,._ic-videofilmproductions,._ic-web_design,._ic-wholesalers,._ic-willstrustsprobates,._ic-workerscomplaw {
+    background: #5359F8;
+    &::before {content: '\e95c'}
+}
+._ic-beautysvc,._ic-acnetreatment,._ic-barbers,._ic-blowoutservices,._ic-eroticmassage,._ic-estheticians,._ic-eyebrowservices,._ic-eyelashservice,._ic-footcare,._ic-hair,._ic-hair_extensions,._ic-hairloss,._ic-hairremoval,._ic-hairstylists,._ic-hotsprings,._ic-kidshairsalons,._ic-laser_hair_removal,._ic-makeupartists,._ic-massage,._ic-menshair,._ic-nailtechnicians,._ic-othersalons,._ic-permanentmakeup,._ic-piercing,._ic-skincare,._ic-spas,._ic-spraytanning,._ic-sugaring,._ic-tanning,._ic-tanningbeds,._ic-tattoo,._ic-teethwhitening,._ic-threadingservices,._ic-waxing {
+    background: #CF48FF;
+    &::before {content: '\e95d'}
+}
+._ic-health,._ic-acupuncture,._ic-addictionmedicine,._ic-aestheticians,._ic-allergist,._ic-alternativemedicine,._ic-anesthesiologists,._ic-animalassistedtherapy,._ic-assistedliving,._ic-audiologist,._ic-ayurveda,._ic-behavioranalysts,._ic-blooddonation,._ic-bodycontouring,._ic-bulkbilling,._ic-c_and_mh,._ic-cannabis_clinics,._ic-cannabiscollective,._ic-cannabisreferrals,._ic-cannabistours,._ic-cardiology,._ic-chiropractors,._ic-colonics,._ic-conciergemedicine,._ic-cosmeticdentists,._ic-cosmeticsurgeons,._ic-crisispregnancycenters,._ic-cryotherapy,._ic-dentalhygeiniststorefront,._ic-dentalhygienists,._ic-dentalhygienistsmobile,._ic-dentists,._ic-dermatology,._ic-diagnosticimaging,._ic-diagnosticservices,._ic-dialysisclinics,._ic-dietitians,._ic-doulas,._ic-earnosethroat,._ic-emergencymedicine,._ic-emergencyrooms,._ic-endocrinologists,._ic-endodontists,._ic-faithbasedcpc,._ic-familydr,._ic-fertility,._ic-floatspa,._ic-gastroenterologist,._ic-generaldentistry,._ic-geneticists,._ic-gerontologist,._ic-habilitativeservices,._ic-halfwayhouses,._ic-halotherapy,._ic-healthcoach,._ic-healthinsurance,._ic-hearing_aids,._ic-hearingaidproviders,._ic-hepatologists,._ic-herbalshops,._ic-homehealthcare,._ic-homeopathic,._ic-hospice,._ic-hospitalists,._ic-hospitals,._ic-hydrotherapy,._ic-hypnosis,._ic-immunodermatologists,._ic-infectiousdisease,._ic-internalmed,._ic-ivhydration,._ic-laboratorytesting,._ic-lactationservices,._ic-laserlasikeyes,._ic-liceservices,._ic-massage_therapy,._ic-medcenters,._ic-medicalfoot,._ic-medicalspa,._ic-medicaltransportation,._ic-memorycare,._ic-midwives,._ic-naturopathic,._ic-nephrologists,._ic-neurologist,._ic-neuropathologists,._ic-neurotologists,._ic-nursepractitioner,._ic-nutritionists,._ic-obgyn,._ic-occupationaltherapy,._ic-oncologist,._ic-opthamalogists,._ic-optometrists,._ic-oralsurgeons,._ic-organdonorservices,._ic-orthodontists,._ic-orthopedists,._ic-orthotics,._ic-osteopathicphysicians,._ic-osteopaths,._ic-otologists,._ic-oxygenbars,._ic-painmanagement,._ic-pathologists,._ic-pediatric_dentists,._ic-pediatricians,._ic-periodontists,._ic-personalcare,._ic-pharmacy,._ic-phlebologists,._ic-physicaltherapy,._ic-physicians,._ic-placentaencapsulation,._ic-plasticsurgeons,._ic-podiatrists,._ic-postpartumcare,._ic-prenatal,._ic-preventivemedicine,._ic-proctologist,._ic-prosthetics,._ic-prosthodontists,._ic-psychiatrists,._ic-psychoanalysts,._ic-psychologists,._ic-psychotechnicaltests,._ic-psychotherapists,._ic-pulmonologist,._ic-radiologists,._ic-reflexology,._ic-rehabilitation_center,._ic-reiki,._ic-reproductivehealthservices,._ic-retinaspecialists,._ic-retirement_homes,._ic-rhematologists,._ic-saunas,._ic-sextherapists,._ic-skillednursing,._ic-sleepspecialists,._ic-sophrologists,._ic-speech_therapists,._ic-spermclinic,._ic-spinesurgeons,._ic-sportsmed,._ic-sportspsychologists,._ic-surgeons,._ic-tattooremoval,._ic-tcm,._ic-toxicologists,._ic-tropicalmedicine,._ic-tuina,._ic-ultrasoundimagingcenters,._ic-underseamedicine,._ic-urgent_care,._ic-urologists,._ic-vascularmedicine,._ic-walkinclinics,._ic-weightlosscenters {
+    background: #FF3E3E;
+    &::before {content: '\e95a'}
+}
+._ic-education,._ic-adultedu,._ic-artclasses,._ic-artschools,._ic-bartendingschools,._ic-cheerleading,._ic-cheesetastingclasses,._ic-childbirthedu,._ic-circusschools,._ic-collegecounseling,._ic-collegeuniv,._ic-cookingschools,._ic-cosmetology_schools,._ic-cprclasses,._ic-dance_schools,._ic-dramaschools,._ic-driving_schools,._ic-duischools,._ic-educationservices,._ic-elementaryschools,._ic-firearmtraining,._ic-firstaidclasses,._ic-flightinstruction,._ic-foodsafety,._ic-glassblowing,._ic-highschools,._ic-language_schools,._ic-massage_schools,._ic-montessori,._ic-nursingschools,._ic-parentingclasses,._ic-photoclasses,._ic-poledancingclasses,._ic-preschools,._ic-privateschools,._ic-privatetutors,._ic-religiousschools,._ic-sambaschools,._ic-skischools,._ic-specialed,._ic-specialtyschools,._ic-speechtraining,._ic-surfschools,._ic-swimminglessons,._ic-tastingclasses,._ic-testprep,._ic-trafficschools,._ic-tutoring,._ic-vocation,._ic-waldorfschools,._ic-winetasteclasses {
+    background-color: #E8D000;
+    &::before {content: '\e940'}
+}
+._ic-active,._ic-aerialfitness,._ic-airsoft,._ic-amateursportsteams,._ic-amusementparks,._ic-aquariums,._ic-archery,._ic-atvrentals,._ic-axethrowing,._ic-badminton,._ic-barreclasses,._ic-baseballfields,._ic-basketballcourts,._ic-bathing_area,._ic-battingcages,._ic-beachequipmentrental,._ic-beaches,._ic-beachvolleyball,._ic-bicyclepaths,._ic-bikeparking,._ic-bikerentals,._ic-boating,._ic-bobsledding,._ic-bocceball,._ic-bootcamps,._ic-bowling,._ic-boxing,._ic-brazilianjiujitsu,._ic-bubblesoccer,._ic-bungeejumping,._ic-canyoneering,._ic-cardioclasses,._ic-carousels,._ic-challengecourses,._ic-chinesemartialarts,._ic-circuittraininggyms,._ic-climbing,._ic-cyclingclasses,._ic-dancestudio,._ic-dartarenas,._ic-daycamps,._ic-discgolf,._ic-diving,._ic-dog_parks,._ic-emstraining,._ic-escapegames,._ic-experiences,._ic-fencing,._ic-fishing,._ic-fitness,._ic-flyboarding,._ic-football,._ic-freediving,._ic-gliding,._ic-gokarts,._ic-golf,._ic-golflessons,._ic-gun_ranges,._ic-gymnastics,._ic-gyms,._ic-handball,._ic-hanggliding,._ic-healthtrainers,._ic-hiking,._ic-horsebackriding,._ic-horseracing,._ic-hot_air_balloons,._ic-indoor_playcenter,._ic-intervaltraininggyms,._ic-jetskis,._ic-karate,._ic-kickboxing,._ic-kids_activities,._ic-kiteboarding,._ic-lakes,._ic-lasertag,._ic-lawn_bowling,._ic-martialarts,._ic-meditationcenters,._ic-mini_golf,._ic-mountainbiking,._ic-muaythai,._ic-nudist,._ic-paddleboarding,._ic-paintball,._ic-paragliding,._ic-parasailing,._ic-parks,._ic-pettingzoos,._ic-pickleball,._ic-pilates,._ic-playgrounds,._ic-publicplazas,._ic-qigong,._ic-races,._ic-racingexperience,._ic-rafting,._ic-recreation,._ic-rock_climbing,._ic-sailing,._ic-scavengerhunts,._ic-scooterrentals,._ic-scuba,._ic-selfdefenseclasses,._ic-seniorcenters,._ic-skate_parks,._ic-skatingrinks,._ic-skiing,._ic-skydiving,._ic-sledding,._ic-snorkeling,._ic-sport_equipment_hire,._ic-sports_clubs,._ic-squash,._ic-summer_camps,._ic-surfing,._ic-surflifesaving,._ic-swimmingpools,._ic-taekwondo,._ic-taichi,._ic-tennis,._ic-trampoline,._ic-tubing,._ic-volleyball,._ic-waterparks,._ic-wildlifehunting,._ic-yoga,._ic-zipline,._ic-zoos,._ic-zorbing {
+    background: #2EB100;
+    &::before {content: '\e950'}
+}
+._ic-hotelstravel,._ic-aerialtours,._ic-airlines,._ic-airport_shuttles,._ic-airports,._ic-airportterminals,._ic-architecturaltours,._ic-arttours,._ic-bedbreakfast,._ic-beertours,._ic-bikesharing,._ic-biketours,._ic-boattours,._ic-buses,._ic-busstations,._ic-bustours,._ic-cablecars,._ic-campgrounds,._ic-carrental,._ic-dolmusstation,._ic-ferries,._ic-foodtours,._ic-guesthouses,._ic-healthretreats,._ic-historicaltours,._ic-hostels,._ic-limos,._ic-luggagestorage,._ic-metrostations,._ic-motorcycle_rental,._ic-passportvisaservices,._ic-pedicabs,._ic-privatejetcharter,._ic-publictransport,._ic-resorts,._ic-rvparks,._ic-rvrental,._ic-scootertours,._ic-sharedtaxis,._ic-skiresorts,._ic-taxis,._ic-tours,._ic-towncarservice,._ic-trains,._ic-trainstations,._ic-transport,._ic-travelagents,._ic-travelservices,._ic-vacation_rentals,._ic-vacationrentalagents,._ic-visitorcenters,._ic-walkingtours,._ic-watertaxis,._ic-whalewatchingtours,._ic-winetours {
+    background: #00856D;
+    &::before {content: '\e952'}
+}
+._ic-religiousorgs,._ic-afrobrazilian,._ic-buddhist_temples,._ic-churches,._ic-hindu_temples,._ic-mosques,._ic-shrines,._ic-sikhtemples,._ic-spiritism,._ic-synagogues,._ic-taoisttemples {
+    background: #E4BE34;
+    &::before {content: '\e953'}
+}
+._ic-eventservices,._ic-agriturismi,._ic-audiovisualequipmentrental,._ic-balloonservices,._ic-bartenders,._ic-boatcharters,._ic-boudoirphotography,._ic-bouncehouserentals,._ic-caricatures,._ic-catering,._ic-clowns,._ic-djs,._ic-eventphotography,._ic-eventplanning,._ic-facepainting,._ic-floraldesigners,._ic-gametruckrental,._ic-golfcartrentals,._ic-hennaartists,._ic-hotels,._ic-karaokerental,._ic-magicians,._ic-mohels,._ic-mountainhuts,._ic-musicians,._ic-officiants,._ic-partybikerentals,._ic-partybusrentals,._ic-partycharacters,._ic-partyequipmentrentals,._ic-partysupplies,._ic-pensions,._ic-personalchefs,._ic-photoboothrentals,._ic-photographers,._ic-residences,._ic-reststops,._ic-ryokan,._ic-sessionphotography,._ic-silentdisco,._ic-sommelierservices,._ic-teambuilding,._ic-triviahosts,._ic-valetservices,._ic-venues,._ic-videographers,._ic-wedding_planning,._ic-weddingchappels {
+    background: #CE0088;
+    &::before {content: '\e954'}
+}
+._ic-auto,._ic-aircraftdealers,._ic-aircraftrepairs,._ic-auto_detailing,._ic-autocustomization,._ic-autodamageassessment,._ic-autoelectric,._ic-autoglass,._ic-autoloanproviders,._ic-autopartssupplies,._ic-autorepair,._ic-autosecurity,._ic-autoupholstery,._ic-aviationservices,._ic-boatdealers,._ic-boatpartsandsupplies,._ic-bodyshops,._ic-car_dealers,._ic-carauctions,._ic-carbrokers,._ic-carbuyers,._ic-carshares,._ic-carwash,._ic-carwindowtinting,._ic-diyautoshop,._ic-evchargingstations,._ic-fueldocks,._ic-golfcartdealers,._ic-hybridcarrepair,._ic-interlocksystems,._ic-marinas,._ic-mobiledentrepair,._ic-mobilityequipment,._ic-motodealers,._ic-motorcycledealers,._ic-motorcyclepartsandsupplies,._ic-motorcyclerepair,._ic-motorepairs,._ic-oilchange,._ic-parking,._ic-registrationservices,._ic-roadsideassist,._ic-rv_dealers,._ic-rvrepair,._ic-service_stations,._ic-servicestations,._ic-smog_check_stations,._ic-stereo_installation,._ic-tires,._ic-towing,._ic-trailerdealers,._ic-trailerrental,._ic-trailerrepair,._ic-transmissionrepair,._ic-truck_rental,._ic-truckdealers,._ic-truckrepair,._ic-usedcardealers,._ic-vehicleshipping,._ic-vehiclewraps,._ic-wheelrimrepair,._ic-windshieldinstallrepair {
+    background: #585858;
+    &::before {content: '\e959'}
+}
+._ic-pets,._ic-animalholistic,._ic-animalphysicaltherapy,._ic-animalshelters,._ic-aquariumservices,._ic-birdshops,._ic-dogwalkers,._ic-emergencypethospital,._ic-farriers,._ic-groomer,._ic-horse_boarding,._ic-localfishstores,._ic-pet_sitting,._ic-pet_training,._ic-petadoption,._ic-petboarding,._ic-petbreeders,._ic-petcremation,._ic-pethospice,._ic-petinsurance,._ic-petphotography,._ic-petservices,._ic-petstore,._ic-pettransport,._ic-petwasteremoval,._ic-reptileshops,._ic-vet {
+    background: #974800;
+    &::before {content: '\e94f'}
+}
+._ic-homeservices,._ic-apartmentagents,._ic-apartments,._ic-artificialturf,._ic-artspacerentals,._ic-backflowservices,._ic-blinds,._ic-buildingsupplies,._ic-cabinetry,._ic-carpenters,._ic-carpeting,._ic-carpetinstallation,._ic-childproofing,._ic-chimneysweeps,._ic-commercialrealestate,._ic-condominiums,._ic-contractors,._ic-countertopinstall,._ic-damagerestoration,._ic-decksrailing,._ic-demolitionservices,._ic-doorsales,._ic-drywall,._ic-electricians,._ic-electricitysuppliers,._ic-estateliquidation,._ic-estatephotography,._ic-excavationservices,._ic-fencesgates,._ic-fireplace,._ic-fireprotection,._ic-firewood,._ic-flooring,._ic-foundationrepair,._ic-furnitureassembly,._ic-garage_door_services,._ic-gardeners,._ic-glassandmirrors,._ic-groutservices,._ic-gutterservices,._ic-handyman,._ic-home_inspectors,._ic-home_organization,._ic-homeautomation,._ic-homecleaning,._ic-homedevelopers,._ic-homeenergyauditors,._ic-homenetworkinstall,._ic-homeownerassociation,._ic-homestaging,._ic-hometheatreinstallation,._ic-homewindowtinting,._ic-housesitters,._ic-housingcooperatives,._ic-hvac,._ic-insulationinstallation,._ic-interiordesign,._ic-irrigation,._ic-isps,._ic-kitchenincubators,._ic-landscapearchitects,._ic-landscaping,._ic-landsurveying,._ic-lawnservices,._ic-lighting,._ic-locksmiths,._ic-masonry_concrete,._ic-mobile_home_repair,._ic-mobilehomes,._ic-mobileparks,._ic-mortgagebrokers,._ic-movers,._ic-naturalgassuppliers,._ic-packingservices,._ic-painters,._ic-patiocoverings,._ic-plumbing,._ic-poolcleaners,._ic-poolservice,._ic-pressurewashers,._ic-propertymgmt,._ic-realestate,._ic-realestateagents,._ic-realestatesvcs,._ic-refinishing,._ic-roofing,._ic-roofinspectors,._ic-saunainstallation,._ic-seasonaldecorservices,._ic-securitysystems,._ic-sharedofficespaces,._ic-shutters,._ic-solarinstallation,._ic-solarpanelcleaning,._ic-structuralengineers,._ic-stucco,._ic-televisionserviceproviders,._ic-tiling,._ic-treeservices,._ic-university_housing,._ic-utilities,._ic-vinylsiding,._ic-wallpapering,._ic-waterheaterinstallrepair,._ic-waterproofing,._ic-waterpurification,._ic-watersuppliers,._ic-windowsinstallation,._ic-windowwashing {
+    background: #00659D;
+    &::before {content: '\e951'}
+}
+._ic-arts,._ic-arcades,._ic-artmuseums,._ic-astrologers,._ic-attractionfarms,._ic-bettingcenters,._ic-bingo,._ic-cabaret,._ic-casinos,._ic-castles,._ic-childrensmuseums,._ic-choirs,._ic-countryclubs,._ic-culturalcenter,._ic-driveintheater,._ic-eatertainment,._ic-farms,._ic-festivals,._ic-funfair,._ic-galleries,._ic-gardens,._ic-generalfestivals,._ic-hauntedhouses,._ic-jazzandblues,._ic-lancenters,._ic-mahjong,._ic-makerspaces,._ic-marchingbands,._ic-movietheaters,._ic-museums,._ic-musicvenues,._ic-mystics,._ic-observatories,._ic-opera,._ic-outdoormovies,._ic-pachinko,._ic-paintandsip,._ic-pickyourown,._ic-planetarium,._ic-psychic_astrology,._ic-psychicmediums,._ic-psychics,._ic-racetracks,._ic-ranches,._ic-rodeo,._ic-social_clubs,._ic-sportsbetting,._ic-sportsteams,._ic-stadiumsarenas,._ic-streetart,._ic-studiotaping,._ic-tablaoflamenco,._ic-theater,._ic-ticketsales,._ic-tradefairs,._ic-veteransorganizations,._ic-virtualrealitycenters,._ic-wineries,._ic-winetastingroom,._ic-xmasmarkets {
+    background-color: #4AB2D8;
+    &::before {content: '\e93c'}
+}
+._ic-publicservicesgovt,._ic-authorized_postal_representative,._ic-civiccenter,._ic-communitycenters,._ic-courthouses,._ic-departmentsofmotorvehicles,._ic-embassy,._ic-firedepartments,._ic-jailsandprisons,._ic-landmarks,._ic-libraries,._ic-municipality,._ic-policedepartments,._ic-postoffices,._ic-registry_office,._ic-taxoffice,._ic-townhall {
+    background: #1800AE;
+    &::before {content: '\e956'}
+}
+._ic-financialservices,._ic-autoinsurance,._ic-banks,._ic-businessfinancing,._ic-currencyexchange,._ic-debtrelief,._ic-financialadvising,._ic-homeinsurance,._ic-installmentloans,._ic-insurance,._ic-investing,._ic-lifeinsurance,._ic-mortgagelenders,._ic-paydayloans,._ic-taxservices,._ic-titleloans {
+    background: #006C04;
+    &::before {content: '\e958'}
+}
+._ic-bicycles,._ic-bikeassociations,._ic-bikerepair,._ic-bikeshop,._ic-specialbikes {
+    background-color: #757AFF;
+    &::before {content: '\e93d'}
+}
+._ic-localflavor,._ic-parklets,._ic-publicart,._ic-unofficialyelpevents,._ic-yelpevents {
+    background: #A80000;
+    &::before {content: '\e957'}
+}
+._ic-massmedia,._ic-printmedia,._ic-radiostations,._ic-televisionstations {
+    background: #0088B2;
+    &::before {content: '\e955'}
+}
+._ic-driving {
+    background-color: #757AFF;
+    &::before {content: '\e93f'}
+}
+._ic-transit {
+    background-color: #757AFF;
+    &::before {content: '\e947'}
+}
+._ic-walking {
+    background-color: #757AFF;
+    &::before {content: '\e948'}
+}
+._ic-cafes {
+    background-color: #9B441F;
+    &::before {content: '\e93e'}
+}
+._ic-fitness {
+    background-color: #374246;
+    &::before {content: '\e941'}
+}
+._ic-groceries, ._ic-grocery {
+    background-color: #90BF0B;
+    &::before {content: '\e942'}
+}
+
+._ic-ealestate {
+    color: #448114;
+    border-radius: 0;
+    background: transparent;
+    
+    &::before {
+        font-size: 49px;
+    }
+    
+    &::after {
+        content: "\e931";
+        font-size: 49px;
+        font-family: $icomoon;
+        transition: color .3s ease;
+        z-index: 1;
+    }
+    
+    @media print {
+        color: $black;
+    }
+}
+
+
+.yelp-simple-card {
+    background: $white;
+    border-radius: 10px;
+    @extend .mb10;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    .yelp-marker-popup-inner {
+        width: 100%;
+    }
+}
+
+.yelp-marker-popup-inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 290px;
+    padding: 10px;
+    
+    &__img-wrap {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 10px;
+        z-index: 2;
+        
+        img {
+            display: block;
+            z-index: 1;
+        }
+    }
+    
+    &__info {
+        position: relative;
+        width: calc(100% - 60px);
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    &__description {
+        padding-right: 10px;
+    }
+    
+    &__rating-wrap {
+        margin-top: auto;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    &__reviews {
+        padding-left: 8px;
+        padding-right: 4px;
+        margin-right: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1px;
+    }
+    
+    &__categories {
+        color: $gray1;
+    }
+    
+    &__reviews {
+        color: $gray1;
+    }
+}
+
+.yelp-logo {
+    position: relative;
+    display: block;
+    width: 30px;
+    @include rh(0.5);
+    background: url(../../images/map/yelp/yelp-logo.png) center center no-repeat;
+    background-size: contain;
+}
+
+.rating {
+    width: 82px;
+    max-width: 100%;
+    @include rh(14/82);
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    
+    &._5 {
+        background-image: url(../../images/map/rating/rating_5.png);
+    }
+    
+    &._45 {
+        background-image: url(../../images/map/rating/rating_4_half.png);
+    }
+    
+    &._4 {
+        background-image: url(../../images/map/rating/rating_4.png);
+    }
+    
+    &._35 {
+        background-image: url(../../images/map/rating/rating_3_half.png);
+    }
+    
+    &._3 {
+        background-image: url(../../images/map/rating/rating_3.png);
+    }
+    
+    &._25 {
+        background-image: url(../../images/map/rating/rating_2_half.png);
+    }
+    
+    &._2 {
+        background-image: url(../../images/map/rating/rating_2.png);
+    }
+    
+    &._15 {
+        background-image: url(../../images/map/rating/rating_1_half.png);
+    }
+    
+    &._1 {
+        background-image: url(../../images/map/rating/rating_1.png);
+    }
+    
+    &._0 {
+        background-image: url(../../images/map/rating/rating_0.png);
+    }
+}
+
+.yelp-cards-slider {
+    position: relative;
+    width: calc(100% + 20px);
+    left: -10px;
+    
+    .yelp-card {
+        padding: 0 10px;
+    }
+    
+    @include media_500 {
+        width: calc(100% + 10px);
+        left: -5px;
+    
+        .yelp-card {
+            padding: 0 5px;
+        }
+    }
+}
+
+.yelp-card {
+    &__img-wrap {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 120px;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 2;
+        
+        img {
+            z-index: 1;
+            transition: $default-transition;
+            transform-origin: 50% 50%;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+    
+        &:hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+    
+    &__title {
+        color: $dark1;
+    }
+    
+    &__categories {
+        color: $gray1;
+    }
+    
+    .yelp-logo {
+        width: 41px;
+    }
+    
+    @include media_500 {
+        &__img-wrap {
+            height: 80px;
+        }
+    }
+}
+
+.school-card {
+    padding: 10px 20px;
+    background: $white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &__bottom {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    &__rank {
+        margin-right: 10px;
+        color: $green;
+    }
+    
+    &__separate {
+        color: $dark1;
+    }
+    
+    &__title {
+        color: $dark1;
+    }
+    
+    &__address {
+        color: $gray1;
+    }
+}
+
+.bus-card {
+    padding: 5px 10px;
+    background: $white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    &__title {
+        color: $dark1;
+    }
+}
+
+.leaflet-popup-tip {
+    pointer-events: auto;
+}
+
+.leaflet-resp-popup-north {
+    .leaflet-popup-tip {
+        width: 27px;
+        height: 27px;
+        margin: -19px auto 0;
+    }
+}
+
+.leaflet-resp-popup-west-south {
+    .leaflet-popup-tip-container {
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
+    }
+}
+
+.leaflet-resp-popup-south-east,
+.leaflet-resp-popup-north-east {
+    .leaflet-popup-tip-container {
+        transform-origin: 0 50%;
+        transform: scale(1.8);
+    }
+}
+
+.leaflet-resp-popup-south-west,
+.leaflet-resp-popup-north-west {
+    .leaflet-popup-tip-container {
+        transform-origin: 100% 50%;
+        transform: scale(1.8);
+    }
+}
+
+.google-street-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: $gray2;
+    z-index: 5;
+    
+    @include media_1300 {
+        height: calc(100% - 31px);
+    }
+    
+    @include media_700 {
+        height: calc(100% - 41px);
+    }
+}
+
+.leaflet-popup-content {
+    .route-card {
+        max-width: 200px;
+        
+        &__remove {
+            display: none;
+        }
+    }
+}
+
+.route-card {
+    position: relative;
+    padding: 10px 30px 10px 20px;
+    background: $white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &__error {
+        color: $pink-red;
+    }
+    
+    &__time {
+        color: $dark1;
+    }
+    
+    &__address {
+        color: $gray1;
+    }
+    
+    &__remove {
+        @include absolute(0, 0, auto, auto);
+        padding: 10px;
+        cursor: pointer;
+        color: $dark1;
+        transition: $default-transition;
+        
+        &:hover {
+            opacity: .5;
+        }
+        
+        &::before {
+            font-size: 10px;
+            display: block;
+        }
+    }
+}

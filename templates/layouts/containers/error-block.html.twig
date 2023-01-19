@@ -1,0 +1,11 @@
+<section class="error-block {{ wrapMod ?? '' }}">
+    <div class="error-block__container {{ containerMod ?? 'container-wide' }}">
+        <div class="error-block__col error-block__col_left {{ svgWrapMod|default('') }} js-check-in-window">
+            {% block error_svg %}{% endblock %}
+        </div>
+
+        <div class="error-block__col error-block__col_right">
+            {% block error_content %}{% endblock %}
+        </div>
+    </div>
+</section>

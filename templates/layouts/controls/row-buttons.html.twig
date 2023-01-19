@@ -1,0 +1,14 @@
+{% set dataCallbackAttr = buttonsCallback|default(false) ? "data-callback=" ~ buttonsCallback %}
+
+<div class="row-buttons mtr5">
+    {% for item in array %}
+        {% set dataUrlAttr = item.dataUrl|default(false) ? 'data-url=' ~ item.dataUrl %}
+        {% set activeMod = setActive|default('') == item.text ? '_active' : '' %}
+
+        <div
+            class="row-buttons__item small-text mt5 {{ activeMod }} {{ buttonsMod|default('') }} {{ item.mod|default('') }}"
+            {{ dataUrlAttr }}
+            {{ dataCallbackAttr }}
+        >{{ item.text }}</div>
+    {% endfor %}
+</div>

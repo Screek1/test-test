@@ -1,0 +1,64 @@
+$white: #ffffff;
+$black:#000;
+
+$dark1: #374246;
+$fuchsia: #CB009B;
+$gray0: #5F6C75;
+$gray1: #ACB8C0;
+$gray-line: #E1E6E7;
+$gray2: #f0f3f8;
+$gray2_07: rgba(240,243,248,0.7);
+$gray3: #E5E8EC;
+$gray4: $gray2;
+$gray5: #CDD6DC;
+$turquoise: #757AFF;
+$red: #FF6F31;
+$green: #b9c157;
+$yellow: #FFF06A;
+$yellow2: #FFD56A;
+
+$dark-red: #9c0b1c;
+$blue: #3452c9;
+$blue2: #94ABFF;
+$blue3: #133DC7;
+$fuchsia-hover: #EC18BA;
+$pink-red: #F15A7F;
+$pink: #F0AACE;
+$pink-pdra: #FEDEDF;
+
+$twitter: #00ABF0;
+$facebook: #39579A;
+$youtube: #FF0000;
+$linkedin: #0A66C2;
+$pinterest: #E60023;
+
+$details: #FEFDE1;
+$advice: #DFEEFF;
+
+$g1: linear-gradient(90deg, #FBAEC8 -0.05%, #757AFF 100%);
+
+$bg-grad-1: linear-gradient(90deg, #F9B7B4 -0.05%, #FCE0DF 100%);
+$bg-grad-2: linear-gradient(90deg, #F49E9A -0.05%, #FFEFEE 100%);
+$bg-grad-3: linear-gradient(90deg, #E1E7FF -0.05%, #FFFFFF 100%);
+
+.bg-grad-1 {
+	background: $bg-grad-1;
+}
+.bg-grad-2 {
+	background: $bg-grad-2;
+}
+.bg-grad-3 {
+	background: $bg-grad-3;
+}
+
+$chart-color-a: $fuchsia;
+$chart-color-b: $dark1;
+$chart-color-c: $turquoise;
+$chart-color-d: $red;
+$chart-color-e: $yellow2;
+
+//$chart-color-a: $pink-red;
+//$chart-color-b: $pink;
+//$chart-color-c: $blue;
+//$chart-color-d: $fuchsia;
+//$chart-color-e: $yellow2;

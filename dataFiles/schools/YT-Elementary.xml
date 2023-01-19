@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>Chief Zzeh Gittlit School</Name>
+    <Street>Box 93</Street>
+    <City>Old Crow</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>67.5696339</lat>
+    <lon>-139.828784</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Christ the King Elementary School</Name>
+    <Street>20 Nisutlin Dr.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.70312500000001</lat>
+    <lon>-135.0376499</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Del Van Gorder School</Name>
+    <Street>Box 160</Street>
+    <City>Faro</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.2285419</lat>
+    <lon>-133.3531599</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>École Émilie-Tremblay / L'Académie Parhélie</Name>
+    <Street>20 Falcon Dr.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.706952</lat>
+    <lon>-135.1098979</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Elijah Smith Elementary School</Name>
+    <Street>1399 Hamilton Boulevard</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.712061</lat>
+    <lon>-135.102278</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eliza Van Bibber School</Name>
+    <Street>Box 30</Street>
+    <City>Pelly Crossing</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.81797899999999</lat>
+    <lon>-136.568795</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ghùch Tlâ Community School</Name>
+    <Street>General Delivery</Street>
+    <City>Carcross</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.1675851</lat>
+    <lon>-134.7073506</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Golden Horn Elementary School</Name>
+    <Street>Duncan Drive Lot 209</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.60058429999999</lat>
+    <lon>-134.8873606</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Grey Mountain Primary School</Name>
+    <Street>186 Alsek Rd.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-3</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.701758</lat>
+    <lon>-135.021749</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hidden Valley Elementary School</Name>
+    <Street>5 MacPherson Road</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.82076799999999</lat>
+    <lon>-135.2009281</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Holy Family Elementary School</Name>
+    <Street>55 Wann Rd.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.77629599999999</lat>
+    <lon>-135.1357079</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>J.V. Clark School</Name>
+    <Street>Box 38</Street>
+    <City>Mayo</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>63.59426199999999</lat>
+    <lon>-135.8964919</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Jack Hulland Elementary School</Name>
+    <Street>1304 Fir Street</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.765787</lat>
+    <lon>-135.135186</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Johnson Elementary School</Name>
+    <Street>Box 367</Street>
+    <City>Watson Lake</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.0633663</lat>
+    <lon>-128.7141586</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Kluane Lake School</Name>
+    <Street>General Delivery</Street>
+    <City>Destruction Bay</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.2524715</lat>
+    <lon>-138.8008311</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Nelnah Bessie John School</Name>
+    <Street>P.O. Box 68</Street>
+    <City>Beaver Creek</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.38669119999999</lat>
+    <lon>-140.8728268</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Robert Service School</Name>
+    <Street>Box 278</Street>
+    <City>Dawson City</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>64.06006959999999</lat>
+    <lon>-139.4320347</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ross River School</Name>
+    <Street>General Delivery</Street>
+    <City>Ross River</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>61.97968830000001</lat>
+    <lon>-132.4470326</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Selkirk Elementary School</Name>
+    <Street>5 Selkirk Street</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.70857319999999</lat>
+    <lon>-135.0378036</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Elias Community School</Name>
+    <Street>Box 5494</Street>
+    <City>Haines Junction</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.7544541</lat>
+    <lon>-137.5117819</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Takhini Elementary School</Name>
+    <Street>526 Range Rd.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.741128</lat>
+    <lon>-135.091924</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Tantalus School</Name>
+    <Street>Box 134</Street>
+    <City>Carmacks</City>
+    <State>YT</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>62.08846800000001</lat>
+    <lon>-136.28729</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Teslin School</Name>
+    <Street>Box 10</Street>
+    <City>Teslin</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.1677401</lat>
+    <lon>-132.7074237</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Whitehorse Elementary School</Name>
+    <Street>4181 4th Ave.</Street>
+    <City>Whitehorse</City>
+    <State>YT</State>
+    <Level>Elementary</Level>
+    <Grades>K-7</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>60.724265</lat>
+    <lon>-135.0603391</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

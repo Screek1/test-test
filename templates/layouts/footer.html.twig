@@ -1,0 +1,19 @@
+<div class="footer {{ wrapMod|default('pt150 pb50') }}">
+    <div class="footer__container {{ containerMod|default('container') }}">
+        <div class="footer__row mb70">
+            {% include 'layouts/modules/social-buttons.html.twig' %}
+        </div>
+
+        <div class="footer__row mb70">
+            {% include 'layouts/modules/collapse-nav-list.html.twig' with {
+                wrapMod: navListMod|default(false),
+            } only %}
+        </div>
+
+        <div class="footer__row">
+            {% include 'layouts/common/copyright.html.twig' with {
+                wrapMod: copyrightMod|default(false),
+            } only %}
+        </div>
+    </div>
+</div>

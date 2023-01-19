@@ -1,0 +1,124 @@
+{% set homeTypes = [
+    'Industrial',
+    'Office',
+    'Single Family',
+    'Multi-family',
+    'Agriculture',
+    'Other',
+    'Business',
+    'Retail',
+    'Recreational',
+    'Vacant Land',
+] %}
+
+{% set listingTypes = [
+    'New Construction',
+    'Foreclosures',
+    'New Listings (Past Week)',
+    'Open Houses',
+    'Price Reduced (Past Week)',
+    'Include Accepting Backup Offers',
+    'Include Pending & Under Contract',
+] %}
+
+{% set keywords = [
+    'keyword1',
+    'keyword2',
+    'keyword3',
+    'keyword4',
+    'keyword5',
+    'keyword6',
+    'keyword7',
+    'keyword8',
+    'keyword9',
+    'keyword10',
+] %}
+
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" class="form-control" name="price" id="price">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="beds">Beds</label>
+            <input type="text" class="form-control" name="beds" id="beds">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="bath">Bathrooms</label>
+            <input type="text" class="form-control" name="bath" id="bath">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="lot-size">Lot Size</label>
+            <input type="text" class="form-control" name="lotSize" id="lot-size">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        {% include 'admin/modules/checkbox-list.html.twig' with {
+            array: homeTypes,
+            id: 'home-type',
+            label: 'Home Types',
+            name: 'homeTypes',
+            selectedValues: [
+                'Agriculture',
+                'Other',
+                'Business',
+            ],
+        } only %}
+    </div>
+
+    <div class="col">
+        {% include 'admin/modules/checkbox-list.html.twig' with {
+            array: listingTypes,
+            id: 'listing-type',
+            label: 'Listing Types',
+            name: 'listingTypes',
+            selectedValues: [
+                'Include Accepting Backup Offers',
+                'Include Pending & Under Contract',
+                'Price Reduced (Past Week)',
+            ],
+        } only %}
+    </div>
+
+    <div class="col-6">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="square-feet">Square feet</label>
+                    <input type="text" class="form-control" name="squareFeet" id="square-feet">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="year-built">Year built</label>
+                    <input type="text" class="form-control" name="yearBuilt" id="year-built">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="keywords">Keywords</label>
+
+                    <select id="keywords" class="js-tags-input" name="page[keywords]" multiple>
+                        {% for item in keywords|default(false) %}
+                            <option value="{{ item }}">{{ item }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

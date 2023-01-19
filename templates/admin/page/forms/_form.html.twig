@@ -1,0 +1,54 @@
+<form class="form-style js-ajax-form"
+        {% if (static_page is defined and static_page.type and static_page.id) %}
+            action="{{ path('page_update', {'id': static_page.id,'type': static_page.type } ) }}"
+        {% else %}
+            action="{{ path('page_create') }}"
+        {% endif %}
+      method="post"
+      autocomplete="off"
+      data-prevent-clear="true"
+      data-remove-ty="true"
+      data-success-trigger="trigger:update-data">
+    <div class="box-body">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" class="form-control required"
+                   value="{{ static_page.title|default('') }}">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" class="form-control"
+                   value="{{ static_page.description|default('') }}">
+        </div>
+        <div class="form-group">
+            <label for="page_content">Content</label>
+
+            <div class="editor-container">
+                <input type="text" id="page_content" name="content" class="form-control" hidden>
+
+                <div id="editor" class="editor">
+                    {% if (static_page is defined) %}
+                        {{ static_page.content|raw }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="slug">Slug</label>
+            <input type="text" id="slug" name="slug" class="form-control required"
+                   value="{{ static_page.slug|default('') }}">
+
+        </div>
+        <div class="form-group" hidden>
+            <input type="text" id="description" name="type" class="form-control" value="{{ form|default('static') }}">
+        </div>
+        <div class="checkbox form-group">
+            <label for="type">Publish</label>
+            <input type="checkbox" id="status" name="status" {{ static_page.status|default(false) ? 'checked' : '' }}>
+        </div>
+    </div>
+    <div class="box-footer">
+        <button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+        <a class="btn btn-light" href="{{ path('page_index') }}" hreflang="en">back to list</a>
+    </div>
+</form>

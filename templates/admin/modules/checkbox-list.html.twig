@@ -1,0 +1,14 @@
+<div class="form-group">
+    {% if label|default(false) %}
+        <label>{{ label }}</label>
+    {% endif %}
+
+    {% for item in array %}
+        {% set checkedProp = item in selectedValues|default([]) ? 'checked' : '' %}
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="{{ name }}" value="{{ item }}" id="{{ id ~ loop.index }}" {{ checkedProp }}>
+            <label class="form-check-label" for="{{ id ~ loop.index }}">{{ item }}</label>
+        </div>
+    {% endfor %}
+</div>

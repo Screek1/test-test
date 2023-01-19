@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>Birchwood Intermediate School</Name>
+    <Street>49 Longworth Av</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2429397</lat>
+    <lon>-63.12524449999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>East Wiltshire Intermediate School</Name>
+    <Street>100 Kingston Rd</Street>
+    <City>Cornwall</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.254665</lat>
+    <lon>-63.205097</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Hernewood Intermediate School</Name>
+    <Street>34 Mill Rd – Rte 136</Street>
+    <City>Woodstock</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.510712</lat>
+    <lon>-63.41681359999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>M. E. Callaghan Intermediate School</Name>
+    <Street>41870 Western Rd – Rte 2</Street>
+    <City>St. Roch</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.899581</lat>
+    <lon>-64.082504</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Montague Intermediate School</Name>
+    <Street>221 Kennedy St</Street>
+    <City>Montague</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.1645857</lat>
+    <lon>-62.65061819999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Queen Charlotte Intermediate School</Name>
+    <Street>150 North River Rd</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.239228</lat>
+    <lon>-63.14228609999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Stonepark Intermediate School</Name>
+    <Street>50 Pope Av</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2682774</lat>
+    <lon>-63.1210891</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Summerside Intermediate School</Name>
+    <Street>247 Central St</Street>
+    <City>Summerside</City>
+    <State>PE</State>
+    <Level>Middle</Level>
+    <Grades>7-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.3995733</lat>
+    <lon>-63.7897786</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

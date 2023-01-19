@@ -1,0 +1,163 @@
+@import 'plugins/bootstrap-tagsinput.css';
+@import '../../node_modules/material-datetime-picker/dist/material-datetime-picker.css';
+
+.btn-toggle {
+  margin: auto;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #83858a;
+  & > .handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
+    background: #fff;
+    transition: left .25s;
+  }
+  &.active {
+    transition: background-color .25s;
+    background-color: #007bff;
+    
+    & > .handle {
+      left: 1.6875rem;
+      transition: left .25s;
+    }
+    &:before {
+      opacity: .5;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+  &.disabled {
+    opacity: .5;
+    &:before {
+      opacity: .5;
+    }
+    &:after {
+      opacity: .5;
+    }
+  }
+}
+.btn-toggle:focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus,
+.btn-toggle.focus.active {
+  outline: none;
+}
+
+.bootstrap-tagsinput {
+  width: 100%;
+  box-shadow: none;
+  min-height: calc(2.25rem + 2px);
+  border: 1px solid #ced4da;
+  
+  input {
+    color: #495057;
+  }
+}
+
+.date-picker-button {
+  cursor: pointer;
+  
+  &__text-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    i {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.simpilepicker-date-picker {
+  margin: 70px auto 0;
+}
+
+
+.c-datepicker {
+  max-height: 100vh;
+  overflow: auto;
+  height: 610px;
+  min-height: 0;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  z-index: 1099;
+  
+  .modal-btns {
+    position: relative;
+    margin-top: auto;
+  }
+  
+  &__header {
+    width: 100%;
+  }
+  
+  &__clock,
+  &__header-date {
+    box-sizing: content-box;
+  }
+  
+  &__day--disabled {
+    opacity: .1;
+    pointer-events: none;
+  }
+  
+  &__mask {
+    top: auto;
+    bottom: calc(200px/2 - 132px/2);
+  }
+  
+  &__clock__hours,
+  &__clock__minutes {
+    position: relative;
+    margin: 0;
+  }
+  
+  &__clock {
+    padding: 100px 0 0 0;
+    margin-bottom: 30px;
+  
+    &::before {
+      top: auto;
+      bottom: -20px;
+      pointer-events: none;
+    }
+  }
+}
+
+thead {
+  & tr {
+    & th {
+      font-weight: normal !important;
+    }
+  }
+}
+
+.h-40px {
+  height: 40px;
+}
+
+.w-33 {
+  width: 33% !important;
+}
+
+.input-group + .input-group {
+  margin-left: 5px;
+}
+
+.font-weight-400 {
+  font-weight: 400 !important;
+}

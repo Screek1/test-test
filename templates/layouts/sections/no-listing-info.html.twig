@@ -1,0 +1,32 @@
+<section class="no-listing-info">
+    <div class="no-listing-info__container">
+        {% include 'layouts/common/title-block.html.twig' with {
+            tag: 'h1',
+            text: title|default('Listing not found'),
+            wrapMod: 'mb0 mt30',
+            titleWrapMode: 'h3 fs-30'
+        } only %}
+        {% include 'layouts/common/title-block.html.twig' with {
+            tag: 'h2',
+            text: listingMLS|default('Listing not found'),
+            wrapMod: 'mb70',
+            titleWrapMode: 'h3 fs-30'
+        } only %}
+        {% include 'layouts/common/title-block.html.twig' with {
+            tag: 'h3',
+            text: listingText|default('Listing not found'),
+            wrapMod: 'mb50',
+            titleWrapMode: 'fs-24'
+        } only %}
+        <div class="header__control-wrap">
+            {% include 'layouts/controls/button.html.twig' with {
+                href: buttonLink,
+                text: buttonText,
+                mod: '_custom-view-similar'
+            } %}
+        </div>
+        {#        <div class="navbar__item mb20"> #}
+        {#            <a href="{{ path('price-your-home') }}" class="navbar__link link-light-gray h4">Price Your Home</a> #}
+        {#        </div> #}
+    </div>
+</section>

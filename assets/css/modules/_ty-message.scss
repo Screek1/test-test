@@ -1,0 +1,89 @@
+form {
+	&:not(._ty) {
+		.ty-message {
+			display: none;
+		}
+	}
+	
+	&._ty {
+		.ty-message  ~ * {
+			display: none;
+		}
+	}
+}
+
+@keyframes show-ty {
+	0% {
+		transform: scale(.75);
+		opacity: 0;
+	}
+	
+	50% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes show-ty-v2 {
+	0%, 100% {
+		opacity: 0;
+	}
+	
+	20%, 80% {
+		opacity: 1;
+	}
+}
+
+.ty-message {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	will-change: transform;
+	backface-visibility: hidden;
+	
+	&:not([class*=_animation-]) {
+		animation: show-ty 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	}
+	
+	&__title {
+		color: $white;
+	}
+	
+	&__subtitle {
+		color: $gray1;
+	}
+	
+	&._animation-v2 {
+		animation: show-ty-v2 2s ease forwards;
+	}
+	
+	&._dark-text & {
+		&__title,
+		&__subtitle {
+			color: $dark1;
+		}
+		
+	}
+	
+	&._gray2-bg {
+		background: $gray2_07;
+	}
+	
+	&._overlay {
+		@include absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 50;
+	}
+}

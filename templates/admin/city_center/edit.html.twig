@@ -1,0 +1,49 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Create City Center!{% endblock %}
+
+{% block body %}
+    <div class="content-header" style="display: flex; justify-content: space-between">
+        <h1 class="text-dark">Update City Center</h1>
+    </div>
+
+    <div class="content px-2">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <div class="card-content">
+                    <form class="form-style js-ajax-form" action="{{ path('admin_city_center_update') }}" method="post">
+                        <input type="hidden" name="id" value="{{ cityCenter.id }}">
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" name="city" class="form-control required" id="city"
+                                   value="{{ cityCenter.city }}" placeholder="Vancouver">
+                        </div>
+                        <div class="mb-3">
+                            <label for="stateOrProvince" class="form-label">State or Province</label>
+                            <input type="text" name="stateOrProvince" class="form-control required" id="stateOrProvince"
+                                   value="{{ cityCenter.stateOrProvince }}" placeholder="British Columbia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="latitude" class="form-label">Latitude</label>
+                            <input type="number" name="latitude" step="0.01" class="form-control required" id="latitude"
+                                   value="{{ cityCenter.latitude }}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="longitude" class="form-label">Longitude</label>
+                            <input type="number" name="longitude" step="0.01" class="form-control required"
+                                   id="longitude" value="{{ cityCenter.longitude }}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="zoom" class="form-label">Longitude</label>
+                            <input type="number" name="zoom" step="1" class="form-control required" id="zoom"
+                                   value="{{ cityCenter.zoom }}">
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" step="1" class="btn btn-primary" id="zoom" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

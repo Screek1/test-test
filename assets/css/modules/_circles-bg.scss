@@ -1,0 +1,104 @@
+.circles-bg {
+	@include absolute-cm(0,auto,auto,calc(50% - (1568px/2)));
+	width: 1568px;
+	height: 616px;
+	max-height: calc(100% + 220px);
+	z-index: -1;
+	
+	&__circle {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		@include rh;
+		
+		&_orange {
+			@include absolute(0,auto,auto);
+			width: 394px;
+		}
+		
+		&_blue {
+			@include absolute(auto,auto,0,535px);
+			width: 349px;
+		}
+		
+		&_purple {
+			@include absolute(auto,0,15px,auto);
+			width: 453px;
+		}
+	}
+	
+	&._in-window & {
+		&__circle {
+			&_orange {
+				background-image: url(../../images/bg/circle-orange.png);
+			}
+			
+			&_blue {
+				background-image: url(../../images/bg/circle-blue.png);
+			}
+			
+			&_purple {
+				background-image: url(../../images/bg/circle-purple.png);
+			}
+		}
+	}
+	
+	@include media_1300 {
+		top: 0;
+		left: calc(50% - (1268px/2) + 95px);
+		width: 1268px;
+		height: 850px;
+		
+		&__circle {
+			&_blue {
+				left: 260px;
+			}
+			
+			&_purple {
+				top: 144px;
+				right: 0;
+				bottom: auto;
+			}
+		}
+	}
+	
+	@include media_1000 {
+		top: 0;
+		left: calc(50% - (978px/2) + 10px);
+		width: 978px;
+		height: 873px;
+		
+		&__circle {
+			&_blue {
+				left: 162px;
+			}
+			
+			&_purple {
+				top: 181px;
+			}
+		}
+	}
+	
+	@include media_700 {
+		top: 0;
+		left: calc(50% - (538px/2) - 5px);
+		width: 538px;
+		height: 912px;
+		
+		&__circle {
+			&_orange {
+				width: 268px;
+			}
+			
+			&_blue {
+				left: 110px;
+				width: 238px;
+			}
+			
+			&_purple {
+				top: 291px;
+				width: 310px;
+			}
+		}
+	}
+}

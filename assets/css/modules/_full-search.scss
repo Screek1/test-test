@@ -1,0 +1,267 @@
+@mixin field-wrap {
+	height: 60px;
+	box-shadow: 0 0 0 5px $dark1;
+	border-radius: 20px;
+	background: $white;
+}
+
+@mixin field-wrap-700 {
+	height: 46px;
+	box-shadow: 0 0 0 3px $dark1;
+	border-radius: 10px;
+	background: $white;
+}
+
+.full-search {
+	._hide {
+		display: none;
+	}
+	
+	.icon-btn {
+		@include absolute(0,7px,0,auto);
+		width: 47px;
+		height: 47px;
+		border-radius: 15px;
+		
+		&::before {
+			font-size: 18px;
+		}
+	}
+	
+	.check__text {
+		white-space: nowrap;
+	}
+	
+	.select-module {
+		z-index: 6;
+		
+		&__scroll {
+			max-height: 185px;
+		}
+		
+		&__option {
+			white-space: nowrap;
+		}
+		
+		&__dropdown {
+			width: auto;
+			left: auto;
+			right: 0;
+		}
+	}
+	
+	&__buttons-wrap {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+	
+	&__selects-group {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 50%;
+		height: 100%;
+		
+		& > .dropdown-button,
+		& > .select-module {
+			position: relative;
+			width: 50%;
+			
+			&::before {
+				content: '';
+				@include absolute(0,auto);
+				width: 1px;
+				height: 40px;
+				background: $gray-line;
+			}
+		}
+		
+		& > .dropdown-button {
+			padding: 0 15px 0 20px;
+		}
+		
+		& > .select-module {
+			height: 100%;
+			
+			.select-module__input-container {
+				height: 100%;
+				padding: 0 30px 0 20px;
+			}
+		}
+	}
+	
+	&__selects-container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 550px;
+		height: 100%;
+		@include absolute(0,70px,auto,auto);
+	}
+	
+	&__fields-container {
+		position: relative;
+		
+		& > .autofill {
+			width: calc(100% - 620px);
+			height: 100%;
+			
+			.input-style {
+				height: 100%;
+				
+				.input-style__container {
+					height: 100%;
+				}
+				
+				.input-style__input {
+					height: 100%;
+					border-radius: 20px 0 0 20px;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+	
+	@include media_min-1300 {
+		&__fields-container {
+			@include field-wrap;
+		}
+	}
+	
+	@include media_1300-700 {
+		&__selects-container {
+			@include field-wrap;
+		}
+		
+		&__fields-container > .autofill {
+			@include field-wrap;
+		}
+	}
+	
+	@include media_1300 {
+		.icon-btn {
+			top: auto;
+			bottom: 6px;
+		}
+		
+		&__fields-container > .autofill {
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		
+		&__selects-container {
+			position: relative;
+			width: 100%;
+			right: 0;
+			padding-right: 70px;
+		}
+		
+		&__selects-group {
+			& > .dropdown-button,
+			& > .select-module {
+				&:first-child {
+					&::before {
+						display: none;
+					}
+				}
+			}
+			
+			&:first-child {
+				.dropdown-button__popup {
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+	}
+	
+	@include media_700 {
+		&__fields-container {
+			& > .autofill {
+				margin-bottom: 15px;
+				@include field-wrap-700;
+			}
+			
+			.icon-btn {
+				display: none;
+			}
+		}
+		
+		&__buttons-wrap {
+			width: 100%;
+			max-width: 320px;
+			margin-left: auto;
+			justify-content: space-between;
+		}
+		
+		&__button-search-wrap {
+			width: calc(100% - 55px);
+		}
+		
+		&__button-search-wrap {
+			.btn-style {
+				width: 100%;
+			}
+		}
+		
+		&__selects-container {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-right: 0;
+		}
+		
+		&__selects-group {
+			@include field-wrap-700;
+			margin-bottom: 15px;
+			width: 100%;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
+			& > .dropdown-button {
+				padding-left: 15px;
+			}
+			
+			.dropdown-button,
+			.select-module {
+				&._hide + .dropdown-button:not(:last-child),
+				&._hide + .select-module:not(:last-child) {
+					&::before {
+						display: none;
+					}
+					
+					.select-module__dropdown,
+					.dropdown-button__popup {
+						left: 0;
+						right: auto;
+					}
+				}
+			}
+			
+			.dropdown-button,
+			.select-module {
+				&:first-child {
+					.select-module__dropdown,
+					.dropdown-button__popup {
+						left: 0;
+						right: auto;
+					}
+				}
+			}
+			
+			.dropdown-button,
+			.select-module {
+				&:last-child {
+					.select-module__dropdown,
+					.dropdown-button__popup {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+.tools-and-guides {
+	position: relative;
+	$r: &;
+	
+	.mini-subscribe-form {
+		max-width: 287px;
+	}
+	
+	&__table {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	&__col {
+		width: calc(50% - 10px);
+		background: $dark1;
+		border-radius: 20px;
+		padding-left: 50px;
+		padding-right: 40px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		
+		&_left {
+			#{$r}__img-wrap {
+				width: 83px;
+				@include rh(80/83);
+			}
+			
+			#{$r}__content {
+				width: calc(100% - 83px);
+			}
+		}
+		
+		&_right {
+			#{$r}__img-wrap {
+				width: 108px;
+				@include rh(80/108);
+			}
+			
+			#{$r}__content {
+				width: calc(100% - 108px);
+			}
+		}
+	}
+	
+	&__title {
+		color: $white;
+	}
+	
+	&__text {
+		color: $gray1;
+	}
+	
+	&__content {
+		padding-left: 40px;
+	}
+	
+	&__img-wrap {
+		position: relative;
+	}
+	
+	&__img {
+	
+	}
+	
+	@include media_1300 {
+		&__col {
+			padding-right: 50px;
+			
+			#{$r}__content {
+				width: 100%;
+				padding-left: 0;
+				margin-top: 40px;
+			}
+			
+			&_left {
+				#{$r}__img-wrap {
+					width: 73px;
+				}
+			}
+			
+			&_right {
+				#{$r}__img-wrap {
+					width: 95px;
+				}
+			}
+		}
+	}
+	
+	@include media_1000 {
+		.circles-bg {
+			margin-top: 0;
+		}
+		
+		&__col {
+			width: 100%;
+			margin-bottom: 20px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
+			#{$r}__content {
+				margin-top: 0;
+				padding-left: 40px;
+			}
+			
+			&_left {
+				#{$r}__content {
+					width: calc(100% - 73px);
+				}
+			}
+			
+			&_right {
+				padding-right: 25px;
+				
+				#{$r}__content {
+					width: calc(100% - 95px);
+				}
+			}
+		}
+	}
+	
+	@include media_700 {
+		&__col {
+			padding-right: 30px;
+			padding-left: 30px;
+			margin-bottom: 15px;
+			
+			#{$r}__content {
+				width: 100%;
+				margin-top: 30px;
+				padding-left: 0;
+			}
+			
+			&_left {
+				#{$r}__img-wrap {
+					width: 63px;
+				}
+			}
+			
+			&_right {
+				#{$r}__img-wrap {
+					width: 82px;
+				}
+			}
+		}
+	}
+}

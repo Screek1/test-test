@@ -1,0 +1,43 @@
+{% set wrap_mod = wrapMod|default(false) ? ' ' ~ wrapMod : '' %}
+{% set input_mod = inputMod|default(false) ? ' ' ~ inputMod : '' %}
+{% set select_mod = selectMod|default(false) ? ' ' ~ selectMod : '' %}
+{% set dataMaxHeightSettingsAttr = maxHeightSettings|default(false) ? "data-mh-settings=" ~ maxHeightSettings|json_encode %}
+
+<div class="select-module{{ wrap_mod }} js-select-module js-bcc">
+    <select class="select-module__select{{ select_mod }} pseudo-hidden js-select-module-select" name="{{ name }}">
+        {% if initialEmpty|default(false) %}
+            <option value="" disabled selected></option>
+        {% endif %}
+
+        {% for option in options|cast_to_array %}
+            {% set value = option.value|default(false) ? option.value : (loop.index0 ? option : '') %}
+            {% set text = option.text|default(false) ? option.text : option %}
+            {% set icon = option.icon|default(null) %}
+
+            {% set selectedAttr = initialEmpty|default(false) ? '' :
+                (selectedVal|default(false) ? (selectedVal is same as(value) ? 'selected=selected' : '') : (loop.index0 ? '' : 'selected=selected'))
+            %}
+
+            {% set formatText = formatBigPrice|default(false) and loop.index0 ?
+                '$' ~ (text >= 1000000 ? text/1000000 ~ 'm' : text/1000 ~ 'k') :
+                text
+            %}
+
+            <option value="{{ value }}" {{ selectedAttr }} data-icon="{{ icon }}">{{ formatText }}</option>
+        {% endfor %}
+    </select>
+
+    <div class="select-module__input-container{{ input_mod }} js-select-module-container">
+        <span class="select-module__text-block js-select-module-text-block {{ textMod|default('small-text_bold') }}">
+            {% if initialEmpty|default(false) %}
+                {{ placeholder|default('') }}
+            {% endif %}
+        </span>
+    </div>
+
+    <div class="select-module__dropdown js-select-dropdown {{ dropdownMod|default('') }}" data-name="{{ name }}"
+        {{ dataMaxHeightSettingsAttr }}
+    >
+        <div class="select-module__scroll js-smooth-scroll js-select-module-options"></div>
+    </div>
+</div>

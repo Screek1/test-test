@@ -1,0 +1,17 @@
+.request {
+	position: relative;
+	
+	&__wrap {
+		width: 100%;
+		background: $dark1;
+		border-radius: 20px;
+		color: $white;
+	}
+	
+	@include media_700 {
+		&__wrap {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}

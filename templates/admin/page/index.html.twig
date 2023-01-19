@@ -1,0 +1,57 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Page index{% endblock %}
+
+{% block body %}
+    <div class="content-header">
+        <h1 class="text-dark">Static Pages</h1>
+    </div>
+
+    <div class="content px-2">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <table class="table table-bordered table-hover mb-0">
+                    <thead class="bg-secondary">
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Slug</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for static_page in static_pages %}
+                        <tr>
+                            <td class="align-middle">{{ static_page.id }}</td>
+                            <td class="align-middle">{{ static_page.title }}</td>
+                            <td class="align-middle">{{ static_page.slug }}</td>
+                            <td class="align-middle">{{ static_page.type }}</td>
+                            <td class="align-middle">{{ static_page.status ? 'Published' : 'Draft' }}</td>
+                            <td class="align-middle">
+                                <a class="card-link"
+                                   href="{{ path('page_edit', {'id': static_page.id,'type': static_page.type}) }}"
+                                   hreflang="en">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="5">no records found</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <a class="btn btn-primary" href="{{ path('page_new', {'type': 'static'}) }}" hreflang="en">Create new Static
+            Page</a>
+        <a class="btn btn-primary" href="{{ path('page_new', {'type': 'search'}) }}" hreflang="en">Create new Search
+            Page</a>
+        <a class="btn btn-primary" href="{{ path('page_new', {'type': 'landing'}) }}" hreflang="en">Create new Landing
+            Page</a>
+    </div>
+{% endblock %}

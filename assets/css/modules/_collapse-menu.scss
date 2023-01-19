@@ -1,0 +1,35 @@
+.collapse-menu {
+	&__title-wrap {
+		position: relative;
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		color: $dark1;
+		@extend .angle-down-after;
+		padding-left: 25px;
+		
+		&::before {
+			@include absolute(0, auto, auto);
+			display: block;
+			margin-right: 10px;
+			flex: 0 0 auto;
+			font-size: 16px;
+		}
+		
+		&::after {
+			position: relative;
+			top: 0;
+			margin: 0 0 0 10px;
+		}
+	}
+	
+	&__title {
+		position: relative;
+		padding-top: 1px;
+		word-break: break-all;
+	}
+	
+	&__collapse-wrap {
+		display: none;
+	}
+}

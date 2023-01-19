@@ -1,0 +1,99 @@
+.search-card {
+	padding-left: 50px;
+	padding-right: 50px;
+	background: $white;
+	border: 1px solid $gray-line;
+	border-radius: 20px;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	&__title {
+		word-break: break-word;
+	}
+	
+	&__price {
+		color: $dark1;
+	}
+	
+	&__found,
+	&__date,
+	&__criteria-val {
+		color: $gray1;
+	}
+	
+	&__table {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	
+	&__col {
+		&_left {
+			width: calc(100% / 8 * 6 - 10px);
+		}
+		
+		&_right {
+			width: calc(100% / 8 * 2 - 10px);
+			text-align: right;
+		}
+	}
+	
+	&__subtitle {
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	
+	&__criteria-label {
+		margin-right: 10px;
+	}
+	
+	&__buttons-wrap {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		
+		.btn-style {
+			margin-right: 10px;
+		}
+	}
+	
+	@include media_1000 {
+		&__col {
+			&_left {
+				width: calc(100% / 12 * 8 - 10px);
+			}
+			
+			&_right {
+				width: calc(100% / 12 * 4 - 10px);
+			}
+		}
+	}
+	
+	@include media_700 {
+		padding-left: 30px;
+		padding-right: 30px;
+		
+		&__table {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		
+		&__col {
+			width: 100%;
+			
+			&_left {
+			
+			}
+			
+			&_right {
+				margin-top: 10px;
+				text-align: left;
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}City Centres{% endblock %}
+
+{% block body %}
+    <div class="content px-2">
+        <div class="content-header" style="display: flex; justify-content: space-between">
+            <h1 class="text-dark">City Center List</h1>
+            <a href="{{ path('admin_city_center_create') }}" class="btn btn-primary" hreflang="en"> <i
+                        class="fa fa-plus"></i></a>
+        </div>
+
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <table class="table table-bordered table-hover mb-0">
+                    <thead class="bg-secondary">
+                    <tr>
+                        <th>id</th>
+                        <th>City</th>
+                        <th>State or Province</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Zoom</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    {% for cityCenter in cityCenters.results %}
+                        <tr>
+                            <td class="align-middle">{{ cityCenter.id }}</td>
+                            <td class="align-middle">{{ cityCenter.city }}</td>
+                            <td class="align-middle">{{ cityCenter.stateOrProvince }}</td>
+                            <td class="align-middle">{{ cityCenter.latitude }}</td>
+                            <td class="align-middle">{{ cityCenter.longitude }}</td>
+                            <td class="align-middle">{{ cityCenter.zoom }}</td>
+                            <td class="align-middle">
+                                <a class="card-link"
+                                   href="{{ path('admin_city_center_edit', {id: cityCenter.id}) }}"
+                                   hreflang="en"
+                                >
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a class="card-link"
+                                   href="{{ path('admin_city_center_delete', {id: cityCenter.id}) }}"
+                                   hreflang="en"
+                                >
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="5">no records found</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% macro pagination(total, current, url, nearbyPagesLimit = 4) %}
+            {% apply spaceless %}
+                <div class="pagination">
+                    <li class="page-item {{ current > 1 ? '' : 'disabled' }}">
+                        <a class="page-link" href="{{ current > 1 ? (url ~ (current-1))|e : '' }}"
+                           aria-label="Previous"
+                           hreflang="en">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+
+                    {% for i in 1..total %}
+                        {% if 0 == (current - nearbyPagesLimit) - loop.index %}
+                            <li class="page-item"><a class="page-link" href="{{ (url ~ 1)|e }}" hreflang="en">1</a></li>
+                            {% if 1 != loop.index %}
+                                <li class="page-item disabled"><span class="page-link">...</span></li>
+                            {% endif %}
+                        {% elseif 0 == (current + nearbyPagesLimit) - loop.index  and (current + nearbyPagesLimit) < total %}
+                            <li class="page-item disabled"><span class="page-link">...</span></li>
+                        {% elseif 0 < (current - nearbyPagesLimit) - loop.index %}
+                        {% elseif 0 > (current + nearbyPagesLimit) - loop.index %}
+                        {% else %}
+                            {% if current == loop.index %}
+                                <li class="page-item active"><span class="page-link">{{ loop.index }}</span></li>
+                            {% else %}
+                                <li class="page-item"><a class="page-link"
+                                                         href="{{ url ~ loop.index }}"
+                                                         hreflang="en">{{ loop.index }}</a></li>
+                            {% endif %}
+
+                        {% endif %}
+                    {% endfor %}
+                    {% if current != total  and (current + nearbyPagesLimit) < total %}
+                        <li class="page-item"><a class="page-link" href="{{ (url ~ total)|e }}"
+                                                 hreflang="en">{{ total }}</a></li>
+                    {% endif %}
+
+
+                    <li class="page-item {{ current < total ? '' : 'disabled' }}">
+                        <a class="page-link" href="{{ current < total ? (url ~ (current+1))|e : '' }}"
+                           aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </div>
+            {% endapply %}
+        {% endmacro %}
+
+        {% if cityCenters.results is not empty and cityCenters.pagesCount > 1 %}
+            <div class="row">
+                <div class="col-auto">
+                    {{ _self.pagination(cityCenters.pagesCount, cityCenters.currentPage, '/admin/city_center/') }}
+                </div>
+                <div class="col-auto">
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="page-selector" id="page-selector-input"
+                               placeholder="Page number"/>
+
+                        <span class="input-group-append">
+                            <span class="btn btn-primary"
+                                  onclick="window.location = `/admin/city_center/${document.getElementById('page-selector-input').value}`">Go</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}

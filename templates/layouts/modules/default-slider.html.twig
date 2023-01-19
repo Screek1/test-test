@@ -1,0 +1,46 @@
+{% set defaultSliderParameters = {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    lazyLoadSrcAttr: 'none',
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false,
+                dots: true,
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+            }
+        },
+    ]
+} %}
+
+<div
+    class="default-slider js-default-slider _gray-dots-nav"
+    data-lazy-inner='true'
+    data-inner-slider-selector='.js-trigger-slider'
+    data-slider-parameters="{{ defaultSliderParameters|json_encode() }}"
+>
+    {% for item in slides %}
+        <div class="default-slider__item">
+            {% include 'layouts/modules/estate-card.html.twig' with item only %}
+        </div>
+    {% endfor %}
+</div>

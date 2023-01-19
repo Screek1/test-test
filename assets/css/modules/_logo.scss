@@ -1,0 +1,26 @@
+.logo {
+	display: block;
+	position: relative;
+	width: 280px;
+	height: auto;
+	
+	&__img {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	@include media_1300 {
+	
+	}
+	
+	@include media_1000 {
+		width: 161px;
+	}
+	
+	@include media_700 {
+		width: 121px;
+	}
+}

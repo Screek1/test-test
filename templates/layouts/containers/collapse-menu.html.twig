@@ -1,0 +1,9 @@
+<div class="collapse-menu {{ wrapMod|default('') }}">
+    <div class="collapse-menu__title-wrap {{ titleWrapMod|default('')}} js-toggle-next">
+        <span class="collapse-menu__title {{ titleMod|default('button1')}}">{{ title|default('') }}</span>
+    </div>
+
+    <div class="collapse-menu__collapse-wrap pt20">
+        {% block collapse_menu_content %}{% endblock %}
+    </div>
+</div>

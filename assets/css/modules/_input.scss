@@ -1,0 +1,317 @@
+@mixin input-wrap {
+    width: 100%;
+    position: relative;
+}
+
+@mixin input-style {
+    position: relative;
+    z-index: 9;
+    transition: $default_transition;
+    height: 41px;
+    width: 100%;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid $gray0;
+    color: $gray1;
+    
+    font-family: $montserrat;
+    @include small-text;
+    
+    &:hover {
+        background: $gray0;
+    }
+
+    &:focus {
+        background: transparent;
+        color: $gray2;
+        font-weight: 700;
+    }
+    
+    &.error {
+        background: transparent;
+        color: $gray2;
+        border-color: $pink-red;
+    }
+
+    &::-webkit-input-placeholder {
+        @include small-text;
+        color: $gray1;
+    }
+    &::-moz-placeholder {
+        @include small-text;
+        color: $gray1;
+    }
+    &:-ms-input-placeholder {
+        @include small-text;
+        color: $gray1;
+    }
+    &:-moz-placeholder {
+        @include small-text;
+        color: $gray1;
+    }
+    
+    &._transparent {
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        color: $dark1;
+    
+        &:hover {
+            background: transparent;
+            color: $gray0;
+        }
+    
+        &:focus {
+            background: transparent;
+            color: $dark1;
+            font-weight: 700;
+        }
+    
+        &.error {
+            background: transparent;
+            color: $pink-pdra;
+            font-weight: 700;
+        }
+    }
+    
+    &._fill-white {
+        background: $white;
+        color: $gray1;
+        border-color: $white;
+    
+        &:hover {
+            background: $gray3;
+            border-color: $gray3;
+        }
+    
+        &:focus {
+            background: $white;
+            border-color: $gray2;
+            color: $dark1;
+            font-weight: 700;
+        }
+    
+        &.error {
+            background: $pink-pdra;
+            border-color: $pink-pdra;
+            color: $dark1;
+            font-weight: 700;
+        }
+    }
+    
+    &._fill-gray {
+        border: none;
+        background: $gray2;
+        
+        &:hover {
+            background: $gray3;
+        }
+    }
+    
+    &._bordered {
+        background: $white;
+        color: $gray1;
+        border-color: $gray-line;
+    
+        &:hover {
+            background: $gray4;
+        }
+    
+        &:focus {
+            background: $white;
+            border-color: $gray2;
+            color: $dark1;
+            font-weight: 700;
+        }
+    
+        &.error {
+            background: $pink-pdra;
+            border-color: $pink-pdra;
+            color: $dark1;
+            font-weight: 700;
+        }
+    }
+    
+    &._bordered-med {
+        background: $white;
+        color: $gray1;
+        border-color: $gray5;
+    
+        &:hover {
+            background: $gray4;
+        }
+    
+        &:focus {
+            background: $white;
+            color: $dark1;
+            font-weight: 700;
+        }
+    
+        &.error {
+            background: $pink-pdra;
+            border-color: $pink-pdra;
+            color: $dark1;
+            font-weight: 700;
+        }
+    }
+    
+    &._bordered-bright {
+        background: $white;
+        color: $dark1;
+        border-color: $gray-line;
+    
+        &:hover {
+            background: $gray4;
+        }
+    
+        &:focus {
+            background: $white;
+            border-color: $gray2;
+            color: $dark1;
+            font-weight: normal;
+        }
+    
+        &.error {
+            background: $pink-pdra;
+            border-color: $pink-pdra;
+            color: $dark1;
+            font-weight: normal;
+        }
+    }
+    
+    &._gray-text {
+        color: $gray1;
+    }
+    
+    &._inline {
+        color: $dark1;
+        border: none;
+        padding: 0 13px 0 0;
+        height: auto;
+    
+        &::after {
+            right: 0;
+            top: calc(50% - 6px);
+        }
+        
+        &:hover {
+            background: transparent;
+            color: $gray0;
+        }
+    
+        &:focus {
+            background: transparent;
+            color: $gray0;
+        }
+    
+        &.error {
+            color: $pink-pdra;
+        }
+    }
+    
+    &._dark-text {
+        color: $dark1;
+    }
+    
+    @include media_1700 {
+    
+    }
+    
+    @include media_1300 {
+    
+    }
+    
+    @include media_1000 {
+    
+    }
+    
+    @include media_700 {
+    
+    }
+    
+}
+
+.input-style {
+    @include input-wrap;
+    
+    &__inline-submit {
+        @include absolute(auto, 0, 0, auto);
+        width: 40px;
+        height: 46px;
+        z-index: 15;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        background: transparent;
+        cursor: pointer;
+        
+        &::before {
+            font-size: 22px;
+        }
+        
+        &_fh {
+            height: 100%;
+        }
+        
+        &.icon-search {
+            &::before {
+                font-size: 21px;
+                margin-top: -0.1em;
+            }
+        }
+    }
+    
+    &__inline-submit ~ &__input {
+        width: calc(100% - 40px);
+    }
+    
+    &__input {
+        @include input-style;
+        
+        &._textarea {
+            height: 143px;
+            padding-top: 11px;
+            border-radius: 10px;
+        }
+    }
+    
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    &__label {
+        color: red;
+    }
+    
+    @include media_1700 {
+    
+    }
+    
+    @include media_1300 {
+    
+    }
+    
+    @include media_1000 {
+    
+    }
+    
+    @include media_700 {
+        &__input {
+            &._textarea {
+                height: 100px;
+            }
+        }
+    }
+}
+
+.select-wrapper {
+
+}

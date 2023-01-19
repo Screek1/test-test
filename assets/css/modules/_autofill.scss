@@ -1,0 +1,111 @@
+.autofill {
+	$r: &;
+	position: relative;
+	
+	&__dropdown {
+		@extend .select-dropdown;
+		min-width: 100%;
+		width: auto;
+		
+		&._rel-h {
+			display: flex;
+			flex-direction: column;
+			
+			#{$r}__options {
+				max-height: none;
+				height: 100%;
+			}
+		}
+		
+		&._big {
+			#{$r}__options {
+				max-height: 190px;
+			}
+		}
+	}
+	
+	&__options {
+		@extend .select-scroll;
+	}
+	
+	&__options-list {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	
+	&._active {
+		#{$r}__dropdown {
+			@extend .select-dropdown-active;
+		}
+	}
+}
+
+.autofill-no-results {
+	color: $gray1;
+	
+	&:not(._show) {
+		display: none;
+	}
+}
+
+.options-category {
+	width: 100%;
+	margin-bottom: 20px;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	.autofill-option:not(._hide) ~ .autofill-option {
+		margin-top: 5px;
+	}
+	
+	&__title {
+		margin-bottom: 10px;
+		padding: 5px;
+		background: $gray2;
+		color: $dark1;
+		text-align: center;
+		@extend .small-text;
+	}
+}
+
+.autofill-option {
+	@extend .select-option;
+	margin-top: 0;
+	
+	&:not(._hide) ~ & {
+		margin-top: 10px;
+	}
+	
+	span {
+		display: inline;
+		background: yellow;
+	}
+	
+	&._hide {
+		display: none;
+	}
+}
+
+.option-label {
+	@extend .tiny-text;
+	position: relative;
+	color: $gray1;
+	display: block;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	
+	&::after {
+		content: '';
+		width: 20px;
+		height: 100%;
+		@include absolute(0,0,auto,auto);
+		background: linear-gradient(270deg, $white, rgba(0,0,0,0));
+		z-index: 2;
+	}
+}

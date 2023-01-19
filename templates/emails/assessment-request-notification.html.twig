@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<body>
+<h1>Assessment Request</h1>
+
+<strong>Name</strong>: <span>{{ name }}</span><br>
+<strong>Email</strong>: <span>{{ email }}</span><br>
+<strong>Phone</strong>: <span>{{ code }} {{ phone }}</span><br>
+<strong>Details</strong>:
+<p>User searched for: <strong>{{ userSearch }}</strong></p>
+<p>User found: <strong>{{ selectedAddress }}</strong></p>
+
+<script type="text/javascript">
+    {% block js %}{% endblock %}
+</script>
+</body>
+</html>

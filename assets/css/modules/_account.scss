@@ -1,0 +1,68 @@
+.account-table {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	&__col {
+		&_left {
+			width: 340px;
+		}
+		
+		&_right {
+			width: calc(100% - 340px);
+			padding-left: 67px;
+		}
+	}
+	
+	
+	
+	
+	@include media_1300 {
+		
+		&__col {
+			width: 100%;
+			
+			&_left {
+				margin-bottom: 50px;
+			}
+			
+			&_right {
+				padding-left: 0;
+			}
+		}
+		
+		
+	}
+	
+	@include media_1000 {
+	
+	}
+	
+	@include media_700 {
+	
+	}
+	
+}
+
+.favorites-nav {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	
+	.select-module {
+		width: 250px;
+		max-width: 100%;
+		margin-right: 40px;
+	}
+	
+	@include media_700 {
+		.form-style {
+			width: 100%;
+		}
+		
+		.select-module {
+			margin-right: 0;
+		}
+	}
+}

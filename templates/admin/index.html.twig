@@ -1,0 +1,32 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+{% block body %}
+    <div class="content-header">
+        <h1 class="text-dark">Welcome in Admin side! ✅</h1>
+    </div>
+
+    <div class="content px-2">
+        {% if app.user %}
+            <div class="mb-3">
+                You are logged in as {{ app.user.username }}, <a href="{{ path('admin_logout') }}"
+                                                                 hreflang="en">Logout</a>
+            </div>
+        {% endif %}
+
+        <div class="mb-3">
+            You can go to, <a href="{{ path('admin_profile') }}" hreflang="en">Admin profile</a>
+        </div>
+
+        <ul>
+            <li>Your controller at <code><a
+                            hreflang="en"
+                            href="{{ '/mount/space-1/.user/domains/viksemenov20/src/Controller/AdminController.php'|file_link(0) }}">src/Controller/AdminController.php</a></code>
+            </li>
+            <li>Your template at <code><a
+                            hreflang="en"
+                            href="{{ '/mount/space-1/.user/domains/viksemenov20/templates/admin/index.html.twig'|file_link(0) }}">templates/admin/index.html.twig</a></code>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+<div class="check {{ wrapMod|default('') }}">
+    <input
+            class="check__input {{ inputMod|default('') }}"
+            type="{{ type|default('checkbox') }}"
+            name="{{ name }}" value="{{ value }}"
+            {{ checked|default(false) ? 'checked' : (selected|default(false) ? 'checked' : '') }}
+    >
+    <div class="check__indicator"></div>
+    <div class="check__text tiny-text">{{ (valueAsText|default(false) ? value : text)|raw }}</div>
+</div>

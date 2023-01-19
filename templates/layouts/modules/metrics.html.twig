@@ -1,0 +1,45 @@
+{% set metricsLabels = {
+    bedRooms: {
+        suffix: 'Beds',
+    },
+    bathRooms: {
+        suffix: 'Baths',
+    },
+    stories: {
+        suffix: 'Stories',
+    },
+    lotSize: {
+        prefix: 'lot',
+        suffix: metrics.lotSizeUnits|default('sqft'),
+    },
+    sqrtFootage: {
+        suffix: metrics.sqrtFootageUnits|default('sqft'),
+    },
+    yearBuilt: {
+        suffix: 'built',
+    }
+} %}
+
+{% set defaultOutputProps = ['bedRooms','bathRooms','stories','lotSize','sqrtFootage','yearBuilt'] %}
+
+<div class="metrics {{ wrapMod ?? '' }}">
+    {% for prop in outputProps ?? defaultOutputProps %}
+        {% if attribute(metrics, prop)|default('')|length %}
+            <div class="metrics__item {{ itemMod ?? '' }}">
+                {% if metricsLabels[prop] and metricsLabels[prop].prefix|default(false) %}
+                    <span class="metrics__label {{ labelMod ?? 'small-text' }}">{{
+                        metricsLabels[prop].prefix
+                    }}</span>
+                {% endif %}
+
+                <span class="metrics__val {{ valMod ?? 'small-text_bold' }}">{{ attribute(metrics, prop) }}</span>
+
+                {% if metricsLabels[prop] and metricsLabels[prop].suffix|default(false) %}
+                    <span class="metrics__label {{ labelMod ?? 'small-text' }}">{{
+                        metricsLabels[prop].suffix
+                    }}</span>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

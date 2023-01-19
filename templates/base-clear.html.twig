@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>{% block title %}Homes for Sale, MLS® Listings | viksemenov{% endblock %}</title>
+    <meta name="description"
+          content="{% block description %}List of all MLS® Real Estate Listings: Houses, Condos, Apartments and Land for sale in Canada | viksemenov{% endblock %}">
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    <script type="text/javascript">
+      window.IS_AUTHENTICATED_REMEMBERED = {{ is_granted('IS_AUTHENTICATED_REMEMBERED') ? 'true' : 'false' }};
+      window.ADD_TO_FAVORITES_PATH = "{{ path('add_to_favorites', {listingId: '@'}) }}"
+    </script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('build/images/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('build/images/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('build/images/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('build/images/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('build/images/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('build/images/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('build/images/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('build/images/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('build/images/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="{{ asset('build/images/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('build/images/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('build/images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('build/images/favicon/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('build/images/favicon/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="og:locale" content="{{ app.request.locale }}">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="{{ app.request.uri }}">
+    <meta name="og:site_name" content="viksemenov.com by Renanza Realty Inc.">
+    <meta name="og:title" content="{{ block('title') }}">
+    <meta name="og:description" content="{{ block('description') }}">
+
+    {% block og_tags %}
+        <meta name="og:image" content="{{ app.request.schemeAndHttpHost ~ asset('build/images/logo.svg') }}"/>
+    {% endblock %}
+
+    <meta name="fb:app_id" content="464510310340979">
+    {% block facebook_tags %}
+
+    {% endblock %}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="viksemenov">
+    <meta name="twitter:creator" content="@viksemenov">
+    <meta name="twitter:title" content="{{ block('title') }}">
+    <meta name="twitter:description" content="{{ block('description') }}">
+    {% block twitter_tags %}
+        <meta name="twitter:image" content="{{ app.request.schemeAndHttpHost ~ asset('build/images/logo.svg') }}"/>
+    {% endblock %}
+</head>
+<body>
+<div class="wrapper">
+    {% include 'layouts/header.html.twig' with {
+        'showSearch': true
+    } %}
+
+    {% block body %}{% endblock %}
+
+    {% include 'layouts/popups/popup-overlay.html.twig' %}
+    {% include 'layouts/popups/authorization-popup.html.twig' %}
+    {% include 'layouts/popups/registration-popup.html.twig' %}
+    {% include 'layouts/popups/password-recovery-popup.html.twig' %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</div>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6102ef29a9f75f3d"></script>
+
+{% if (app.environment != 'local' and app.environment != 'dev') %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41512741-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'UA-41512741-1');
+    </script>
+{% endif %}
+</body>
+</html>

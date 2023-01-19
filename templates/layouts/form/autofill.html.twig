@@ -1,0 +1,24 @@
+{% set dataRequestOptionsAttribute = requestOptions|default(false)  ? "data-request-options=" ~ requestOptions|json_encode()  %}
+{% set datapropsAttribute = props|default(false)  ? "data-props=" ~ props|json_encode()  %}
+{% set dataJsonNameAttr = dataJsonName|default(false)  ? "data-json-name=" ~ dataJsonName  %}
+{% set dataMaxHeightSettingsAttr = maxHeightSettings|default(false) ? "data-mh-settings=" ~ maxHeightSettings|json_encode %}
+
+<div
+    class="autofill {{ wrapMod|default('js-autofill') }} js-bcc"
+    data-no-result-text="no results"
+    {{ dataRequestOptionsAttribute }}
+    {{ datapropsAttribute }}
+>
+    {% include 'layouts/form/input.html.twig' with {
+        name: inputName|default('search-input'),
+        placeholder: inputPlaceholder|default('Enter Neighbourhood, City, MLS®'),
+        inputMod: 'required ' ~ inputMod|default('_transparent') ~ ' ' ~ inputJsMod|default('js-autofill-input') ~ ' js-exclude',
+        value: inputValue|default(''),
+    } only %}
+
+    <div class="autofill__dropdown js-max-width {{ dropdownMod|default('') }}" {{ dataMaxHeightSettingsAttr }}>
+        <div class="autofill__options js-smooth-scroll {{ optionsContainerMod|default('js-autofill-options-container ') }}">
+            <div class="autofill__options-list js-autofill-options-list" {{ dataJsonNameAttr }}></div>
+        </div>
+    </div>
+</div>

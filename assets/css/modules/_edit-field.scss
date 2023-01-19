@@ -1,0 +1,30 @@
+.edit-field {
+	position: relative;
+	width: 100%;
+	
+	&__controls-wrap {
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	
+	&__text {
+		margin-right: 10px;
+		color: $gray0;
+	}
+	
+	&:not(._active) & {
+		&__cancel-text,
+		&__collapse-container {
+			display: none;
+		}
+	}
+	
+	&._active & {
+		&__text,
+		&__edit-text {
+			display: none;
+		}
+	}
+}

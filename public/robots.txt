@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /my-account/
+Disallow: /api/
+
+Sitemap: https://www.viksemenov.com/sitemap.xml

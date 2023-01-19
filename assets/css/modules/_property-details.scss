@@ -1,0 +1,124 @@
+.property-details {
+
+}
+
+.property-table {
+	$r: &;
+	position: relative;
+	border: 1px solid $gray-line;
+	border-radius: 30px;
+	
+	.slick-list {
+		width: 100%;
+	}
+	
+	&__top {
+		border-bottom: 1px solid $gray-line;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
+	&__list {
+		position: relative;
+		width: calc(100% + 40px);
+		left: -20px;
+		@include slider-preload($r, 'col');
+		
+		&:not(.slick-dotted) {
+			.slick-track {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				
+				&::before,
+				&::after {
+					display: none;
+				}
+			}
+			
+			#{$r}__col {
+				max-width: 180px;
+			}
+		}
+	}
+	
+	&__col {
+		width: calc(100% / 3);
+		padding: 0 20px;
+	}
+	
+	&__row {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__label {
+		color: $gray1;
+	}
+	
+	&__val {
+		color: $dark1;
+	}
+	
+	&__bottom {
+		position: relative;
+		padding-left: 50px;
+		padding-right: 50px;
+		
+		&.icon-mls {
+			&::before {
+				@include absolute(0,50px,auto,auto);
+				font-size: 40px;
+				color: $gray1;
+				display: block;
+			}
+			
+			#{$r}__title {
+				padding-right: 120px;
+				min-height: 40px;
+			}
+		}
+	}
+	
+	&__title {
+		position: relative;
+	}
+	
+	@include media_1300 {
+	
+	}
+	
+	@include media_1000 {
+	
+	}
+	
+	@include media_700 {
+		&__top {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		
+		&__bottom {
+			padding-left: 30px;
+			padding-right: 30px;
+			
+			&.icon-mls {
+				padding-bottom: 45px;
+				
+				&::before {
+					top: auto;
+					bottom: 0;
+					right: auto;
+					left: 30px;
+					font-size: 30px;
+				}
+				
+				#{$r}__title {
+					padding-right: 0;
+					min-height: 0;
+				}
+			}
+		}
+	}
+}

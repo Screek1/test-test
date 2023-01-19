@@ -1,0 +1,82 @@
+{% set mod = twoCol|default(false) ? '_2-col' : '' %}
+{% set collapseMod = confidentialityCollapse|default(false) ? '_collapse' : '' %}
+{% set collapseJsMod = confidentialityCollapse|default(false) ? 'js-conf-collapse-form' : '' %}
+{% set action = formAction|default(false) ? formAction : path('new_viewing') %}
+
+<form class="contact-form {{ mod }} {{ collapseMod }} {{ collapseJsMod }} js-ajax-form" action="{{ action }}"
+      method="post" data-google-action="new-viewing" data-category="contact" data-label="contact" autocomplete="off">
+    {% if addHiddenInputs|default(false) %}
+        {% for item in addHiddenInputs %}
+            {% include 'layouts/form/hidden-input.html.twig' with {
+                name: item.name,
+                value: item.value|default(false)
+            } only %}
+        {% endfor %}
+    {% endif %}
+
+    {% if listingId|default(false) %}
+        {% include 'layouts/form/hidden-input.html.twig' with {
+            name: 'listingId',
+            value: listingId,
+        } only %}
+    {% endif %}
+
+    {% include 'layouts/common/ty-message.html.twig' with {
+        title: tyTitle|default('Thank you'),
+        subtitle: tySubtitle|default('Your message has been sent'),
+        titleMod: tyTitleMod|default(false),
+        subtitleMod: tySubtitleMod|default(false),
+    } only %}
+
+    <div class="contact-form__col">
+        <div class="contact-form__list mb20">
+            <div class="contact-form__row">
+                {% include 'layouts/form/input.html.twig' with {
+                    'name': 'name',
+                    'placeholder': 'Enter your name',
+                    'inputMod': 'required',
+                    'value': app.user|default(false) ? app.user.name : null
+                } only %}
+            </div>
+
+            <div class="contact-form__row">
+                {% include 'layouts/form/input.html.twig' with {
+                    'name': 'email',
+                    'placeholder': 'Your email',
+                    'inputMod': 'required usermail',
+                    'value': app.user|default(false) ? app.user.email : null
+                } only %}
+            </div>
+            <div class="contact-form__row">
+                <div class="tel-wrap js-max-width-container">
+                    <div class="tel-wrap__phone">
+                        {% include 'layouts/form/input.html.twig' with {
+                            'name': 'phone',
+                            'placeholder': 'Phone number',
+                            'inputMod': 'required js-only-numbers',
+                            'value': app.user|default(false) ? app.user.phoneNumber : null,
+                            'extraParams': 'maxlength=10'
+                        } only %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if confidentiality|default(false) and not twoCol|default(false) %}
+            <div class="contact-form__check-wrap js-collapse mb30">
+                {% include 'layouts/modules/agreement-check.html.twig' %}
+            </div>
+        {% endif %}
+
+        {% include 'layouts/controls/button.html.twig' with {
+            button: true,
+            text: btnText|default(''),
+        } only %}
+    </div>
+
+    {% if confidentiality|default(false) and twoCol|default(false) %}
+        <div class="contact-form__col">
+            {% include 'layouts/modules/agreement-check.html.twig' %}
+        </div>
+    {% endif %}
+</form>

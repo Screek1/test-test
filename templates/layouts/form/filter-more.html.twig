@@ -1,0 +1,214 @@
+{% set checkboxArray1 = [
+    {
+        type: 'checkbox',
+        name: 'propertyTypes',
+        value: 'New Construction',
+        text: 'New Construction',
+        wrapMod: '_dark-gray',
+    },
+    {
+        type: 'checkbox',
+        name: 'propertyTypes',
+        value: 'Foreclosures',
+        text: 'Foreclosures',
+        wrapMod: '_dark-gray',
+    }
+] %}
+
+{% set checkboxArray2 = [
+    {
+        type: 'checkbox',
+        name: 'propertyTypes',
+        value: 'New Listings (Past Week)',
+        text: 'New Listings (Past Week)',
+        wrapMod: '_dark-gray',
+    },
+    {
+        type: 'checkbox',
+        name: 'propertyTypes',
+        value: 'Open Houses',
+        text: 'Open Houses',
+        wrapMod: '_dark-gray',
+    }
+] %}
+
+{% set selectLotSize = {
+    name: 'minLotSize',
+    inputMod: '_bordered-bright',
+    wrapMod: '',
+    options: [
+        {
+            value: '',
+            text: 'No Min',
+            selected: true,
+        },
+
+        {
+            value: '100',
+            text: '100+ sqft',
+        },
+
+        {
+            value: '200',
+            text: '200+ sqft',
+        },
+
+        {
+            value: '300',
+            text: '300+ sqft',
+        },
+    ]
+} %}
+
+{% set selectLotSizeOptions = [
+    {
+        value: '',
+        text: 'No Min',
+        selected: true,
+    },
+    {
+        value: 100,
+        text: '100+ sqft',
+    },
+    {
+        value: 200,
+        text: '200+ sqft',
+    },
+    {
+        value: 300,
+        text: '300+ sqft',
+    },
+    {
+        value: 400,
+        text: '400+ sqft',
+    },
+    {
+        value: 500,
+        text: '500+ sqft',
+    },
+    {
+        value: 600,
+        text: '600+ sqft',
+    },
+    {
+        value: 700,
+        text: '700+ sqft',
+    },
+    {
+        value: 800,
+        text: '300+ sqft',
+    },
+    {
+        value: 800,
+        text: '300+ sqft',
+    },
+    {
+        value: 900,
+        text: '900+ sqft',
+    },
+    {
+        value: 1000,
+        text: '1000+ sqft',
+    },
+
+] %}
+
+<div class="filter-more js-prevent-send">
+    <div class="filter-more__row mb20">
+        <span class="filter-more__label small-text mb10">Type of Listing</span>
+
+        <div class="filter-more__fields-wrap">
+            <div class="list">
+                {% for item in checkboxArray1 %}
+                    {% set selected = item.value in criteria.propertyTypes|default([]) %}
+
+                    {% include 'layouts/controls/check.html.twig' with item|merge({selected: selected}) only %}
+                {% endfor %}
+            </div>
+            <div class="list">
+                {% for item in checkboxArray2 %}
+                    {% set selected = item.value in criteria.propertyTypes|default([]) %}
+
+                    {% include 'layouts/controls/check.html.twig' with item|merge({selected: selected}) only %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-more__row mb20">
+        <span class="filter-more__label small-text mb5">Keywords</span>
+
+        <div class="filter-more__fields-wrap">
+            {% include 'layouts/form/keywords.html.twig' with {
+                value: criteria.keywordsArray|default(false),
+            } only %}
+        </div>
+    </div>
+
+    <div class="filter-more__row mb20">
+        <span class="filter-more__label small-text mb5">Square Feet</span>
+
+        <div class="filter-more__fields-wrap">
+            <div class="twin-fields js-twin-fields">
+                {% include 'layouts/form/input.html.twig' with {
+                    name: 'minLivingArea',
+                    placeholder: 'No Min',
+                    inputMod: '_bordered-bright js-only-numbers',
+                    value: criteria.minLivingArea|default(''),
+                } only %}
+
+                {% include 'layouts/form/input.html.twig' with {
+                    name: 'maxLivingArea',
+                    placeholder: 'No Max',
+                    inputMod: '_bordered-bright js-only-numbers',
+                    value: criteria.maxLivingArea|default(''),
+                } only %}
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-more__row mb20">
+        <span class="filter-more__label small-text mb5">Lot Size</span>
+
+        <div class="filter-more__fields-wrap">
+            {% include 'layouts/form/select.html.twig' with {
+                name: 'minLotSize',
+                inputMod: '_bordered-bright',
+                wrapMod: '',
+                options: selectLotSizeOptions,
+                selectedVal: criteria.minLotSize|default(false),
+            } only %}
+        </div>
+    </div>
+
+    <div class="filter-more__row mb40">
+        <span class="filter-more__label small-text mb5">Year Built</span>
+
+        <div class="filter-more__fields-wrap">
+            <div class="twin-fields js-twin-fields">
+                {% include 'layouts/form/input.html.twig' with {
+                    name: 'minYearBuilt',
+                    placeholder: 'No Min',
+                    inputMod: '_bordered-bright js-only-numbers',
+                    value: criteria.minYearBuilt|default(''),
+                } only %}
+
+                {% include 'layouts/form/input.html.twig' with {
+                    name: 'maxYearBuilt',
+                    placeholder: 'No Max',
+                    inputMod: '_bordered-bright js-only-numbers',
+                    value: criteria.maxYearBuilt|default(''),
+                } only %}
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-more__row">
+        <div class="filter-more__button-wrap">
+            {% include 'layouts/controls/button.html.twig' with {
+                'text': 'View Homes',
+                'mod': 'js-send-filter-button js-bcc-close',
+            } only %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,177 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Users/Leads{% endblock %}
+
+{% block body %}
+    <div class="content px-2">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-user-tab" data-toggle="pill" href="#pills-info" role="tab"
+                   aria-controls="pills-home" aria-selected="true" hreflang="en">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-searches" role="tab"
+                   aria-controls="pills-profile" aria-selected="false" hreflang="en">Saved searches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-viewings" role="tab"
+                   aria-controls="pills-contact" aria-selected="false" hreflang="en">Scheduled Viewings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-favorites" role="tab"
+                   aria-controls="pills-contact" aria-selected="false" hreflang="en">Favourites Listings</a>
+            </li>
+        </ul>
+
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-info" role="tabpanel"
+                         aria-labelledby="pills-info-tab">
+                        {#                        {{ dump(user) }} #}
+
+                        <table class="table table-bordered table-hover mb-0">
+                            <tbody>
+                            <tr>
+                                <th style="width: 200px">Id</th>
+                                <td class="align-middle">{{ user.id }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">Name</th>
+                                <td>{{ user.name|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">Phone</th>
+                                <td>{{ user.phoneNumber|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">Email</th>
+                                <td>{{ user.email|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">Roles</th>
+                                <td>{{ user.roles|default('-')|join(', ') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">Address</th>
+                                <td>{{ user.address|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">State</th>
+                                <td>{{ user.state|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">City</th>
+                                <td>{{ user.city|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">Postal</th>
+                                <td>{{ user.postal|default('-') }}</td>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 200px;">About</th>
+                                <td>{{ user.about|default('-') }}</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-searches" role="tabpanel" aria-labelledby="pills-searches-tab">
+                        {#                        {{ dump(searches) }} #}
+
+                        {% for item in searches %}
+                            {% include 'admin/modules/search-card.html.twig' with item only %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-viewings" role="tabpanel" aria-labelledby="pills-viewings-tab">
+                        {#                        {{ dump(viewings) }} #}
+
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-viewing-feature-tab" data-toggle="tab"
+                                   href="#nav-viewing-feature" role="tab" aria-controls="nav-home" aria-selected="true"
+                                   hreflang="en">Upcoming</a>
+                                <a class="nav-item nav-link" id="nav-viewing-past-tab" data-toggle="tab"
+                                   href="#nav-viewing-past" role="tab" aria-controls="nav-profile"
+                                   aria-selected="false" hreflang="en">Past</a>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-viewing-feature" role="tabpanel"
+                                 aria-labelledby="nav-viewing-feature-tab">
+                                <div class="row">
+                                    {% for item in viewings %}
+                                        {% if ((item.scheduled_time|date('Y-m-d') > date('now')|date('Y-m-d')) or item.scheduled_time == null) and item.status == 'new' %}
+                                            <div class="col-4 js-wrap">
+                                                {% include 'admin/modules/listing-card.html.twig' with item.listing|merge({
+                                                    sliderIndex: 'v-new-' ~ loop.index,
+                                                    date: item.scheduled_time|default('now'),
+                                                    showDate: true,
+                                                    status: item.status,
+                                                    updatePath: path('update_viewing'),
+                                                    cancelPath: '#',
+                                                    listingId: item.id
+                                                }) only %}
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-viewing-past" role="tabpanel"
+                                 aria-labelledby="nav-viewing-past-tab">
+                                <div class="row">
+                                    {% for item in viewings %}
+                                        {% if (item.scheduled_time|date('Y-m-d') < date('now')|date('Y-m-d')) and item.status == 'new' %}
+                                            <div class="col-4">
+                                                {% include 'admin/modules/listing-card.html.twig' with item.listing|merge({
+                                                    sliderIndex: 'v-past-' ~ loop.index,
+                                                    date: item.scheduled_time|default('now'),
+                                                    showDate: true,
+                                                    status: 'past',
+                                                    updatePath: '#',
+                                                    cancelPath: '#',
+                                                }) only %}
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-favorites" role="tabpanel"
+                         aria-labelledby="pills-favorites-tab">
+                        {#                        {{ dump(favouritesListings) }} #}
+
+                        <div class="row">
+                            {% for item in favouritesListings %}
+                                <div class="col-4">
+                                    {% include 'admin/modules/listing-card.html.twig' with item|merge({
+                                        sliderIndex: 'f-' ~ loop.index
+                                    }) only %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn btn-light mt-4" href="{{ path('admin_user_list') }}" hreflang="en">back to list</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

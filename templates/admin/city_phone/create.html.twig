@@ -1,0 +1,42 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Create City Phone!{% endblock %}
+
+{% block body %}
+    <div class="content-header" style="display: flex; justify-content: space-between">
+        <h1 class="text-dark">Create City Phone</h1>
+    </div>
+    <div class="content px-2">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <div class="card-content">
+                    <form class="form-style js-ajax-form" action="{{ path('admin_city_phone_store') }}" method="post">
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" name="country" class="form-control required" id="country"
+                                   placeholder="Canada">
+                        </div>
+                        <div class="mb-3">
+                            <label for="stateOrProvince" class="form-label">State or Province</label>
+                            <input type="text" name="stateOrProvince" class="form-control required" id="stateOrProvince"
+                                   placeholder="British Columbia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" name="city" class="form-control required" id="city"
+                                   placeholder="Vancouver">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" name="phone" class="form-control required" id="phone"
+                                   placeholder="123-456-7890">
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" step="1" class="btn btn-primary" value="Create">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

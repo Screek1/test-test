@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schools>
+  <Placemark>
+    <Name>Alberton Elementary School</Name>
+    <Street>354 Church St</Street>
+    <City>Alberton</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.810322</lat>
+    <lon>-64.0763798</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Amherst Cove Consolidated School</Name>
+    <Street>300 Carleton St</Street>
+    <City>Borden-Carleton</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.252593</lat>
+    <lon>-63.6851651</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Athena Consolidated School</Name>
+    <Street>150 Ryan St</Street>
+    <City>Summerside</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.410846</lat>
+    <lon>-63.777843</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Belfast Consolidated School</Name>
+    <Street>3326 Rte 1</Street>
+    <City>South Pinette</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat/>
+    <lon/>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Bloomfield Elementary School</Name>
+    <Street>2472 O’Halloran Rd – Rte 145</Street>
+    <City>Bloomfield Corner</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.76130999999999</lat>
+    <lon>-64.180609</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Cardigan Consolidated School</Name>
+    <Street>1614 North Royatly Rd – Rte 342</Street>
+    <City>Cardigan</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2336872</lat>
+    <lon>-62.6217853</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Central Queens Elementary School</Name>
+    <Street>19821 Rte 2</Street>
+    <City>Hunter River</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.3558367</lat>
+    <lon>-63.3516323</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Donagh Regional School</Name>
+    <Street>928 Bethel Rd – Rte 215</Street>
+    <City>Donagh</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.263672</lat>
+    <lon>-62.961798</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>East A+ Program</Name>
+    <Street>622 Princess Dr</Street>
+    <City>Montague</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>3-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program>Alternative Education Sites</Program>
+    <www/>
+    <lat>46.16645219999999</lat>
+    <lon>-62.6578011</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Eliot River Elementary School</Name>
+    <Street>79 Hilltop Dr</Street>
+    <City>Cornwall</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>4-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2245627</lat>
+    <lon>-63.22814140000001</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Ellerslie Elementary School</Name>
+    <Street>1226 Ellerslie Rd – Rte 133</Street>
+    <City>Ellerslie-Bideford</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.6062664</lat>
+    <lon>-63.9346728</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Elm Street Elementary School</Name>
+    <Street>256 Elm St</Street>
+    <City>Summerside</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.40177060000001</lat>
+    <lon>-63.79538299999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Englewood School</Name>
+    <Street>20280 Rte 1</Street>
+    <City>Victoria</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.23033059999999</lat>
+    <lon>-63.4966698</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Georgetown Elementary School</Name>
+    <Street>47 Kent St</Street>
+    <City>Georgetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.183311</lat>
+    <lon>-62.53356900000001</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Glen Stewart Primary School</Name>
+    <Street>34 Glen Stewart Dr</Street>
+    <City>Glen Stewart</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-3</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.224395</lat>
+    <lon>-63.09836559999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Grace Christian School</Name>
+    <Street>50 Kirkdale Rd.</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program/>
+    <www/>
+    <lat>46.26428</lat>
+    <lon>-63.16317249999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Greenfield Elementary School</Name>
+    <Street>100 Darby Dr</Street>
+    <City>Summerside</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.4131902</lat>
+    <lon>-63.81351979999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Gulf Shore Consolidated School</Name>
+    <Street>185 Hilltop Av</Street>
+    <City>North Rustico</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.4579499</lat>
+    <lon>-63.327716</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Immanuel Christian School</Name>
+    <Street>68 Allen Street</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program/>
+    <www/>
+    <lat>46.2467563</lat>
+    <lon>-63.1280914</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>L. M. Montgomery Elementary School</Name>
+    <Street>Civic Address  69 MacWilliams Rd</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2847455</lat>
+    <lon>-63.1030124</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Miscouche Consolidated School</Name>
+    <Street>19 School St</Street>
+    <City>Miscouche</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.4320032</lat>
+    <lon>-63.86404349999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Montague Consolidated School</Name>
+    <Street>622 Princess Dr</Street>
+    <City>Montague</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.16645219999999</lat>
+    <lon>-62.6578011</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Montessori School of Charlottetown</Name>
+    <Street>134 Kent Street</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>false</Public>
+    <Private>true</Private>
+    <Program/>
+    <www/>
+    <lat>46.2356403</lat>
+    <lon>-63.1280704</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Morell Consolidated School</Name>
+    <Street>7755 St Peters Rd – Rte 2</Street>
+    <City>Morell</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.415821</lat>
+    <lon>-62.710048</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Mt. Stewart Consolidated School</Name>
+    <Street>120 South Main St – Rte 351</Street>
+    <City>Mt. Stewart</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.3658013</lat>
+    <lon>-62.8668586</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>O’Leary Elementary School</Name>
+    <Street>25 Barclay Rd</Street>
+    <City>O’Leary</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.704029</lat>
+    <lon>-64.23114</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Parkdale Elementary School</Name>
+    <Street>49 Confederation St</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2524022</lat>
+    <lon>-63.1243229</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Parkside Elementary School</Name>
+    <Street>195 Summer St</Street>
+    <City>Summerside</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.3986496</lat>
+    <lon>-63.7886373</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Prince Street Elementary School</Name>
+    <Street>60 Upper Prince St</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2408294</lat>
+    <lon>-63.1291196</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Queen Elizabeth Elementary School</Name>
+    <Street>2 Saunders Ln</Street>
+    <City>Kensington</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.437988</lat>
+    <lon>-63.6286311</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Sherwood Elementary School</Name>
+    <Street>64 Maple Av</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2648101</lat>
+    <lon>-63.1290063</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Somerset Elementary School</Name>
+    <Street>30 Somerset St</Street>
+    <City>Kinkora</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.3278968</lat>
+    <lon>-63.605127</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Souris Regional School</Name>
+    <Street>15 Longworth St</Street>
+    <City>Souris</City>
+    <State>PE</State>
+    <Level>Elementary, Secondary</Level>
+    <Grades>K-12</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.357826</lat>
+    <lon>-62.2511441</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Southern Kings Consolidated School</Name>
+    <Street>2294 Peter’s Rd – Rte 324</Street>
+    <City>Peter’s Road</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-8</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.059677</lat>
+    <lon>-62.600463</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Spring Park Elementary School</Name>
+    <Street>30 Dunkirk St</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.244449</lat>
+    <lon>-63.141288</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Jean Elementary School</Name>
+    <Street>335 Queen St</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.23805489999999</lat>
+    <lon>-63.1331807</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>St. Louis Elementary School</Name>
+    <Street>3807 Union Rd – Rte 152</Street>
+    <City>St. Edward</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.331038</lat>
+    <lon>-63.134612</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Stratford Elementary School</Name>
+    <Street>50 Glen Stewart Dr</Street>
+    <City>Stratford</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>4-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2238736</lat>
+    <lon>-63.0963086</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Tignish Elementary School</Name>
+    <Street>322 Church St</Street>
+    <City>Tignish</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.9547424</lat>
+    <lon>-64.03414909999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Vernon River Consolidated School</Name>
+    <Street>5505 Murray Harbour Rd – Rte 24</Street>
+    <City>Vernon River</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-9</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.190722</lat>
+    <lon>-62.8322781</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>West Kent Elementary School</Name>
+    <Street>27 Viceroy Av</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2349041</lat>
+    <lon>-63.14542919999999</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>West Royalty Elementary School</Name>
+    <Street>80 Commonwealth Av</Street>
+    <City>Charlottetown</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-6</Grades>
+    <Lang>en</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.275142</lat>
+    <lon>-63.169849</lon>
+    <Coordinates/>
+  </Placemark>
+  <Placemark>
+    <Name>Westwood Primary School</Name>
+    <Street>80 Meadowbank Rd</Street>
+    <City>Cornwall</City>
+    <State>PE</State>
+    <Level>Elementary</Level>
+    <Grades>K-3</Grades>
+    <Lang>en, fr</Lang>
+    <Public>true</Public>
+    <Private>false</Private>
+    <Program/>
+    <www/>
+    <lat>46.2202506</lat>
+    <lon>-63.2180471</lon>
+    <Coordinates/>
+  </Placemark>
+</Schools>

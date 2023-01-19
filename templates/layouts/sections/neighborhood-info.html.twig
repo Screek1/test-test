@@ -1,0 +1,173 @@
+{% set infoList = [] %}
+
+{% if schoolData.public is defined and schoolData.public is not empty %}
+    {% set infoList = infoList|merge([{
+        icon: 'icon-public-schools',
+        title: 'Public Schools',
+        description: 'Part of this information is provided by the Province of British Columbia under the Open Government License for Government of BC Information v.BC1.0. School boundaries and other statistics changes frequently and is for general informational purposes only. You should not use such information in determining the legal eligibility to attend any particular school.',
+        list: schoolData.public
+    }]) %}
+{% endif %}
+
+{% if schoolData.private is defined and schoolData.private is not empty %}
+    {% set infoList = infoList|merge([{
+        icon: 'icon-private-schools',
+        title: 'Private Schools',
+        list: [
+            schoolData.private.elementary,
+            schoolData.private.secondary,
+        ]
+    }]) %}
+{% endif %}
+
+{% if neighborhoodData.busStops is defined and neighborhoodData.busStops is not empty %}
+    {% set infoList = infoList|merge([{
+        icon: 'icon-bus',
+        title: 'Closest Transit',
+        list: [
+            neighborhoodData.busStops
+        ]
+    }]) %}
+{% endif %}
+
+
+{#{% set infoListOld = [#}
+{#    publickSchools,#}
+{#    {#}
+{#        icon: 'icon-noise',#}
+{#        title: 'Noise/ Power Lines',#}
+{#        list: [#}
+{#            {#}
+{#                subtitle: 'Road Noise',#}
+{#                status: {#}
+{#                    text: 'Unlikely',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Railway/Sky train Noise',#}
+{#                status: {#}
+{#                    text: 'Unlikely',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Airport/Port Noise',#}
+{#                status: {#}
+{#                    text: 'Unlikely',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Close to major Power Lines',#}
+{#                status: {#}
+{#                    text: 'Unlikely',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#            },#}
+{#        ]#}
+{#    },#}
+{#    {#}
+{#        icon: 'icon-bus',#}
+{#        title: 'Closest Transit',#}
+{#        list: [#}
+{#            {#}
+{#                subtitle: 'Bus Stop',#}
+{#                label: 'Lorimer at Marketplace',#}
+{#                val: '0.13 km',#}
+{#                details: '#',#}
+{#            }#}
+{#        ]#}
+{#    },#}
+{#    privateSchools,#}
+{#    {#}
+{#        icon: 'icon-climate',#}
+{#        title: 'Climate',#}
+{#        list: [#}
+{#            {#}
+{#                subtitle: 'Station Distance',#}
+{#                val: '0.85km',#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Station Elevation',#}
+{#                val: '658 m',#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Temperature',#}
+{#                status: {#}
+{#                    text: 'Low',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#                details: '#',#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Rainfall',#}
+{#                status: {#}
+{#                    text: 'Low',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#                details: '#',#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Snowfall',#}
+{#                status: {#}
+{#                    text: 'Very high',#}
+{#                    mod: '_orange'#}
+{#                },#}
+{#                details: '#',#}
+{#            },#}
+{#        ]#}
+{#    },#}
+{#    {#}
+{#        icon: 'icon-environment',#}
+{#        title: 'Other',#}
+{#        list: [#}
+{#            {#}
+{#                subtitle: 'Agricultural Land Reserve (ALR)',#}
+{#                status: {#}
+{#                    text: 'Unlikely',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#                details: '#',#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Flood Area',#}
+{#                status: {#}
+{#                    text: 'Possibly',#}
+{#                    mod: '_orange'#}
+{#                },#}
+{#                details: '#',#}
+{#            },#}
+{#            {#}
+{#                subtitle: 'Close to Cemeteries',#}
+{#                status: {#}
+{#                    text: 'Unlikely',#}
+{#                    mod: '_green'#}
+{#                },#}
+{#                details: '#',#}
+{#            },#}
+{#        ]#}
+{#    },#}
+{#] %}#}
+
+{% if infoList|length %}
+    <section class="neighborhood-info {{ wrapMod ?? 'mb70' }}">
+        <div class="neighborhood-info__container {{ containerMod ?? 'container' }}">
+            {% include 'layouts/common/title-block.html.twig' with {
+                tag: 'h3',
+                text: title|default('Neighborhood Info'),
+            } only %}
+
+            {% include 'layouts/modules/info-cards.html.twig' with {
+                infoList: infoList,
+            } only %}
+
+            {% if description|default(false) %}
+                {% include 'layouts/common/show-more-wrap.html.twig' with {
+                    description: description,
+                    feedId: feedId
+                } only %}
+            {% endif %}
+        </div>
+    </section>
+{% endif %}

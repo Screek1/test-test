@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Administrator{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('adminLte') }}
+    {% endblock %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="{{ bodyClass|default('sidebar-mini layout-fixed layout-navbar-fixed') }}">
+<div class="wrapper">
+    {% if is_granted('ROLE_ADMIN') %}
+        {% embed 'admin/layouts/top-panel.html.twig' %}{% endembed %}
+        {% embed 'admin/layouts/left-panel.html.twig' %}{% endembed %}
+    {% endif %}
+
+    <div class="content-wrapper px-4 py-4">
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('adminLte') }}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

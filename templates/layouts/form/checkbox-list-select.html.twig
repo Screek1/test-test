@@ -1,0 +1,54 @@
+{% set defaultLists = {
+    common: [
+       "Aaprtment/Condo",
+       "House",
+       "Multifamily",
+       "Townhouse",
+       "Land Only",
+       "Other",
+    ],
+
+    commercial: [
+        "Aaprtment/Condo",
+        "House",
+        "Multifamily",
+        "Townhouse",
+        "Land Only",
+        "Other",
+    ]
+} %}
+
+{% set defaultList = 'common' %}
+
+{% set useList = list|default(false) ? list : (defaultList ? defaultLists[defaultList] : []) %}
+
+{% embed 'layouts/containers/dropdown-button.html.twig' with {
+    placeholder: placeholder|default(''),
+    wrapMod: wrapMod|default(''),
+    scroll: true,
+    list: useList,
+    selectedValues: selectedValues|default([]),
+    dataProps: {
+        patternReplace: '@',
+        patternMulti: {
+            single: '@',
+            multi: 'Home&#32;Types&#32;(@)',
+        },
+    },
+    disableScrollBp: disableScrollBp|default(false),
+} only %}
+    {% block dropdown_content %}
+        <div class="list">
+            {% for item in list|cast_to_array %}
+                {% include 'layouts/controls/check.html.twig' with {
+                    type: 'checkbox',
+                    name: item.name|default('propertyTypes[]'),
+                    wrapMod: '_dark-gray',
+                    valueAsText: true,
+                    value: item,
+                    selected: item in selectedValues,
+                } only %}
+            {% endfor %}
+        </div>
+    {% endblock %}
+{% endembed %}

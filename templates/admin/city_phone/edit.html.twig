@@ -1,0 +1,44 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Create City Center!{% endblock %}
+
+{% block body %}
+    <div class="content-header" style="display: flex; justify-content: space-between">
+        <h1 class="text-dark">Update City Center</h1>
+    </div>
+
+    <div class="content px-2">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <div class="card-content">
+                    <form class="form-style js-ajax-form" action="{{ path('admin_city_phone_update') }}" method="post">
+                        <input type="hidden" name="id" value="{{ cityPhone.id }}">
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" name="country" class="form-control required" id="country"
+                                   value="{{ cityPhone.country }}" placeholder="Canada">
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" name="city" class="form-control required" id="city"
+                                   value="{{ cityPhone.city }}" placeholder="Vancouver">
+                        </div>
+                        <div class="mb-3">
+                            <label for="stateOrProvince" class="form-label">State or Province</label>
+                            <input type="text" name="stateOrProvince" class="form-control required" id="stateOrProvince"
+                                   value="{{ cityPhone.stateOrProvince }}" placeholder="British Columbia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="latitude" class="form-label">Phone</label>
+                            <input type="text" name="phone" class="form-control required" id="phone"
+                                   value="{{ cityPhone.phone }}" placeholder="123-456-7890">
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" step="1" class="btn btn-primary" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

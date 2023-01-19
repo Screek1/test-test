@@ -1,0 +1,17 @@
+{% set infoCardsSliderParameters = {
+    adaptiveHeight: false
+} %}
+
+<div class="info-cards-wrap mb70">
+    <div
+        class="info-cards-wrap__list _gray-dots-nav js-bp-slider"
+        data-breakpoint="700"
+        data-slider-parameters="{{ infoCardsSliderParameters|json_encode() }}"
+    >
+        {% for item in infoList %}
+            {% if item is not null %}
+                {% include 'layouts/modules/info-card.html.twig' with item only %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{% set dataFormatProps = dataFormatProps|default(false) ? "data-format-props=" ~ dataFormatProps|json_encode() %}
+{% set extraParams = extraParams|default(false) ? extraParams : '' %}
+<div class="input-style {{ wrapMod|default('') }}">
+    <div class="input-style__container">
+        <input
+                class="input-style__input {{ inputMod|default('') }}"
+                type="text" name="{{ name }}"
+                placeholder="{{ placeholder|default('') }}"
+                value="{{ value|default('') }}"
+                {{ dataFormatProps }}
+                {{ extraParams }}
+                autocomplete="off"
+        />
+    </div>
+</div>

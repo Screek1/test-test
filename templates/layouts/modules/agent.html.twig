@@ -1,0 +1,63 @@
+{% set mod = simple|default(false) ? '_simple' : '' %}
+{% set idAttribute = id|default(false) ? 'id=' ~ id : '' %}
+{% set action = formAction|default(false) ? formAction : path('new_viewing') %}
+
+<div class="agent {{ mod }} {{ wrapMod|default('') }}" {{ idAttribute }}
+     data-mh-settings="{{ {offset: 20 }|json_encode }}">
+    <div class="agent__container _scroll-hover-white {{ containerMod|default('') }}" data-init-if-overflow="true">
+        <div class="agent__person">
+            <div class="agent__photo-wrap">
+                <img class="agent__photo of" src="{{ agentPhoto }}" alt="Agent photor"/>
+            </div>
+
+            <div class="agent__info">
+                <div class="agent__name body-text_bold">{{ agentName }}</div>
+                <div class="agent__agency tiny-text">{{ agencyName }}</div>
+
+                {% if simple|default(false) %}
+                    <a class="agent__phone link-white-fuchsia body-text mt10"
+                       href="tel:{{ agentPhone }}">{{ agentPhone }}</a>
+                {% endif %}
+
+                {% if telWithLogo|default(false) %}
+                    <div class="agent__phone-wrap mt20">
+                        <a class="agent__phone link-fuchsia body-text_bold"
+                           href="tel:{{ agentPhone }}">{{ agentPhone }}</a>
+                        <div class="agent__phone-label small-text_bold">{{ 'Call or Text Now!' }}</div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if simple|default(false) %}
+            {% include 'layouts/controls/button.html.twig' with {
+                href: '#agent',
+                text: 'Go See This Home Now',
+                mod: 'js-nav-link',
+            } only %}
+        {% endif %}
+
+        {% if not simple|default(false) and not telWithLogo|default(false) %}
+            <div class="agent__phone-wrap mb10">
+                <a class="agent__phone link-fuchsia body-text_bold" href="tel:{{ agentPhone }}">{{ agentPhone }}</a>
+                <div class="agent__phone-label small-text_bold">{{ 'Call or Text Now!' }}</div>
+            </div>
+        {% endif %}
+
+        {% if not simple|default(false) %}
+            {% include 'layouts/modules/contact-form.html.twig' with {
+                confidentiality: confidentiality|default(false),
+                confidentialityCollapse: confidentialityCollapse|default(false),
+                btnText: btnText|default('Go See This Home Now'),
+                listingId:listingId|default(''),
+                tyTitle: tyTitle|default(false),
+                tySubtitle: tySubtitle|default(false),
+                tyTitleMod: tyTitleMod|default(false),
+                tySubtitleMod: tySubtitleMod|default(false),
+                twoCol: twoCol|default(false),
+                addHiddenInputs: addHiddenInputs|default(false),
+                formAction: action
+            } only %}
+        {% endif %}
+    </div>
+</div>

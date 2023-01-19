@@ -1,0 +1,28 @@
+.collapse-list {
+	&__wrap {
+		display: none;
+	}
+	
+	&__table {
+		column-count: 4;
+		column-gap: 20px;
+	}
+	
+	@include media_1300 {
+		&__table {
+			column-count: 3;
+		}
+	}
+	
+	@include media_1000 {
+		&__table {
+			column-count: 2;
+		}
+	}
+	
+	@include media_500 {
+		&__table {
+			column-count: 1;
+		}
+	}
+}

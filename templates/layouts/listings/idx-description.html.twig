@@ -1,0 +1,222 @@
+{% if description.schools is not empty %}
+    {% if description.schools.public.elementary is defined %}
+        <p>
+            {{ description.address }} is serviced by {{ description.schools.public.elementary.name }}.
+            The property with listing {{ description.MLSWithPrefix }} is
+            located {{ description.schools.public.elementary.distance }} from the school.
+            {{ description.schools.public.elementary.name }} has a rating
+            of {{ description.schools.public.elementary.rating }}.
+        </p>
+    {% endif %}
+    {% if description.schools.public.secondary is defined %}
+        <p>
+            This home with address {{ description.addresscity }} is also serviced
+            by {{ description.schools.public.secondary.name }} and
+            located {{ description.schools.public.secondary.distance }} from it.
+            {{ description.schools.public.secondary.name }} has a rating
+            of {{ description.schools.public.secondary.rating }}.
+        </p>
+    {% endif %}
+{% endif %}
+
+{% if description.schools is not empty %}
+    {% if description.schools.private.elementary is defined %}
+        <p>
+            The closest Elementary independent school to this home for sale located at {{ description.address }}
+            is {{ description.schools.private.elementary.name }}
+            with School's rating {{ description.schools.private.elementary.rating }},
+            located {{ description.schools.private.elementary.distance }} from this home.
+        </p>
+    {% endif %}
+    {% if description.schools.private.secondary is defined %}
+        <p>
+            The closest to this address {{ description.address }} Secondary independent school
+            is {{ description.schools.private.secondary.name }}
+            with School's rating {{ description.schools.private.secondary.rating }},
+            located {{ description.schools.private.secondary.distance }} from this home
+        </p>
+    {% endif %}
+{% endif %}
+
+{% if description.crime is defined %}
+    <p>
+        The freshest crime data from Statistics Canada are from 2020.
+        There were {{ description.crime.allViolationsIncidents }} volation disturbances in this neighbourhood.
+        The overall crime rate near the address - {{ description.addresscity }}
+        is {{ description.crime.allViolationsRatePerOneHundredThousand }}.
+        Rate is the amount of incidents per 100,000 population.
+        Comparing to other Canadian cities it has {{ description.crime.allViolationsRating }} rate in 2020.
+        Year by year change in the total crime rate is {{ description.crime.allViolationsChangeInRate }}
+    </p>
+{% endif %}
+
+{% if description.crime is defined %}
+    <p>
+        Drug crime rate next to the listing {{ description.MLSWithPrefix }}
+        is {{ description.crime.drugCrimeRating }} comparing to other neighbourhoods. The illegal substances offences
+        rating
+        is {{ description.crime.drugViolationsRatePerOneHundredThousand }}. There
+        were {{ description.crime.drugViolationsIncidents }} illegal substances lawbreaking disturbances in this
+        city in 2020
+        . Year by year change in the illegal substances offences ranking
+        is {{ description.crime.drugViolationsChangeInRate }}
+    </p>
+{% endif %}
+
+{% if description.crime is defined %}
+    <p>
+        Property crimes in the neighbourhood close to real estate listing for sale {{ description.address }}
+        are {{ description.crime.propertyCrimeRating }}. Property misconduct rating adjacent
+        to {{ description.MLSWithPrefix }}
+        is {{ description.crime.propertyCrimeRatePerOneHundredThousand }}. There
+        were {{ description.crime.propertyCrimeIncidents }} in
+        the neighbourhood in 2020. Year by year change in the property misconduct rate
+        is {{ description.crime.propertyCrimeChangeInRate }}
+    </p>
+{% endif %}
+
+{% if description.crime is defined %}
+    <p>
+        There were {{ description.crime.violentCriminalCodeViolationsIncidents }} violent lawbreaking disorders in 2020.
+        {{ description.crime.violentCriminalCodeViolationsRatePerOneHundredThousand }} and it
+        is {{ description.crime.violentCrimeRating }} rate comparing to other BC municipalities. Year by year change in
+        the violent crime rate is {{ description.crime.violentCriminalCodeViolationsChangeInRate }}
+    </p>
+{% endif %}
+
+{% if description.busStop is defined %}
+    <p>The closest Bus station is {{ description.busStop.label }} in {{ description.busStop.val }} away from this
+        listing with - {{ description.MLSWithPrefix }}.</p>
+{% endif %}
+
+
+{% if description.demography is defined %}
+    <p>
+        {{ description.demography['26Univer'] }}% of people with university certificate/degree live in this
+        neighbourhood adjacent to the {{ description.address }}
+        which is {{ description.demography['26rUnive'] }} in comparison with other BC
+        neighbourhoods. {{ description.demography['25NoCer'] }}% of population in this
+        neighbourhood that is near the Listing {{ description.MLSWithPrefix }} have no certificate or degree. This
+        number is {{ description.demography['25rNoCe'] }} compared to
+        the average in BC.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Median Household Income near this dwelling with the address {{ description.addresscity }} is
+        ${{ description.demography['16Median'] }} which
+        is {{ description.demography['16rMedia'] }} in comparison with the
+        British Columbia average. Median personal income near this dwelling with listing
+        - {{ description.MLSWithPrefix }} is ${{ description.demography['15Median'] }}
+        which is {{ description.demography['15rMedia'] }} in
+        comparison with the BC average. % of the Households with a mortgage in this census subdivision is
+        {{ description.demography['2OfOw'] }}% which is
+        {{ description.demography['2rOfO'] }}.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Unemployment rate in the area around Real Estate Listing # {{ description.MLS }}
+        is {{ description.demography['28Unempl'] }}
+        which is {{ description.demography['28rUnemp'] }} in comparison
+        to the other province neighbourhoods.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        This real estate is located in {{ description.address }} {{ description.subdivision }} where population change
+        between
+        2011 and 2016 was {{ description.demography['20Popula'] }}%. This is {{ description.demography['20rPopul'] }} in
+        comparison to average growth rate of this region.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Population density per square kilometre in this community near the address {{ description.addresscity }}
+        is {{ description.demography['19Popula'] }} which
+        is {{ description.demography['19rPopul'] }} people per
+        sq.km.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Average size of families in the area adjacent to home for sale {{ description.address }}
+        is {{ description.demography['8Average'] }}. This
+        is {{ description.demography['8rAverag'] }} number in comparison to the whole region.
+        Percent of families with children near by the Real Estate Listing - {{ description.MLSWithPrefix }}
+        is {{ description.demography['17OfW'] }}% and it
+        is {{ description.demography['17rOf'] }}. % of Married or living common law is around
+        {{ description.demography['14OfM'] }}% and it is {{ description.demography['14rOf'] }}.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Average age of the population close to the {{ description.address }} is {{ description.demography['5Average'] }}
+        . This percentage
+        is {{ description.demography['5rAverag'] }} in comparison to other BC cities.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Average value of dwellings in this neighbourhood around {{ description.addresscity }} is
+        ${{ description.demography['9Average'] }} and this
+        is {{ description.demography['9rAverag'] }} comparing to other
+        areas in British Columbia
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        Average Owner payments are {{ description.demography['6rAverag'] }} in the area adjacent
+        to {{ description.address }}.
+        ${{ description.demography['6Average'] }} owners spent in average for the dwelling.
+        Tenants are paying ${{ description.demography['7Average'] }} in this district close
+        to {{ description.MLSWithPrefix }} and it
+        is {{ description.demography['7rAverag'] }} comparing to other cities.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        {{ description.demography['27OfR'] }}% of Population in this district near the {{ description.address }} are
+        Renters and it
+        is {{ description.demography['27rOf'] }} comparing to other BC cities and areas.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        % of English and French speakers around real estate listing {{ description.addresscity }}
+        is {{ description.demography['10Engl'] }}%, it
+        is {{ description.demography['10rEng'] }}, % of English speakers only is {{ description.demography['11OfE'] }}%
+        and {{ description.demography['11rOf'] }}.
+        {% if description.demography['12OfF'] != "" and description.demography['12rOf'] != "" %}
+            % of French speakers adjacent to {{ description.address }} only is {{ description.demography['12OfF'] }}% and it is {{ description.demography['12rOf'] }}.
+        {% endif %}
+        % of Neither English nor French speakers close to home for sale {{ description.addresscity }}
+        is {{ description.demography['13OfN'] }}% and it
+        is {{ description.demography['13rOf'] }} comparing to
+        other BC cities.
+    </p>
+{% endif %}
+
+{% if description.demography is defined %}
+    <p>
+        {{ description.demography['21Public'] }}% of all population in the area around this property with the
+        address {{ description.addresscity }} using Public
+        Transport which is {{ description.demography['21rPubli'] }},
+        {{ description.demography['23CarT'] }}% of using population are using Cars
+        around {{ description.MLSWithPrefix }}, which
+        is {{ description.demography['23rCar'] }}. {{ description.demography['22Bycycl'] }}% of people using Bicycles
+        around the {{ description.address }}
+        and it is {{ description.demography['22rBycyc'] }}. {{ description.demography['24Walked'] }}% of population are
+        walking which is {{ description.demography['24rWalke'] }}
+    </p>
+{% endif %}
